@@ -6,7 +6,7 @@
 
 <title>Kenya Tours | Oldepe Tours & Safaris</title>
 
-<meta name="description" content="Explore Nairobi tours, city experiences, day trips and private tours with Oldepe Tours & Safaris.">
+<meta name="description" content="Explore Nairobi city tours, day trips, cultural experiences and private tours with Oldepe Tours & Safaris.">
 
 <style>
 *{
@@ -19,6 +19,7 @@ body{
 font-family:Arial,Helvetica,sans-serif;
 color:#222;
 line-height:1.6;
+background:#fff;
 }
 
 a{
@@ -40,7 +41,7 @@ left:0;
 right:0;
 z-index:10;
 padding:20px 5%;
-background:rgba(20,30,18,.60);
+background:rgba(20,30,18,.65);
 }
 
 .nav{
@@ -69,7 +70,7 @@ margin-top:5px;
 nav{
 display:flex;
 align-items:center;
-gap:22px;
+gap:20px;
 }
 
 nav a{
@@ -82,21 +83,22 @@ nav a:hover{
 color:#e0a32b;
 }
 
-.nav-whatsapp{
+.nav-plan{
 background:#d99b27;
-padding:10px 16px;
+padding:10px 15px;
 border-radius:5px;
 }
 
 /* HERO */
 
 .hero{
-min-height:58vh;
+min-height:60vh;
 display:flex;
 align-items:center;
+
 background:
-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.62)),
-url("https://images.unsplash.com/photo-1565610222536-ef125c59da2e?auto=format&fit=crop&w=2000&q=90")
+linear-gradient(rgba(0,0,0,.48),rgba(0,0,0,.68)),
+url("https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=2000&q=90")
 center/cover no-repeat;
 }
 
@@ -104,7 +106,7 @@ center/cover no-repeat;
 max-width:1200px;
 width:100%;
 margin:auto;
-padding:140px 5% 70px;
+padding:145px 5% 75px;
 color:#fff;
 }
 
@@ -116,7 +118,7 @@ margin-bottom:15px;
 
 .hero p{
 font-size:19px;
-max-width:700px;
+max-width:720px;
 }
 
 /* SECTION */
@@ -179,16 +181,17 @@ transform:scale(1.05);
 padding:25px;
 }
 
+.location{
+color:#a97015;
+font-size:13px;
+font-weight:bold;
+letter-spacing:.5px;
+margin-bottom:7px;
+}
+
 .tour-content h3{
 font-size:27px;
 margin-bottom:8px;
-}
-
-.location{
-color:#a97015;
-font-weight:bold;
-font-size:14px;
-margin-bottom:10px;
 }
 
 .tour-content p{
@@ -198,7 +201,7 @@ margin-bottom:18px;
 
 .details{
 display:flex;
-gap:10px;
+gap:9px;
 flex-wrap:wrap;
 margin-bottom:20px;
 }
@@ -224,9 +227,9 @@ color:#fff;
 background:#b77e19;
 }
 
-/* EXPERIENCE */
+/* EXPERIENCE SECTION */
 
-.experience{
+.experiences{
 background:#f7f5f0;
 }
 
@@ -262,9 +265,10 @@ color:#666;
 padding:85px 5%;
 text-align:center;
 color:#fff;
+
 background:
 linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url("https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=2000&q=90")
+url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2000&q=90")
 center/cover no-repeat;
 }
 
@@ -335,12 +339,8 @@ color:#888;
 
 @media(max-width:850px){
 
-nav a:not(.nav-whatsapp){
+nav a:not(.nav-plan){
 display:none;
-}
-
-nav{
-gap:8px;
 }
 
 .tour-grid{
@@ -367,7 +367,7 @@ font-size:46px;
 font-size:17px;
 }
 
-.nav-whatsapp{
+.nav-plan{
 padding:9px 12px;
 font-size:12px;
 }
@@ -395,6 +395,8 @@ font-size:30px;
 
 <body>
 
+<!-- HEADER -->
+
 <header>
 
 <div class="nav">
@@ -413,9 +415,8 @@ OLDEPE TOURS & SAFARIS
 <a href="gallery.html">Gallery</a>
 <a href="contact.html">Contact</a>
 
-<a class="nav-whatsapp"
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20make%20an%20enquiry.">
-WhatsApp
+<a href="booking.html" class="nav-plan">
+Plan Your Trip
 </a>
 
 </nav>
@@ -425,21 +426,25 @@ WhatsApp
 </header>
 
 
+<!-- HERO -->
+
 <section class="hero">
 
 <div class="hero-content">
 
-<h1>Kenya Tours & Experiences</h1>
+<h1>Kenya Tours</h1>
 
 <p>
-Discover Nairobi, explore Kenya's attractions and enjoy
-private experiences designed around your interests.
+Discover Nairobi, Kenya's culture, wildlife and beautiful
+landscapes through memorable private tours and day experiences.
 </p>
 
 </div>
 
 </section>
 
+
+<!-- TOURS -->
 
 <section class="section">
 
@@ -450,9 +455,9 @@ private experiences designed around your interests.
 <h2>Explore Our Tours</h2>
 
 <p>
-Not every Kenyan adventure has to be a multi-day safari.
-Explore the city, meet wildlife, discover local attractions
-and enjoy memorable day trips.
+Choose from city experiences, wildlife encounters, day trips
+and private tours. We can also create an itinerary around your
+own interests.
 </p>
 
 </div>
@@ -468,33 +473,34 @@ and enjoy memorable day trips.
 <div class="tour-image">
 
 <img
-src="https://images.unsplash.com/photo-1565610222536-ef125c59da2e?auto=format&fit=crop&w=1200&q=85"
+src="https://images.unsplash.com/photo-1611348524140-53c9a25263d6?auto=format&fit=crop&w=1200&q=85"
 alt="Nairobi city">
 
 </div>
 
 <div class="tour-content">
 
-<div class="location">NAIROBI • KENYA</div>
+<div class="location">
+NAIROBI • KENYA
+</div>
 
 <h3>Nairobi City Tour</h3>
 
 <p>
-Discover Nairobi's landmarks, history, culture and
-modern city life with a private guided experience.
+Explore Nairobi's landmarks, history, culture and modern city
+life with a private guided city experience.
 </p>
 
 <div class="details">
 
-<span class="detail">🏙 City</span>
-<span class="detail">📸 Sightseeing</span>
-<span class="detail">⏱ Flexible</span>
+<span class="detail">City Highlights</span>
+<span class="detail">Culture</span>
+<span class="detail">4–5 Hours</span>
 
 </div>
 
-<a class="button"
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20a%20Nairobi%20City%20Tour.">
-Enquire Now
+<a href="booking.html" class="button">
+Plan This Tour
 </a>
 
 </div>
@@ -502,40 +508,41 @@ Enquire Now
 </div>
 
 
-<!-- NNP -->
+<!-- NAIROBI NATIONAL PARK -->
 
 <div class="tour-card">
 
 <div class="tour-image">
 
 <img
-src="https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=1200&q=85"
+src="https://images.unsplash.com/photo-1534567110243-8875d64ca8ff?auto=format&fit=crop&w=1200&q=85"
 alt="Nairobi National Park">
 
 </div>
 
 <div class="tour-content">
 
-<div class="location">NAIROBI • KENYA</div>
+<div class="location">
+NAIROBI • KENYA
+</div>
 
 <h3>Nairobi National Park</h3>
 
 <p>
-Enjoy a wildlife experience just outside the city and
-look for lions, rhinos, giraffes, zebras and more.
+Experience wildlife close to the city with a game drive through
+Nairobi National Park.
 </p>
 
 <div class="details">
 
-<span class="detail">🦁 Wildlife</span>
-<span class="detail">🦏 Rhino</span>
-<span class="detail">🚙 Game Drive</span>
+<span class="detail">Game Drive</span>
+<span class="detail">Wildlife</span>
+<span class="detail">Day Tour</span>
 
 </div>
 
-<a class="button"
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20a%20Nairobi%20National%20Park%20tour.">
-Enquire Now
+<a href="booking.html" class="button">
+Plan This Tour
 </a>
 
 </div>
@@ -557,26 +564,27 @@ alt="Giraffe experience">
 
 <div class="tour-content">
 
-<div class="location">NAIROBI • KENYA</div>
+<div class="location">
+NAIROBI • KENYA
+</div>
 
 <h3>Giraffe Experience</h3>
 
 <p>
-Enjoy a memorable encounter with giraffes and learn
-more about wildlife conservation in Kenya.
+Meet and learn about giraffes during an enjoyable Nairobi
+wildlife experience.
 </p>
 
 <div class="details">
 
-<span class="detail">🦒 Giraffes</span>
-<span class="detail">📸 Photography</span>
-<span class="detail">🌿 Conservation</span>
+<span class="detail">Giraffes</span>
+<span class="detail">Wildlife</span>
+<span class="detail">2–3 Hours</span>
 
 </div>
 
-<a class="button"
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20a%20giraffe%20experience.">
-Enquire Now
+<a href="booking.html" class="button">
+Plan This Tour
 </a>
 
 </div>
@@ -598,26 +606,27 @@ alt="Elephant conservation">
 
 <div class="tour-content">
 
-<div class="location">NAIROBI • KENYA</div>
+<div class="location">
+NAIROBI • KENYA
+</div>
 
-<h3>Elephant Conservation</h3>
+<h3>Elephant Conservation Experience</h3>
 
 <p>
-Learn about elephant conservation and enjoy an
-educational wildlife experience in Nairobi.
+Learn about elephant conservation and enjoy an educational
+wildlife experience in Nairobi.
 </p>
 
 <div class="details">
 
-<span class="detail">🐘 Elephants</span>
-<span class="detail">🌿 Conservation</span>
-<span class="detail">📚 Educational</span>
+<span class="detail">Elephants</span>
+<span class="detail">Conservation</span>
+<span class="detail">Education</span>
 
 </div>
 
-<a class="button"
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20an%20elephant%20conservation%20experience.">
-Enquire Now
+<a href="booking.html" class="button">
+Plan This Tour
 </a>
 
 </div>
@@ -625,81 +634,83 @@ Enquire Now
 </div>
 
 
-<!-- DAY TRIPS -->
+<!-- CITY WALK -->
 
 <div class="tour-card">
 
 <div class="tour-image">
 
 <img
-src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=1200&q=85"
-alt="Kenya landscape">
+src="https://images.unsplash.com/photo-1596005554384-d293674c91d7?auto=format&fit=crop&w=1200&q=85"
+alt="Nairobi city walking tour">
 
 </div>
 
 <div class="tour-content">
 
-<div class="location">KENYA • DAY TRIPS</div>
+<div class="location">
+NAIROBI • KENYA
+</div>
+
+<h3>Nairobi City Walk</h3>
+
+<p>
+Discover Nairobi on foot while exploring historic landmarks,
+markets, gardens and the character of the city centre.
+</p>
+
+<div class="details">
+
+<span class="detail">Walking Tour</span>
+<span class="detail">History</span>
+<span class="detail">Culture</span>
+
+</div>
+
+<a href="booking.html" class="button">
+Plan This Tour
+</a>
+
+</div>
+
+</div>
+
+
+<!-- DAY TRIP -->
+
+<div class="tour-card">
+
+<div class="tour-image">
+
+<img
+src="https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=1200&q=85"
+alt="Kenya day trip">
+
+</div>
+
+<div class="tour-content">
+
+<div class="location">
+KENYA • PRIVATE TOUR
+</div>
 
 <h3>Kenya Day Trips</h3>
 
 <p>
-Explore destinations around Nairobi and beyond with
-a flexible private day trip.
+Take a private day trip from Nairobi to a destination that
+matches your interests and available time.
 </p>
 
 <div class="details">
 
-<span class="detail">🚙 Private</span>
-<span class="detail">📍 Flexible</span>
-<span class="detail">📸 Sightseeing</span>
+<span class="detail">Private</span>
+<span class="detail">Flexible</span>
+<span class="detail">Day Trip</span>
 
 </div>
 
-<a class="button"
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20a%20Kenya%20day%20trip.">
-Enquire Now
-</a>
-
-</div>
-
-</div>
-
-
-<!-- CUSTOM TOUR -->
-
-<div class="tour-card">
-
-<div class="tour-image">
-
-<img
-src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=85"
-alt="Private Kenya tour">
-
-</div>
-
-<div class="tour-content">
-
-<div class="location">KENYA • PRIVATE EXPERIENCE</div>
-
-<h3>Custom Private Tour</h3>
-
-<p>
-Have somewhere specific in mind? Tell us what you want
-to see and we'll help create a trip around your plans.
-</p>
-
-<div class="details">
-
-<span class="detail">⭐ Custom</span>
-<span class="detail">🚙 Private</span>
-<span class="detail">🗓 Flexible</span>
-
-</div>
-
-<a class="button"
-href="contact.html">
-Plan My Tour
+<a href="booking.html" class="button">
+Plan This Tour
 </a>
 
 </div>
@@ -714,17 +725,19 @@ Plan My Tour
 </section>
 
 
-<section class="section experience">
+<!-- EXPERIENCES -->
+
+<section class="section experiences">
 
 <div class="container">
 
 <div class="intro">
 
-<h2>Travel Your Way</h2>
+<h2>More Than a Tour</h2>
 
 <p>
-Our tours can be adapted to your schedule, interests
-and travel plans.
+Our goal is to give you an enjoyable and personal experience
+of Kenya.
 </p>
 
 </div>
@@ -732,14 +745,16 @@ and travel plans.
 
 <div class="experience-grid">
 
+
 <div class="experience-box">
 
-<div class="icon">🗓</div>
+<div class="icon">🇰🇪</div>
 
-<h3>Flexible Schedule</h3>
+<h3>Discover Kenya</h3>
 
 <p>
-Choose dates and durations that work for your itinerary.
+Experience the country's history, culture, wildlife and
+beautiful landscapes.
 </p>
 
 </div>
@@ -749,10 +764,10 @@ Choose dates and durations that work for your itinerary.
 
 <div class="icon">🚙</div>
 
-<h3>Private Travel</h3>
+<h3>Private & Flexible</h3>
 
 <p>
-Enjoy a more personal experience with your own group.
+Plan your experience around your schedule, interests and group.
 </p>
 
 </div>
@@ -760,15 +775,16 @@ Enjoy a more personal experience with your own group.
 
 <div class="experience-box">
 
-<div class="icon">🤝</div>
+<div class="icon">📸</div>
 
-<h3>Local Service</h3>
+<h3>Create Memories</h3>
 
 <p>
-Get practical assistance and local knowledge throughout your trip.
+Enjoy memorable experiences and take home stories worth sharing.
 </p>
 
 </div>
+
 
 </div>
 
@@ -776,6 +792,8 @@ Get practical assistance and local knowledge throughout your trip.
 
 </section>
 
+
+<!-- CTA -->
 
 <section class="cta">
 
@@ -784,20 +802,20 @@ Get practical assistance and local knowledge throughout your trip.
 <h2>Ready to Explore Kenya?</h2>
 
 <p>
-Tell us what you would like to see and experience.
-We'll help you plan your trip.
+Tell us what you would like to experience and we'll help you
+plan your trip.
 </p>
 
 <div class="buttons">
 
-<a href="contact.html" class="button">
-Send An Enquiry
+<a href="booking.html" class="button">
+Plan Your Trip
 </a>
 
 <a
 href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20would%20like%20to%20plan%20a%20Kenya%20tour."
 class="button">
-Chat On WhatsApp
+WhatsApp Us
 </a>
 
 </div>
@@ -806,6 +824,8 @@ Chat On WhatsApp
 
 </section>
 
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -815,7 +835,9 @@ Chat On WhatsApp
 
 <h3>Oldepe Tours & Safaris</h3>
 
-<p>Discover Kenya. Experience the wild.</p>
+<p>
+Discover Kenya. Experience the wild.
+</p>
 
 <p>
 Safaris, tours, excursions and private travel experiences.
@@ -834,6 +856,7 @@ Safaris, tours, excursions and private travel experiences.
 <a href="about.html">About</a>
 <a href="gallery.html">Gallery</a>
 <a href="contact.html">Contact</a>
+<a href="booking.html">Plan Your Trip</a>
 
 </div>
 
