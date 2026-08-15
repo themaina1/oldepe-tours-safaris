@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kenya Tours | Oldepe Tours & Safaris</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:#222;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+img{
+  width:100%;
+  display:block;
+}
+
+/* HEADER */
+
+header{
+  background:#172116;
+  padding:18px 5%;
+}
+
+.nav{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  color:white;
+  font-size:21px;
+  font-weight:bold;
+  line-height:1.2;
+}
+
+.logo span{
+  display:block;
+  font-size:11px;
+  letter-spacing:2px;
+  font-weight:normal;
+}
+
+nav{
+  display:flex;
+  gap:23px;
+  align-items:center;
+}
+
+nav a{
+  color:white;
+  font-size:15px;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:#d99b27;
+}
+
+.whatsapp{
+  background:#d99b27;
+  padding:10px 17px;
+  border-radius:5px;
+}
+
+/* HERO */
+
+.hero{
+  min-height:52vh;
+  display:flex;
+  align-items:center;
+  background:
+  linear-gradient(rgba(0,0,0,.58),rgba(0,0,0,.58)),
+  url("https://images.unsplash.com/photo-1534177616072-ef7dc120449d?auto=format&fit=crop&w=1800&q=85")
+  center/cover no-repeat;
+}
+
+.hero-content{
+  max-width:1200px;
+  width:100%;
+  margin:auto;
+  padding:80px 5%;
+  color:white;
+}
+
+.hero small{
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-weight:bold;
+}
+
+.hero h1{
+  font-size:clamp(42px,7vw,70px);
+  line-height:1.05;
+  margin:15px 0;
+}
+
+.hero p{
+  max-width:650px;
+  font-size:19px;
+}
+
+/* GENERAL */
+
+.section{
+  padding:75px 5%;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.intro{
+  max-width:850px;
+  margin:0 auto 45px;
+  text-align:center;
+}
+
+.intro h2{
+  font-size:38px;
+  margin-bottom:12px;
+}
+
+.intro p{
+  color:#666;
+}
+
+/* TOUR CARDS */
+
+.tours{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.tour{
+  background:white;
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:0 5px 22px rgba(0,0,0,.12);
+  transition:.3s;
+}
+
+.tour:hover{
+  transform:translateY(-5px);
+}
+
+.tour img{
+  height:230px;
+  object-fit:cover;
+}
+
+.tour-content{
+  padding:24px;
+}
+
+.tour-content h3{
+  font-size:23px;
+  margin-bottom:8px;
+}
+
+.tour-content p{
+  color:#666;
+  margin-bottom:18px;
+}
+
+.button{
+  display:inline-block;
+  background:#d99b27;
+  color:white;
+  padding:11px 18px;
+  border-radius:5px;
+  font-weight:bold;
+}
+
+.button:hover{
+  background:#b77e19;
+}
+
+/* CUSTOM TOUR */
+
+.custom{
+  background:#f5f2eb;
+}
+
+.custom-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.custom-box{
+  background:white;
+  padding:28px;
+  border-radius:8px;
+}
+
+.custom-box h3{
+  margin-bottom:10px;
+}
+
+.custom-box p{
+  color:#666;
+}
+
+/* CTA */
+
+.cta{
+  text-align:center;
+  padding:90px 5%;
+  color:white;
+  background:
+  linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+  url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1800&q=85")
+  center/cover no-repeat;
+}
+
+.cta h2{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.cta p{
+  max-width:650px;
+  margin:0 auto 25px;
+  font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+  background:#191919;
+  color:#ddd;
+  padding:50px 5% 20px;
+}
+
+.footer-grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:40px;
+}
+
+footer h3{
+  color:white;
+  margin-bottom:15px;
+}
+
+footer p,
+footer a{
+  color:#aaa;
+  margin-bottom:8px;
+}
+
+footer a{
+  display:block;
+}
+
+footer a:hover{
+  color:#d99b27;
+}
+
+.copyright{
+  max-width:1200px;
+  margin:30px auto 0;
+  padding-top:20px;
+  border-top:1px solid #333;
+  text-align:center;
+  color:#888;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+  .nav{
+    align-items:flex-start;
+  }
+
+  nav{
+    gap:10px;
+  }
+
+  nav a:not(.whatsapp){
+    display:none;
+  }
+
+  .tours,
+  .custom-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:45px;
+  }
+}
+
+@media(max-width:500px){
+
+  .hero h1{
+    font-size:39px;
+  }
+
+  .intro h2,
+  .cta h2{
+    font-size:30px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="nav">
+
+<a href="index.html" class="logo">
+OLDEPE TOURS & SAFARIS
+<span>TEMBEA KENYA</span>
+</a>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="safaris.html">Safaris</a>
+<a href="tours.html">Tours</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+
+<a class="whatsapp"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20make%20an%20enquiry.">
+WhatsApp
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<section class="hero">
+
+<div class="hero-content">
+
+<small>Explore Kenya</small>
+
+<h1>Tours & Excursions</h1>
+
+<p>
+Discover Kenya beyond the traditional safari with
+city tours, wildlife excursions, day trips and
+private experiences.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="container">
+
+<div class="intro">
+
+<h2>Explore More of Kenya</h2>
+
+<p>
+Whether you have a few hours or a full day, we can help
+you discover some of Kenya's most interesting places.
+</p>
+
+</div>
+
+
+<div class="tours">
+
+
+<!-- NAIROBI CITY -->
+
+<div class="tour">
+
+<img
+src="https://images.unsplash.com/photo-1565610222536-ef125c59da2e?auto=format&fit=crop&w=1000&q=85"
+alt="Nairobi city">
+
+<div class="tour-content">
+
+<h3>Nairobi City Tour</h3>
+
+<p>
+Explore Nairobi's landmarks, history, culture and
+modern city life with a private tour.
+</p>
+
+<a class="button"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20am%20interested%20in%20a%20Nairobi%20City%20Tour.">
+Enquire Now
+</a>
+
+</div>
+
+</div>
+
+
+<!-- NNP -->
+
+<div class="tour">
+
+<img
+src="https://images.unsplash.com/photo-1519659528534-7fd733a832a0?auto=format&fit=crop&w=1000&q=85"
+alt="Nairobi National Park">
+
+<div class="tour-content">
+
+<h3>Nairobi National Park</h3>
+
+<p>
+Enjoy a wildlife experience close to the city and look
+for lions, giraffes, zebras, rhinos and many other species.
+</p>
+
+<a class="button"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20am%20interested%20in%20a%20Nairobi%20National%20Park%20tour.">
+Enquire Now
+</a>
+
+</div>
+
+</div>
+
+
+<!-- GIRAFFE -->
+
+<div class="tour">
+
+<img
+src="https://images.unsplash.com/photo-1547721064-da6cfb341d50?auto=format&fit=crop&w=1000&q=85"
+alt="Giraffe">
+
+<div class="tour-content">
+
+<h3>Giraffe Experience</h3>
+
+<p>
+Meet giraffes and enjoy a memorable wildlife experience
+during your visit to Nairobi.
+</p>
+
+<a class="button"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20am%20interested%20in%20a%20giraffe%20experience.">
+Enquire Now
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ELEPHANT -->
+
+<div class="tour">
+
+<img
+src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=1000&q=85"
+alt="Elephant">
+
+<div class="tour-content">
+
+<h3>Elephant Conservation Experience</h3>
+
+<p>
+Learn about elephant conservation and enjoy an
+educational wildlife experience.
+</p>
+
+<a class="button"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20am%20interested%20in%20an%20elephant%20conservation%20experience.">
+Enquire Now
+</a>
+
+</div>
+
+</div>
+
+
+<!-- DAY TRIPS -->
+
+<div class="tour">
+
+<img
+src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=1000&q=85"
+alt="Kenya landscape">
+
+<div class="tour-content">
+
+<h3>Kenya Day Trips</h3>
+
+<p>
+Explore destinations around Nairobi and beyond with
+a private vehicle and flexible itinerary.
+</p>
+
+<a class="button"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20am%20interested%20in%20a%20Kenya%20day%20trip.">
+Enquire Now
+</a>
+
+</div>
+
+</div>
+
+
+<!-- CUSTOM -->
+
+<div class="tour">
+
+<img
+src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1000&q=85"
+alt="Kenya safari">
+
+<div class="tour-content">
+
+<h3>Private Custom Tour</h3>
+
+<p>
+Have somewhere specific in mind? Tell us what you want
+to see and we'll help plan your experience.
+</p>
+
+<a class="button"
+href="contact.html">
+Plan My Tour
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section custom">
+
+<div class="container">
+
+<div class="intro">
+
+<h2>Travel Your Way</h2>
+
+<p>
+Our private tours can be adjusted to suit your schedule,
+interests and group size.
+</p>
+
+</div>
+
+
+<div class="custom-grid">
+
+<div class="custom-box">
+
+<h3>Flexible Schedules</h3>
+
+<p>
+Choose the date and duration that works best for your trip.
+</p>
+
+</div>
+
+
+<div class="custom-box">
+
+<h3>Private Experiences</h3>
+
+<p>
+Travel with your own group and enjoy a more personal experience.
+</p>
+
+</div>
+
+
+<div class="custom-box">
+
+<h3>Local Knowledge</h3>
+
+<p>
+Get practical assistance with destinations, routes and activities.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="cta">
+
+<div class="container">
+
+<h2>Plan Your Next Adventure</h2>
+
+<p>
+Tell us what you would like to experience in Kenya.
+</p>
+
+<a class="button"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20plan%20a%20tour.">
+Chat on WhatsApp
+</a>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+
+<h3>Oldepe Tours & Safaris</h3>
+
+<p>Discover Kenya. Experience the wild.</p>
+
+<p>
+Kenya safaris, tours, excursions and private travel experiences.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a>
+<a href="safaris.html">Safaris</a>
+<a href="tours.html">Tours</a>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+
+<div>
+
+<h3>Contact Us</h3>
+
+<p>📞 0720 580 063</p>
+
+<p>✉ oldepetr@gmail.com</p>
+
+<a href="https://wa.me/254720580063">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+© 2026 Oldepe Tours & Safaris. All Rights Reserved.
+</div>
+
+</footer>
+
+</body>
+</html>
