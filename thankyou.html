@@ -10,52 +10,52 @@ content="width=device-width, initial-scale=1.0">
 
 <title>Thank You | Oldepe Tours & Safaris</title>
 
-<meta name="description"
-content="Thank you for contacting Oldepe Tours & Safaris. Your safari enquiry has been received.">
-
 <style>
 
 *{
-    margin:0;
-    padding:0;
     box-sizing:border-box;
 }
 
 body{
+
     margin:0;
+
     min-height:100vh;
-    font-family:Arial, Helvetica, sans-serif;
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:20px;
 
     background:
     linear-gradient(
-        rgba(0,0,0,.60),
-        rgba(0,0,0,.72)
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.70)
     ),
     url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2000&q=90")
-    center/cover fixed no-repeat;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    padding:25px;
+    center/cover no-repeat;
 }
 
 .card{
 
     width:100%;
+
     max-width:650px;
 
     background:#fff;
 
     border-radius:14px;
 
-    padding:50px 35px;
+    padding:50px 30px;
 
     text-align:center;
 
-    box-shadow:
-    0 20px 60px rgba(0,0,0,.30);
+    box-shadow:0 20px 60px rgba(0,0,0,.3);
 }
 
 .logo{
@@ -66,8 +66,6 @@ body{
 
     font-weight:bold;
 
-    letter-spacing:.5px;
-
     margin-bottom:25px;
 }
 
@@ -77,21 +75,20 @@ body{
 
     color:#b47b13;
 
-    font-size:11px;
+    font-size:10px;
 
     letter-spacing:4px;
 
-    font-weight:normal;
-
     margin-top:5px;
+
+    font-weight:normal;
 }
 
 .check{
 
     width:80px;
-    height:80px;
 
-    margin:0 auto 25px;
+    height:80px;
 
     border-radius:50%;
 
@@ -102,38 +99,30 @@ body{
     display:flex;
 
     align-items:center;
+
     justify-content:center;
 
-    font-size:42px;
+    margin:0 auto 25px;
+
+    font-size:45px;
 }
 
 h1{
 
     color:#173b2a;
 
-    font-size:42px;
+    font-size:40px;
 
     margin-bottom:15px;
 }
 
-.message{
+p{
 
     color:#666;
 
     font-size:18px;
 
     line-height:1.7;
-
-    margin-bottom:15px;
-}
-
-.small{
-
-    color:#777;
-
-    font-size:15px;
-
-    margin-bottom:30px;
 }
 
 .buttons{
@@ -146,20 +135,20 @@ h1{
 
     max-width:400px;
 
-    margin:auto;
+    margin:30px auto 0;
 }
 
 .button{
 
     display:block;
 
-    padding:15px 20px;
+    padding:15px;
 
     border-radius:6px;
 
-    font-weight:bold;
+    color:#fff;
 
-    font-size:16px;
+    font-weight:bold;
 
     text-decoration:none;
 }
@@ -167,37 +156,16 @@ h1{
 .home{
 
     background:#173b2a;
-
-    color:#fff;
 }
 
-.home:hover{
-
-    background:#10291d;
-}
-
-.safari{
+.safaris{
 
     background:#d99b27;
-
-    color:#fff;
-}
-
-.safari:hover{
-
-    background:#b77e19;
 }
 
 .whatsapp{
 
     background:#229c4b;
-
-    color:#fff;
-}
-
-.whatsapp:hover{
-
-    background:#187a39;
 }
 
 .footer{
@@ -211,26 +179,6 @@ h1{
     color:#888;
 
     font-size:13px;
-}
-
-@media(max-width:500px){
-
-    body{
-        padding:15px;
-    }
-
-    .card{
-        padding:40px 22px;
-    }
-
-    h1{
-        font-size:34px;
-    }
-
-    .message{
-        font-size:16px;
-    }
-
 }
 
 </style>
@@ -251,14 +199,18 @@ OLDEPE TOURS & SAFARIS
 
 
 <div class="check">
+
 ✓
+
 </div>
 
 
-<h1>Safari Enquiry Received!</h1>
+<h1>
+Safari Enquiry Received!
+</h1>
 
 
-<p class="message">
+<p>
 
 Thank you for contacting
 <strong>Oldepe Tours & Safaris.</strong>
@@ -266,18 +218,11 @@ Thank you for contacting
 </p>
 
 
-<p class="message">
+<p>
 
-We have received your safari enquiry
-and will get back to you shortly with
-more information about your trip.
-
-</p>
-
-
-<p class="small">
-
-We look forward to helping you discover Kenya.
+Your safari enquiry has been received
+successfully. We will contact you shortly
+to discuss your travel plans.
 
 </p>
 
@@ -294,7 +239,7 @@ class="button home"
 
 <a
 href="safaris.html"
-class="button safari"
+class="button safaris"
 >
 VIEW OUR SAFARIS
 </a>
@@ -304,7 +249,7 @@ VIEW OUR SAFARIS
 href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20have%20just%20submitted%20a%20safari%20enquiry."
 class="button whatsapp"
 >
-CHAT WITH US ON WHATSAPP
+CHAT ON WHATSAPP
 </a>
 
 </div>
