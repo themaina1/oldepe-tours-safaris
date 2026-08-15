@@ -9,6 +9,7 @@
 <meta name="description" content="View safari, wildlife and Kenya travel experiences with Oldepe Tours & Safaris.">
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -121,7 +122,7 @@ font-size:19px;
 max-width:700px;
 }
 
-/* GALLERY */
+/* GALLERY SECTION */
 
 .section{
 padding:75px 5%;
@@ -147,6 +148,22 @@ margin-bottom:12px;
 color:#666;
 }
 
+/* GALLERY TITLE */
+
+.gallery-heading{
+margin:50px 0 22px;
+}
+
+.gallery-heading h3{
+font-size:28px;
+color:#173b2a;
+}
+
+.gallery-heading p{
+color:#777;
+margin-top:4px;
+}
+
 /* PHOTO GRID */
 
 .gallery{
@@ -161,6 +178,7 @@ overflow:hidden;
 border-radius:8px;
 background:#eee;
 position:relative;
+cursor:pointer;
 }
 
 .photo img{
@@ -190,6 +208,73 @@ rgba(0,0,0,.75)
 );
 }
 
+/* BUTTONS */
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:12px;
+flex-wrap:wrap;
+margin-top:55px;
+}
+
+.button{
+display:inline-block;
+padding:13px 22px;
+border-radius:5px;
+font-weight:bold;
+background:#d99b27;
+color:#fff;
+}
+
+.button:hover{
+background:#b77e19;
+}
+
+.back-button{
+background:#173b2a;
+}
+
+.back-button:hover{
+background:#0d291d;
+}
+
+/* LIGHTBOX */
+
+.lightbox{
+display:none;
+position:fixed;
+z-index:9999;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.94);
+align-items:center;
+justify-content:center;
+padding:25px;
+}
+
+.lightbox img{
+max-width:95%;
+max-height:88vh;
+width:auto;
+height:auto;
+object-fit:contain;
+border-radius:5px;
+}
+
+.close{
+position:absolute;
+top:15px;
+right:25px;
+color:#fff;
+font-size:45px;
+font-weight:normal;
+cursor:pointer;
+z-index:10000;
+}
+
 /* CTA */
 
 .cta{
@@ -212,26 +297,6 @@ margin-bottom:12px;
 font-size:18px;
 max-width:650px;
 margin:0 auto 25px;
-}
-
-.button{
-display:inline-block;
-padding:13px 22px;
-border-radius:5px;
-font-weight:bold;
-background:#d99b27;
-color:#fff;
-}
-
-.button:hover{
-background:#b77e19;
-}
-
-.buttons{
-display:flex;
-justify-content:center;
-gap:12px;
-flex-wrap:wrap;
 }
 
 /* FOOTER */
@@ -279,7 +344,7 @@ font-size:14px;
 color:#888;
 }
 
-/* MOBILE */
+/* TABLET */
 
 @media(max-width:850px){
 
@@ -308,6 +373,8 @@ font-size:46px;
 }
 
 }
+
+/* PHONE */
 
 @media(max-width:500px){
 
@@ -341,7 +408,18 @@ height:260px;
 font-size:30px;
 }
 
+.gallery-heading h3{
+font-size:24px;
 }
+
+}
+
+/* PREVENT PAGE SCROLL WHEN LIGHTBOX IS OPEN */
+
+body.no-scroll{
+overflow:hidden;
+}
+
 </style>
 </head>
 
@@ -415,10 +493,22 @@ Kenya one of Africa's most exciting destinations.
 </div>
 
 
+<!-- EXISTING PHOTOS -->
+
+<div class="gallery-heading">
+
+<h3>Kenya Safari Experiences</h3>
+
+<p>Explore some of the destinations and wildlife experiences Kenya has to offer.</p>
+
+</div>
+
+
 <div class="gallery">
 
 
-<div class="photo">
+<div class="photo"
+onclick="openPhoto('https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1600&q=90')">
 
 <img
 src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1000&q=85"
@@ -431,7 +521,8 @@ Kenya Safari
 </div>
 
 
-<div class="photo">
+<div class="photo"
+onclick="openPhoto('https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=1600&q=90')">
 
 <img
 src="https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=1000&q=85"
@@ -444,7 +535,8 @@ Wildlife Experience
 </div>
 
 
-<div class="photo">
+<div class="photo"
+onclick="openPhoto('https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=1600&q=90')">
 
 <img
 src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=1000&q=85"
@@ -457,7 +549,8 @@ Elephant Encounter
 </div>
 
 
-<div class="photo">
+<div class="photo"
+onclick="openPhoto('https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1600&q=90')">
 
 <img
 src="https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1000&q=85"
@@ -470,7 +563,8 @@ Amboseli
 </div>
 
 
-<div class="photo">
+<div class="photo"
+onclick="openPhoto('https://images.unsplash.com/photo-1519659528534-7fd733a832a0?auto=format&fit=crop&w=1600&q=90')">
 
 <img
 src="https://images.unsplash.com/photo-1519659528534-7fd733a832a0?auto=format&fit=crop&w=1000&q=85"
@@ -483,7 +577,8 @@ African Wilderness
 </div>
 
 
-<div class="photo">
+<div class="photo"
+onclick="openPhoto('https://images.unsplash.com/photo-1547721064-da6cfb341d50?auto=format&fit=crop&w=1600&q=90')">
 
 <img
 src="https://images.unsplash.com/photo-1547721064-da6cfb341d50?auto=format&fit=crop&w=1000&q=85"
@@ -496,7 +591,8 @@ Giraffe Experience
 </div>
 
 
-<div class="photo">
+<div class="photo"
+onclick="openPhoto('https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=1600&q=90')">
 
 <img
 src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=1000&q=85"
@@ -509,7 +605,8 @@ Kenya Landscapes
 </div>
 
 
-<div class="photo">
+<div class="photo"
+onclick="openPhoto('https://images.unsplash.com/photo-1534567110243-8875d64ca8ff?auto=format&fit=crop&w=1600&q=90')">
 
 <img
 src="https://images.unsplash.com/photo-1534567110243-8875d64ca8ff?auto=format&fit=crop&w=1000&q=85"
@@ -522,7 +619,8 @@ Safari Moments
 </div>
 
 
-<div class="photo">
+<div class="photo"
+onclick="openPhoto('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=90')">
 
 <img
 src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85"
@@ -534,6 +632,164 @@ Travel Kenya
 
 </div>
 
+
+</div>
+
+
+<!-- NEW UPLOADED PHOTOS -->
+
+<div class="gallery-heading">
+
+<h3>Oldepe Tours & Safaris</h3>
+
+<p>Our own collection of safari and travel memories.</p>
+
+</div>
+
+
+<div class="gallery">
+
+
+<div class="photo"
+onclick="openPhoto('images/safari1.jpg')">
+
+<img
+src="images/safari1.jpg"
+alt="Oldepe Tours safari">
+
+<div class="photo-title">
+Safari Experience
+</div>
+
+</div>
+
+
+<div class="photo"
+onclick="openPhoto('images/safari2.jpg')">
+
+<img
+src="images/safari2.jpg"
+alt="Oldepe Tours safari">
+
+<div class="photo-title">
+Wildlife Adventure
+</div>
+
+</div>
+
+
+<div class="photo"
+onclick="openPhoto('images/safari3.jpg')">
+
+<img
+src="images/safari3.jpg"
+alt="Oldepe Tours safari">
+
+<div class="photo-title">
+Kenya Wildlife
+</div>
+
+</div>
+
+
+<div class="photo"
+onclick="openPhoto('images/safari4.jpg')">
+
+<img
+src="images/safari4.jpg"
+alt="Oldepe Tours safari">
+
+<div class="photo-title">
+Safari Memories
+</div>
+
+</div>
+
+
+<div class="photo"
+onclick="openPhoto('images/safari5.jpg')">
+
+<img
+src="images/safari5.jpg"
+alt="Oldepe Tours safari">
+
+<div class="photo-title">
+Discover Kenya
+</div>
+
+</div>
+
+
+<div class="photo"
+onclick="openPhoto('images/safari6.jpg')">
+
+<img
+src="images/safari6.jpg"
+alt="Oldepe Tours safari">
+
+<div class="photo-title">
+Kenya Adventure
+</div>
+
+</div>
+
+
+<div class="photo"
+onclick="openPhoto('images/safari7.jpg')">
+
+<img
+src="images/safari7.jpg"
+alt="Oldepe Tours safari">
+
+<div class="photo-title">
+Wildlife & Nature
+</div>
+
+</div>
+
+
+<div class="photo"
+onclick="openPhoto('images/safari8.jpg')">
+
+<img
+src="images/safari8.jpg"
+alt="Oldepe Tours safari">
+
+<div class="photo-title">
+Safari Journey
+</div>
+
+</div>
+
+
+<div class="photo"
+onclick="openPhoto('images/safari9.jpg')">
+
+<img
+src="images/safari9.jpg"
+alt="Oldepe Tours safari">
+
+<div class="photo-title">
+Experience Kenya
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- BUTTONS -->
+
+<div class="buttons">
+
+<a href="safaris.html" class="button back-button">
+← Back to Safaris
+</a>
+
+<a href="booking.html" class="button">
+Plan Your Trip
+</a>
 
 </div>
 
@@ -557,14 +813,16 @@ your own Kenyan adventure.
 
 <div class="buttons">
 
-<a href="contact.html" class="button">
+<a href="booking.html" class="button">
 Plan Your Trip
 </a>
 
 <a
 href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20would%20like%20to%20plan%20a%20Kenya%20trip."
 class="button">
+
 Chat On WhatsApp
+
 </a>
 
 </div>
@@ -605,6 +863,7 @@ Safaris, tours, excursions and private travel experiences.
 <a href="about.html">About</a>
 <a href="gallery.html">Gallery</a>
 <a href="contact.html">Contact</a>
+<a href="booking.html">Plan Your Trip</a>
 
 </div>
 
@@ -633,6 +892,64 @@ WhatsApp
 </div>
 
 </footer>
+
+
+<!-- LIGHTBOX -->
+
+<div class="lightbox" id="lightbox" onclick="closePhoto(event)">
+
+<span class="close" onclick="closePhoto(event)">
+&times;
+</span>
+
+<img id="largePhoto" src="" alt="Enlarged gallery photo">
+
+</div>
+
+
+<script>
+
+function openPhoto(photo){
+
+document.getElementById("largePhoto").src = photo;
+
+document.getElementById("lightbox").style.display = "flex";
+
+document.body.classList.add("no-scroll");
+
+}
+
+
+function closePhoto(event){
+
+if(event){
+
+event.stopPropagation();
+
+}
+
+document.getElementById("lightbox").style.display = "none";
+
+document.getElementById("largePhoto").src = "";
+
+document.body.classList.remove("no-scroll");
+
+}
+
+
+/* Close lightbox with phone back/escape key */
+
+document.addEventListener("keydown",function(event){
+
+if(event.key === "Escape"){
+
+closePhoto();
+
+}
+
+});
+
+</script>
 
 </body>
 </html>
