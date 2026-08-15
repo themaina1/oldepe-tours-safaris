@@ -6,253 +6,887 @@
 
 <title>Kenya Safaris | Oldepe Tours & Safaris</title>
 
-<meta name="description" content="Explore Kenya safaris with Oldepe Tours & Safaris. Discover Maasai Mara, Amboseli, Lake Nakuru, Tsavo and more.">
+<meta name="description" content="Explore Kenya safaris with Oldepe Tours & Safaris. Discover Maasai Mara, Amboseli, Nairobi National Park, Lake Nakuru and Tsavo.">
 
 <style>
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-  scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  color:#222;
-  background:#fff;
-  line-height:1.6;
+font-family:Arial,Helvetica,sans-serif;
+color:#222;
+line-height:1.6;
+background:#fff;
 }
 
 a{
-  text-decoration:none;
-  color:inherit;
+text-decoration:none;
+color:inherit;
 }
 
 img{
-  width:100%;
-  display:block;
+width:100%;
+display:block;
 }
 
-/* HEADER */
-
 header{
-  background:#172116;
-  padding:18px 5%;
+position:absolute;
+top:0;
+left:0;
+right:0;
+z-index:10;
+padding:20px 5%;
+background:rgba(20,30,18,.60);
 }
 
 .nav{
-  max-width:1200px;
-  margin:auto;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
 
 .logo{
-  color:#fff;
-  font-size:21px;
-  font-weight:bold;
-  line-height:1.2;
+color:#fff;
+font-size:21px;
+font-weight:bold;
+line-height:1.15;
 }
 
 .logo span{
-  display:block;
-  font-size:11px;
-  letter-spacing:2px;
-  font-weight:normal;
-  margin-top:4px;
+display:block;
+font-size:10px;
+letter-spacing:3px;
+font-weight:normal;
+margin-top:5px;
 }
 
 nav{
-  display:flex;
-  gap:24px;
-  align-items:center;
+display:flex;
+align-items:center;
+gap:22px;
 }
 
 nav a{
-  color:#fff;
-  font-size:15px;
-  font-weight:bold;
+color:#fff;
+font-size:14px;
+font-weight:bold;
 }
 
 nav a:hover{
-  color:#d99b27;
+color:#e0a32b;
 }
 
-.whatsapp{
-  background:#d99b27;
-  padding:10px 17px;
-  border-radius:5px;
+.nav-whatsapp{
+background:#d99b27;
+padding:10px 16px;
+border-radius:5px;
 }
 
-.whatsapp:hover{
-  color:#fff;
-  background:#b77e19;
+/* PAGE HERO */
+
+.page-hero{
+min-height:58vh;
+display:flex;
+align-items:center;
+background:
+linear-gradient(rgba(0,0,0,.48),rgba(0,0,0,.62)),
+url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2000&q=90")
+center/cover no-repeat;
 }
 
-/* HERO */
-
-.hero{
-  min-height:55vh;
-  display:flex;
-  align-items:center;
-  background:
-  linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-  url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1800&q=85")
-  center/cover no-repeat;
+.page-hero-content{
+max-width:1200px;
+width:100%;
+margin:auto;
+padding:140px 5% 70px;
+color:#fff;
 }
 
-.hero-content{
-  max-width:1200px;
-  width:100%;
-  margin:auto;
-  padding:80px 5%;
-  color:#fff;
+.page-hero h1{
+font-size:clamp(42px,6vw,68px);
+line-height:1.05;
+margin-bottom:15px;
 }
 
-.hero small{
-  text-transform:uppercase;
-  letter-spacing:3px;
-  font-weight:bold;
+.page-hero p{
+font-size:19px;
+max-width:700px;
 }
 
-.hero h1{
-  font-size:clamp(42px,7vw,70px);
-  line-height:1.05;
-  margin:15px 0;
-}
-
-.hero p{
-  max-width:650px;
-  font-size:19px;
-}
-
-/* GENERAL */
+/* INTRO */
 
 .section{
-  padding:75px 5%;
+padding:75px 5%;
 }
 
 .container{
-  max-width:1200px;
-  margin:auto;
+max-width:1200px;
+margin:auto;
 }
 
 .intro{
-  max-width:850px;
-  margin:0 auto 55px;
-  text-align:center;
+max-width:800px;
+margin:0 auto 45px;
+text-align:center;
 }
 
 .intro h2{
-  font-size:38px;
-  margin-bottom:15px;
+font-size:38px;
+margin-bottom:12px;
 }
 
 .intro p{
-  color:#666;
+color:#666;
 }
 
-/* CARDS */
+/* SAFARI CARDS */
 
-.cards{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:25px;
+.safari-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
 }
 
-.card{
-  background:#fff;
-  border-radius:8px;
-  overflow:hidden;
-  box-shadow:0 5px 22px rgba(0,0,0,.12);
-  transition:.3s;
+.safari-card{
+background:#fff;
+border-radius:9px;
+overflow:hidden;
+box-shadow:0 6px 25px rgba(0,0,0,.12);
 }
 
-.card:hover{
-  transform:translateY(-6px);
+.safari-image{
+height:300px;
+overflow:hidden;
 }
 
-.card img{
-  height:240px;
-  object-fit:cover;
+.safari-image img{
+height:100%;
+object-fit:cover;
+transition:.4s;
 }
 
-.card-content{
-  padding:25px;
+.safari-card:hover .safari-image img{
+transform:scale(1.05);
 }
 
-.card-content h3{
-  font-size:24px;
-  margin-bottom:10px;
+.safari-content{
+padding:25px;
 }
 
-.card-content p{
-  color:#666;
-  margin-bottom:18px;
+.safari-content h3{
+font-size:27px;
+margin-bottom:8px;
 }
 
-.card-button{
-  display:inline-block;
-  background:#d99b27;
-  color:#fff;
-  padding:11px 18px;
-  border-radius:5px;
-  font-weight:bold;
+.location{
+color:#a97015;
+font-weight:bold;
+font-size:14px;
+margin-bottom:10px;
 }
 
-.card-button:hover{
-  background:#b77e19;
+.safari-content p{
+color:#666;
+margin-bottom:15px;
 }
 
-/* PACKAGE INFO */
-
-.info{
-  background:#f5f2eb;
+.details{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin-bottom:20px;
 }
 
-.info-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:25px;
+.detail{
+background:#f3f0e9;
+padding:7px 11px;
+border-radius:4px;
+font-size:13px;
+font-weight:bold;
 }
 
-.info-box{
-  background:#fff;
-  padding:28px;
-  border-radius:8px;
+.button{
+display:inline-block;
+padding:13px 22px;
+border-radius:5px;
+font-weight:bold;
+background:#d99b27;
+color:#fff;
 }
 
-.info-box h3{
-  margin-bottom:10px;
-  font-size:21px;
+.button:hover{
+background:#b77e19;
 }
 
-.info-box p{
-  color:#666;
+/* WHY SAFARI */
+
+.why{
+background:#f7f5f0;
+}
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.why-box{
+text-align:center;
+padding:25px;
+}
+
+.why-icon{
+font-size:38px;
+margin-bottom:12px;
+}
+
+.why-box h3{
+margin-bottom:8px;
+}
+
+.why-box p{
+color:#666;
 }
 
 /* CTA */
 
 .cta{
-  padding:90px 5%;
-  text-align:center;
-  color:#fff;
-  background:
-  linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-  url("https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=1800&q=85")
-  center/cover no-repeat;
+padding:85px 5%;
+text-align:center;
+color:#fff;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url("https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=2000&q=90")
+center/cover no-repeat;
 }
 
 .cta h2{
-  font-size:42px;
-  margin-bottom:15px;
+font-size:42px;
+margin-bottom:12px;
 }
 
 .cta p{
-  max-width:650px;
-  margin:0 auto 25px;
-  font
+font-size:18px;
+max-width:650px;
+margin:0 auto 25px;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:12px;
+flex-wrap:wrap;
+}
+
+/* FOOTER */
+
+footer{
+background:#191919;
+color:#ddd;
+padding:50px 5% 20px;
+}
+
+.footer-grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:2fr 1fr 1fr;
+gap:40px;
+}
+
+footer h3{
+color:#fff;
+margin-bottom:15px;
+}
+
+footer p,
+footer a{
+color:#aaa;
+margin-bottom:8px;
+}
+
+footer a{
+display:block;
+}
+
+footer a:hover{
+color:#d99b27;
+}
+
+.copyright{
+max-width:1200px;
+margin:30px auto 0;
+padding-top:20px;
+border-top:1px solid #333;
+text-align:center;
+font-size:14px;
+color:#888;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+nav a:not(.nav-whatsapp){
+display:none;
+}
+
+nav{
+gap:8px;
+}
+
+.safari-grid{
+grid-template-columns:1fr;
+}
+
+.why-grid{
+grid-template-columns:1fr;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.page-hero{
+min-height:55vh;
+}
+
+.page-hero h1{
+font-size:46px;
+}
+
+}
+
+@media(max-width:500px){
+
+.logo{
+font-size:17px;
+}
+
+.nav-whatsapp{
+padding:9px 12px;
+font-size:12px;
+}
+
+.page-hero h1{
+font-size:40px;
+}
+
+.page-hero p{
+font-size:17px;
+}
+
+.safari-image{
+height:240px;
+}
+
+.intro h2,
+.cta h2{
+font-size:30px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="nav">
+
+<a href="index.html" class="logo">
+OLDEPE TOURS & SAFARIS
+<span>TEMBEA KENYA</span>
+</a>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="safaris.html">Safaris</a>
+<a href="tours.html">Tours</a>
+<a href="about.html">About</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+
+<a class="nav-whatsapp"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20enquire%20about%20a%20safari.">
+WhatsApp
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="page-hero">
+
+<div class="page-hero-content">
+
+<h1>Kenya Safaris</h1>
+
+<p>
+Discover Kenya's incredible wildlife, spectacular landscapes
+and unforgettable safari destinations.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- SAFARIS -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="intro">
+
+<h2>Explore Our Safari Destinations</h2>
+
+<p>
+Choose from some of Kenya's most remarkable wildlife destinations.
+Whether you are looking for a short safari or a longer adventure,
+we can help plan your journey.
+</p>
+
+</div>
+
+
+<div class="safari-grid">
+
+
+<!-- MASAI MARA -->
+
+<div class="safari-card">
+
+<div class="safari-image">
+
+<img
+src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=85"
+alt="Maasai Mara safari">
+
+</div>
+
+<div class="safari-content">
+
+<div class="location">NAROK COUNTY • KENYA</div>
+
+<h3>Maasai Mara</h3>
+
+<p>
+Experience one of Africa's most famous wildlife reserves,
+renowned for lions, elephants, cheetahs, leopards and the
+Great Migration.
+</p>
+
+<div class="details">
+
+<span class="detail">🦁 Big Five</span>
+<span class="detail">📸 Wildlife</span>
+<span class="detail">🌅 Scenic Plains</span>
+
+</div>
+
+<a
+class="button"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20a%20Maasai%20Mara%20safari.">
+Enquire Now
+</a>
+
+</div>
+
+</div>
+
+
+<!-- AMBOSELI -->
+
+<div class="safari-card">
+
+<div class="safari-image">
+
+<img
+src="https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1200&q=85"
+alt="Amboseli safari">
+
+</div>
+
+<div class="safari-content">
+
+<div class="location">KAJIADO COUNTY • KENYA</div>
+
+<h3>Amboseli National Park</h3>
+
+<p>
+Enjoy spectacular views of Mount Kilimanjaro while encountering
+elephants, lions, giraffes, zebras and many other species.
+</p>
+
+<div class="details">
+
+<span class="detail">🐘 Elephants</span>
+<span class="detail">🏔 Kilimanjaro</span>
+<span class="detail">📸 Photography</span>
+
+</div>
+
+<a
+class="button"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20an%20Amboseli%20safari.">
+Enquire Now
+</a>
+
+</div>
+
+</div>
+
+
+<!-- NAIROBI -->
+
+<div class="safari-card">
+
+<div class="safari-image">
+
+<img
+src="https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=1200&q=85"
+alt="Nairobi National Park">
+
+</div>
+
+<div class="safari-content">
+
+<div class="location">NAIROBI • KENYA</div>
+
+<h3>Nairobi National Park</h3>
+
+<p>
+Enjoy a unique wildlife experience just outside Kenya's capital,
+with opportunities to see lions, rhinos, giraffes, zebras and more.
+</p>
+
+<div class="details">
+
+<span class="detail">🦏 Rhino</span>
+<span class="detail">🦁 Lions</span>
+<span class="detail">🏙 Near Nairobi</span>
+
+</div>
+
+<a
+class="button"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20a%20Nairobi%20National%20Park%20safari.">
+Enquire Now
+</a>
+
+</div>
+
+</div>
+
+
+<!-- LAKE NAKURU -->
+
+<div class="safari-card">
+
+<div class="safari-image">
+
+<img
+src="https://images.unsplash.com/photo-1547970810-dc1eac37d174?auto=format&fit=crop&w=1200&q=85"
+alt="Lake Nakuru wildlife">
+
+</div>
+
+<div class="safari-content">
+
+<div class="location">RIFT VALLEY • KENYA</div>
+
+<h3>Lake Nakuru</h3>
+
+<p>
+Explore the beautiful Rift Valley and enjoy wildlife viewing
+around Lake Nakuru, home to rhinos, giraffes, lions and many birds.
+</p>
+
+<div class="details">
+
+<span class="detail">🦏 Rhinos</span>
+<span class="detail">🦒 Giraffes</span>
+<span class="detail">🦅 Birds</span>
+
+</div>
+
+<a
+class="button"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20a%20Lake%20Nakuru%20safari.">
+Enquire Now
+</a>
+
+</div>
+
+</div>
+
+
+<!-- TSAVO -->
+
+<div class="safari-card">
+
+<div class="safari-image">
+
+<img
+src="https://images.unsplash.com/photo-1534567110243-8875d64ca8ff?auto=format&fit=crop&w=1200&q=85"
+alt="Tsavo safari">
+
+</div>
+
+<div class="safari-content">
+
+<div class="location">EASTERN & COASTAL KENYA</div>
+
+<h3>Tsavo National Parks</h3>
+
+<p>
+Discover the vast wilderness of Tsavo, famous for its red elephants,
+dramatic landscapes and diverse wildlife.
+</p>
+
+<div class="details">
+
+<span class="detail">🐘 Elephants</span>
+<span class="detail">🌿 Wilderness</span>
+<span class="detail">🦁 Wildlife</span>
+
+</div>
+
+<a
+class="button"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20a%20Tsavo%20safari.">
+Enquire Now
+</a>
+
+</div>
+
+</div>
+
+
+<!-- CUSTOM -->
+
+<div class="safari-card">
+
+<div class="safari-image">
+
+<img
+src="https://images.unsplash.com/photo-1519659528534-7fd733a832a0?auto=format&fit=crop&w=1200&q=85"
+alt="African safari landscape">
+
+</div>
+
+<div class="safari-content">
+
+<div class="location">KENYA • CUSTOM SAFARIS</div>
+
+<h3>Tailor-Made Safari</h3>
+
+<p>
+Have a special destination, budget or travel schedule in mind?
+We can help create a safari designed around your requirements.
+</p>
+
+<div class="details">
+
+<span class="detail">🗓 Flexible</span>
+<span class="detail">🚙 Private</span>
+<span class="detail">⭐ Custom</span>
+
+</div>
+
+<a
+class="button"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20would%20like%20to%20plan%20a%20custom%20Kenya%20safari.">
+Plan My Safari
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY -->
+
+<section class="section why">
+
+<div class="container">
+
+<div class="intro">
+
+<h2>Make Your Safari Special</h2>
+
+<p>
+Travel at your own pace and enjoy a safari experience built
+around what matters most to you.
+</p>
+
+</div>
+
+<div class="why-grid">
+
+<div class="why-box">
+
+<div class="why-icon">🚙</div>
+
+<h3>Flexible Travel</h3>
+
+<p>
+Choose your destination, travel dates and preferred experience.
+</p>
+
+</div>
+
+
+<div class="why-box">
+
+<div class="why-icon">📷</div>
+
+<h3>Memorable Experiences</h3>
+
+<p>
+Enjoy opportunities to see wildlife and capture unforgettable moments.
+</p>
+
+</div>
+
+
+<div class="why-box">
+
+<div class="why-icon">🤝</div>
+
+<h3>Personal Service</h3>
+
+<p>
+We work with you to make your Kenyan adventure comfortable and enjoyable.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>Ready for Your Safari?</h2>
+
+<p>
+Tell us where you would like to go, when you would like to travel,
+and what you would like to experience.
+</p>
+
+<div class="buttons">
+
+<a href="contact.html" class="button">
+Send An Enquiry
+</a>
+
+<a
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20would%20like%20to%20plan%20a%20Kenya%20safari."
+class="button">
+Chat On WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+
+<h3>Oldepe Tours & Safaris</h3>
+
+<p>
+Discover Kenya. Experience the wild.
+</p>
+
+<p>
+Safaris, tours, excursions and private travel experiences.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a>
+<a href="safaris.html">Safaris</a>
+<a href="tours.html">Tours</a>
+<a href="about.html">About</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+
+<div>
+
+<h3>Contact Us</h3>
+
+<p>📞 0720 580 063</p>
+
+<p>✉ oldepetr@gmail.com</p>
+
+<a href="https://wa.me/254720580063">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Oldepe Tours & Safaris. All Rights Reserved.
+
+</div>
+
+</footer>
+
+</body>
+</html>
