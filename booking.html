@@ -1,444 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Plan Your Safari | Oldepe Tours & Safaris</title>
+<title>Book Your Safari | Oldepe Tours & Safaris</title>
 
 <meta name="description"
-content="Plan your Kenya safari with Oldepe Tours & Safaris. Choose your destination, safari experience, travel dates and preferences.">
+content="Book your Kenya safari, wildlife adventure, national park tour, reserve visit, airport transfer or private safari with Oldepe Tours & Safaris.">
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial,Helvetica,sans-serif;
-background:#f7f6f2;
-color:#222;
-line-height:1.6;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7f6f1;
+    color:#222;
+    line-height:1.6;
 }
 
 a{
-text-decoration:none;
-color:inherit;
+    text-decoration:none;
+    color:inherit;
 }
 
-/* HEADER */
+
+/* ================= HEADER ================= */
 
 header{
-background:#182018;
-padding:18px 5%;
+    background:#173b2a;
+    color:#fff;
+    padding:18px 5%;
 }
 
 .nav{
-max-width:1200px;
-margin:auto;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:20px;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
 .logo{
-color:#fff;
-font-size:20px;
-font-weight:bold;
-line-height:1.1;
+    color:#fff;
+    font-size:21px;
+    font-weight:bold;
+    line-height:1.1;
 }
 
 .logo span{
-display:block;
-font-size:10px;
-letter-spacing:3px;
-font-weight:normal;
-margin-top:5px;
+    display:block;
+    font-size:10px;
+    letter-spacing:3px;
+    font-weight:normal;
+    margin-top:5px;
 }
 
 nav{
-display:flex;
-gap:20px;
-align-items:center;
+    display:flex;
+    align-items:center;
+    gap:20px;
 }
 
 nav a{
-color:#fff;
-font-size:14px;
-font-weight:bold;
+    color:#fff;
+    font-size:14px;
+    font-weight:bold;
 }
 
 nav a:hover{
-color:#d99b27;
+    color:#e0a32b;
 }
 
 .whatsapp{
-background:#d99b27;
-padding:10px 16px;
-border-radius:5px;
+    background:#229c4b;
+    padding:9px 15px;
+    border-radius:5px;
 }
 
-/* HERO */
+
+/* ================= HERO ================= */
 
 .hero{
-background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),
-url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2000&q=90")
-center/cover no-repeat;
+    min-height:42vh;
 
-min-height:45vh;
-display:flex;
-align-items:center;
+    background:
+    linear-gradient(
+        rgba(0,0,0,.48),
+        rgba(0,0,0,.68)
+    ),
+    url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2000&q=90")
+    center/cover no-repeat;
+
+    display:flex;
+    align-items:center;
 }
 
 .hero-content{
-max-width:1100px;
-width:100%;
-margin:auto;
-padding:90px 5% 60px;
-color:#fff;
+    max-width:1200px;
+    width:100%;
+    margin:auto;
+    padding:80px 5%;
+    color:#fff;
 }
 
 .hero h1{
-font-size:clamp(42px,6vw,65px);
-line-height:1.05;
-margin-bottom:15px;
+    font-size:clamp(42px,6vw,68px);
+    line-height:1.05;
+    margin-bottom:15px;
 }
 
 .hero p{
-font-size:19px;
-max-width:700px;
+    max-width:700px;
+    font-size:19px;
 }
 
-/* MAIN */
+
+/* ================= MAIN ================= */
 
 .section{
-padding:70px 5%;
+    padding:65px 5%;
 }
 
 .container{
-max-width:1100px;
-margin:auto;
+    max-width:1100px;
+    margin:auto;
+}
+
+
+/* ================= BOOKING BOX ================= */
+
+.booking-box{
+    background:#fff;
+    padding:42px;
+    border-radius:12px;
+    box-shadow:0 8px 30px rgba(0,0,0,.09);
+}
+
+.booking-box h2{
+    color:#173b2a;
+    font-size:38px;
+    margin-bottom:8px;
 }
 
 .intro{
-text-align:center;
-max-width:750px;
-margin:0 auto 40px;
+    color:#666;
+    font-size:17px;
+    margin-bottom:30px;
 }
 
-.intro h2{
-font-size:38px;
-margin-bottom:12px;
-}
 
-.intro p{
-color:#666;
-}
-
-/* BOOKING BOX */
-
-.booking-box{
-background:#fff;
-padding:40px;
-border-radius:12px;
-box-shadow:0 10px 35px rgba(0,0,0,.08);
-}
-
-.form-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:22px;
-}
+/* ================= FORM ================= */
 
 .form-group{
-display:flex;
-flex-direction:column;
-}
-
-.form-group.full{
-grid-column:1/-1;
+    margin-bottom:20px;
 }
 
 label{
-font-weight:bold;
-margin-bottom:8px;
+    display:block;
+    font-weight:bold;
+    margin-bottom:8px;
+    font-size:16px;
 }
 
 input,
 select,
 textarea{
-width:100%;
-padding:14px;
-border:1px solid #d5d5d5;
-border-radius:6px;
-font-size:16px;
-font-family:inherit;
-background:#fff;
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    background:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
 }
 
 input:focus,
 select:focus,
 textarea:focus{
-outline:none;
-border-color:#d99b27;
+    outline:none;
+    border-color:#d99b27;
 }
 
 textarea{
-min-height:130px;
-resize:vertical;
+    min-height:150px;
+    resize:vertical;
 }
 
-.submit{
-margin-top:25px;
-width:100%;
-padding:16px;
-border:none;
-border-radius:6px;
-background:#d99b27;
-color:#fff;
-font-size:18px;
-font-weight:bold;
-cursor:pointer;
+
+/* ================= TWO COLUMNS ================= */
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
 }
 
-.submit:hover{
-background:#b77e19;
+
+/* ================= BUTTON ================= */
+
+.submit-button{
+    width:100%;
+    border:none;
+    background:#d99b27;
+    color:#fff;
+    padding:16px;
+    border-radius:6px;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:8px;
 }
 
-/* DESTINATIONS */
-
-.destinations{
-margin-top:60px;
+.submit-button:hover{
+    background:#b77e19;
 }
 
-.destinations h2{
-text-align:center;
-font-size:34px;
-margin-bottom:12px;
+
+/* ================= SAFARI INFORMATION ================= */
+
+.info-box{
+    margin-top:30px;
+    padding:25px;
+    background:#173b2a;
+    color:#fff;
+    border-radius:9px;
 }
 
-.destinations-intro{
-text-align:center;
-color:#666;
-max-width:750px;
-margin:0 auto 35px;
+.info-box h3{
+    margin-bottom:10px;
+    font-size:24px;
 }
 
-.destination-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:16px;
+.info-box p{
+    color:#ddd;
 }
 
-.destination{
-background:#fff;
-padding:18px;
-border-radius:8px;
-border-left:4px solid #d99b27;
-box-shadow:0 5px 18px rgba(0,0,0,.05);
+
+/* ================= THANK YOU ================= */
+
+.thank-you{
+    display:none;
+    background:#fff;
+    text-align:center;
+    padding:55px 30px;
+    border-radius:12px;
+    box-shadow:0 8px 30px rgba(0,0,0,.09);
 }
 
-.destination h3{
-font-size:18px;
-margin-bottom:5px;
+.thank-you .check{
+    width:75px;
+    height:75px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#229c4b;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:42px;
+    font-weight:bold;
 }
 
-.destination p{
-font-size:14px;
-color:#666;
+.thank-you h2{
+    color:#173b2a;
+    font-size:38px;
+    margin-bottom:15px;
 }
 
-/* SAFARI TYPES */
-
-.safari-types{
-margin-top:60px;
+.thank-you p{
+    max-width:650px;
+    margin:0 auto 25px;
+    color:#666;
+    font-size:17px;
 }
 
-.safari-types h2{
-text-align:center;
-font-size:34px;
-margin-bottom:30px;
+.home-button{
+    display:inline-block;
+    background:#d99b27;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:6px;
+    font-weight:bold;
 }
 
-.type-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:18px;
+.home-button:hover{
+    background:#b77e19;
 }
 
-.type{
-background:#182018;
-color:#fff;
-padding:25px;
-border-radius:8px;
+.whatsapp-button{
+    display:inline-block;
+    margin-left:8px;
+    background:#229c4b;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:6px;
+    font-weight:bold;
 }
 
-.type h3{
-color:#d99b27;
-margin-bottom:8px;
-}
 
-/* CTA */
-
-.cta{
-background:#182018;
-color:#fff;
-padding:70px 5%;
-text-align:center;
-}
-
-.cta h2{
-font-size:38px;
-margin-bottom:10px;
-}
-
-.cta p{
-max-width:650px;
-margin:0 auto 25px;
-color:#ddd;
-}
-
-.cta-button{
-display:inline-block;
-background:#d99b27;
-padding:13px 24px;
-border-radius:5px;
-font-weight:bold;
-}
-
-/* FOOTER */
+/* ================= FOOTER ================= */
 
 footer{
-background:#111;
-color:#ddd;
-padding:45px 5% 20px;
+    background:#191919;
+    color:#ddd;
+    padding:45px 5% 20px;
+    margin-top:30px;
 }
 
 .footer-grid{
-max-width:1100px;
-margin:auto;
-display:grid;
-grid-template-columns:2fr 1fr 1fr;
-gap:35px;
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:35px;
 }
 
 footer h3{
-color:#fff;
-margin-bottom:12px;
+    color:#fff;
+    margin-bottom:14px;
 }
 
 footer p,
 footer a{
-color:#aaa;
-margin-bottom:7px;
+    color:#aaa;
+    margin-bottom:8px;
 }
 
 footer a{
-display:block;
+    display:block;
 }
 
 footer a:hover{
-color:#d99b27;
+    color:#d99b27;
 }
 
 .copyright{
-max-width:1100px;
-margin:30px auto 0;
-padding-top:20px;
-border-top:1px solid #333;
-text-align:center;
-font-size:14px;
-color:#777;
+    max-width:1100px;
+    margin:30px auto 0;
+    padding-top:20px;
+    border-top:1px solid #333;
+    text-align:center;
+    color:#888;
+    font-size:14px;
 }
 
-/* MOBILE */
+
+/* ================= MOBILE ================= */
 
 @media(max-width:800px){
 
-nav a:not(.whatsapp){
-display:none;
-}
+    nav a:not(.whatsapp){
+        display:none;
+    }
 
-.form-grid{
-grid-template-columns:1fr;
-}
+    .form-grid{
+        grid-template-columns:1fr;
+        gap:0;
+    }
 
-.form-group.full{
-grid-column:auto;
-}
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
 
-.destination-grid,
-.type-grid{
-grid-template-columns:1fr 1fr;
-}
+    .booking-box{
+        padding:25px 20px;
+    }
 
-.booking-box{
-padding:25px;
-}
+    .booking-box h2{
+        font-size:30px;
+    }
 
-.footer-grid{
-grid-template-columns:1fr;
-}
+    .thank-you h2{
+        font-size:30px;
+    }
 
+    .whatsapp-button{
+        margin-left:0;
+        margin-top:10px;
+    }
 }
 
 @media(max-width:500px){
 
-.hero h1{
-font-size:40px;
-}
+    .logo{
+        font-size:17px;
+    }
 
-.hero p{
-font-size:17px;
-}
+    .whatsapp{
+        font-size:12px;
+        padding:8px 11px;
+    }
 
-.destination-grid,
-.type-grid{
-grid-template-columns:1fr;
-}
+    .hero h1{
+        font-size:40px;
+    }
 
-.intro h2,
-.destinations h2,
-.safari-types h2,
-.cta h2{
-font-size:30px;
-}
-
+    .hero p{
+        font-size:17px;
+    }
 }
 
 </style>
+
 </head>
+
 
 <body>
 
-<!-- HEADER -->
+
+<!-- ================= HEADER ================= -->
 
 <header>
 
 <div class="nav">
 
 <a href="index.html" class="logo">
+
 OLDEPE TOURS & SAFARIS
+
 <span>TEMBEA KENYA</span>
+
 </a>
 
 <nav>
 
 <a href="index.html">Home</a>
+
 <a href="safaris.html">Safaris</a>
+
 <a href="tours.html">Tours</a>
+
 <a href="about.html">About</a>
+
 <a href="gallery.html">Gallery</a>
+
 <a href="contact.html">Contact</a>
 
 <a
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20plan%20a%20safari."
-class="whatsapp">
+class="whatsapp"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20make%20a%20booking."
+>
 WhatsApp
 </a>
 
@@ -449,17 +461,18 @@ WhatsApp
 </header>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
 <div class="hero-content">
 
-<h1>Plan Your Safari</h1>
+<h1>Book Your Safari</h1>
 
 <p>
-Tell us where you would like to go, when you would like to travel
-and the kind of Kenyan safari experience you are looking for.
+Tell us where you would like to go, your preferred dates
+and the number of guests. We will help you plan your
+Kenya safari experience.
 </p>
 
 </div>
@@ -467,69 +480,92 @@ and the kind of Kenyan safari experience you are looking for.
 </section>
 
 
-<!-- BOOKING FORM -->
+<!-- ================= BOOKING SECTION ================= -->
 
 <section class="section">
 
 <div class="container">
 
-<div class="intro">
 
-<h2>Start Planning Your Kenya Safari</h2>
+<!-- ================= BOOKING FORM ================= -->
 
-<p>
-Choose your preferred destination and safari experience.
-We will help you create a memorable journey around Kenya.
+<div class="booking-box" id="bookingBox">
+
+<h2>Plan Your Safari</h2>
+
+<p class="intro">
+Complete the form below and Oldepe Tours & Safaris
+will contact you with the details of your safari.
 </p>
 
-</div>
-
-
-<div class="booking-box">
 
 <form
-action="https://formsubmit.co/oldepetr@gmail.com"
+id="bookingForm"
+action="https://formsubmit.co/oldepetours@gmail.com"
 method="POST"
 >
+
+
+<!-- FORM SUBMIT SETTINGS -->
 
 <input
 type="hidden"
 name="_subject"
-value="New Safari Booking Enquiry - Oldepe Tours & Safaris">
-
-<input
-type="hidden"
-name="_captcha"
-value="false">
+value="New Safari Booking - Oldepe Tours & Safaris"
+>
 
 <input
 type="hidden"
 name="_template"
-value="table">
+value="table"
+>
 
+<input
+type="hidden"
+name="_captcha"
+value="false"
+>
+
+<input
+type="hidden"
+name="_replyto"
+id="replyto"
+>
+
+<input
+type="hidden"
+name="_next"
+id="nextPage"
+>
+
+<input
+type="hidden"
+name="_url"
+id="formUrl"
+>
+
+
+<!-- ================= PERSONAL DETAILS ================= -->
 
 <div class="form-grid">
 
 
-<!-- NAME -->
-
 <div class="form-group">
 
-<label for="name">
+<label for="fullname">
 Full Name *
 </label>
 
 <input
+id="fullname"
 type="text"
-id="name"
 name="Full Name"
 placeholder="Your full name"
-required>
+required
+>
 
 </div>
 
-
-<!-- EMAIL -->
 
 <div class="form-group">
 
@@ -538,16 +574,21 @@ Email Address *
 </label>
 
 <input
-type="email"
 id="email"
-name="Email"
+type="email"
+name="email"
 placeholder="Your email address"
-required>
+required
+>
 
 </div>
 
 
-<!-- PHONE -->
+</div>
+
+
+<div class="form-grid">
+
 
 <div class="form-group">
 
@@ -556,460 +597,318 @@ Phone / WhatsApp *
 </label>
 
 <input
-type="tel"
 id="phone"
+type="tel"
 name="Phone / WhatsApp"
-placeholder="+254..."
-required>
+placeholder="Your phone number"
+required
+>
 
 </div>
 
 
-<!-- COUNTRY -->
-
 <div class="form-group">
 
-<label for="country">
-Country of Residence
-</label>
-
-<input
-type="text"
-id="country"
-name="Country of Residence"
-placeholder="e.g. USA, UK, India">
-
-</div>
-
-
-<!-- SAFARI DESTINATION -->
-
-<div class="form-group">
-
-<label for="destination">
-Preferred Safari Destination *
+<label for="guests">
+Number of Guests *
 </label>
 
 <select
-id="destination"
-name="Safari Destination"
-required>
+id="guests"
+name="Number of Guests"
+required
+>
 
 <option value="">
-Select destination
+Select number of guests
 </option>
 
-<option>Masai Mara National Reserve</option>
-
-<option>Amboseli National Park</option>
-
-<option>Lake Nakuru National Park</option>
-
-<option>Tsavo East National Park</option>
-
-<option>Tsavo West National Park</option>
-
-<option>Samburu National Reserve</option>
-
-<option>Ol Pejeta Conservancy</option>
-
-<option>Meru National Park</option>
-
-<option>Aberdare National Park</option>
-
-<option>Mount Kenya National Park</option>
-
-<option>Nairobi National Park</option>
-
-<option>Lake Naivasha</option>
-
-<option>Lake Bogoria</option>
-
-<option>Hell's Gate National Park</option>
-
-<option>Multiple Destinations</option>
-
-<option>Not Sure - Recommend for Me</option>
+<option>1 Guest</option>
+<option>2 Guests</option>
+<option>3 Guests</option>
+<option>4 Guests</option>
+<option>5 Guests</option>
+<option>6 Guests</option>
+<option>7 Guests</option>
+<option>8 Guests</option>
+<option>9 Guests</option>
+<option>10+ Guests</option>
 
 </select>
 
 </div>
 
 
-<!-- SAFARI TYPE -->
+</div>
+
+
+<!-- ================= SAFARI TYPE ================= -->
 
 <div class="form-group">
 
-<label for="experience">
-Safari Experience *
+<label for="service">
+Safari / Service *
 </label>
 
 <select
-id="experience"
-name="Safari Experience"
-required>
+id="service"
+name="Safari / Service"
+required
+>
 
 <option value="">
-Select safari experience
+Select a safari or service
 </option>
 
-<option>Classic Wildlife Safari</option>
+<option value="Maasai Mara National Reserve">
+Maasai Mara National Reserve
+</option>
 
-<option>Big Five Safari</option>
+<option value="Amboseli National Park">
+Amboseli National Park
+</option>
 
-<option>Photography Safari</option>
+<option value="Tsavo East National Park">
+Tsavo East National Park
+</option>
 
-<option>Family Safari</option>
+<option value="Tsavo West National Park">
+Tsavo West National Park
+</option>
 
-<option>Private Safari</option>
+<option value="Lake Nakuru National Park">
+Lake Nakuru National Park
+</option>
 
-<option>Luxury Safari</option>
+<option value="Samburu National Reserve">
+Samburu National Reserve
+</option>
 
-<option>Budget Safari</option>
+<option value="Ol Pejeta Conservancy">
+Ol Pejeta Conservancy
+</option>
 
-<option>Camping Safari</option>
+<option value="Meru National Park">
+Meru National Park
+</option>
 
-<option>Beach & Safari Combination</option>
+<option value="Nairobi National Park">
+Nairobi National Park
+</option>
 
-<option>Cultural Experience</option>
+<option value="Hell's Gate National Park">
+Hell's Gate National Park
+</option>
 
-<option>Custom Safari</option>
+<option value="Lake Naivasha">
+Lake Naivasha
+</option>
+
+<option value="Mount Kenya">
+Mount Kenya
+</option>
+
+<option value="Kenya Safari - Multiple Destinations">
+Kenya Safari - Multiple Destinations
+</option>
+
+<option value="Wildlife Safari">
+Wildlife Safari
+</option>
+
+<option value="Airport Transfer">
+Airport Transfer
+</option>
+
+<option value="Private Safari">
+Private Safari
+</option>
+
+<option value="Custom Safari">
+Custom Safari
+</option>
 
 </select>
 
 </div>
 
 
-<!-- DATE -->
+<!-- ================= TRAVEL DATE ================= -->
+
+<div class="form-grid">
+
 
 <div class="form-group">
 
-<label for="arrival">
-Preferred Start Date
+<label for="travel-date">
+Preferred Travel Date *
 </label>
 
 <input
+id="travel-date"
 type="date"
-id="arrival"
-name="Preferred Start Date">
+name="Preferred Travel Date"
+required
+>
 
 </div>
 
 
-<!-- DAYS -->
-
 <div class="form-group">
 
-<label for="days">
-Number of Safari Days
+<label for="duration">
+Safari Duration
 </label>
 
 <select
-id="days"
-name="Number of Safari Days">
+id="duration"
+name="Safari Duration"
+>
 
 <option value="">
 Select duration
 </option>
 
 <option>1 Day</option>
-
-<option>2 Days</option>
-
-<option>3 Days</option>
-
-<option>4 Days</option>
-
-<option>5 Days</option>
-
-<option>6 Days</option>
-
+<option>2 Days / 1 Night</option>
+<option>3 Days / 2 Nights</option>
+<option>4 Days / 3 Nights</option>
+<option>5 Days / 4 Nights</option>
+<option>6 Days / 5 Nights</option>
 <option>7 Days</option>
-
-<option>8–10 Days</option>
-
-<option>More than 10 Days</option>
+<option>8+ Days</option>
+<option>Not Sure - Please Advise</option>
 
 </select>
 
 </div>
 
 
-<!-- PEOPLE -->
+</div>
+
+
+<!-- ================= PICKUP ================= -->
 
 <div class="form-group">
 
-<label for="guests">
-Number of Travellers
+<label for="pickup">
+Pickup / Starting Location
 </label>
 
-<select
-id="guests"
-name="Number of Travellers">
-
-<option>1</option>
-
-<option>2</option>
-
-<option>3</option>
-
-<option>4</option>
-
-<option>5</option>
-
-<option>6</option>
-
-<option>7</option>
-
-<option>8–10</option>
-
-<option>More than 10</option>
-
-</select>
+<input
+id="pickup"
+type="text"
+name="Pickup / Starting Location"
+placeholder="For example: JKIA, Nairobi hotel, or another location"
+>
 
 </div>
 
 
-<!-- VEHICLE -->
+<!-- ================= MESSAGE ================= -->
 
 <div class="form-group">
-
-<label for="vehicle">
-Preferred Safari Vehicle
-</label>
-
-<select
-id="vehicle"
-name="Preferred Vehicle">
-
-<option value="">
-Select vehicle
-</option>
-
-<option>Safari Land Cruiser</option>
-
-<option>Safari Tour Van</option>
-
-<option>No Preference</option>
-
-</select>
-
-</div>
-
-
-<!-- MESSAGE -->
-
-<div class="form-group full">
 
 <label for="message">
-Tell Us About Your Safari
+Tell Us About Your Safari *
 </label>
 
 <textarea
 id="message"
-name="Safari Requirements"
-placeholder="Tell us your preferred destinations, interests, accommodation level, budget or anything else you would like us to know."></textarea>
+name="Message"
+placeholder="Tell us where you would like to go, number of days, number of guests, accommodation preference, transport preference or anything else you would like us to know..."
+required
+></textarea>
 
 </div>
 
 
-</div>
-
+<!-- ================= SUBMIT ================= -->
 
 <button
 type="submit"
-class="submit">
+class="submit-button"
+>
 
-SEND SAFARI ENQUIRY
+SEND SAFARI BOOKING
 
 </button>
 
+
 </form>
 
-</div>
 
+<!-- ================= INFO ================= -->
 
-<!-- NATIONAL PARKS & RESERVES -->
+<div class="info-box">
 
-<div class="destinations">
-
-<h2>National Parks & Reserves</h2>
-
-<p class="destinations-intro">
-
-Explore Kenya's remarkable wildlife destinations.
-We can arrange private safaris, guided journeys and customized
-itineraries to suit your travel plans.
-
-</p>
-
-
-<div class="destination-grid">
-
-
-<div class="destination">
-<h3>Masai Mara National Reserve</h3>
-<p>Big Five, spectacular wildlife and the Great Migration.</p>
-</div>
-
-
-<div class="destination">
-<h3>Amboseli National Park</h3>
-<p>Famous for elephants and spectacular views of Mount Kilimanjaro.</p>
-</div>
-
-
-<div class="destination">
-<h3>Tsavo East National Park</h3>
-<p>Vast wilderness, elephants and classic Kenyan safari scenery.</p>
-</div>
-
-
-<div class="destination">
-<h3>Tsavo West National Park</h3>
-<p>Dramatic landscapes, wildlife and volcanic scenery.</p>
-</div>
-
-
-<div class="destination">
-<h3>Lake Nakuru National Park</h3>
-<p>Rhinoceros, birdlife and beautiful Rift Valley landscapes.</p>
-</div>
-
-
-<div class="destination">
-<h3>Samburu National Reserve</h3>
-<p>Unique northern wildlife and striking semi-arid landscapes.</p>
-</div>
-
-
-<div class="destination">
-<h3>Ol Pejeta Conservancy</h3>
-<p>Wildlife conservation, rhino experiences and diverse safari activities.</p>
-</div>
-
-
-<div class="destination">
-<h3>Meru National Park</h3>
-<p>Remote wilderness, diverse wildlife and beautiful landscapes.</p>
-</div>
-
-
-<div class="destination">
-<h3>Aberdare National Park</h3>
-<p>Mountain forests, waterfalls and unique highland wildlife.</p>
-</div>
-
-
-<div class="destination">
-<h3>Mount Kenya National Park</h3>
-<p>Mountain scenery, forests and high-altitude adventure.</p>
-</div>
-
-
-<div class="destination">
-<h3>Nairobi National Park</h3>
-<p>Wildlife viewing close to Kenya's capital.</p>
-</div>
-
-
-<div class="destination">
-<h3>Hell's Gate National Park</h3>
-<p>Dramatic cliffs, gorges, cycling and walking experiences.</p>
-</div>
-
-
-<div class="destination">
-<h3>Lake Naivasha</h3>
-<p>Freshwater lake, birdlife and boat experiences.</p>
-</div>
-
-
-<div class="destination">
-<h3>Lake Bogoria</h3>
-<p>Hot springs, dramatic scenery and famous flamingo habitats.</p>
-</div>
-
-
-</div>
-
-</div>
-
-
-<!-- SAFARI EXPERIENCES -->
-
-<div class="safari-types">
-
-<h2>Safari Experiences We Offer</h2>
-
-<div class="type-grid">
-
-<div class="type">
-<h3>Private Safaris</h3>
-<p>Personalized safari journeys designed around your schedule and interests.</p>
-</div>
-
-<div class="type">
-<h3>Wildlife Safaris</h3>
-<p>Explore Kenya's famous wildlife parks and reserves.</p>
-</div>
-
-<div class="type">
-<h3>Big Five Safaris</h3>
-<p>Travel through Kenya's leading wildlife destinations in search of the Big Five.</p>
-</div>
-
-<div class="type">
-<h3>Family Safaris</h3>
-<p>Comfortable and carefully planned safari experiences for families.</p>
-</div>
-
-<div class="type">
-<h3>Photography Safaris</h3>
-<p>More time in the field for wildlife and landscape photography.</p>
-</div>
-
-<div class="type">
-<h3>Custom Safaris</h3>
-<p>Tell us what you want to experience and we will help build your itinerary.</p>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- CTA -->
-
-<section class="cta">
-
-<h2>Ready to Explore Kenya?</h2>
+<h3>Explore Kenya With Oldepe Tours & Safaris</h3>
 
 <p>
-Send us your safari requirements and let Oldepe Tours & Safaris
-help you plan your Kenyan adventure.
+We arrange safari experiences to Kenya's national parks,
+national reserves, conservancies and wildlife destinations,
+as well as airport transfers and private safari arrangements.
 </p>
 
+</div>
+
+
+</div>
+
+
+<!-- ================= THANK YOU ================= -->
+
+<div
+class="thank-you"
+id="thankYou"
+>
+
+<div class="check">
+✓
+</div>
+
+<h2>Thank You for Your Booking!</h2>
+
+<p>
+Your safari enquiry has been submitted successfully
+to Oldepe Tours & Safaris.
+</p>
+
+<p>
+We have received your travel details and will contact you
+using the phone number or email address you provided.
+</p>
+
+
 <a
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20plan%20a%20Kenya%20safari."
-class="cta-button">
-
-Chat With Us on WhatsApp
-
+href="index.html"
+class="home-button"
+>
+← Back Home
 </a>
+
+
+<a
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20have%20just%20submitted%20a%20safari%20booking%20through%20your%20website."
+class="whatsapp-button"
+>
+Chat on WhatsApp
+</a>
+
+</div>
+
+
+</div>
 
 </section>
 
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
 <div class="footer-grid">
+
 
 <div>
 
@@ -1020,8 +919,8 @@ Discover Kenya. Experience the wild.
 </p>
 
 <p>
-Kenya safaris, wildlife experiences, cultural experiences
-and private travel.
+Kenya safaris, wildlife experiences,
+national parks, reserves and private safari adventures.
 </p>
 
 </div>
@@ -1032,10 +931,15 @@ and private travel.
 <h3>Quick Links</h3>
 
 <a href="index.html">Home</a>
+
 <a href="safaris.html">Safaris</a>
+
 <a href="tours.html">Tours</a>
+
 <a href="about.html">About</a>
+
 <a href="gallery.html">Gallery</a>
+
 <a href="contact.html">Contact</a>
 
 </div>
@@ -1045,15 +949,20 @@ and private travel.
 
 <h3>Contact</h3>
 
-<p>0720 580 063</p>
+<p>
+📞 0720 580 063
+</p>
 
-<p>oldepetr@gmail.com</p>
+<p>
+✉ oldepetours@gmail.com
+</p>
 
 <a href="https://wa.me/254720580063">
 WhatsApp
 </a>
 
 </div>
+
 
 </div>
 
@@ -1065,6 +974,75 @@ WhatsApp
 </div>
 
 </footer>
+
+
+<!-- ================= SCRIPT ================= -->
+
+<script>
+
+const form = document.getElementById("bookingForm");
+
+const emailField = document.getElementById("email");
+
+const replyToField = document.getElementById("replyto");
+
+const nextPage = document.getElementById("nextPage");
+
+const formUrl = document.getElementById("formUrl");
+
+
+/*
+Set the FormSubmit redirect automatically
+using the actual website address.
+
+After submission the visitor returns to:
+
+booking.html?success=1
+*/
+
+form.addEventListener("submit", function(){
+
+    const currentUrl =
+        window.location.origin +
+        window.location.pathname;
+
+    nextPage.value =
+        currentUrl + "?success=1";
+
+    formUrl.value =
+        currentUrl;
+
+    replyToField.value =
+        emailField.value;
+
+});
+
+
+/*
+Show Thank You screen after FormSubmit
+redirects back to this page.
+*/
+
+const params =
+    new URLSearchParams(window.location.search);
+
+if(params.get("success") === "1"){
+
+    document.getElementById("bookingBox")
+    .style.display = "none";
+
+    document.getElementById("thankYou")
+    .style.display = "block";
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+}
+
+</script>
+
 
 </body>
 </html>
