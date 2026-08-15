@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Oldepe Tours & Safaris</title>
+
+<meta name="description" content="Contact Oldepe Tours & Safaris for Kenya safaris, tours, transfers and customised travel experiences.">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:#222;
+  background:#fff;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+header{
+  background:#172116;
+  padding:18px 5%;
+}
+
+.nav{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  color:#fff;
+  font-size:21px;
+  font-weight:bold;
+  line-height:1.2;
+}
+
+.logo span{
+  display:block;
+  font-size:11px;
+  letter-spacing:2px;
+  font-weight:normal;
+  margin-top:4px;
+}
+
+nav{
+  display:flex;
+  gap:24px;
+  align-items:center;
+}
+
+nav a{
+  color:#fff;
+  font-size:15px;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:#d99b27;
+}
+
+.whatsapp{
+  background:#d99b27;
+  padding:10px 17px;
+  border-radius:5px;
+}
+
+.whatsapp:hover{
+  color:#fff;
+  background:#b77e19;
+}
+
+/* HERO */
+
+.hero{
+  min-height:45vh;
+  display:flex;
+  align-items:center;
+  background:
+  linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+  url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1800&q=85")
+  center/cover no-repeat;
+}
+
+.hero-content{
+  max-width:1200px;
+  width:100%;
+  margin:auto;
+  padding:70px 5%;
+  color:#fff;
+}
+
+.hero small{
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-weight:bold;
+}
+
+.hero h1{
+  font-size:clamp(42px,7vw,65px);
+  line-height:1.05;
+  margin:15px 0;
+}
+
+.hero p{
+  max-width:650px;
+  font-size:19px;
+}
+
+/* CONTACT */
+
+.section{
+  padding:75px 5%;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1.2fr;
+  gap:45px;
+}
+
+.contact-info h2,
+.form-box h2{
+  font-size:34px;
+  margin-bottom:15px;
+}
+
+.contact-info > p{
+  color:#666;
+  margin-bottom:30px;
+}
+
+.contact-item{
+  display:flex;
+  gap:18px;
+  margin-bottom:25px;
+  align-items:flex-start;
+}
+
+.contact-icon{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  background:#f5f2eb;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+  flex-shrink:0;
+}
+
+.contact-item h3{
+  font-size:18px;
+  margin-bottom:3px;
+}
+
+.contact-item p,
+.contact-item a{
+  color:#666;
+}
+
+.contact-item a:hover{
+  color:#b47b18;
+}
+
+/* FORM */
+
+.form-box{
+  background:#f5f2eb;
+  padding:35px;
+  border-radius:8px;
+}
+
+.form-box > p{
+  color:#666;
+  margin-bottom:25px;
+}
+
+.form-group{
+  margin-bottom:18px;
+}
+
+.form-group label{
+  display:block;
+  font-weight:bold;
+  margin-bottom:7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+  width:100%;
+  padding:13px;
+  border:1px solid #ccc;
+  border-radius:5px;
+  font:inherit;
+  background:#fff;
+}
+
+.form-group textarea{
+  min-height:140px;
+  resize:vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  outline:2px solid #d99b27;
+  border-color:#d99b27;
+}
+
+.submit-button{
+  width:100%;
+  border:0;
+  background:#d99b27;
+  color:#fff;
+  padding:14px;
+  border-radius:5px;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.submit-button:hover{
+  background:#b77e19;
+}
+
+/* WHATSAPP BOX */
+
+.whatsapp-box{
+  margin-top:35px;
+  padding:28px;
+  background:#172116;
+  color:#fff;
+  border-radius:8px;
+}
+
+.whatsapp-box h3{
+  margin-bottom:8px;
+}
+
+.whatsapp-box p{
+  color:#ddd;
+  margin-bottom:18px;
+}
+
+.whatsapp-button{
+  display:inline-block;
+  background:#d99b27;
+  padding:12px 20px;
+  border-radius:5px;
+  font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+  background:#191919;
+  color:#ddd;
+  padding:50px 5% 20px;
+}
+
+.footer-grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:40px;
+}
+
+footer h3{
+  color:#fff;
+  margin-bottom:15px;
+}
+
+footer p,
+footer a{
+  color:#aaa;
+  margin-bottom:8px;
+}
+
+footer a{
+  display:block;
+}
+
+footer a:hover{
+  color:#d99b27;
+}
+
+.copyright{
+  max-width:1200px;
+  margin:30px auto 0;
+  padding-top:20px;
+  border-top:1px solid #333;
+  text-align:center;
+  color:#888;
+  font-size:14px;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+  .nav{
+    align-items:flex-start;
+  }
+
+  nav{
+    gap:10px;
+  }
+
+  nav a:not(.whatsapp){
+    display:none;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    min-height:42vh;
+  }
+
+  .hero h1{
+    font-size:45px;
+  }
+}
+
+@media(max-width:500px){
+
+  .hero h1{
+    font-size:39px;
+  }
+
+  .contact-info h2,
+  .form-box h2{
+    font-size:29px;
+  }
+
+  .form-box{
+    padding:25px 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="nav">
+
+<a href="index.html" class="logo">
+OLDEPE TOURS & SAFARIS
+<span>TEMBEA KENYA</span>
+</a>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="safaris.html">Safaris</a>
+
+<a href="about.html">About</a>
+
+<a href="contact.html">Contact</a>
+
+<a class="whatsapp"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20make%20an%20enquiry.">
+WhatsApp
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<section class="hero">
+
+<div class="hero-content">
+
+<small>Get In Touch</small>
+
+<h1>Contact Us</h1>
+
+<p>
+Let's start planning your Kenya adventure.
+Tell us what you have in mind and we'll get back to you.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="container">
+
+<div class="contact-grid">
+
+
+<!-- CONTACT INFORMATION -->
+
+<div class="contact-info">
+
+<h2>Let's Talk About Your Trip</h2>
+
+<p>
+Whether you're looking for a safari, airport transfer,
+private tour or customised Kenya experience, we'd be
+happy to hear from you.
+</p>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">📞</div>
+
+<div>
+
+<h3>Phone</h3>
+
+<a href="tel:+254720580063">
+0720 580 063
+</a>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">✉</div>
+
+<div>
+
+<h3>Email</h3>
+
+<a href="mailto:oldepetr@gmail.com">
+oldepetr@gmail.com
+</a>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">💬</div>
+
+<div>
+
+<h3>WhatsApp</h3>
+
+<a href="https://wa.me/254720580063">
+Chat with us on WhatsApp
+</a>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">🇰🇪</div>
+
+<div>
+
+<h3>Location</h3>
+
+<p>Kenya</p>
+
+</div>
+
+</div>
+
+
+<div class="whatsapp-box">
+
+<h3>Prefer WhatsApp?</h3>
+
+<p>
+Send us a message directly and tell us about
+your preferred destination, dates and group size.
+</p>
+
+<a class="whatsapp-button"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20make%20an%20enquiry.">
+Message Us
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ENQUIRY FORM -->
+
+<div class="form-box">
+
+<h2>Send an Enquiry</h2>
+
+<p>
+Fill in the details below and we'll receive your enquiry.
+</p>
+
+<form action="https://formsubmit.co/oldepetr@gmail.com" method="POST">
+
+<input type="hidden" name="_subject" value="New Enquiry - Oldepe Tours & Safaris">
+
+<input type="hidden" name="_captcha" value="false">
+
+<input type="hidden" name="_template" value="table">
+
+<input type="hidden" name="_next" value="https://themaina1.github.io/oldepe-tours-safaris/thankyou.html">
+
+
+<div class="form-group">
+
+<label for="name">Full Name</label>
+
+<input
+type="text"
+id="name"
+name="name"
+placeholder="Your full name"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="email">Email Address</label>
+
+<input
+type="email"
+id="email"
+name="email"
+placeholder="Your email address"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="phone">Phone / WhatsApp</label>
+
+<input
+type="tel"
+id="phone"
+name="phone"
+placeholder="Your phone number"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="service">What are you interested in?</label>
+
+<select id="service" name="service" required>
+
+<option value="">Select an option</option>
+
+<option>Kenya Safari</option>
+
+<option>Airport Transfer</option>
+
+<option>Private Tour</option>
+
+<option>Customised Safari</option>
+
+<option>Other</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="travel-date">Preferred Travel Date</label>
+
+<input
+type="date"
+id="travel-date"
+name="travel_date">
+
+</div>
+
+
+<div class="form-group">
+
+<label for="message">Tell us about your trip</label>
+
+<textarea
+id="message"
+name="message"
+placeholder="Destination, number of travellers, number of days, or anything else you would like us to know..."
+required></textarea>
+
+</div>
+
+
+<button type="submit" class="submit-button">
+Send Enquiry
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+
+<h3>Oldepe Tours & Safaris</h3>
+
+<p>
+Discover Kenya. Experience the wild.
+</p>
+
+<p>
+Kenya safaris, wildlife tours and private travel experiences.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a>
+
+<a href="safaris.html">Safaris</a>
+
+<a href="about.html">About Us</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+
+<div>
+
+<h3>Contact Us</h3>
+
+<p>📞 0720 580 063</p>
+
+<p>✉ oldepetr@gmail.com</p>
+
+<a href="https://wa.me/254720580063">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Oldepe Tours & Safaris. All Rights Reserved.
+
+</div>
+
+</footer>
+
+</body>
+</html>
