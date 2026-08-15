@@ -4,15 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kenya Tours | Oldepe Tours & Safaris</title>
+<title>Kenya Tours & Excursions | Oldepe Tours & Safaris</title>
 
-<meta name="description" content="Explore Nairobi city tours, day trips, cultural experiences and private tours with Oldepe Tours & Safaris.">
+<meta name="description" content="Discover Nairobi city tours, city walks, cultural experiences and private excursions with Oldepe Tours & Safaris.">
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
@@ -70,7 +75,7 @@ margin-top:5px;
 nav{
 display:flex;
 align-items:center;
-gap:20px;
+gap:22px;
 }
 
 nav a{
@@ -83,22 +88,22 @@ nav a:hover{
 color:#e0a32b;
 }
 
-.nav-plan{
+.nav-whatsapp{
 background:#d99b27;
-padding:10px 15px;
+padding:10px 16px;
 border-radius:5px;
 }
 
 /* HERO */
 
 .hero{
-min-height:60vh;
+min-height:62vh;
 display:flex;
 align-items:center;
 
 background:
-linear-gradient(rgba(0,0,0,.48),rgba(0,0,0,.68)),
-url("https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=2000&q=90")
+linear-gradient(rgba(0,0,0,.52),rgba(0,0,0,.68)),
+url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=2000&q=90")
 center/cover no-repeat;
 }
 
@@ -113,7 +118,7 @@ color:#fff;
 .hero h1{
 font-size:clamp(42px,6vw,68px);
 line-height:1.05;
-margin-bottom:15px;
+margin-bottom:18px;
 }
 
 .hero p{
@@ -133,8 +138,8 @@ margin:auto;
 }
 
 .intro{
-max-width:800px;
-margin:0 auto 45px;
+max-width:820px;
+margin:0 auto 50px;
 text-align:center;
 }
 
@@ -145,6 +150,7 @@ margin-bottom:12px;
 
 .intro p{
 color:#666;
+font-size:17px;
 }
 
 /* TOUR GRID */
@@ -152,23 +158,31 @@ color:#666;
 .tour-grid{
 display:grid;
 grid-template-columns:repeat(2,1fr);
-gap:30px;
+gap:28px;
 }
 
 .tour-card{
 background:#fff;
-border-radius:9px;
+border-radius:10px;
 overflow:hidden;
-box-shadow:0 6px 25px rgba(0,0,0,.12);
+box-shadow:0 5px 20px rgba(0,0,0,.12);
+transition:.3s;
+}
+
+.tour-card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 28px rgba(0,0,0,.18);
 }
 
 .tour-image{
 height:300px;
 overflow:hidden;
+background:#eee;
 }
 
 .tour-image img{
 height:100%;
+width:100%;
 object-fit:cover;
 transition:.4s;
 }
@@ -181,37 +195,114 @@ transform:scale(1.05);
 padding:25px;
 }
 
-.location{
-color:#a97015;
-font-size:13px;
-font-weight:bold;
-letter-spacing:.5px;
-margin-bottom:7px;
+.tour-content h3{
+font-size:26px;
+margin-bottom:8px;
+color:#173b2a;
 }
 
-.tour-content h3{
-font-size:27px;
-margin-bottom:8px;
+.duration{
+font-size:14px;
+font-weight:bold;
+color:#b77e19;
+margin-bottom:12px;
 }
 
 .tour-content p{
 color:#666;
-margin-bottom:18px;
-}
-
-.details{
-display:flex;
-gap:9px;
-flex-wrap:wrap;
 margin-bottom:20px;
 }
 
-.detail{
-background:#f3f0e9;
-padding:7px 11px;
-border-radius:4px;
-font-size:13px;
+.card-button{
+display:inline-block;
+padding:11px 18px;
+background:#d99b27;
+color:#fff;
+border-radius:5px;
 font-weight:bold;
+}
+
+.card-button:hover{
+background:#b77e19;
+}
+
+/* CITY WALKS */
+
+.walks{
+background:#f5f3ed;
+}
+
+.walk-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.walk{
+background:#fff;
+padding:30px 25px;
+border-radius:9px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.walk h3{
+color:#173b2a;
+font-size:21px;
+margin-bottom:10px;
+}
+
+.walk p{
+color:#666;
+}
+
+/* CUSTOM TOUR */
+
+.custom{
+background:#173b2a;
+color:#fff;
+text-align:center;
+}
+
+.custom h2{
+font-size:38px;
+margin-bottom:12px;
+}
+
+.custom p{
+max-width:720px;
+margin:0 auto 25px;
+color:#ddd;
+}
+
+/* CTA */
+
+.cta{
+padding:85px 5%;
+text-align:center;
+color:#fff;
+
+background:
+linear-gradient(rgba(0,0,0,.68),rgba(0,0,0,.68)),
+url("https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=2000&q=90")
+center/cover no-repeat;
+}
+
+.cta h2{
+font-size:42px;
+margin-bottom:12px;
+}
+
+.cta p{
+font-size:18px;
+max-width:680px;
+margin:0 auto 25px;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:12px;
+flex-wrap:wrap;
 }
 
 .button{
@@ -227,67 +318,12 @@ color:#fff;
 background:#b77e19;
 }
 
-/* EXPERIENCE SECTION */
-
-.experiences{
-background:#f7f5f0;
+.button-dark{
+background:#173b2a;
 }
 
-.experience-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-}
-
-.experience-box{
-background:#fff;
-padding:30px;
-border-radius:8px;
-text-align:center;
-}
-
-.icon{
-font-size:38px;
-margin-bottom:12px;
-}
-
-.experience-box h3{
-margin-bottom:8px;
-}
-
-.experience-box p{
-color:#666;
-}
-
-/* CTA */
-
-.cta{
-padding:85px 5%;
-text-align:center;
-color:#fff;
-
-background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2000&q=90")
-center/cover no-repeat;
-}
-
-.cta h2{
-font-size:42px;
-margin-bottom:12px;
-}
-
-.cta p{
-font-size:18px;
-max-width:650px;
-margin:0 auto 25px;
-}
-
-.buttons{
-display:flex;
-justify-content:center;
-gap:12px;
-flex-wrap:wrap;
+.button-dark:hover{
+background:#0d291d;
 }
 
 /* FOOTER */
@@ -335,19 +371,23 @@ font-size:14px;
 color:#888;
 }
 
-/* MOBILE */
+/* TABLET */
 
 @media(max-width:850px){
 
-nav a:not(.nav-plan){
+nav a:not(.nav-whatsapp){
 display:none;
+}
+
+nav{
+gap:8px;
 }
 
 .tour-grid{
 grid-template-columns:1fr;
 }
 
-.experience-grid{
+.walk-grid{
 grid-template-columns:1fr;
 }
 
@@ -361,15 +401,21 @@ font-size:46px;
 
 }
 
+/* PHONE */
+
 @media(max-width:500px){
 
 .logo{
 font-size:17px;
 }
 
-.nav-plan{
+.nav-whatsapp{
 padding:9px 12px;
 font-size:12px;
+}
+
+.hero{
+min-height:58vh;
 }
 
 .hero h1{
@@ -381,15 +427,21 @@ font-size:17px;
 }
 
 .tour-image{
-height:240px;
+height:250px;
 }
 
 .intro h2,
+.custom h2,
 .cta h2{
 font-size:30px;
 }
 
+.tour-content h3{
+font-size:24px;
 }
+
+}
+
 </style>
 </head>
 
@@ -415,8 +467,10 @@ OLDEPE TOURS & SAFARIS
 <a href="gallery.html">Gallery</a>
 <a href="contact.html">Contact</a>
 
-<a href="booking.html" class="nav-plan">
-Plan Your Trip
+<a
+class="nav-whatsapp"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20make%20an%20enquiry.">
+WhatsApp
 </a>
 
 </nav>
@@ -432,11 +486,12 @@ Plan Your Trip
 
 <div class="hero-content">
 
-<h1>Kenya Tours</h1>
+<h1>Kenya Tours & Excursions</h1>
 
 <p>
-Discover Nairobi, Kenya's culture, wildlife and beautiful
-landscapes through memorable private tours and day experiences.
+Discover Nairobi and beyond through memorable city tours,
+cultural experiences, nature excursions and private journeys
+designed around your interests.
 </p>
 
 </div>
@@ -455,9 +510,8 @@ landscapes through memorable private tours and day experiences.
 <h2>Explore Our Tours</h2>
 
 <p>
-Choose from city experiences, wildlife encounters, day trips
-and private tours. We can also create an itinerary around your
-own interests.
+Whether you have a few hours or a full day, we can help you
+discover some of the best experiences around Nairobi.
 </p>
 
 </div>
@@ -474,159 +528,26 @@ own interests.
 
 <img
 src="https://images.unsplash.com/photo-1611348524140-53c9a25263d6?auto=format&fit=crop&w=1200&q=85"
-alt="Nairobi city">
+alt="Nairobi city tour">
 
 </div>
 
 <div class="tour-content">
 
-<div class="location">
-NAIROBI • KENYA
-</div>
+<h3>Nairobi City Highlights</h3>
 
-<h3>Nairobi City Tour</h3>
+<div class="duration">
+4–5 Hours • Private Tour
+</div>
 
 <p>
-Explore Nairobi's landmarks, history, culture and modern city
-life with a private guided city experience.
+Explore Nairobi's key landmarks including the city centre,
+KICC area, Parliament surroundings, City Market, Jeevanjee
+Gardens and other highlights.
 </p>
 
-<div class="details">
-
-<span class="detail">City Highlights</span>
-<span class="detail">Culture</span>
-<span class="detail">4–5 Hours</span>
-
-</div>
-
-<a href="booking.html" class="button">
-Plan This Tour
-</a>
-
-</div>
-
-</div>
-
-
-<!-- NAIROBI NATIONAL PARK -->
-
-<div class="tour-card">
-
-<div class="tour-image">
-
-<img
-src="https://images.unsplash.com/photo-1534567110243-8875d64ca8ff?auto=format&fit=crop&w=1200&q=85"
-alt="Nairobi National Park">
-
-</div>
-
-<div class="tour-content">
-
-<div class="location">
-NAIROBI • KENYA
-</div>
-
-<h3>Nairobi National Park</h3>
-
-<p>
-Experience wildlife close to the city with a game drive through
-Nairobi National Park.
-</p>
-
-<div class="details">
-
-<span class="detail">Game Drive</span>
-<span class="detail">Wildlife</span>
-<span class="detail">Day Tour</span>
-
-</div>
-
-<a href="booking.html" class="button">
-Plan This Tour
-</a>
-
-</div>
-
-</div>
-
-
-<!-- GIRAFFE -->
-
-<div class="tour-card">
-
-<div class="tour-image">
-
-<img
-src="https://images.unsplash.com/photo-1547721064-da6cfb341d50?auto=format&fit=crop&w=1200&q=85"
-alt="Giraffe experience">
-
-</div>
-
-<div class="tour-content">
-
-<div class="location">
-NAIROBI • KENYA
-</div>
-
-<h3>Giraffe Experience</h3>
-
-<p>
-Meet and learn about giraffes during an enjoyable Nairobi
-wildlife experience.
-</p>
-
-<div class="details">
-
-<span class="detail">Giraffes</span>
-<span class="detail">Wildlife</span>
-<span class="detail">2–3 Hours</span>
-
-</div>
-
-<a href="booking.html" class="button">
-Plan This Tour
-</a>
-
-</div>
-
-</div>
-
-
-<!-- ELEPHANT -->
-
-<div class="tour-card">
-
-<div class="tour-image">
-
-<img
-src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=1200&q=85"
-alt="Elephant conservation">
-
-</div>
-
-<div class="tour-content">
-
-<div class="location">
-NAIROBI • KENYA
-</div>
-
-<h3>Elephant Conservation Experience</h3>
-
-<p>
-Learn about elephant conservation and enjoy an educational
-wildlife experience in Nairobi.
-</p>
-
-<div class="details">
-
-<span class="detail">Elephants</span>
-<span class="detail">Conservation</span>
-<span class="detail">Education</span>
-
-</div>
-
-<a href="booking.html" class="button">
-Plan This Tour
+<a href="booking.html" class="card-button">
+Book This Tour
 </a>
 
 </div>
@@ -641,34 +562,27 @@ Plan This Tour
 <div class="tour-image">
 
 <img
-src="https://images.unsplash.com/photo-1596005554384-d293674c91d7?auto=format&fit=crop&w=1200&q=85"
+src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=85"
 alt="Nairobi city walking tour">
 
 </div>
 
 <div class="tour-content">
 
-<div class="location">
-NAIROBI • KENYA
-</div>
-
 <h3>Nairobi City Walk</h3>
 
-<p>
-Discover Nairobi on foot while exploring historic landmarks,
-markets, gardens and the character of the city centre.
-</p>
-
-<div class="details">
-
-<span class="detail">Walking Tour</span>
-<span class="detail">History</span>
-<span class="detail">Culture</span>
-
+<div class="duration">
+2–3 Hours • Walking Experience
 </div>
 
-<a href="booking.html" class="button">
-Plan This Tour
+<p>
+Discover Nairobi on foot while learning about the city's
+history, architecture, public spaces, culture and everyday
+life with a local guide.
+</p>
+
+<a href="booking.html" class="card-button">
+Book This Tour
 </a>
 
 </div>
@@ -676,41 +590,139 @@ Plan This Tour
 </div>
 
 
-<!-- DAY TRIP -->
+<!-- GIRAFFE CENTRE -->
 
 <div class="tour-card">
 
 <div class="tour-image">
 
 <img
-src="https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=1200&q=85"
-alt="Kenya day trip">
+src="https://images.unsplash.com/photo-1547721064-da6cfb341d50?auto=format&fit=crop&w=1200&q=85"
+alt="Giraffe experience">
 
 </div>
 
 <div class="tour-content">
 
-<div class="location">
-KENYA • PRIVATE TOUR
-</div>
+<h3>Giraffe Centre</h3>
 
-<h3>Kenya Day Trips</h3>
+<div class="duration">
+2–3 Hours • Wildlife Experience
+</div>
 
 <p>
-Take a private day trip from Nairobi to a destination that
-matches your interests and available time.
+Get close to the famous Rothschild's giraffes and learn
+about conservation while enjoying a relaxed Nairobi
+excursion.
 </p>
 
-<div class="details">
-
-<span class="detail">Private</span>
-<span class="detail">Flexible</span>
-<span class="detail">Day Trip</span>
+<a href="booking.html" class="card-button">
+Book This Tour
+</a>
 
 </div>
 
-<a href="booking.html" class="button">
-Plan This Tour
+</div>
+
+
+<!-- NAIROBI NATIONAL MUSEUM -->
+
+<div class="tour-card">
+
+<div class="tour-image">
+
+<img
+src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=1200&q=85"
+alt="Nairobi museum and culture tour">
+
+</div>
+
+<div class="tour-content">
+
+<h3>Nairobi National Museum</h3>
+
+<div class="duration">
+2–3 Hours • Culture & History
+</div>
+
+<p>
+Explore Kenya's history, culture, art, natural heritage
+and archaeological discoveries at one of Nairobi's most
+important cultural attractions.
+</p>
+
+<a href="booking.html" class="card-button">
+Book This Tour
+</a>
+
+</div>
+
+</div>
+
+
+<!-- KAREN -->
+
+<div class="tour-card">
+
+<div class="tour-image">
+
+<img
+src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=85"
+alt="Karen Nairobi tour">
+
+</div>
+
+<div class="tour-content">
+
+<h3>Karen & Cultural Experience</h3>
+
+<div class="duration">
+Half Day • Private Tour
+</div>
+
+<p>
+Enjoy a relaxed excursion around Karen combining history,
+culture, beautiful surroundings and selected attractions
+according to your interests.
+</p>
+
+<a href="booking.html" class="card-button">
+Book This Tour
+</a>
+
+</div>
+
+</div>
+
+
+<!-- NNP -->
+
+<div class="tour-card">
+
+<div class="tour-image">
+
+<img
+src="https://images.unsplash.com/photo-1534567110243-8875d64ca8ff?auto=format&fit=crop&w=1200&q=85"
+alt="Nairobi National Park tour">
+
+</div>
+
+<div class="tour-content">
+
+<h3>Nairobi National Park</h3>
+
+<div class="duration">
+Half Day • Wildlife Safari
+</div>
+
+<p>
+Enjoy a wildlife experience only a short distance from
+Nairobi's city centre. A great option for visitors with
+limited time.
+</p>
+
+<a href="booking.html" class="card-button">
+Book This Tour
 </a>
 
 </div>
@@ -725,66 +737,97 @@ Plan This Tour
 </section>
 
 
-<!-- EXPERIENCES -->
+<!-- CITY WALKS -->
 
-<section class="section experiences">
+<section class="section walks">
 
 <div class="container">
 
 <div class="intro">
 
-<h2>More Than a Tour</h2>
+<h2>Discover Nairobi On Foot</h2>
 
 <p>
-Our goal is to give you an enjoyable and personal experience
-of Kenya.
+Our city walks offer a more personal way to experience
+Nairobi and understand the city beyond the usual tourist
+stops.
 </p>
 
 </div>
 
 
-<div class="experience-grid">
+<div class="walk-grid">
 
 
-<div class="experience-box">
+<div class="walk">
 
-<div class="icon">🇰🇪</div>
-
-<h3>Discover Kenya</h3>
+<h3>Historic Nairobi</h3>
 
 <p>
-Experience the country's history, culture, wildlife and
-beautiful landscapes.
+Explore historic buildings, monuments and streets while
+learning how Nairobi developed from a railway settlement
+into Kenya's capital.
 </p>
 
 </div>
 
 
-<div class="experience-box">
+<div class="walk">
 
-<div class="icon">🚙</div>
-
-<h3>Private & Flexible</h3>
+<h3>City Centre Experience</h3>
 
 <p>
-Plan your experience around your schedule, interests and group.
+See Nairobi's central landmarks, public spaces, markets
+and everyday city life while accompanied by a local guide.
 </p>
 
 </div>
 
 
-<div class="experience-box">
+<div class="walk">
 
-<div class="icon">📸</div>
-
-<h3>Create Memories</h3>
+<h3>Custom City Walk</h3>
 
 <p>
-Enjoy memorable experiences and take home stories worth sharing.
+Tell us what interests you and we can create a walking
+experience around your preferred sights and available time.
 </p>
 
 </div>
 
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CUSTOM TOURS -->
+
+<section class="section custom">
+
+<div class="container">
+
+<h2>Looking For Something Different?</h2>
+
+<p>
+Every traveller is different. Tell us your interests,
+available time, preferred attractions and group size,
+and we can help create a private itinerary for you.
+</p>
+
+<div class="buttons">
+
+<a href="booking.html" class="button">
+Plan A Custom Tour
+</a>
+
+<a
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20would%20like%20to%20create%20a%20custom%20tour."
+class="button">
+Ask On WhatsApp
+</a>
 
 </div>
 
@@ -799,11 +842,11 @@ Enjoy memorable experiences and take home stories worth sharing.
 
 <div class="container">
 
-<h2>Ready to Explore Kenya?</h2>
+<h2>Ready To Explore Kenya?</h2>
 
 <p>
-Tell us what you would like to experience and we'll help you
-plan your trip.
+Choose a tour above or tell us what you would like to see.
+We will help you plan a memorable Kenyan experience.
 </p>
 
 <div class="buttons">
@@ -813,9 +856,9 @@ Plan Your Trip
 </a>
 
 <a
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20would%20like%20to%20plan%20a%20Kenya%20tour."
+href="gallery.html"
 class="button">
-WhatsApp Us
+View Our Gallery
 </a>
 
 </div>
@@ -830,6 +873,7 @@ WhatsApp Us
 <footer>
 
 <div class="footer-grid">
+
 
 <div>
 
@@ -856,7 +900,6 @@ Safaris, tours, excursions and private travel experiences.
 <a href="about.html">About</a>
 <a href="gallery.html">Gallery</a>
 <a href="contact.html">Contact</a>
-<a href="booking.html">Plan Your Trip</a>
 
 </div>
 
@@ -874,6 +917,7 @@ WhatsApp
 </a>
 
 </div>
+
 
 </div>
 
