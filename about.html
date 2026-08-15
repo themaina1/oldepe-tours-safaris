@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Us | Oldepe Tours & Safaris</title>
+
+<meta name="description" content="Learn about Oldepe Tours & Safaris and our passion for creating memorable Kenya travel experiences.">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:#222;
+  line-height:1.6;
+  background:#fff;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+img{
+  width:100%;
+  display:block;
+}
+
+/* HEADER */
+
+header{
+  background:#172116;
+  padding:18px 5%;
+}
+
+.nav{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  color:#fff;
+  font-size:21px;
+  font-weight:bold;
+  line-height:1.2;
+}
+
+.logo span{
+  display:block;
+  font-size:11px;
+  letter-spacing:2px;
+  font-weight:normal;
+  margin-top:4px;
+}
+
+nav{
+  display:flex;
+  gap:24px;
+  align-items:center;
+}
+
+nav a{
+  color:#fff;
+  font-size:15px;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:#d99b27;
+}
+
+.whatsapp{
+  background:#d99b27;
+  padding:10px 17px;
+  border-radius:5px;
+}
+
+.whatsapp:hover{
+  color:#fff;
+  background:#b77e19;
+}
+
+/* HERO */
+
+.hero{
+  min-height:52vh;
+  display:flex;
+  align-items:center;
+  background:
+  linear-gradient(rgba(0,0,0,.58),rgba(0,0,0,.58)),
+  url("https://images.unsplash.com/photo-1534177616072-ef7dc120449d?auto=format&fit=crop&w=1800&q=85")
+  center/cover no-repeat;
+}
+
+.hero-content{
+  max-width:1200px;
+  width:100%;
+  margin:auto;
+  padding:80px 5%;
+  color:#fff;
+}
+
+.hero small{
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-weight:bold;
+}
+
+.hero h1{
+  font-size:clamp(42px,7vw,70px);
+  line-height:1.05;
+  margin:15px 0;
+}
+
+.hero p{
+  max-width:650px;
+  font-size:19px;
+}
+
+/* CONTENT */
+
+.section{
+  padding:75px 5%;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+}
+
+.about-image img{
+  height:460px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+.about-text h2{
+  font-size:38px;
+  margin-bottom:18px;
+}
+
+.about-text p{
+  color:#555;
+  margin-bottom:18px;
+}
+
+.button{
+  display:inline-block;
+  background:#d99b27;
+  color:#fff;
+  padding:13px 22px;
+  border-radius:5px;
+  font-weight:bold;
+}
+
+.button:hover{
+  background:#b77e19;
+}
+
+/* VALUES */
+
+.values{
+  background:#f5f2eb;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:45px;
+}
+
+.section-title small{
+  color:#b47b18;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-weight:bold;
+}
+
+.section-title h2{
+  font-size:38px;
+  margin-top:8px;
+}
+
+.value-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.value{
+  background:#fff;
+  padding:30px;
+  border-radius:8px;
+  text-align:center;
+  box-shadow:0 4px 18px rgba(0,0,0,.07);
+}
+
+.value-icon{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.value h3{
+  margin-bottom:10px;
+}
+
+.value p{
+  color:#666;
+}
+
+/* EXPERIENCE */
+
+.experience{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+
+.experience h2{
+  font-size:36px;
+  margin-bottom:18px;
+}
+
+.experience p{
+  color:#555;
+  margin-bottom:16px;
+}
+
+.experience-image img{
+  height:400px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+/* CTA */
+
+.cta{
+  padding:90px 5%;
+  text-align:center;
+  color:#fff;
+  background:
+  linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+  url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1800&q=85")
+  center/cover no-repeat;
+}
+
+.cta h2{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.cta p{
+  max-width:650px;
+  margin:0 auto 25px;
+  font-size:18px;
+}
+
+.cta a{
+  display:inline-block;
+  background:#d99b27;
+  color:#fff;
+  padding:14px 25px;
+  border-radius:5px;
+  font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+  background:#191919;
+  color:#ddd;
+  padding:50px 5% 20px;
+}
+
+.footer-grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:40px;
+}
+
+footer h3{
+  color:#fff;
+  margin-bottom:15px;
+}
+
+footer p,
+footer a{
+  color:#aaa;
+  margin-bottom:8px;
+}
+
+footer a{
+  display:block;
+}
+
+footer a:hover{
+  color:#d99b27;
+}
+
+.copyright{
+  max-width:1200px;
+  margin:30px auto 0;
+  padding-top:20px;
+  border-top:1px solid #333;
+  text-align:center;
+  color:#888;
+  font-size:14px;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+  .nav{
+    align-items:flex-start;
+  }
+
+  nav{
+    gap:10px;
+  }
+
+  nav a:not(.whatsapp){
+    display:none;
+  }
+
+  .about-grid,
+  .experience{
+    grid-template-columns:1fr;
+  }
+
+  .about-image img{
+    height:320px;
+  }
+
+  .experience-image{
+    order:-1;
+  }
+
+  .value-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    min-height:48vh;
+  }
+
+  .hero h1{
+    font-size:45px;
+  }
+}
+
+@media(max-width:500px){
+
+  .hero h1{
+    font-size:39px;
+  }
+
+  .section-title h2,
+  .about-text h2,
+  .experience h2{
+    font-size:30px;
+  }
+
+  .cta h2{
+    font-size:32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="nav">
+
+<a href="index.html" class="logo">
+OLDEPE TOURS & SAFARIS
+<span>TEMBEA KENYA</span>
+</a>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="safaris.html">Safaris</a>
+
+<a href="about.html">About</a>
+
+<a href="contact.html">Contact</a>
+
+<a class="whatsapp"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20make%20an%20enquiry.">
+WhatsApp
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<small>About Oldepe Tours & Safaris</small>
+
+<h1>Travel Kenya With Us</h1>
+
+<p>
+Discover Kenya through memorable wildlife experiences,
+beautiful landscapes, culture and personalised travel.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="about-grid">
+
+<div class="about-image">
+
+<img
+src="https://images.unsplash.com/photo-1519659528534-7fd733a832a0?auto=format&fit=crop&w=1200&q=85"
+alt="Kenya wildlife">
+
+</div>
+
+
+<div class="about-text">
+
+<h2>Welcome to Oldepe Tours & Safaris</h2>
+
+<p>
+Oldepe Tours & Safaris is a Kenya-based travel company
+focused on helping visitors discover the beauty, wildlife
+and culture of Kenya.
+</p>
+
+<p>
+From exciting wildlife safaris to private tours and
+travel experiences, our aim is to make your journey
+comfortable, enjoyable and memorable.
+</p>
+
+<p>
+We understand that every traveller is different.
+That is why we welcome enquiries for both planned
+safari packages and customised journeys.
+</p>
+
+<a href="safaris.html" class="button">
+Explore Our Safaris
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- VALUES -->
+
+<section class="section values">
+
+<div class="container">
+
+<div class="section-title">
+
+<small>Our Approach</small>
+
+<h2>What We Stand For</h2>
+
+</div>
+
+
+<div class="value-grid">
+
+
+<div class="value">
+
+<div class="value-icon">🦁</div>
+
+<h3>Authentic Experiences</h3>
+
+<p>
+We want our guests to experience the real Kenya,
+from wildlife and landscapes to local culture.
+</p>
+
+</div>
+
+
+<div class="value">
+
+<div class="value-icon">🤝</div>
+
+<h3>Personal Service</h3>
+
+<p>
+We listen to our guests and work with them to create
+travel experiences that suit their needs.
+</p>
+
+</div>
+
+
+<div class="value">
+
+<div class="value-icon">🌍</div>
+
+<h3>Responsible Travel</h3>
+
+<p>
+We believe in respecting Kenya's wildlife, natural
+environment, communities and cultural heritage.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="experience">
+
+<div>
+
+<h2>Your Kenya Adventure Starts Here</h2>
+
+<p>
+Whether you have a few days or several weeks, Kenya
+offers extraordinary opportunities for exploration.
+</p>
+
+<p>
+Visit the famous Maasai Mara, watch elephants beneath
+Mount Kilimanjaro in Amboseli, explore the Rift Valley,
+or create a completely customised itinerary.
+</p>
+
+<p>
+Our team can help you plan the destinations, duration
+and style of travel that best suits your trip.
+</p>
+
+<a href="contact.html" class="button">
+Plan Your Trip
+</a>
+
+</div>
+
+
+<div class="experience-image">
+
+<img
+src="https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1200&q=85"
+alt="Kenya safari experience">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>Ready to Discover Kenya?</h2>
+
+<p>
+Talk to Oldepe Tours & Safaris about your next
+Kenya adventure.
+</p>
+
+<a href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20plan%20a%20Kenya%20trip.">
+Chat With Us on WhatsApp
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+
+<h3>Oldepe Tours & Safaris</h3>
+
+<p>
+Discover Kenya. Experience the wild.
+</p>
+
+<p>
+Kenya safaris, wildlife tours and private travel experiences.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a>
+
+<a href="safaris.html">Safaris</a>
+
+<a href="about.html">About Us</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+
+<div>
+
+<h3>Contact Us</h3>
+
+<p>📞 0720 580 063</p>
+
+<p>✉ oldepetr@gmail.com</p>
+
+<a href="https://wa.me/254720580063">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Oldepe Tours & Safaris. All Rights Reserved.
+
+</div>
+
+</footer>
+
+</body>
+</html>
