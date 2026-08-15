@@ -4,19 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Oldepe Tours & Safaris | Kenya Safaris & Tours</title>
+<title>Oldepe Tours & Safaris | Discover Kenya</title>
 
-<meta name="description" content="Oldepe Tours & Safaris offers memorable Kenya safaris, wildlife tours, private excursions and travel experiences.">
+<meta name="description" content="Oldepe Tours & Safaris offers Kenya safaris, Nairobi city tours, wildlife experiences, day trips and private tours.">
 
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
 }
 
 body{
@@ -32,8 +28,8 @@ color:inherit;
 }
 
 img{
-display:block;
 width:100%;
+display:block;
 }
 
 /* HEADER */
@@ -43,9 +39,9 @@ position:absolute;
 top:0;
 left:0;
 right:0;
-z-index:10;
+z-index:20;
 padding:20px 5%;
-background:rgba(20,30,18,.55);
+background:rgba(15,25,15,.55);
 }
 
 .nav{
@@ -74,7 +70,7 @@ margin-top:5px;
 nav{
 display:flex;
 align-items:center;
-gap:22px;
+gap:20px;
 }
 
 nav a{
@@ -87,21 +83,22 @@ nav a:hover{
 color:#e0a32b;
 }
 
-.nav-whatsapp{
+.nav-plan{
 background:#d99b27;
-padding:10px 16px;
+padding:10px 15px;
 border-radius:5px;
 }
 
 /* HERO */
 
 .hero{
-min-height:90vh;
+min-height:92vh;
 display:flex;
 align-items:center;
+
 background:
-linear-gradient(rgba(0,0,0,.48),rgba(0,0,0,.58)),
-url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2000&q=90")
+linear-gradient(rgba(0,0,0,.38),rgba(0,0,0,.70)),
+url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2200&q=90")
 center/cover no-repeat;
 }
 
@@ -109,33 +106,30 @@ center/cover no-repeat;
 max-width:1200px;
 width:100%;
 margin:auto;
-padding:130px 5% 80px;
+padding:150px 5% 80px;
 color:#fff;
 }
 
-.hero-label{
-font-size:14px;
-font-weight:bold;
-letter-spacing:4px;
-text-transform:uppercase;
+.hero h1{
+font-size:clamp(48px,7vw,82px);
+line-height:1.02;
+max-width:850px;
+margin-bottom:20px;
 }
 
-.hero h1{
-font-size:clamp(45px,7vw,78px);
-line-height:1.02;
-max-width:800px;
-margin:18px 0;
+.hero h1 span{
+color:#e0a32b;
 }
 
 .hero p{
 font-size:20px;
-max-width:650px;
+max-width:700px;
 margin-bottom:30px;
 }
 
 .buttons{
 display:flex;
-gap:14px;
+gap:13px;
 flex-wrap:wrap;
 }
 
@@ -153,8 +147,12 @@ background:#b77e19;
 }
 
 .button-outline{
-background:transparent;
+display:inline-block;
+padding:13px 23px;
 border:2px solid #fff;
+border-radius:5px;
+font-weight:bold;
+color:#fff;
 }
 
 .button-outline:hover{
@@ -165,7 +163,7 @@ color:#222;
 /* INTRO */
 
 .section{
-padding:80px 5%;
+padding:75px 5%;
 }
 
 .container{
@@ -188,88 +186,60 @@ margin-bottom:12px;
 color:#666;
 }
 
-/* FEATURES */
+/* FEATURE CARDS */
 
-.features{
+.feature-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:25px;
 }
 
-.feature{
-padding:30px;
-background:#f5f2eb;
-border-radius:8px;
-text-align:center;
-}
-
-.feature-icon{
-font-size:35px;
-margin-bottom:12px;
-}
-
-.feature h3{
-margin-bottom:8px;
-}
-
-.feature p{
-color:#666;
-}
-
-/* DESTINATIONS */
-
-.destinations{
-background:#fafafa;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-}
-
-.card{
+.feature-card{
 background:#fff;
 border-radius:8px;
 overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
+box-shadow:0 5px 22px rgba(0,0,0,.11);
 }
 
-.card-image{
+.feature-image{
 height:230px;
 overflow:hidden;
 }
 
-.card-image img{
+.feature-image img{
 height:100%;
 object-fit:cover;
 transition:.4s;
 }
 
-.card:hover img{
+.feature-card:hover .feature-image img{
 transform:scale(1.05);
 }
 
-.card-content{
+.feature-content{
 padding:23px;
 }
 
-.card-content h3{
-font-size:23px;
+.feature-content h3{
+font-size:24px;
 margin-bottom:8px;
 }
 
-.card-content p{
+.feature-content p{
 color:#666;
-margin-bottom:16px;
+margin-bottom:18px;
 }
 
-.card-link{
+.small-link{
 color:#a97015;
 font-weight:bold;
 }
 
-/* ABOUT */
+/* ABOUT STRIP */
+
+.about-strip{
+background:#f7f5f0;
+}
 
 .about-grid{
 display:grid;
@@ -279,7 +249,7 @@ align-items:center;
 }
 
 .about-image{
-height:480px;
+height:450px;
 border-radius:8px;
 overflow:hidden;
 }
@@ -290,18 +260,39 @@ object-fit:cover;
 }
 
 .about-text h2{
-font-size:40px;
+font-size:38px;
 margin-bottom:15px;
 }
 
 .about-text p{
 color:#666;
-margin-bottom:17px;
+margin-bottom:18px;
 }
 
-.check{
-margin:10px 0;
-font-weight:bold;
+/* WHY */
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.why-box{
+text-align:center;
+padding:30px 22px;
+}
+
+.icon{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.why-box h3{
+margin-bottom:8px;
+}
+
+.why-box p{
+color:#666;
 }
 
 /* CTA */
@@ -310,9 +301,10 @@ font-weight:bold;
 padding:90px 5%;
 text-align:center;
 color:#fff;
+
 background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url("https://images.unsplash.com/photo-1534177616072-ef7dc120449d?auto=format&fit=crop&w=2000&q=90")
+linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.72)),
+url("https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=2200&q=90")
 center/cover no-repeat;
 }
 
@@ -323,8 +315,8 @@ margin-bottom:12px;
 
 .cta p{
 font-size:19px;
-max-width:650px;
-margin:0 auto 25px;
+max-width:680px;
+margin:0 auto 28px;
 }
 
 /* FOOTER */
@@ -376,28 +368,11 @@ color:#888;
 
 @media(max-width:850px){
 
-header{
-position:absolute;
-}
-
-nav a:not(.nav-whatsapp){
+nav a:not(.nav-plan){
 display:none;
 }
 
-nav{
-gap:8px;
-}
-
-.hero{
-min-height:82vh;
-}
-
-.hero h1{
-font-size:48px;
-}
-
-.features,
-.cards{
+.feature-grid{
 grid-template-columns:1fr;
 }
 
@@ -405,12 +380,20 @@ grid-template-columns:1fr;
 grid-template-columns:1fr;
 }
 
-.about-image{
-height:350px;
+.why-grid{
+grid-template-columns:1fr;
 }
 
 .footer-grid{
 grid-template-columns:1fr;
+}
+
+.about-image{
+height:330px;
+}
+
+.hero h1{
+font-size:52px;
 }
 
 }
@@ -421,13 +404,17 @@ grid-template-columns:1fr;
 font-size:17px;
 }
 
-.nav-whatsapp{
+.nav-plan{
 padding:9px 12px;
 font-size:12px;
 }
 
+.hero{
+min-height:88vh;
+}
+
 .hero h1{
-font-size:40px;
+font-size:43px;
 }
 
 .hero p{
@@ -438,11 +425,6 @@ font-size:17px;
 .about-text h2,
 .cta h2{
 font-size:30px;
-}
-
-.buttons{
-flex-direction:column;
-align-items:flex-start;
 }
 
 }
@@ -471,9 +453,8 @@ OLDEPE TOURS & SAFARIS
 <a href="gallery.html">Gallery</a>
 <a href="contact.html">Contact</a>
 
-<a class="nav-whatsapp"
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20make%20an%20enquiry.">
-WhatsApp
+<a href="booking.html" class="nav-plan">
+Plan Your Trip
 </a>
 
 </nav>
@@ -489,28 +470,24 @@ WhatsApp
 
 <div class="hero-content">
 
-<div class="hero-label">
-Discover Kenya
-</div>
-
 <h1>
-Experience the Wild Heart of Kenya
+Discover <span>Kenya</span> Your Way
 </h1>
 
 <p>
-Discover unforgettable safaris, wildlife encounters,
-scenic destinations and authentic Kenyan experiences
-with Oldepe Tours & Safaris.
+Experience Kenya through unforgettable safaris, Nairobi city
+tours, wildlife encounters, cultural experiences and private
+journeys designed around you.
 </p>
 
 <div class="buttons">
 
-<a href="safaris.html" class="button">
-Explore Safaris
+<a href="booking.html" class="button">
+Plan Your Trip
 </a>
 
-<a href="contact.html" class="button button-outline">
-Plan Your Trip
+<a href="safaris.html" class="button-outline">
+Explore Safaris
 </a>
 
 </div>
@@ -520,7 +497,7 @@ Plan Your Trip
 </section>
 
 
-<!-- WHY US -->
+<!-- INTRO -->
 
 <section class="section">
 
@@ -528,106 +505,41 @@ Plan Your Trip
 
 <div class="intro">
 
-<h2>Why Travel With Oldepe?</h2>
+<h2>Experience Kenya With Oldepe</h2>
 
 <p>
-We believe a great safari is more than simply visiting a destination.
-It is about the journey, the people, the wildlife and the memories
-you take home.
+From the excitement of a Nairobi city tour to the wild landscapes
+of Kenya's national parks, we help you discover the country in
+a comfortable and memorable way.
 </p>
 
 </div>
 
 
-<div class="features">
-
-<div class="feature">
-
-<div class="feature-icon">🦁</div>
-
-<h3>Wildlife Experiences</h3>
-
-<p>
-Discover Kenya's remarkable wildlife and beautiful natural landscapes.
-</p>
-
-</div>
+<div class="feature-grid">
 
 
-<div class="feature">
+<div class="feature-card">
 
-<div class="feature-icon">🚙</div>
-
-<h3>Private Tours</h3>
-
-<p>
-Enjoy flexible travel experiences designed around your schedule and interests.
-</p>
-
-</div>
-
-
-<div class="feature">
-
-<div class="feature-icon">🇰🇪</div>
-
-<h3>Local Experience</h3>
-
-<p>
-Experience Kenya with practical local knowledge and personal service.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- DESTINATIONS -->
-
-<section class="section destinations">
-
-<div class="container">
-
-<div class="intro">
-
-<h2>Discover Kenya</h2>
-
-<p>
-From Nairobi to the great wildlife destinations,
-Kenya offers something for every traveller.
-</p>
-
-</div>
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<div class="card-image">
+<div class="feature-image">
 
 <img
-src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1000&q=85"
+src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=85"
 alt="Kenya safari">
 
 </div>
 
-<div class="card-content">
+<div class="feature-content">
 
 <h3>Kenya Safaris</h3>
 
 <p>
-Explore Kenya's iconic wildlife destinations and experience
-the beauty of the African wilderness.
+Explore Kenya's famous wildlife destinations including Maasai
+Mara, Amboseli, Tsavo, Samburu and Lake Nakuru.
 </p>
 
-<a href="safaris.html" class="card-link">
-View Safaris →
+<a href="safaris.html" class="small-link">
+Explore Safaris →
 </a>
 
 </div>
@@ -635,26 +547,26 @@ View Safaris →
 </div>
 
 
-<div class="card">
+<div class="feature-card">
 
-<div class="card-image">
+<div class="feature-image">
 
 <img
-src="https://images.unsplash.com/photo-1565610222536-ef125c59da2e?auto=format&fit=crop&w=1000&q=85"
-alt="Nairobi Kenya">
+src="https://images.unsplash.com/photo-1611348524140-53c9a25263d6?auto=format&fit=crop&w=1200&q=85"
+alt="Nairobi city">
 
 </div>
 
-<div class="card-content">
+<div class="feature-content">
 
 <h3>Nairobi Tours</h3>
 
 <p>
-Discover Nairobi's culture, history, attractions and
-unique experiences.
+Discover Nairobi's landmarks, history, culture, wildlife and
+unique attractions through private tours and city walks.
 </p>
 
-<a href="tours.html" class="card-link">
+<a href="tours.html" class="small-link">
 Explore Tours →
 </a>
 
@@ -663,27 +575,27 @@ Explore Tours →
 </div>
 
 
-<div class="card">
+<div class="feature-card">
 
-<div class="card-image">
+<div class="feature-image">
 
 <img
-src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=1000&q=85"
-alt="African elephant">
+src="https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1200&q=85"
+alt="Kenya wildlife">
 
 </div>
 
-<div class="card-content">
+<div class="feature-content">
 
 <h3>Private Experiences</h3>
 
 <p>
-Tell us what you want to experience and let us help
-create a trip around your interests.
+Create a flexible itinerary based on your interests, schedule,
+group size and preferred destinations.
 </p>
 
-<a href="contact.html" class="card-link">
-Plan Your Trip →
+<a href="booking.html" class="small-link">
+Plan Your Experience →
 </a>
 
 </div>
@@ -700,52 +612,109 @@ Plan Your Trip →
 
 <!-- ABOUT -->
 
-<section class="section">
+<section class="section about-strip">
 
 <div class="container">
 
 <div class="about-grid">
 
+
 <div class="about-image">
 
 <img
-src="https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=1200&q=85"
-alt="Kenya wildlife">
+src="https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=1400&q=85"
+alt="Kenya landscape">
 
 </div>
 
 
 <div class="about-text">
 
-<h2>Your Kenya Adventure Starts Here</h2>
+<h2>Your Journey, Your Way</h2>
 
 <p>
-Oldepe Tours & Safaris is dedicated to creating memorable
-Kenyan travel experiences for visitors who want to discover
-the country's wildlife, landscapes and culture.
+Every traveller is different. Some want a classic safari,
+others want to discover Nairobi, experience Kenyan culture,
+or simply enjoy a private day trip.
 </p>
 
 <p>
-Whether you are visiting Kenya for the first time or returning
-for another adventure, we can help you plan an experience that
-fits your time, interests and travel style.
+At Oldepe Tours & Safaris, we help you put together an
+experience that matches your interests and available time.
 </p>
 
-<div class="check">✓ Personalised travel experiences</div>
-
-<div class="check">✓ Safari and tour arrangements</div>
-
-<div class="check">✓ Flexible private trips</div>
-
-<div class="check">✓ Friendly local service</div>
-
-<br>
-
-<a href="about.html" class="button">
-Learn More About Us
+<a href="booking.html" class="button">
+Start Planning
 </a>
 
 </div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="intro">
+
+<h2>Why Travel With Us?</h2>
+
+<p>
+We focus on making your Kenyan experience enjoyable,
+comfortable and memorable.
+</p>
+
+</div>
+
+
+<div class="why-grid">
+
+
+<div class="why-box">
+
+<div class="icon">🇰🇪</div>
+
+<h3>Local Knowledge</h3>
+
+<p>
+Discover Kenya with practical local knowledge and guidance.
+</p>
+
+</div>
+
+
+<div class="why-box">
+
+<div class="icon">🚙</div>
+
+<h3>Flexible Travel</h3>
+
+<p>
+Plan your itinerary around your dates, interests and group.
+</p>
+
+</div>
+
+
+<div class="why-box">
+
+<div class="icon">🤝</div>
+
+<h3>Personal Service</h3>
+
+<p>
+Get direct assistance when planning your Kenyan adventure.
+</p>
+
+</div>
+
 
 </div>
 
@@ -760,25 +729,23 @@ Learn More About Us
 
 <div class="container">
 
-<h2>
-Let's Plan Your Kenya Adventure
-</h2>
+<h2>Start Planning Your Kenya Adventure</h2>
 
 <p>
-Have a destination in mind or don't know where to start?
-Contact us and let's create your journey together.
+Tell us where you would like to go, when you are travelling
+and what you would like to experience.
 </p>
 
-<div class="buttons" style="justify-content:center;">
+<div class="buttons">
 
-<a href="contact.html" class="button">
-Send An Enquiry
+<a href="booking.html" class="button">
+Plan Your Trip
 </a>
 
 <a
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20plan%20a%20Kenya%20trip."
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20would%20like%20to%20plan%20a%20trip."
 class="button">
-Chat On WhatsApp
+WhatsApp Us
 </a>
 
 </div>
@@ -793,6 +760,7 @@ Chat On WhatsApp
 <footer>
 
 <div class="footer-grid">
+
 
 <div>
 
@@ -819,6 +787,7 @@ Safaris, tours, excursions and private travel experiences.
 <a href="about.html">About</a>
 <a href="gallery.html">Gallery</a>
 <a href="contact.html">Contact</a>
+<a href="booking.html">Plan Your Trip</a>
 
 </div>
 
@@ -836,6 +805,7 @@ WhatsApp
 </a>
 
 </div>
+
 
 </div>
 
