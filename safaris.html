@@ -6,7 +6,7 @@
 
 <title>Kenya Safaris | Oldepe Tours & Safaris</title>
 
-<meta name="description" content="Explore Kenya safaris with Oldepe Tours & Safaris. Discover Maasai Mara, Amboseli, Nairobi National Park, Lake Nakuru and Tsavo.">
+<meta name="description" content="Explore Kenya safari destinations including Maasai Mara, Amboseli, Lake Nakuru and more with Oldepe Tours & Safaris.">
 
 <style>
 *{
@@ -15,15 +15,10 @@ padding:0;
 box-sizing:border-box;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
 font-family:Arial,Helvetica,sans-serif;
 color:#222;
 line-height:1.6;
-background:#fff;
 }
 
 a{
@@ -35,6 +30,8 @@ img{
 width:100%;
 display:block;
 }
+
+/* HEADER */
 
 header{
 position:absolute;
@@ -91,35 +88,36 @@ padding:10px 16px;
 border-radius:5px;
 }
 
-/* PAGE HERO */
+/* HERO */
 
-.page-hero{
-min-height:58vh;
+.hero{
+min-height:60vh;
 display:flex;
 align-items:center;
+
 background:
-linear-gradient(rgba(0,0,0,.48),rgba(0,0,0,.62)),
+linear-gradient(rgba(0,0,0,.48),rgba(0,0,0,.65)),
 url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2000&q=90")
 center/cover no-repeat;
 }
 
-.page-hero-content{
+.hero-content{
 max-width:1200px;
 width:100%;
 margin:auto;
-padding:140px 5% 70px;
+padding:145px 5% 75px;
 color:#fff;
 }
 
-.page-hero h1{
+.hero h1{
 font-size:clamp(42px,6vw,68px);
 line-height:1.05;
 margin-bottom:15px;
 }
 
-.page-hero p{
+.hero p{
 font-size:19px;
-max-width:700px;
+max-width:720px;
 }
 
 /* INTRO */
@@ -182,26 +180,27 @@ transform:scale(1.05);
 padding:25px;
 }
 
+.location{
+color:#a97015;
+font-size:13px;
+font-weight:bold;
+letter-spacing:.5px;
+margin-bottom:7px;
+}
+
 .safari-content h3{
 font-size:27px;
 margin-bottom:8px;
 }
 
-.location{
-color:#a97015;
-font-weight:bold;
-font-size:14px;
-margin-bottom:10px;
-}
-
 .safari-content p{
 color:#666;
-margin-bottom:15px;
+margin-bottom:18px;
 }
 
 .details{
 display:flex;
-gap:10px;
+gap:9px;
 flex-wrap:wrap;
 margin-bottom:20px;
 }
@@ -227,7 +226,7 @@ color:#fff;
 background:#b77e19;
 }
 
-/* WHY SAFARI */
+/* WHY US */
 
 .why{
 background:#f7f5f0;
@@ -240,11 +239,13 @@ gap:25px;
 }
 
 .why-box{
+background:#fff;
+padding:30px;
+border-radius:8px;
 text-align:center;
-padding:25px;
 }
 
-.why-icon{
+.icon{
 font-size:38px;
 margin-bottom:12px;
 }
@@ -263,9 +264,10 @@ color:#666;
 padding:85px 5%;
 text-align:center;
 color:#fff;
+
 background:
 linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url("https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=2000&q=90")
+url("https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=2000&q=90")
 center/cover no-repeat;
 }
 
@@ -356,11 +358,7 @@ grid-template-columns:1fr;
 grid-template-columns:1fr;
 }
 
-.page-hero{
-min-height:55vh;
-}
-
-.page-hero h1{
+.hero h1{
 font-size:46px;
 }
 
@@ -377,11 +375,11 @@ padding:9px 12px;
 font-size:12px;
 }
 
-.page-hero h1{
+.hero h1{
 font-size:40px;
 }
 
-.page-hero p{
+.hero p{
 font-size:17px;
 }
 
@@ -399,8 +397,6 @@ font-size:30px;
 </head>
 
 <body>
-
-<!-- HEADER -->
 
 <header>
 
@@ -420,8 +416,9 @@ OLDEPE TOURS & SAFARIS
 <a href="gallery.html">Gallery</a>
 <a href="contact.html">Contact</a>
 
-<a class="nav-whatsapp"
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20enquire%20about%20a%20safari.">
+<a
+class="nav-whatsapp"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20make%20an%20enquiry.">
 WhatsApp
 </a>
 
@@ -432,17 +429,15 @@ WhatsApp
 </header>
 
 
-<!-- HERO -->
+<section class="hero">
 
-<section class="page-hero">
-
-<div class="page-hero-content">
+<div class="hero-content">
 
 <h1>Kenya Safaris</h1>
 
 <p>
-Discover Kenya's incredible wildlife, spectacular landscapes
-and unforgettable safari destinations.
+Experience Kenya's spectacular wildlife, landscapes and
+national parks on a memorable safari designed around your journey.
 </p>
 
 </div>
@@ -450,20 +445,17 @@ and unforgettable safari destinations.
 </section>
 
 
-<!-- SAFARIS -->
-
 <section class="section">
 
 <div class="container">
 
 <div class="intro">
 
-<h2>Explore Our Safari Destinations</h2>
+<h2>Explore Kenya's Wild Side</h2>
 
 <p>
-Choose from some of Kenya's most remarkable wildlife destinations.
-Whether you are looking for a short safari or a longer adventure,
-we can help plan your journey.
+From the famous Maasai Mara to the dramatic scenery of Amboseli,
+Kenya offers some of Africa's most unforgettable safari experiences.
 </p>
 
 </div>
@@ -472,7 +464,7 @@ we can help plan your journey.
 <div class="safari-grid">
 
 
-<!-- MASAI MARA -->
+<!-- MAASAI MARA -->
 
 <div class="safari-card">
 
@@ -486,21 +478,22 @@ alt="Maasai Mara safari">
 
 <div class="safari-content">
 
-<div class="location">NAROK COUNTY • KENYA</div>
+<div class="location">
+NAROK COUNTY • KENYA
+</div>
 
 <h3>Maasai Mara</h3>
 
 <p>
-Experience one of Africa's most famous wildlife reserves,
-renowned for lions, elephants, cheetahs, leopards and the
-Great Migration.
+Discover Kenya's famous Maasai Mara, home to abundant wildlife
+and the spectacular Great Migration season.
 </p>
 
 <div class="details">
 
 <span class="detail">🦁 Big Five</span>
-<span class="detail">📸 Wildlife</span>
-<span class="detail">🌅 Scenic Plains</span>
+<span class="detail">🚙 Game Drives</span>
+<span class="detail">🌅 Savannah</span>
 
 </div>
 
@@ -523,74 +516,34 @@ Enquire Now
 
 <img
 src="https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1200&q=85"
-alt="Amboseli safari">
+alt="Amboseli National Park">
 
 </div>
 
 <div class="safari-content">
 
-<div class="location">KAJIADO COUNTY • KENYA</div>
+<div class="location">
+KAJIADO COUNTY • KENYA
+</div>
 
 <h3>Amboseli National Park</h3>
 
 <p>
-Enjoy spectacular views of Mount Kilimanjaro while encountering
-elephants, lions, giraffes, zebras and many other species.
+Enjoy spectacular views of Mount Kilimanjaro while exploring
+one of Kenya's best destinations for elephant encounters.
 </p>
 
 <div class="details">
 
 <span class="detail">🐘 Elephants</span>
 <span class="detail">🏔 Kilimanjaro</span>
-<span class="detail">📸 Photography</span>
+<span class="detail">🚙 Game Drives</span>
 
 </div>
 
 <a
 class="button"
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20an%20Amboseli%20safari.">
-Enquire Now
-</a>
-
-</div>
-
-</div>
-
-
-<!-- NAIROBI -->
-
-<div class="safari-card">
-
-<div class="safari-image">
-
-<img
-src="https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=1200&q=85"
-alt="Nairobi National Park">
-
-</div>
-
-<div class="safari-content">
-
-<div class="location">NAIROBI • KENYA</div>
-
-<h3>Nairobi National Park</h3>
-
-<p>
-Enjoy a unique wildlife experience just outside Kenya's capital,
-with opportunities to see lions, rhinos, giraffes, zebras and more.
-</p>
-
-<div class="details">
-
-<span class="detail">🦏 Rhino</span>
-<span class="detail">🦁 Lions</span>
-<span class="detail">🏙 Near Nairobi</span>
-
-</div>
-
-<a
-class="button"
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20a%20Nairobi%20National%20Park%20safari.">
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20an%20Amboseli safari.">
 Enquire Now
 </a>
 
@@ -606,33 +559,35 @@ Enquire Now
 <div class="safari-image">
 
 <img
-src="https://images.unsplash.com/photo-1547970810-dc1eac37d174?auto=format&fit=crop&w=1200&q=85"
-alt="Lake Nakuru wildlife">
+src="https://images.unsplash.com/photo-1519659528534-7fd733a832a0?auto=format&fit=crop&w=1200&q=85"
+alt="Lake Nakuru National Park">
 
 </div>
 
 <div class="safari-content">
 
-<div class="location">RIFT VALLEY • KENYA</div>
+<div class="location">
+NAKURU COUNTY • KENYA
+</div>
 
 <h3>Lake Nakuru</h3>
 
 <p>
-Explore the beautiful Rift Valley and enjoy wildlife viewing
-around Lake Nakuru, home to rhinos, giraffes, lions and many birds.
+Explore the Rift Valley and enjoy a wildlife experience featuring
+rhinos, giraffes, buffalo and a variety of birdlife.
 </p>
 
 <div class="details">
 
-<span class="detail">🦏 Rhinos</span>
-<span class="detail">🦒 Giraffes</span>
+<span class="detail">🦏 Rhino</span>
+<span class="detail">🦒 Giraffe</span>
 <span class="detail">🦅 Birds</span>
 
 </div>
 
 <a
 class="button"
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20a%20Lake%20Nakuru%20safari.">
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20a%20Lake%20Nakuru safari.">
 Enquire Now
 </a>
 
@@ -648,33 +603,35 @@ Enquire Now
 <div class="safari-image">
 
 <img
-src="https://images.unsplash.com/photo-1534567110243-8875d64ca8ff?auto=format&fit=crop&w=1200&q=85"
-alt="Tsavo safari">
+src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=1200&q=85"
+alt="Tsavo wildlife">
 
 </div>
 
 <div class="safari-content">
 
-<div class="location">EASTERN & COASTAL KENYA</div>
+<div class="location">
+KENYA • EASTERN REGION
+</div>
 
 <h3>Tsavo National Parks</h3>
 
 <p>
-Discover the vast wilderness of Tsavo, famous for its red elephants,
-dramatic landscapes and diverse wildlife.
+Discover vast wilderness, dramatic landscapes and impressive
+wildlife in one of Kenya's largest safari regions.
 </p>
 
 <div class="details">
 
-<span class="detail">🐘 Elephants</span>
-<span class="detail">🌿 Wilderness</span>
-<span class="detail">🦁 Wildlife</span>
+<span class="detail">🐘 Wildlife</span>
+<span class="detail">🌄 Wilderness</span>
+<span class="detail">🚙 Game Drives</span>
 
 </div>
 
 <a
 class="button"
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20a%20Tsavo%20safari.">
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20a%20Tsavo safari.">
 Enquire Now
 </a>
 
@@ -683,41 +640,87 @@ Enquire Now
 </div>
 
 
-<!-- CUSTOM -->
+<!-- SAMBURU -->
 
 <div class="safari-card">
 
 <div class="safari-image">
 
 <img
-src="https://images.unsplash.com/photo-1519659528534-7fd733a832a0?auto=format&fit=crop&w=1200&q=85"
-alt="African safari landscape">
+src="https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=1200&q=85"
+alt="Samburu wildlife">
 
 </div>
 
 <div class="safari-content">
 
-<div class="location">KENYA • CUSTOM SAFARIS</div>
+<div class="location">
+NORTHERN KENYA
+</div>
 
-<h3>Tailor-Made Safari</h3>
+<h3>Samburu</h3>
 
 <p>
-Have a special destination, budget or travel schedule in mind?
-We can help create a safari designed around your requirements.
+Experience northern Kenya's unique landscape and discover
+wildlife species rarely seen elsewhere in the country.
 </p>
 
 <div class="details">
 
-<span class="detail">🗓 Flexible</span>
-<span class="detail">🚙 Private</span>
-<span class="detail">⭐ Custom</span>
+<span class="detail">🦒 Wildlife</span>
+<span class="detail">🌄 Landscape</span>
+<span class="detail">📸 Photography</span>
 
 </div>
 
 <a
 class="button"
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20would%20like%20to%20plan%20a%20custom%20Kenya%20safari.">
-Plan My Safari
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20a%20Samburu safari.">
+Enquire Now
+</a>
+
+</div>
+
+</div>
+
+
+<!-- NNP -->
+
+<div class="safari-card">
+
+<div class="safari-image">
+
+<img
+src="https://images.unsplash.com/photo-1534567110243-8875d64ca8ff?auto=format&fit=crop&w=1200&q=85"
+alt="Nairobi National Park">
+
+</div>
+
+<div class="safari-content">
+
+<div class="location">
+NAIROBI • KENYA
+</div>
+
+<h3>Nairobi National Park</h3>
+
+<p>
+Enjoy a genuine wildlife experience only a short distance from
+Kenya's capital city.
+</p>
+
+<div class="details">
+
+<span class="detail">🦁 Lions</span>
+<span class="detail">🦏 Rhino</span>
+<span class="detail">🏙 Near Nairobi</span>
+
+</div>
+
+<a
+class="button"
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20am%20interested%20in%20a%20Nairobi%20National%20Park safari.">
+Enquire Now
 </a>
 
 </div>
@@ -732,33 +735,33 @@ Plan My Safari
 </section>
 
 
-<!-- WHY -->
-
 <section class="section why">
 
 <div class="container">
 
 <div class="intro">
 
-<h2>Make Your Safari Special</h2>
+<h2>Why Travel With Oldepe?</h2>
 
 <p>
-Travel at your own pace and enjoy a safari experience built
-around what matters most to you.
+We aim to make your safari comfortable, flexible and memorable
+from the moment you begin planning.
 </p>
 
 </div>
+
 
 <div class="why-grid">
 
 <div class="why-box">
 
-<div class="why-icon">🚙</div>
+<div class="icon">🚙</div>
 
-<h3>Flexible Travel</h3>
+<h3>Private Experiences</h3>
 
 <p>
-Choose your destination, travel dates and preferred experience.
+Enjoy flexible travel arrangements designed around your group
+and itinerary.
 </p>
 
 </div>
@@ -766,12 +769,13 @@ Choose your destination, travel dates and preferred experience.
 
 <div class="why-box">
 
-<div class="why-icon">📷</div>
+<div class="icon">🤝</div>
 
-<h3>Memorable Experiences</h3>
+<h3>Local Service</h3>
 
 <p>
-Enjoy opportunities to see wildlife and capture unforgettable moments.
+Receive friendly assistance and practical local knowledge
+throughout your journey.
 </p>
 
 </div>
@@ -779,12 +783,13 @@ Enjoy opportunities to see wildlife and capture unforgettable moments.
 
 <div class="why-box">
 
-<div class="why-icon">🤝</div>
+<div class="icon">📸</div>
 
-<h3>Personal Service</h3>
+<h3>Unforgettable Moments</h3>
 
 <p>
-We work with you to make your Kenyan adventure comfortable and enjoyable.
+Experience Kenya's wildlife and landscapes while creating
+memories to take home.
 </p>
 
 </div>
@@ -795,8 +800,6 @@ We work with you to make your Kenyan adventure comfortable and enjoyable.
 
 </section>
 
-
-<!-- CTA -->
 
 <section class="cta">
 
@@ -805,20 +808,22 @@ We work with you to make your Kenyan adventure comfortable and enjoyable.
 <h2>Ready for Your Safari?</h2>
 
 <p>
-Tell us where you would like to go, when you would like to travel,
-and what you would like to experience.
+Tell us where you would like to go, when you are travelling
+and how many people are in your group.
 </p>
 
 <div class="buttons">
 
-<a href="contact.html" class="button">
-Send An Enquiry
+<a
+href="contact.html"
+class="button">
+Plan My Safari
 </a>
 
 <a
 href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20would%20like%20to%20plan%20a%20Kenya%20safari."
 class="button">
-Chat On WhatsApp
+WhatsApp Us
 </a>
 
 </div>
@@ -827,8 +832,6 @@ Chat On WhatsApp
 
 </section>
 
-
-<!-- FOOTER -->
 
 <footer>
 
