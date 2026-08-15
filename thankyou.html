@@ -10,6 +10,9 @@ content="width=device-width, initial-scale=1.0">
 
 <title>Thank You | Oldepe Tours & Safaris</title>
 
+<meta name="description"
+content="Thank you for contacting Oldepe Tours & Safaris. Your safari enquiry has been received.">
+
 <style>
 
 *{
@@ -19,9 +22,17 @@ content="width=device-width, initial-scale=1.0">
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f7f5ef;
+    margin:0;
     min-height:100vh;
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.60),
+        rgba(0,0,0,.72)
+    ),
+    url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2000&q=90")
+    center/cover fixed no-repeat;
 
     display:flex;
     align-items:center;
@@ -30,22 +41,53 @@ body{
     padding:25px;
 }
 
-.thankyou{
-    background:#fff;
+.card{
 
     width:100%;
     max-width:650px;
 
-    padding:55px 35px;
-
-    text-align:center;
+    background:#fff;
 
     border-radius:14px;
 
-    box-shadow:0 10px 35px rgba(0,0,0,.12);
+    padding:50px 35px;
+
+    text-align:center;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.30);
 }
 
-.icon{
+.logo{
+
+    color:#173b2a;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    letter-spacing:.5px;
+
+    margin-bottom:25px;
+}
+
+.logo span{
+
+    display:block;
+
+    color:#b47b13;
+
+    font-size:11px;
+
+    letter-spacing:4px;
+
+    font-weight:normal;
+
+    margin-top:5px;
+}
+
+.check{
+
     width:80px;
     height:80px;
 
@@ -54,24 +96,28 @@ body{
     border-radius:50%;
 
     background:#173b2a;
+
     color:#fff;
 
     display:flex;
+
     align-items:center;
     justify-content:center;
 
-    font-size:40px;
+    font-size:42px;
 }
 
 h1{
+
     color:#173b2a;
 
     font-size:42px;
 
-    margin-bottom:18px;
+    margin-bottom:15px;
 }
 
-p{
+.message{
+
     color:#666;
 
     font-size:18px;
@@ -81,53 +127,99 @@ p{
     margin-bottom:15px;
 }
 
-.contact{
-    margin-top:20px;
+.small{
 
-    font-size:16px;
+    color:#777;
+
+    font-size:15px;
+
+    margin-bottom:30px;
 }
 
 .buttons{
-    margin-top:30px;
 
     display:flex;
 
-    justify-content:center;
+    flex-direction:column;
 
     gap:12px;
 
-    flex-wrap:wrap;
+    max-width:400px;
+
+    margin:auto;
 }
 
 .button{
-    display:inline-block;
 
-    padding:14px 25px;
+    display:block;
+
+    padding:15px 20px;
 
     border-radius:6px;
 
     font-weight:bold;
 
+    font-size:16px;
+
     text-decoration:none;
 }
 
 .home{
+
     background:#173b2a;
+
     color:#fff;
+}
+
+.home:hover{
+
+    background:#10291d;
+}
+
+.safari{
+
+    background:#d99b27;
+
+    color:#fff;
+}
+
+.safari:hover{
+
+    background:#b77e19;
 }
 
 .whatsapp{
+
     background:#229c4b;
+
     color:#fff;
 }
 
-.button:hover{
-    opacity:.9;
+.whatsapp:hover{
+
+    background:#187a39;
+}
+
+.footer{
+
+    margin-top:30px;
+
+    padding-top:20px;
+
+    border-top:1px solid #eee;
+
+    color:#888;
+
+    font-size:13px;
 }
 
 @media(max-width:500px){
 
-    .thankyou{
+    body{
+        padding:15px;
+    }
+
+    .card{
         padding:40px 22px;
     }
 
@@ -135,12 +227,8 @@ p{
         font-size:34px;
     }
 
-    p{
+    .message{
         font-size:16px;
-    }
-
-    .button{
-        width:100%;
     }
 
 }
@@ -149,45 +237,49 @@ p{
 
 </head>
 
-
 <body>
 
+<div class="card">
 
-<div class="thankyou">
+<div class="logo">
 
-<div class="icon">
+OLDEPE TOURS & SAFARIS
+
+<span>TEMBEA KENYA</span>
+
+</div>
+
+
+<div class="check">
 ✓
 </div>
 
 
-<h1>Thank You!</h1>
+<h1>Safari Enquiry Received!</h1>
 
 
-<p>
-Your safari enquiry has been submitted successfully.
+<p class="message">
+
+Thank you for contacting
+<strong>Oldepe Tours & Safaris.</strong>
+
 </p>
 
 
-<p>
-We have received your travel request and will get back
-to you as soon as possible.
+<p class="message">
+
+We have received your safari enquiry
+and will get back to you shortly with
+more information about your trip.
+
 </p>
 
 
-<p>
-Thank you for choosing
-<strong>Oldepe Tours & Safaris</strong>.
+<p class="small">
+
+We look forward to helping you discover Kenya.
+
 </p>
-
-
-<div class="contact">
-
-<strong>Need a quick response?</strong><br>
-
-Call or WhatsApp us on
-<strong>0720 580 063</strong>
-
-</div>
 
 
 <div class="buttons">
@@ -196,7 +288,15 @@ Call or WhatsApp us on
 href="index.html"
 class="button home"
 >
-← Back Home
+← BACK HOME
+</a>
+
+
+<a
+href="safaris.html"
+class="button safari"
+>
+VIEW OUR SAFARIS
 </a>
 
 
@@ -204,13 +304,19 @@ class="button home"
 href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20have%20just%20submitted%20a%20safari%20enquiry."
 class="button whatsapp"
 >
-WhatsApp Us
+CHAT WITH US ON WHATSAPP
 </a>
 
 </div>
 
+
+<div class="footer">
+
+© 2026 Oldepe Tours & Safaris
+
 </div>
 
+</div>
 
 </body>
 
