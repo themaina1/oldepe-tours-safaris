@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -8,7 +9,7 @@
 <title>Book Your Safari | Oldepe Tours & Safaris</title>
 
 <meta name="description"
-content="Book your Kenya safari, national park or reserve adventure, airport transfer or private safari with Oldepe Tours & Safaris.">
+content="Book a Kenya safari, national park or reserve adventure, airport transfer or private safari with Oldepe Tours & Safaris.">
 
 <style>
 
@@ -34,7 +35,7 @@ a{
 }
 
 
-/* ================= HEADER ================= */
+/* HEADER */
 
 header{
     background:#173b2a;
@@ -87,9 +88,10 @@ nav a:hover{
 }
 
 
-/* ================= HERO ================= */
+/* HERO */
 
 .hero{
+
     background:
     linear-gradient(
         rgba(0,0,0,.55),
@@ -124,7 +126,7 @@ nav a:hover{
 }
 
 
-/* ================= BOOKING SECTION ================= */
+/* BOOKING */
 
 .booking-section{
     padding:70px 5%;
@@ -155,7 +157,22 @@ nav a:hover{
 }
 
 
-/* ================= FORM ================= */
+/* NOTE */
+
+.note{
+    background:#f3eee2;
+    border-left:5px solid #d99b27;
+    padding:18px 20px;
+    margin-bottom:30px;
+    color:#555;
+}
+
+.note strong{
+    color:#173b2a;
+}
+
+
+/* FORM */
 
 .form-group{
     margin-bottom:20px;
@@ -194,7 +211,7 @@ textarea{
 }
 
 
-/* ================= TWO COLUMNS ================= */
+/* TWO COLUMNS */
 
 .form-row{
     display:grid;
@@ -203,7 +220,7 @@ textarea{
 }
 
 
-/* ================= BUTTON ================= */
+/* BUTTON */
 
 .submit-button{
     width:100%;
@@ -223,22 +240,7 @@ textarea{
 }
 
 
-/* ================= SAFARI NOTE ================= */
-
-.note{
-    background:#f3eee2;
-    border-left:5px solid #d99b27;
-    padding:18px 20px;
-    margin-bottom:30px;
-    color:#555;
-}
-
-.note strong{
-    color:#173b2a;
-}
-
-
-/* ================= FOOTER ================= */
+/* FOOTER */
 
 footer{
     background:#191919;
@@ -284,7 +286,7 @@ footer a:hover{
 }
 
 
-/* ================= MOBILE ================= */
+/* MOBILE */
 
 @media(max-width:850px){
 
@@ -310,7 +312,6 @@ footer a:hover{
     }
 
 }
-
 
 @media(max-width:500px){
 
@@ -345,7 +346,7 @@ footer a:hover{
 <body>
 
 
-<!-- ================= HEADER ================= -->
+<!-- HEADER -->
 
 <header>
 
@@ -358,7 +359,6 @@ OLDEPE TOURS & SAFARIS
 <span>TEMBEA KENYA</span>
 
 </a>
-
 
 <nav>
 
@@ -388,7 +388,7 @@ WhatsApp
 </header>
 
 
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 
 <section class="hero">
 
@@ -406,7 +406,7 @@ help you arrange your Kenya safari adventure.
 </section>
 
 
-<!-- ================= BOOKING FORM ================= -->
+<!-- BOOKING FORM -->
 
 <section class="booking-section">
 
@@ -418,27 +418,27 @@ help you arrange your Kenya safari adventure.
 
 <p class="intro">
 Complete the form below and we will contact you to discuss
-your safari, preferred destination, dates and requirements.
+your safari, destination, dates and requirements.
 </p>
 
 
 <div class="note">
 
 <strong>Please note:</strong>
-Safari prices and itineraries can vary depending on the
-destination, number of guests, accommodation and duration.
-We will confirm the details with you before final booking.
+
+Safari prices and itineraries vary depending on destination,
+number of guests, accommodation and duration.
+We will confirm all details with you before final booking.
 
 </div>
 
 
-<!-- ================= FORM ================= -->
+<!-- FORM -->
 
 <form
 action="https://formsubmit.co/oldepetours@gmail.com"
 method="POST"
 >
-
 
 <!-- EMAIL SETTINGS -->
 
@@ -460,16 +460,16 @@ name="_captcha"
 value="false"
 >
 
-<!-- IMPORTANT: REDIRECT TO EXISTING THANKYOU.HTML -->
+<!-- CORRECT THANK YOU PAGE -->
 
 <input
 type="hidden"
 name="_next"
-value="https://themaina1.github.io/oldepe/thankyou.html"
+value="https://themaina1.github.io/oldepe-tours-safaris/thankyou.html"
 >
 
 
-<!-- ================= NAME ================= -->
+<!-- NAME -->
 
 <div class="form-group">
 
@@ -488,7 +488,7 @@ required
 </div>
 
 
-<!-- ================= EMAIL ================= -->
+<!-- EMAIL -->
 
 <div class="form-group">
 
@@ -507,7 +507,7 @@ required
 </div>
 
 
-<!-- ================= PHONE ================= -->
+<!-- PHONE -->
 
 <div class="form-group">
 
@@ -526,22 +526,22 @@ required
 </div>
 
 
-<!-- ================= SERVICE ================= -->
+<!-- DESTINATION -->
 
 <div class="form-group">
 
 <label for="service">
-Safari / Service *
+Safari / Destination *
 </label>
 
 <select
 id="service"
-name="Safari / Service"
+name="Safari / Destination"
 required
 >
 
 <option value="">
-Select an option
+Select your destination
 </option>
 
 <option value="Maasai Mara National Reserve">
@@ -572,14 +572,6 @@ Samburu National Reserve
 Ol Pejeta Conservancy
 </option>
 
-<option value="Nairobi National Park">
-Nairobi National Park
-</option>
-
-<option value="Lake Naivasha">
-Lake Naivasha
-</option>
-
 <option value="Aberdare National Park">
 Aberdare National Park
 </option>
@@ -596,20 +588,20 @@ Meru National Park
 Hell's Gate National Park
 </option>
 
-<option value="Kenya Safari - Multiple Destinations">
-Kenya Safari - Multiple Destinations
+<option value="Nairobi National Park">
+Nairobi National Park
 </option>
 
-<option value="Airport Transfer">
-Airport Transfer
-</option>
-
-<option value="Private Safari">
-Private Safari
+<option value="Multiple Destinations">
+Multiple Destinations
 </option>
 
 <option value="Custom Safari">
 Custom Safari
+</option>
+
+<option value="Airport Transfer">
+Airport Transfer
 </option>
 
 </select>
@@ -617,7 +609,7 @@ Custom Safari
 </div>
 
 
-<!-- ================= DATE & GUESTS ================= -->
+<!-- DATE + GUESTS -->
 
 <div class="form-row">
 
@@ -693,7 +685,7 @@ Select number
 </div>
 
 
-<!-- ================= DURATION ================= -->
+<!-- DURATION -->
 
 <div class="form-group">
 
@@ -751,7 +743,7 @@ More than 10 Days
 </div>
 
 
-<!-- ================= VEHICLE ================= -->
+<!-- VEHICLE -->
 
 <div class="form-group">
 
@@ -785,7 +777,7 @@ No Preference
 </div>
 
 
-<!-- ================= MESSAGE ================= -->
+<!-- MESSAGE -->
 
 <div class="form-group">
 
@@ -803,13 +795,15 @@ required
 </div>
 
 
-<!-- ================= SUBMIT ================= -->
+<!-- SUBMIT -->
 
 <button
 type="submit"
 class="submit-button"
 >
+
 SEND BOOKING ENQUIRY
+
 </button>
 
 
@@ -822,7 +816,7 @@ SEND BOOKING ENQUIRY
 </section>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -869,9 +863,13 @@ and airport transfers.
 
 <h3>Contact Us</h3>
 
-<p>📞 0720 580 063</p>
+<p>
+📞 0720 580 063
+</p>
 
-<p>✉ oldepetours@gmail.com</p>
+<p>
+✉ oldepetours@gmail.com
+</p>
 
 <a href="https://wa.me/254720580063">
 WhatsApp
@@ -893,4 +891,5 @@ WhatsApp
 
 
 </body>
+
 </html>
