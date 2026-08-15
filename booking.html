@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Plan Your Trip | Oldepe Tours & Safaris</title>
+<title>Plan Your Safari | Oldepe Tours & Safaris</title>
 
-<meta name="description" content="Plan your Kenya trip with Oldepe Tours & Safaris. Send us your travel details and we will get back to you.">
+<meta name="description"
+content="Plan your Kenya safari with Oldepe Tours & Safaris. Choose your destination, safari experience, travel dates and preferences.">
 
 <style>
 
@@ -16,13 +17,9 @@ padding:0;
 box-sizing:border-box;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
 font-family:Arial,Helvetica,sans-serif;
-background:#f6f4ef;
+background:#f7f6f2;
 color:#222;
 line-height:1.6;
 }
@@ -35,7 +32,7 @@ color:inherit;
 /* HEADER */
 
 header{
-background:#173b2a;
+background:#182018;
 padding:18px 5%;
 }
 
@@ -45,13 +42,14 @@ margin:auto;
 display:flex;
 align-items:center;
 justify-content:space-between;
+gap:20px;
 }
 
 .logo{
 color:#fff;
-font-size:21px;
+font-size:20px;
 font-weight:bold;
-line-height:1.15;
+line-height:1.1;
 }
 
 .logo span{
@@ -64,7 +62,7 @@ margin-top:5px;
 
 nav{
 display:flex;
-gap:22px;
+gap:20px;
 align-items:center;
 }
 
@@ -75,10 +73,10 @@ font-weight:bold;
 }
 
 nav a:hover{
-color:#e0a32b;
+color:#d99b27;
 }
 
-.nav-whatsapp{
+.whatsapp{
 background:#d99b27;
 padding:10px 16px;
 border-radius:5px;
@@ -88,30 +86,32 @@ border-radius:5px;
 
 .hero{
 background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.68)),
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),
 url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2000&q=90")
 center/cover no-repeat;
 
-padding:100px 5%;
-color:#fff;
+min-height:45vh;
+display:flex;
+align-items:center;
 }
 
 .hero-content{
-max-width:1000px;
+max-width:1100px;
+width:100%;
 margin:auto;
-text-align:center;
+padding:90px 5% 60px;
+color:#fff;
 }
 
 .hero h1{
-font-size:clamp(40px,6vw,64px);
-line-height:1.1;
+font-size:clamp(42px,6vw,65px);
+line-height:1.05;
 margin-bottom:15px;
 }
 
 .hero p{
 font-size:19px;
 max-width:700px;
-margin:auto;
 }
 
 /* MAIN */
@@ -121,8 +121,23 @@ padding:70px 5%;
 }
 
 .container{
-max-width:1000px;
+max-width:1100px;
 margin:auto;
+}
+
+.intro{
+text-align:center;
+max-width:750px;
+margin:0 auto 40px;
+}
+
+.intro h2{
+font-size:38px;
+margin-bottom:12px;
+}
+
+.intro p{
+color:#666;
 }
 
 /* BOOKING BOX */
@@ -131,30 +146,13 @@ margin:auto;
 background:#fff;
 padding:40px;
 border-radius:12px;
-box-shadow:0 8px 30px rgba(0,0,0,.12);
+box-shadow:0 10px 35px rgba(0,0,0,.08);
 }
-
-.booking-intro{
-text-align:center;
-margin-bottom:35px;
-}
-
-.booking-intro h2{
-font-size:34px;
-color:#173b2a;
-margin-bottom:10px;
-}
-
-.booking-intro p{
-color:#666;
-}
-
-/* FORM */
 
 .form-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:20px;
+gap:22px;
 }
 
 .form-group{
@@ -168,19 +166,18 @@ grid-column:1/-1;
 
 label{
 font-weight:bold;
-margin-bottom:7px;
-color:#333;
+margin-bottom:8px;
 }
 
 input,
 select,
 textarea{
 width:100%;
-padding:13px 14px;
-border:1px solid #ccc;
+padding:14px;
+border:1px solid #d5d5d5;
 border-radius:6px;
-font-size:15px;
-font-family:Arial,Helvetica,sans-serif;
+font-size:16px;
+font-family:inherit;
 background:#fff;
 }
 
@@ -196,86 +193,149 @@ min-height:130px;
 resize:vertical;
 }
 
-.required{
-color:#c0392b;
-}
-
-.form-note{
-background:#f5f3ed;
-padding:15px;
-border-left:4px solid #d99b27;
-margin:25px 0;
-color:#555;
-font-size:14px;
-}
-
-/* BUTTON */
-
-.submit-area{
-text-align:center;
-margin-top:30px;
-}
-
-.submit-button{
+.submit{
+margin-top:25px;
+width:100%;
+padding:16px;
 border:none;
+border-radius:6px;
 background:#d99b27;
 color:#fff;
-padding:15px 35px;
-font-size:17px;
+font-size:18px;
 font-weight:bold;
-border-radius:6px;
 cursor:pointer;
 }
 
-.submit-button:hover{
+.submit:hover{
 background:#b77e19;
 }
 
-/* CONTACT */
+/* DESTINATIONS */
 
-.contact-strip{
-margin-top:30px;
+.destinations{
+margin-top:60px;
+}
+
+.destinations h2{
 text-align:center;
-padding:25px;
-background:#173b2a;
+font-size:34px;
+margin-bottom:12px;
+}
+
+.destinations-intro{
+text-align:center;
+color:#666;
+max-width:750px;
+margin:0 auto 35px;
+}
+
+.destination-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:16px;
+}
+
+.destination{
+background:#fff;
+padding:18px;
+border-radius:8px;
+border-left:4px solid #d99b27;
+box-shadow:0 5px 18px rgba(0,0,0,.05);
+}
+
+.destination h3{
+font-size:18px;
+margin-bottom:5px;
+}
+
+.destination p{
+font-size:14px;
+color:#666;
+}
+
+/* SAFARI TYPES */
+
+.safari-types{
+margin-top:60px;
+}
+
+.safari-types h2{
+text-align:center;
+font-size:34px;
+margin-bottom:30px;
+}
+
+.type-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.type{
+background:#182018;
 color:#fff;
+padding:25px;
 border-radius:8px;
 }
 
-.contact-strip h3{
+.type h3{
+color:#d99b27;
 margin-bottom:8px;
 }
 
-.contact-strip a{
-color:#f0c15a;
+/* CTA */
+
+.cta{
+background:#182018;
+color:#fff;
+padding:70px 5%;
+text-align:center;
+}
+
+.cta h2{
+font-size:38px;
+margin-bottom:10px;
+}
+
+.cta p{
+max-width:650px;
+margin:0 auto 25px;
+color:#ddd;
+}
+
+.cta-button{
+display:inline-block;
+background:#d99b27;
+padding:13px 24px;
+border-radius:5px;
 font-weight:bold;
 }
 
 /* FOOTER */
 
 footer{
-background:#191919;
+background:#111;
 color:#ddd;
 padding:45px 5% 20px;
 }
 
 .footer-grid{
-max-width:1200px;
+max-width:1100px;
 margin:auto;
 display:grid;
 grid-template-columns:2fr 1fr 1fr;
-gap:40px;
+gap:35px;
 }
 
 footer h3{
 color:#fff;
-margin-bottom:15px;
+margin-bottom:12px;
 }
 
 footer p,
 footer a{
 color:#aaa;
-margin-bottom:8px;
+margin-bottom:7px;
 }
 
 footer a{
@@ -287,20 +347,20 @@ color:#d99b27;
 }
 
 .copyright{
-max-width:1200px;
+max-width:1100px;
 margin:30px auto 0;
 padding-top:20px;
 border-top:1px solid #333;
 text-align:center;
 font-size:14px;
-color:#888;
+color:#777;
 }
 
 /* MOBILE */
 
-@media(max-width:850px){
+@media(max-width:800px){
 
-nav a:not(.nav-whatsapp){
+nav a:not(.whatsapp){
 display:none;
 }
 
@@ -312,30 +372,22 @@ grid-template-columns:1fr;
 grid-column:auto;
 }
 
-.footer-grid{
-grid-template-columns:1fr;
+.destination-grid,
+.type-grid{
+grid-template-columns:1fr 1fr;
 }
 
 .booking-box{
-padding:25px 20px;
+padding:25px;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
 }
 
 }
 
 @media(max-width:500px){
-
-.logo{
-font-size:17px;
-}
-
-.nav-whatsapp{
-padding:9px 12px;
-font-size:12px;
-}
-
-.hero{
-padding:80px 5%;
-}
 
 .hero h1{
 font-size:40px;
@@ -345,8 +397,16 @@ font-size:40px;
 font-size:17px;
 }
 
-.booking-intro h2{
-font-size:29px;
+.destination-grid,
+.type-grid{
+grid-template-columns:1fr;
+}
+
+.intro h2,
+.destinations h2,
+.safari-types h2,
+.cta h2{
+font-size:30px;
 }
 
 }
@@ -377,8 +437,8 @@ OLDEPE TOURS & SAFARIS
 <a href="contact.html">Contact</a>
 
 <a
-class="nav-whatsapp"
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20make%20an%20enquiry.">
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20plan%20a%20safari."
+class="whatsapp">
 WhatsApp
 </a>
 
@@ -395,11 +455,11 @@ WhatsApp
 
 <div class="hero-content">
 
-<h1>Plan Your Trip</h1>
+<h1>Plan Your Safari</h1>
 
 <p>
-Tell us about your Kenya travel plans and we will help
-you create a memorable experience.
+Tell us where you would like to go, when you would like to travel
+and the kind of Kenyan safari experience you are looking for.
 </p>
 
 </div>
@@ -413,56 +473,55 @@ you create a memorable experience.
 
 <div class="container">
 
-<div class="booking-box">
+<div class="intro">
 
-<div class="booking-intro">
-
-<h2>Send Us Your Travel Details</h2>
+<h2>Start Planning Your Kenya Safari</h2>
 
 <p>
-Complete the form below and Oldepe Tours & Safaris will
-contact you to discuss your trip.
+Choose your preferred destination and safari experience.
+We will help you create a memorable journey around Kenya.
 </p>
 
 </div>
 
 
-<!-- FORMSUBMIT -->
+<div class="booking-box">
 
 <form
-action="https://formsubmit.co/oldepetours@gmail.com"
-method="POST">
-
-<!-- FORM SETTINGS -->
+action="https://formsubmit.co/oldepetr@gmail.com"
+method="POST"
+>
 
 <input
 type="hidden"
 name="_subject"
-value="New Booking Enquiry - Oldepe Tours & Safaris">
-
-<input
-type="hidden"
-name="_template"
-value="table">
+value="New Safari Booking Enquiry - Oldepe Tours & Safaris">
 
 <input
 type="hidden"
 name="_captcha"
 value="false">
 
+<input
+type="hidden"
+name="_template"
+value="table">
 
-<!-- PERSONAL DETAILS -->
 
 <div class="form-grid">
 
+
+<!-- NAME -->
+
 <div class="form-group">
 
-<label>
-Full Name <span class="required">*</span>
+<label for="name">
+Full Name *
 </label>
 
 <input
 type="text"
+id="name"
 name="Full Name"
 placeholder="Your full name"
 required>
@@ -470,95 +529,151 @@ required>
 </div>
 
 
-<div class="form-group">
-
-<label>
-Phone / WhatsApp <span class="required">*</span>
-</label>
-
-<input
-type="tel"
-name="Phone / WhatsApp"
-placeholder="e.g. 0720 580 063"
-required>
-
-</div>
-
+<!-- EMAIL -->
 
 <div class="form-group">
 
-<label>
-Email Address <span class="required">*</span>
+<label for="email">
+Email Address *
 </label>
 
 <input
 type="email"
+id="email"
 name="Email"
-placeholder="your@email.com"
+placeholder="Your email address"
 required>
 
 </div>
 
 
+<!-- PHONE -->
+
 <div class="form-group">
 
-<label>
-Number of Travellers <span class="required">*</span>
+<label for="phone">
+Phone / WhatsApp *
 </label>
 
-<select name="Number of Travellers" required>
+<input
+type="tel"
+id="phone"
+name="Phone / WhatsApp"
+placeholder="+254..."
+required>
 
-<option value="">Select number</option>
+</div>
 
-<option>1</option>
-<option>2</option>
-<option>3</option>
-<option>4</option>
-<option>5</option>
-<option>6</option>
-<option>7</option>
-<option>8</option>
-<option>9</option>
-<option>10+</option>
+
+<!-- COUNTRY -->
+
+<div class="form-group">
+
+<label for="country">
+Country of Residence
+</label>
+
+<input
+type="text"
+id="country"
+name="Country of Residence"
+placeholder="e.g. USA, UK, India">
+
+</div>
+
+
+<!-- SAFARI DESTINATION -->
+
+<div class="form-group">
+
+<label for="destination">
+Preferred Safari Destination *
+</label>
+
+<select
+id="destination"
+name="Safari Destination"
+required>
+
+<option value="">
+Select destination
+</option>
+
+<option>Masai Mara National Reserve</option>
+
+<option>Amboseli National Park</option>
+
+<option>Lake Nakuru National Park</option>
+
+<option>Tsavo East National Park</option>
+
+<option>Tsavo West National Park</option>
+
+<option>Samburu National Reserve</option>
+
+<option>Ol Pejeta Conservancy</option>
+
+<option>Meru National Park</option>
+
+<option>Aberdare National Park</option>
+
+<option>Mount Kenya National Park</option>
+
+<option>Nairobi National Park</option>
+
+<option>Lake Naivasha</option>
+
+<option>Lake Bogoria</option>
+
+<option>Hell's Gate National Park</option>
+
+<option>Multiple Destinations</option>
+
+<option>Not Sure - Recommend for Me</option>
 
 </select>
 
 </div>
 
 
-<!-- SERVICE -->
+<!-- SAFARI TYPE -->
 
 <div class="form-group">
 
-<label>
-Type of Experience <span class="required">*</span>
+<label for="experience">
+Safari Experience *
 </label>
 
-<select name="Tour / Service" required>
+<select
+id="experience"
+name="Safari Experience"
+required>
 
-<option value="">Select an option</option>
+<option value="">
+Select safari experience
+</option>
 
-<option>Nairobi City Tour</option>
+<option>Classic Wildlife Safari</option>
 
-<option>Nairobi City Walk</option>
+<option>Big Five Safari</option>
 
-<option>Giraffe Centre Tour</option>
+<option>Photography Safari</option>
 
-<option>Nairobi National Museum</option>
+<option>Family Safari</option>
 
-<option>Nairobi National Park</option>
+<option>Private Safari</option>
 
-<option>Karen & Cultural Experience</option>
+<option>Luxury Safari</option>
 
-<option>Kenya Safari</option>
+<option>Budget Safari</option>
 
-<option>Airport Transfer</option>
+<option>Camping Safari</option>
 
-<option>Private Transfer</option>
+<option>Beach & Safari Combination</option>
 
-<option>Custom Tour</option>
+<option>Cultural Experience</option>
 
-<option>Other</option>
+<option>Custom Safari</option>
 
 </select>
 
@@ -569,62 +684,88 @@ Type of Experience <span class="required">*</span>
 
 <div class="form-group">
 
-<label>
-Preferred Travel Date <span class="required">*</span>
+<label for="arrival">
+Preferred Start Date
 </label>
 
 <input
 type="date"
-name="Travel Date"
-required>
+id="arrival"
+name="Preferred Start Date">
 
 </div>
 
 
-<!-- TIME -->
+<!-- DAYS -->
 
 <div class="form-group">
 
-<label>
-Preferred Start Time
+<label for="days">
+Number of Safari Days
 </label>
 
-<input
-type="time"
-name="Preferred Start Time">
+<select
+id="days"
+name="Number of Safari Days">
+
+<option value="">
+Select duration
+</option>
+
+<option>1 Day</option>
+
+<option>2 Days</option>
+
+<option>3 Days</option>
+
+<option>4 Days</option>
+
+<option>5 Days</option>
+
+<option>6 Days</option>
+
+<option>7 Days</option>
+
+<option>8–10 Days</option>
+
+<option>More than 10 Days</option>
+
+</select>
 
 </div>
 
 
-<!-- PICKUP -->
+<!-- PEOPLE -->
 
 <div class="form-group">
 
-<label>
-Pickup Location <span class="required">*</span>
+<label for="guests">
+Number of Travellers
 </label>
 
-<input
-type="text"
-name="Pickup Location"
-placeholder="Hotel, airport, residence, etc."
-required>
+<select
+id="guests"
+name="Number of Travellers">
 
-</div>
+<option>1</option>
 
+<option>2</option>
 
-<!-- DESTINATION -->
+<option>3</option>
 
-<div class="form-group">
+<option>4</option>
 
-<label>
-Preferred Destination
-</label>
+<option>5</option>
 
-<input
-type="text"
-name="Preferred Destination"
-placeholder="Where would you like to go?">
+<option>6</option>
+
+<option>7</option>
+
+<option>8–10</option>
+
+<option>More than 10</option>
+
+</select>
 
 </div>
 
@@ -633,118 +774,205 @@ placeholder="Where would you like to go?">
 
 <div class="form-group">
 
-<label>
-Preferred Vehicle</label>
-
-<select name="Preferred Vehicle">
-
-<option value="">Select vehicle</option>
-
-<option>Tour Van</option>
-
-<option>Land Cruiser</option>
-
-<option>Private Car</option>
-
-<option>Not Sure</option>
-
-</select>
-
-</div>
-
-
-<!-- DURATION -->
-
-<div class="form-group">
-
-<label>
-Trip Duration
+<label for="vehicle">
+Preferred Safari Vehicle
 </label>
 
-<select name="Trip Duration">
+<select
+id="vehicle"
+name="Preferred Vehicle">
 
-<option value="">Select duration</option>
+<option value="">
+Select vehicle
+</option>
 
-<option>2–3 Hours</option>
+<option>Safari Land Cruiser</option>
 
-<option>Half Day</option>
+<option>Safari Tour Van</option>
 
-<option>Full Day</option>
-
-<option>2 Days</option>
-
-<option>3 Days</option>
-
-<option>4–7 Days</option>
-
-<option>More than 7 Days</option>
-
-<option>Not Sure</option>
+<option>No Preference</option>
 
 </select>
 
 </div>
 
 
-<!-- ADDITIONAL INFORMATION -->
+<!-- MESSAGE -->
 
 <div class="form-group full">
 
-<label>
-Tell Us More About Your Trip
+<label for="message">
+Tell Us About Your Safari
 </label>
 
 <textarea
-name="Additional Information"
-placeholder="Tell us what you would like to see, your interests, special requests, accommodation requirements or anything else we should know."></textarea>
-
-</div>
-
-</div>
-
-
-<div class="form-note">
-
-<strong>Note:</strong>
-This is a booking enquiry and not an instant reservation.
-We will contact you to confirm availability, itinerary,
-pricing and other arrangements.
+id="message"
+name="Safari Requirements"
+placeholder="Tell us your preferred destinations, interests, accommodation level, budget or anything else you would like us to know."></textarea>
 
 </div>
 
 
-<div class="submit-area">
+</div>
+
 
 <button
 type="submit"
-class="submit-button">
+class="submit">
 
-SEND BOOKING ENQUIRY
+SEND SAFARI ENQUIRY
 
 </button>
 
-</div>
-
 </form>
 
+</div>
 
-<!-- CONTACT -->
 
-<div class="contact-strip">
+<!-- NATIONAL PARKS & RESERVES -->
 
-<h3>Prefer to talk directly?</h3>
+<div class="destinations">
 
-<p>
-Call or WhatsApp us on
-<a href="tel:+254720580063">0720 580 063</a>
+<h2>National Parks & Reserves</h2>
+
+<p class="destinations-intro">
+
+Explore Kenya's remarkable wildlife destinations.
+We can arrange private safaris, guided journeys and customized
+itineraries to suit your travel plans.
+
 </p>
 
-<p>
-Email:
-<a href="mailto:oldepetours@gmail.com">
-oldepetours@gmail.com
-</a>
-</p>
+
+<div class="destination-grid">
+
+
+<div class="destination">
+<h3>Masai Mara National Reserve</h3>
+<p>Big Five, spectacular wildlife and the Great Migration.</p>
+</div>
+
+
+<div class="destination">
+<h3>Amboseli National Park</h3>
+<p>Famous for elephants and spectacular views of Mount Kilimanjaro.</p>
+</div>
+
+
+<div class="destination">
+<h3>Tsavo East National Park</h3>
+<p>Vast wilderness, elephants and classic Kenyan safari scenery.</p>
+</div>
+
+
+<div class="destination">
+<h3>Tsavo West National Park</h3>
+<p>Dramatic landscapes, wildlife and volcanic scenery.</p>
+</div>
+
+
+<div class="destination">
+<h3>Lake Nakuru National Park</h3>
+<p>Rhinoceros, birdlife and beautiful Rift Valley landscapes.</p>
+</div>
+
+
+<div class="destination">
+<h3>Samburu National Reserve</h3>
+<p>Unique northern wildlife and striking semi-arid landscapes.</p>
+</div>
+
+
+<div class="destination">
+<h3>Ol Pejeta Conservancy</h3>
+<p>Wildlife conservation, rhino experiences and diverse safari activities.</p>
+</div>
+
+
+<div class="destination">
+<h3>Meru National Park</h3>
+<p>Remote wilderness, diverse wildlife and beautiful landscapes.</p>
+</div>
+
+
+<div class="destination">
+<h3>Aberdare National Park</h3>
+<p>Mountain forests, waterfalls and unique highland wildlife.</p>
+</div>
+
+
+<div class="destination">
+<h3>Mount Kenya National Park</h3>
+<p>Mountain scenery, forests and high-altitude adventure.</p>
+</div>
+
+
+<div class="destination">
+<h3>Nairobi National Park</h3>
+<p>Wildlife viewing close to Kenya's capital.</p>
+</div>
+
+
+<div class="destination">
+<h3>Hell's Gate National Park</h3>
+<p>Dramatic cliffs, gorges, cycling and walking experiences.</p>
+</div>
+
+
+<div class="destination">
+<h3>Lake Naivasha</h3>
+<p>Freshwater lake, birdlife and boat experiences.</p>
+</div>
+
+
+<div class="destination">
+<h3>Lake Bogoria</h3>
+<p>Hot springs, dramatic scenery and famous flamingo habitats.</p>
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- SAFARI EXPERIENCES -->
+
+<div class="safari-types">
+
+<h2>Safari Experiences We Offer</h2>
+
+<div class="type-grid">
+
+<div class="type">
+<h3>Private Safaris</h3>
+<p>Personalized safari journeys designed around your schedule and interests.</p>
+</div>
+
+<div class="type">
+<h3>Wildlife Safaris</h3>
+<p>Explore Kenya's famous wildlife parks and reserves.</p>
+</div>
+
+<div class="type">
+<h3>Big Five Safaris</h3>
+<p>Travel through Kenya's leading wildlife destinations in search of the Big Five.</p>
+</div>
+
+<div class="type">
+<h3>Family Safaris</h3>
+<p>Comfortable and carefully planned safari experiences for families.</p>
+</div>
+
+<div class="type">
+<h3>Photography Safaris</h3>
+<p>More time in the field for wildlife and landscape photography.</p>
+</div>
+
+<div class="type">
+<h3>Custom Safaris</h3>
+<p>Tell us what you want to experience and we will help build your itinerary.</p>
+</div>
 
 </div>
 
@@ -755,12 +983,33 @@ oldepetours@gmail.com
 </section>
 
 
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>Ready to Explore Kenya?</h2>
+
+<p>
+Send us your safari requirements and let Oldepe Tours & Safaris
+help you plan your Kenyan adventure.
+</p>
+
+<a
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20plan%20a%20Kenya%20safari."
+class="cta-button">
+
+Chat With Us on WhatsApp
+
+</a>
+
+</section>
+
+
 <!-- FOOTER -->
 
 <footer>
 
 <div class="footer-grid">
-
 
 <div>
 
@@ -771,7 +1020,8 @@ Discover Kenya. Experience the wild.
 </p>
 
 <p>
-Safaris, tours, excursions and private travel experiences.
+Kenya safaris, wildlife experiences, cultural experiences
+and private travel.
 </p>
 
 </div>
@@ -793,18 +1043,17 @@ Safaris, tours, excursions and private travel experiences.
 
 <div>
 
-<h3>Contact Us</h3>
+<h3>Contact</h3>
 
-<p>📞 0720 580 063</p>
+<p>0720 580 063</p>
 
-<p>✉ oldepetours@gmail.com</p>
+<p>oldepetr@gmail.com</p>
 
 <a href="https://wa.me/254720580063">
 WhatsApp
 </a>
 
 </div>
-
 
 </div>
 
