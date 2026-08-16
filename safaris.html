@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Kenya Safaris | Oldepe Tours & Safaris</title>
 
 <meta name="description"
-content="Explore Kenya safaris to Maasai Mara, Amboseli, Lake Nakuru, Tsavo, Ol Pejeta, Aberdare, Samburu and Mount Kenya with Oldepe Tours & Safaris.">
+content="Explore Kenya safaris with Oldepe Tours & Safaris. Discover Maasai Mara, Amboseli, Lake Nakuru, Ol Pejeta, Mount Kenya, Aberdare and Tsavo.">
 
 <style>
+
+/* =========================
+   RESET
+========================= */
 
 *{
     margin:0;
@@ -27,8 +29,8 @@ html{
 
 body{
     font-family:Arial, Helvetica, sans-serif;
+    background:#f7f6f2;
     color:#222;
-    background:#f7f5ef;
     line-height:1.6;
 }
 
@@ -38,29 +40,32 @@ a{
 }
 
 
-/* ================= HEADER ================= */
+/* =========================
+   HEADER
+========================= */
 
 header{
-    position:absolute;
+    background:#173b2a;
+    padding:18px 5%;
+    position:sticky;
     top:0;
-    left:0;
-    right:0;
-    z-index:100;
-    padding:20px 5%;
-    background:rgba(20,30,18,.75);
+    z-index:1000;
+    box-shadow:0 3px 15px rgba(0,0,0,.15);
 }
 
 .nav{
     max-width:1200px;
     margin:auto;
+
     display:flex;
     align-items:center;
     justify-content:space-between;
+    gap:20px;
 }
 
 .logo{
     color:#fff;
-    font-size:21px;
+    font-size:20px;
     font-weight:bold;
     line-height:1.15;
 }
@@ -70,13 +75,13 @@ header{
     font-size:10px;
     letter-spacing:3px;
     font-weight:normal;
-    margin-top:5px;
+    margin-top:4px;
 }
 
 nav{
     display:flex;
     align-items:center;
-    gap:22px;
+    gap:20px;
 }
 
 nav a{
@@ -89,59 +94,57 @@ nav a:hover{
     color:#e0a32b;
 }
 
-.nav-whatsapp{
+.whatsapp{
     background:#d99b27;
-    padding:10px 16px;
+    padding:10px 15px;
     border-radius:5px;
 }
 
 
-/* ================= HERO ================= */
+/* =========================
+   HERO
+========================= */
 
 .hero{
 
-    min-height:65vh;
-
-    display:flex;
-
-    align-items:center;
+    min-height:55vh;
 
     background:
     linear-gradient(
         rgba(0,0,0,.48),
-        rgba(0,0,0,.72)
+        rgba(0,0,0,.70)
     ),
-
-    url("https://media.holidify.com/images/cmsuploads/compressed/A347-1600x670-little-chemchem-waterhole-game-drive-3_20240806172715.jpg")
-
+    url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Maasai_Mara_National_Reserve_Kenya.jpg")
     center/cover no-repeat;
+
+    display:flex;
+    align-items:center;
 }
 
 .hero-content{
 
-    max-width:1200px;
-
     width:100%;
+    max-width:1200px;
 
     margin:auto;
 
-    padding:150px 5% 80px;
+    padding:100px 5%;
 
     color:#fff;
 }
 
 .hero h1{
 
-    font-size:clamp(45px,7vw,76px);
+    font-size:clamp(45px,7vw,72px);
 
     line-height:1.05;
 
-    margin-bottom:18px;
+    margin-bottom:20px;
 }
 
 .hero p{
 
-    max-width:760px;
+    max-width:720px;
 
     font-size:20px;
 
@@ -149,22 +152,19 @@ nav a:hover{
 }
 
 
-/* ================= INTRO ================= */
+/* =========================
+   INTRO
+========================= */
 
 .intro{
 
-    background:#fff;
-
-    padding:70px 5%;
-
-    text-align:center;
-}
-
-.container{
-
-    max-width:1200px;
+    max-width:1000px;
 
     margin:auto;
+
+    padding:70px 5% 40px;
+
+    text-align:center;
 }
 
 .intro h2{
@@ -178,63 +178,42 @@ nav a:hover{
 
 .intro p{
 
-    max-width:850px;
-
-    margin:auto;
-
     color:#666;
 
     font-size:18px;
+
+    max-width:800px;
+
+    margin:auto;
 }
 
 
-/* ================= DESTINATIONS ================= */
+/* =========================
+   SAFARI GRID
+========================= */
 
-.destinations{
+.safaris{
 
-    padding:75px 5% 90px;
-}
+    max-width:1200px;
 
-.section-title{
+    margin:auto;
 
-    text-align:center;
-
-    margin-bottom:45px;
-}
-
-.section-title h2{
-
-    color:#173b2a;
-
-    font-size:42px;
-
-    margin-bottom:10px;
-}
-
-.section-title p{
-
-    color:#666;
-
-    font-size:17px;
-}
-
-
-/* ================= GRID ================= */
-
-.destination-grid{
+    padding:30px 5% 80px;
 
     display:grid;
 
     grid-template-columns:
-    repeat(2,1fr);
+    repeat(2, 1fr);
 
-    gap:35px;
+    gap:30px;
 }
 
 
-/* ================= CARD ================= */
+/* =========================
+   SAFARI CARD
+========================= */
 
-.destination-card{
+.card{
 
     background:#fff;
 
@@ -243,23 +222,27 @@ nav a:hover{
     overflow:hidden;
 
     box-shadow:
-    0 8px 28px rgba(0,0,0,.10);
+    0 8px 25px rgba(0,0,0,.08);
 
-    transition:.3s ease;
+    transition:
+    transform .25s ease,
+    box-shadow .25s ease;
 }
 
-.destination-card:hover{
+.card:hover{
 
     transform:translateY(-5px);
 
     box-shadow:
-    0 14px 35px rgba(0,0,0,.16);
+    0 15px 35px rgba(0,0,0,.14);
 }
 
 
-/* ================= IMAGE ================= */
+/* =========================
+   CARD IMAGE
+========================= */
 
-.destination-image{
+.card-image{
 
     width:100%;
 
@@ -268,30 +251,37 @@ nav a:hover{
     object-fit:cover;
 
     display:block;
-
-    background:#ddd;
 }
 
 
-/* ================= CONTENT ================= */
+/* =========================
+   CARD CONTENT
+========================= */
 
-.destination-content{
+.card-content{
 
     padding:30px;
 }
 
-.destination-content h3{
+.card-content h2{
 
     color:#173b2a;
 
     font-size:29px;
 
-    line-height:1.2;
+    margin-bottom:10px;
+}
+
+.card-content h3{
+
+    color:#b47b13;
+
+    font-size:17px;
 
     margin-bottom:12px;
 }
 
-.destination-content p{
+.card-content p{
 
     color:#666;
 
@@ -300,16 +290,7 @@ nav a:hover{
     margin-bottom:20px;
 }
 
-.highlight{
-
-    color:#8a6417;
-
-    font-weight:bold;
-
-    margin-bottom:18px;
-}
-
-.book-button{
+.card-button{
 
     display:inline-block;
 
@@ -324,95 +305,58 @@ nav a:hover{
     font-weight:bold;
 }
 
-.book-button:hover{
+.card-button:hover{
 
     background:#b77e19;
 }
 
 
-/* ================= WHY SAFARI ================= */
+/* =========================
+   SPECIAL DESTINATION
+========================= */
 
-.why{
+.featured{
+
+    grid-column:span 2;
+}
+
+.featured .card-image{
+
+    height:390px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
 
     background:#173b2a;
 
     color:#fff;
 
-    padding:75px 5%;
-}
-
-.why-grid{
-
-    max-width:1200px;
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(3,1fr);
-
-    gap:30px;
-}
-
-.why-box{
-
     text-align:center;
 
-    padding:20px;
-}
-
-.why-icon{
-
-    font-size:42px;
-
-    margin-bottom:12px;
-}
-
-.why-box h3{
-
-    font-size:22px;
-
-    margin-bottom:8px;
-}
-
-.why-box p{
-
-    color:#ddd;
-
-    font-size:15px;
-}
-
-
-/* ================= CTA ================= */
-
-.cta{
-
-    background:#fff;
-
-    padding:80px 5%;
-
-    text-align:center;
+    padding:70px 5%;
 }
 
 .cta h2{
 
-    color:#173b2a;
+    font-size:38px;
 
-    font-size:40px;
-
-    margin-bottom:12px;
+    margin-bottom:15px;
 }
 
 .cta p{
 
-    max-width:720px;
+    max-width:700px;
 
-    margin:0 auto 28px;
+    margin:0 auto 25px;
 
-    color:#666;
+    color:#ddd;
 
-    font-size:18px;
+    font-size:17px;
 }
 
 .cta-button{
@@ -423,13 +367,11 @@ nav a:hover{
 
     color:#fff;
 
-    padding:15px 30px;
+    padding:14px 25px;
 
-    border-radius:6px;
+    border-radius:5px;
 
     font-weight:bold;
-
-    font-size:17px;
 }
 
 .cta-button:hover{
@@ -438,7 +380,9 @@ nav a:hover{
 }
 
 
-/* ================= FOOTER ================= */
+/* =========================
+   FOOTER
+========================= */
 
 footer{
 
@@ -470,8 +414,7 @@ footer h3{
     margin-bottom:15px;
 }
 
-footer p,
-footer a{
+footer p{
 
     color:#aaa;
 
@@ -481,6 +424,10 @@ footer a{
 footer a{
 
     display:block;
+
+    color:#aaa;
+
+    margin-bottom:8px;
 }
 
 footer a:hover{
@@ -500,34 +447,36 @@ footer a:hover{
 
     text-align:center;
 
-    font-size:14px;
-
     color:#888;
+
+    font-size:14px;
 }
 
 
-/* ================= MOBILE ================= */
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:850px){
 
-    nav a:not(.nav-whatsapp){
+    nav a:not(.whatsapp){
 
         display:none;
     }
 
-    nav{
-
-        gap:8px;
-    }
-
-    .destination-grid{
+    .safaris{
 
         grid-template-columns:1fr;
     }
 
-    .why-grid{
+    .featured{
 
-        grid-template-columns:1fr;
+        grid-column:span 1;
+    }
+
+    .featured .card-image{
+
+        height:300px;
     }
 
     .footer-grid{
@@ -535,62 +484,65 @@ footer a:hover{
         grid-template-columns:1fr;
     }
 
-    .hero h1{
-
-        font-size:48px;
-    }
-
-}
-
-@media(max-width:500px){
-
-    .logo{
-
-        font-size:17px;
-    }
-
-    .nav-whatsapp{
-
-        padding:9px 12px;
-
-        font-size:12px;
-    }
-
     .hero{
 
-        min-height:60vh;
+        min-height:50vh;
     }
 
     .hero h1{
 
-        font-size:41px;
+        font-size:46px;
     }
 
     .hero p{
 
         font-size:17px;
     }
+}
 
-    .intro h2,
-    .section-title h2,
-    .cta h2{
 
-        font-size:31px;
+@media(max-width:500px){
+
+    header{
+
+        padding:15px 4%;
     }
 
-    .destination-image{
+    .logo{
+
+        font-size:17px;
+    }
+
+    .whatsapp{
+
+        padding:9px 11px;
+
+        font-size:12px;
+    }
+
+    .card-image{
 
         height:250px;
     }
 
-    .destination-content{
+    .featured .card-image{
 
-        padding:24px;
+        height:250px;
     }
 
-    .destination-content h3{
+    .card-content{
+
+        padding:23px;
+    }
+
+    .card-content h2{
 
         font-size:25px;
+    }
+
+    .intro h2{
+
+        font-size:31px;
     }
 
 }
@@ -603,7 +555,9 @@ footer a:hover{
 <body>
 
 
-<!-- ================= HEADER ================= -->
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -633,8 +587,8 @@ OLDEPE TOURS & SAFARIS
 <a href="contact.html">Contact</a>
 
 <a
-class="nav-whatsapp"
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20plan%20a%20Kenya%20safari."
+href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris%2C%20I%20would%20like%20to%20plan%20a%20safari."
+class="whatsapp"
 >
 WhatsApp
 </a>
@@ -646,7 +600,9 @@ WhatsApp
 </header>
 
 
-<!-- ================= HERO ================= -->
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero">
 
@@ -655,9 +611,9 @@ WhatsApp
 <h1>Kenya Safaris</h1>
 
 <p>
-Discover Kenya's legendary wildlife, dramatic landscapes,
-mountains, forests and conservation areas with Oldepe Tours
-& Safaris.
+Experience Kenya's incredible wildlife, mountains,
+forests, landscapes and conservation areas with
+Oldepe Tours & Safaris.
 </p>
 
 </div>
@@ -665,466 +621,328 @@ mountains, forests and conservation areas with Oldepe Tours
 </section>
 
 
-<!-- ================= INTRO ================= -->
+<!-- =========================
+     INTRO
+========================= -->
 
 <section class="intro">
 
-<div class="container">
-
-<h2>
-Explore Kenya's Great Safari Destinations
-</h2>
+<h2>Explore Kenya</h2>
 
 <p>
-From the world-famous Maasai Mara to the elephants of
-Amboseli, the flamingos of Lake Nakuru, the red elephants
-of Tsavo and the conservation experience of Ol Pejeta,
-we create memorable private safari experiences across Kenya.
+From the famous plains of the Maasai Mara to the
+elephants of Amboseli, the flamingos of Lake Nakuru,
+the black rhinos of Ol Pejeta and the dramatic peaks
+of Mount Kenya, discover some of Kenya's most
+remarkable safari destinations.
 </p>
-
-</div>
 
 </section>
 
 
-<!-- ================= DESTINATIONS ================= -->
+<!-- =========================
+     SAFARI DESTINATIONS
+========================= -->
 
-<section class="destinations">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>
-Our Safari Destinations
-</h2>
-
-<p>
-Choose your destination and let us help you plan your safari.
-</p>
-
-</div>
+<section class="safaris">
 
 
-<div class="destination-grid">
+<!-- =========================
+     MAASAI MARA
+========================= -->
 
-
-<!-- ================= MAASAI MARA ================= -->
-
-<div class="destination-card">
+<article class="card">
 
 <img
-class="destination-image"
-src="https://media.holidify.com/images/cmsuploads/compressed/A347-1600x670-little-chemchem-waterhole-game-drive-3_20240806172715.jpg"
-alt="Maasai Mara National Reserve safari Kenya"
+class="card-image"
+src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Maasai_Mara_National_Reserve_Kenya.jpg"
+alt="Maasai Mara National Reserve Kenya safari"
 loading="lazy"
 >
 
-<div class="destination-content">
+<div class="card-content">
 
-<h3>
-Maasai Mara National Reserve
-</h3>
+<h2>Maasai Mara National Reserve</h2>
 
-<p class="highlight">
-Big Cats • Great Migration • Open Savannah
-</p>
+<h3>Big Five & Wildlife Safari</h3>
 
 <p>
-Experience Kenya's iconic safari destination, famous for
-lions, cheetahs, leopards, elephants, giraffes and vast
-savannah landscapes. The Mara is also part of the wider
-ecosystem associated with the Great Wildebeest Migration.
+Experience one of Kenya's most famous wildlife
+destinations, renowned for lions, leopards,
+cheetahs, elephants, buffalo and the spectacular
+Great Migration season.
 </p>
 
 <a
 href="booking.html"
-class="book-button"
+class="card-button"
 >
-Plan Maasai Mara Safari →
+Plan This Safari →
 </a>
 
 </div>
 
-</div>
+</article>
 
 
-<!-- ================= AMBOSELI ================= -->
+<!-- =========================
+     AMBOSELI
+========================= -->
 
-<div class="destination-card">
+<article class="card">
 
 <img
-class="destination-image"
-src="https://cdn.prod.website-files.com/6573da009660c12dfbdd9e12/696d0c1c0cc416869f7eb0c3_Gemini_Generated_Image_bf3q07bf3q07bf3q.jpg"
-alt="Elephants in Amboseli with Mount Kilimanjaro"
+class="card-image"
+src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Amboseli_National_Park_and_Mt._Kilimanjaro.jpg"
+alt="Elephants and Mount Kilimanjaro in Amboseli National Park"
 loading="lazy"
 >
 
-<div class="destination-content">
+<div class="card-content">
 
-<h3>
-Amboseli National Park
-</h3>
+<h2>Amboseli National Park</h2>
 
-<p class="highlight">
-Elephants • Mount Kilimanjaro • Photography
-</p>
+<h3>Elephants & Mount Kilimanjaro</h3>
 
 <p>
-Enjoy spectacular views of Mount Kilimanjaro while
-watching large herds of elephants and other wildlife
-across Amboseli's open plains and wetlands.
+Enjoy unforgettable views of African elephants
+against the spectacular backdrop of Mount
+Kilimanjaro. Amboseli is one of Kenya's best
+destinations for elephant viewing and photography.
 </p>
 
 <a
 href="booking.html"
-class="book-button"
+class="card-button"
 >
-Plan Amboseli Safari →
+Plan This Safari →
 </a>
 
 </div>
 
-</div>
+</article>
 
 
-<!-- ================= LAKE NAKURU ================= -->
+<!-- =========================
+     LAKE NAKURU
+========================= -->
 
-<div class="destination-card">
+<article class="card featured">
 
 <img
-class="destination-image"
-src="https://horizonguides.com/images/guides/kenya-safari/lake-nakuru/flamingoes-lake-nakuru.jpg"
+class="card-image"
+src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Lake_nakuru_flamingos.jpg"
 alt="Flamingos at Lake Nakuru National Park"
 loading="lazy"
 >
 
-<div class="destination-content">
+<div class="card-content">
 
-<h3>
-Lake Nakuru National Park
-</h3>
+<h2>Lake Nakuru National Park</h2>
 
-<p class="highlight">
-Flamingos • Rhinos • Rift Valley
-</p>
+<h3>Flamingos, Rhinos & Rift Valley Scenery</h3>
 
 <p>
-Explore the beautiful Rift Valley scenery of Lake Nakuru,
-with opportunities to see flamingos, rhinos, Rothschild's
-giraffes, buffalo, lions and other wildlife.
+Discover the beautiful Lake Nakuru ecosystem,
+famous for its birdlife and flamingos, while also
+looking out for black and white rhinos, Rothschild's
+giraffes, lions, buffalo and other wildlife.
 </p>
 
 <a
 href="booking.html"
-class="book-button"
+class="card-button"
 >
-Plan Lake Nakuru Safari →
+Plan This Safari →
 </a>
 
 </div>
 
-</div>
+</article>
 
 
-<!-- ================= TSAVO ================= -->
+<!-- =========================
+     OL PEJETA
+========================= -->
 
-<div class="destination-card">
+<article class="card">
 
 <img
-class="destination-image"
-src="https://d1v1h30ifx4f5d.cloudfront.net/locations/1001/red_elephants_tsavo.jpg"
-alt="Red elephants of Tsavo National Park"
+class="card-image"
+src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Black_Rhinoceros_in_Sweetwater_Nat_Park_Kenya.jpg"
+alt="Black rhinoceros at Ol Pejeta Conservancy"
 loading="lazy"
 >
 
-<div class="destination-content">
+<div class="card-content">
 
-<h3>
-Tsavo East & Tsavo West
-</h3>
+<h2>Ol Pejeta Conservancy</h2>
 
-<p class="highlight">
-Red Elephants • Vast Wilderness • Wildlife
-</p>
+<h3>Black Rhino & Conservation Safari</h3>
 
 <p>
-Discover one of Kenya's great wilderness regions, famous
-for its enormous landscapes, wildlife and the distinctive
-red appearance of Tsavo's elephants from the park's
-iron-rich soil.
+Visit one of Kenya's leading wildlife conservation
+areas and experience exceptional rhino viewing,
+wildlife encounters and conservation experiences
+in the Laikipia landscape.
 </p>
 
 <a
 href="booking.html"
-class="book-button"
+class="card-button"
 >
-Plan Tsavo Safari →
+Plan This Safari →
 </a>
 
 </div>
 
-</div>
+</article>
 
 
-<!-- ================= OL PEJETA ================= -->
+<!-- =========================
+     MOUNT KENYA
+========================= -->
 
-<div class="destination-card">
+<article class="card">
 
 <img
-class="destination-image"
-src="https://live.staticflickr.com/65535/50325765733_6d0c3c5f8b_b.jpg"
-alt="Black rhino at Ol Pejeta Conservancy"
+class="card-image"
+src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mount_kenya.png"
+alt="Mount Kenya mountain"
 loading="lazy"
 >
 
-<div class="destination-content">
+<div class="card-content">
 
-<h3>
-Ol Pejeta Conservancy
-</h3>
+<h2>Mount Kenya</h2>
 
-<p class="highlight">
-Black Rhinos • Conservation • Wildlife
-</p>
+<h3>Mountain, Nature & Adventure</h3>
 
 <p>
-Visit one of Kenya's leading wildlife conservation areas
-and discover its remarkable rhino conservation work alongside
-elephants, lions, giraffes, zebras and other wildlife.
+Explore the dramatic landscapes of Mount Kenya,
+Kenya's highest mountain, with alpine scenery,
+forests, moorlands and opportunities for hiking,
+nature and mountain experiences.
 </p>
 
 <a
 href="booking.html"
-class="book-button"
+class="card-button"
 >
-Plan Ol Pejeta Safari →
+Plan This Experience →
 </a>
 
 </div>
 
-</div>
+</article>
 
 
-<!-- ================= ABERDARE ================= -->
+<!-- =========================
+     ABERDARE
+========================= -->
 
-<div class="destination-card">
+<article class="card">
 
 <img
-class="destination-image"
-src="https://sereneafrica.com/serene-new/wp-content/uploads/2024/11/aberdare-waterfall.jpg"
-alt="Aberdare National Park waterfall and forest Kenya"
+class="card-image"
+src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Aberdare_National_Forest_Kenya.jpg"
+alt="Aberdare Forest Kenya"
 loading="lazy"
 >
 
-<div class="destination-content">
+<div class="card-content">
 
-<h3>
-Aberdare National Park
-</h3>
+<h2>Aberdare National Park</h2>
 
-<p class="highlight">
-Mountain Forest • Waterfalls • Highland Wildlife
-</p>
+<h3>Forest, Wildlife & Mountain Scenery</h3>
 
 <p>
-Explore Kenya's beautiful highland wilderness with lush
-forests, dramatic waterfalls, mountain scenery and unique
-wildlife experiences.
+Discover the cool highland forests of the Aberdare
+range, home to elephants, buffalo, waterbuck,
+bongo and a variety of forest birds and wildlife.
 </p>
 
 <a
 href="booking.html"
-class="book-button"
+class="card-button"
 >
-Plan Aberdare Safari →
+Plan This Safari →
 </a>
 
 </div>
 
-</div>
+</article>
 
 
-<!-- ================= SAMBURU ================= -->
+<!-- =========================
+     TSAVO
+========================= -->
 
-<div class="destination-card">
+<article class="card featured">
 
 <img
-class="destination-image"
-src="https://cdn.prod.website-files.com/607e99bffc9a6042b332722c/662facfa128aa8b0b535945c_4-WILDLIFE-_-LANDSCAPES-samburu-kenya-timbuktu-travel-2.jpg.webp"
-alt="Elephants and landscape in Samburu National Reserve"
+class="card-image"
+src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Majestic_red_elephant_of_Tsavo_East_%285232098119%29.jpg"
+alt="Red elephant in Tsavo East National Park"
 loading="lazy"
 >
 
-<div class="destination-content">
+<div class="card-content">
 
-<h3>
-Samburu National Reserve
-</h3>
+<h2>Tsavo National Parks</h2>
 
-<p class="highlight">
-Northern Kenya • Elephants • Unique Wildlife
-</p>
+<h3>Red Elephants & Wilderness</h3>
 
 <p>
-Travel into northern Kenya and experience Samburu's
-distinctive dry landscapes, wildlife and beautiful
-Ewaso Ng'iro river environment.
+Explore the vast wilderness of Tsavo East and
+Tsavo West, famous for its large elephant herds,
+dramatic landscapes and the distinctive red-coated
+elephants covered in the park's red volcanic soil.
 </p>
 
 <a
 href="booking.html"
-class="book-button"
+class="card-button"
 >
-Plan Samburu Safari →
+Plan This Safari →
 </a>
 
 </div>
 
-</div>
+</article>
 
-
-<!-- ================= MOUNT KENYA ================= -->
-
-<div class="destination-card">
-
-<img
-class="destination-image"
-src="https://kenyapeaks.com/wp-content/uploads/2024/03/Mount-Kenya-National-Park.jpg"
-alt="Mount Kenya National Park mountain peaks"
-loading="lazy"
->
-
-<div class="destination-content">
-
-<h3>
-Mount Kenya
-</h3>
-
-<p class="highlight">
-Mountain • Hiking • Forests • Scenic Landscapes
-</p>
-
-<p>
-Discover the spectacular mountain environment of Mount Kenya,
-with highland forests, dramatic peaks, scenic trails and
-nature experiences around Kenya's highest mountain.
-</p>
-
-<a
-href="booking.html"
-class="book-button"
->
-Plan Mount Kenya Experience →
-</a>
-
-</div>
-
-</div>
-
-
-</div>
-
-</div>
 
 </section>
 
 
-<!-- ================= WHY OLDPEPE ================= -->
-
-<section class="why">
-
-<div class="why-grid">
-
-
-<div class="why-box">
-
-<div class="why-icon">
-🦁
-</div>
-
-<h3>
-Wildlife Experiences
-</h3>
-
-<p>
-Explore Kenya's parks and reserves with a focus on wildlife,
-nature and memorable game-viewing experiences.
-</p>
-
-</div>
-
-
-<div class="why-box">
-
-<div class="why-icon">
-🚙
-</div>
-
-<h3>
-Private Safari Travel
-</h3>
-
-<p>
-Enjoy flexible private travel designed around your dates,
-interests, group size and preferred destinations.
-</p>
-
-</div>
-
-
-<div class="why-box">
-
-<div class="why-icon">
-🇰🇪
-</div>
-
-<h3>
-Experience Kenya
-</h3>
-
-<p>
-Go beyond the game drive and discover Kenya's landscapes,
-culture, conservation areas and mountain environments.
-</p>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-<!-- ================= CTA ================= -->
+<!-- =========================
+     CALL TO ACTION
+========================= -->
 
 <section class="cta">
 
-<div class="container">
-
-<h2>
-Ready to Plan Your Kenya Safari?
-</h2>
+<h2>Plan Your Kenya Safari</h2>
 
 <p>
-Tell us your preferred destination, travel dates,
-number of guests and what you would like to experience.
-We will help you plan your safari.
+Tell us where you would like to go, how many days
+you have and what kind of experience you want.
+Oldepe Tours & Safaris can help you plan a private
+Kenya safari around your interests.
 </p>
 
 <a
 href="booking.html"
 class="cta-button"
 >
-PLAN YOUR SAFARI
+BOOK YOUR SAFARI
 </a>
-
-</div>
 
 </section>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -1133,9 +951,7 @@ PLAN YOUR SAFARI
 
 <div>
 
-<h3>
-Oldepe Tours & Safaris
-</h3>
+<h3>Oldepe Tours & Safaris</h3>
 
 <p>
 Discover Kenya. Experience the wild.
@@ -1143,7 +959,7 @@ Discover Kenya. Experience the wild.
 
 <p>
 Private safaris, wildlife experiences,
-cultural journeys, scenic travel and airport transfers.
+cultural experiences and airport transfers.
 </p>
 
 </div>
@@ -1151,42 +967,26 @@ cultural journeys, scenic travel and airport transfers.
 
 <div>
 
-<h3>
-Quick Links
-</h3>
+<h3>Quick Links</h3>
 
-<a href="index.html">
-Home
-</a>
+<a href="index.html">Home</a>
 
-<a href="safaris.html">
-Safaris
-</a>
+<a href="safaris.html">Safaris</a>
 
-<a href="tours.html">
-Tours
-</a>
+<a href="tours.html">Tours</a>
 
-<a href="about.html">
-About
-</a>
+<a href="about.html">About</a>
 
-<a href="gallery.html">
-Gallery
-</a>
+<a href="gallery.html">Gallery</a>
 
-<a href="contact.html">
-Contact
-</a>
+<a href="contact.html">Contact</a>
 
 </div>
 
 
 <div>
 
-<h3>
-Contact Us
-</h3>
+<h3>Contact</h3>
 
 <p>
 📞 0720 580 063
@@ -1196,7 +996,9 @@ Contact Us
 ✉ oldepetours@gmail.com
 </p>
 
-<a href="https://wa.me/254720580063">
+<a
+href="https://wa.me/254720580063"
+>
 WhatsApp
 </a>
 
