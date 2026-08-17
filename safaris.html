@@ -1,1093 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Safaris | Oldepe Tours & Safaris</title>
 
-<meta name="description"
-content="Explore Kenya national parks, reserves, wildlife, nature and cultural safari experiences with Oldepe Tours & Safaris.">
-
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    color: #333;
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f5f4ef;
-    color:#333;
-    line-height:1.6;
+header {
+    background: #174d2a;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
 }
 
-a{
-    text-decoration:none;
+header h1 {
+    margin: 0;
+    font-size: 32px;
 }
 
-/* ================= HEADER ================= */
-
-header{
-    background:#173b2a;
-    color:#fff;
-    padding:22px 5%;
+header p {
+    margin: 8px 0 0;
 }
 
-.nav{
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+nav {
+    background: #10391f;
+    text-align: center;
+    padding: 12px;
 }
 
-.logo{
-    color:#fff;
-    font-size:21px;
-    font-weight:bold;
-    line-height:1.15;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 9px;
+    font-weight: bold;
 }
 
-.logo span{
-    display:block;
-    font-size:10px;
-    letter-spacing:3px;
-    font-weight:normal;
-    margin-top:5px;
+nav a:hover {
+    color: #f4c542;
 }
 
-nav{
-    display:flex;
-    align-items:center;
-    gap:20px;
+.container {
+    width: 94%;
+    max-width: 1200px;
+    margin: 35px auto;
 }
 
-nav a{
-    color:#fff;
-    font-size:14px;
-    font-weight:bold;
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-nav a:hover{
-    color:#e0a32b;
+.intro h2 {
+    color: #174d2a;
+    font-size: 32px;
+    margin-bottom: 12px;
 }
 
-.nav-book{
-    background:#d99b27;
-    padding:10px 15px;
-    border-radius:5px;
+.intro p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.7;
 }
 
-/* ================= HERO ================= */
-
-.hero{
-    min-height:48vh;
-
-    display:flex;
-    align-items:center;
-
-    background:
-    linear-gradient(
-        rgba(0,0,0,.48),
-        rgba(0,0,0,.70)
-    ),
-    url("images/safari3.jpg")
-    center/cover no-repeat;
+.safari-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
-.hero-content{
-    width:100%;
-    max-width:1200px;
-    margin:auto;
-    padding:100px 5% 75px;
-    color:#fff;
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
 }
 
-.hero h1{
-    font-size:clamp(42px,6vw,68px);
-    line-height:1.05;
-    margin-bottom:15px;
+.card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
 }
 
-.hero p{
-    max-width:760px;
-    font-size:19px;
+.card-content {
+    padding: 20px;
 }
 
-/* ================= INTRO ================= */
-
-.section{
-    padding:70px 5%;
+.card h3 {
+    color: #174d2a;
+    margin: 0 0 10px;
+    font-size: 22px;
 }
 
-.container{
-    max-width:1200px;
-    margin:auto;
+.card p {
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
-.intro{
-    text-align:center;
-    margin-bottom:45px;
+.button {
+    display: inline-block;
+    background: #174d2a;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.intro h2{
-    color:#173b2a;
-    font-size:38px;
-    margin-bottom:12px;
+.button:hover {
+    background: #286b3b;
 }
 
-.intro p{
-    max-width:850px;
-    margin:auto;
-    color:#666;
-    font-size:17px;
+footer {
+    margin-top: 50px;
+    background: #10391f;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
 }
 
-/* ================= SAFARI GRID ================= */
-
-.safari-grid{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:28px;
+footer p {
+    margin: 6px;
 }
 
-.card{
-    background:#fff;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 6px 20px rgba(0,0,0,.10);
-    transition:.2s ease;
-}
+@media (max-width: 600px) {
 
-.card:hover{
-    transform:translateY(-4px);
-}
-
-.card img{
-    width:100%;
-    height:245px;
-    object-fit:cover;
-    display:block;
-}
-
-.card-content{
-    padding:23px;
-}
-
-.card h3{
-    color:#173b2a;
-    font-size:23px;
-    margin-bottom:10px;
-}
-
-.card p{
-    color:#666;
-    margin-bottom:18px;
-}
-
-.book-button{
-    display:inline-block;
-    background:#d99b27;
-    color:#fff;
-    padding:11px 18px;
-    border-radius:5px;
-    font-weight:bold;
-}
-
-.book-button:hover{
-    background:#b77e19;
-}
-
-/* ================= FEATURED DESTINATIONS ================= */
-
-.destination-title{
-    text-align:center;
-    margin:65px 0 30px;
-}
-
-.destination-title h2{
-    color:#173b2a;
-    font-size:34px;
-}
-
-.destination-title p{
-    color:#666;
-    margin-top:8px;
-}
-
-/* ================= FOOTER ================= */
-
-footer{
-    background:#191919;
-    color:#ddd;
-    padding:50px 5% 20px;
-    margin-top:30px;
-}
-
-.footer-grid{
-    max-width:1200px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:2fr 1fr 1fr;
-    gap:40px;
-}
-
-footer h3{
-    color:#fff;
-    margin-bottom:15px;
-}
-
-footer p,
-footer a{
-    color:#aaa;
-    margin-bottom:8px;
-}
-
-footer a{
-    display:block;
-}
-
-footer a:hover{
-    color:#d99b27;
-}
-
-.copyright{
-    max-width:1200px;
-    margin:30px auto 0;
-    padding-top:20px;
-    border-top:1px solid #333;
-    text-align:center;
-    color:#888;
-    font-size:14px;
-}
-
-/* ================= MOBILE ================= */
-
-@media(max-width:900px){
-
-    nav a:not(.nav-book){
-        display:none;
+    header h1 {
+        font-size: 27px;
     }
 
-    nav{
-        gap:8px;
+    nav a {
+        display: inline-block;
+        margin: 4px 5px;
+        font-size: 14px;
     }
 
-    .safari-grid{
-        grid-template-columns:repeat(2, 1fr);
+    .container {
+        width: 94%;
     }
 
-    .footer-grid{
-        grid-template-columns:1fr;
-    }
-}
-
-@media(max-width:600px){
-
-    .logo{
-        font-size:17px;
+    .safari-grid {
+        grid-template-columns: 1fr;
     }
 
-    .nav-book{
-        padding:9px 12px;
-        font-size:12px;
-    }
-
-    .hero{
-        min-height:50vh;
-    }
-
-    .hero h1{
-        font-size:42px;
-    }
-
-    .hero p{
-        font-size:17px;
-    }
-
-    .intro h2{
-        font-size:30px;
-    }
-
-    .safari-grid{
-        grid-template-columns:1fr;
-    }
-
-    .card img{
-        height:230px;
+    .card img {
+        height: 220px;
     }
 }
-
 </style>
-
 </head>
 
 <body>
 
-
-<!-- ================= HEADER ================= -->
-
 <header>
-
-<div class="nav">
-
-<a href="index.html" class="logo">
-
-OLDEPE TOURS & SAFARIS
-
-<span>TEMBEA KENYA</span>
-
-</a>
-
-<nav>
-
-<a href="index.html">Home</a>
-
-<a href="safaris.html">Safaris</a>
-
-<a href="tours.html">Tours</a>
-
-<a href="about.html">About</a>
-
-<a href="gallery.html">Gallery</a>
-
-<a href="contact.html">Contact</a>
-
-<a
-href="booking.html"
-class="nav-book"
->
-Book Now
-</a>
-
-</nav>
-
-</div>
-
+    <h1>Oldepe Tours & Safaris</h1>
+    <p>Discover Kenya • Experience Africa</p>
 </header>
 
-
-<!-- ================= HERO ================= -->
-
-<section class="hero">
-
-<div class="hero-content">
-
-<h1>Kenya Safaris</h1>
-
-<p>
-Discover Kenya's national parks, reserves, wildlife,
-mountains, lakes and spectacular landscapes with
-Oldepe Tours & Safaris.
-</p>
-
-</div>
-
-</section>
-
-
-<!-- ================= MAIN ================= -->
-
-<section class="section">
+<nav>
+    <a href="index.html">Home</a>
+    <a href="safaris.html">Safaris</a>
+    <a href="tours.html">Tours</a>
+    <a href="about.html">About Us</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="booking.html">Book Now</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
 <div class="container">
 
-<div class="intro">
+<section class="intro">
 
-<h2>Explore Kenya</h2>
+    <h2>Kenya Safari Experiences</h2>
 
-<p>
-From magnificent elephants beneath Mount Kilimanjaro to
-the flamingos of Lake Nakuru, Kenya offers unforgettable
-wildlife and nature experiences. Explore our safari
-destinations and experiences below.
-</p>
+    <p>
+        Explore Kenya's spectacular wildlife, landscapes and
+        natural beauty with Oldepe Tours & Safaris. Discover
+        some of Kenya's most memorable safari destinations.
+    </p>
 
-</div>
-
+</section>
 
 <div class="safari-grid">
 
 
-<!-- ================= MOUNT KENYA ================= -->
+<!-- MOUNT KENYA -->
 
 <div class="card">
 
-<img
-src="images/safari3.jpg"
-alt="Mount Kenya and Kenyan landscape"
->
+    <img src="images/safari3.jpg"
+         alt="Mount Kenya">
 
-<div class="card-content">
+    <div class="card-content">
 
-<h3>Mount Kenya</h3>
+        <h3>Mount Kenya</h3>
 
-<p>
-Explore the spectacular landscapes around Mount Kenya,
-with mountain scenery, forests, wildlife and unforgettable
-natural surroundings.
-</p>
+        <p>
+            Explore the spectacular landscapes surrounding
+            Mount Kenya and enjoy the mountain scenery,
+            forests and wildlife.
+        </p>
 
-<a
-href="booking.html"
-class="book-button"
->
-Book This Safari
-</a>
+        <a href="booking.html" class="button">
+            Book This Safari
+        </a>
 
-</div>
+    </div>
 
 </div>
 
 
-<!-- ================= ABERDARE ================= -->
+<!-- ABERDARE -->
 
 <div class="card">
 
-<img
-src="images/safari19.jpg"
-alt="Aberdare National Park landscape"
->
+    <img src="images/safari19.jpg"
+         alt="Aberdare National Park">
 
-<div class="card-content">
+    <div class="card-content">
 
-<h3>Aberdare National Park</h3>
+        <h3>Aberdare National Park</h3>
 
-<p>
-Discover the forests, highlands, waterfalls and rich
-wildlife of the Aberdare mountain ecosystem.
-</p>
+        <p>
+            Discover the beautiful Aberdare highlands,
+            forests, waterfalls and diverse wildlife.
+        </p>
 
-<a
-href="booking.html"
-class="book-button"
->
-Book This Safari
-</a>
+        <a href="booking.html" class="button">
+            Book This Safari
+        </a>
 
-</div>
+    </div>
 
 </div>
 
 
-<!-- ================= OL PEJETA ================= -->
+<!-- OL PEJETA -->
 
 <div class="card">
 
-<img
-src="images/safari20.jpg"
-alt="Wildlife experience at Ol Pejeta Conservancy"
->
+    <img src="images/safari20.jpg"
+         alt="Ol Pejeta Conservancy">
 
-<div class="card-content">
+    <div class="card-content">
 
-<h3>Ol Pejeta Conservancy</h3>
+        <h3>Ol Pejeta Conservancy</h3>
 
-<p>
-Experience one of Kenya's leading wildlife conservation
-areas and discover its remarkable wildlife and conservation
-story.
-</p>
+        <p>
+            Experience Kenya's wildlife and conservation
+            at the famous Ol Pejeta Conservancy.
+        </p>
 
-<a
-href="booking.html"
-class="book-button"
->
-Book This Safari
-</a>
+        <a href="booking.html" class="button">
+            Book This Safari
+        </a>
 
-</div>
+    </div>
 
 </div>
 
 
-<!-- ================= LAKE NAKURU ================= -->
+<!-- LAKE NAKURU -->
 
 <div class="card">
 
-<img
-src="images/safari12.jpg"
-alt="Flamingos at Lake Nakuru National Park"
->
+    <img src="images/safari12.jpg"
+         alt="Flamingos at Lake Nakuru">
 
-<div class="card-content">
+    <div class="card-content">
 
-<h3>Lake Nakuru National Park</h3>
+        <h3>Lake Nakuru National Park</h3>
 
-<p>
-Enjoy the beautiful scenery and wildlife of Lake Nakuru,
-including its famous flamingos and diverse birdlife.
-</p>
+        <p>
+            Discover Lake Nakuru's beautiful scenery,
+            flamingos, wildlife and remarkable birdlife.
+        </p>
 
-<a
-href="booking.html"
-class="book-button"
->
-Book This Safari
-</a>
+        <a href="booking.html" class="button">
+            Book This Safari
+        </a>
 
-</div>
+    </div>
 
 </div>
 
 
-<!-- ================= TSAVO ================= -->
+<!-- TSAVO -->
 
 <div class="card">
 
-<img
-src="images/safari14.jpg"
-alt="African elephant on safari"
->
+    <img src="images/safari14.jpg"
+         alt="Elephant in Tsavo">
 
-<div class="card-content">
+    <div class="card-content">
 
-<h3>Tsavo National Parks</h3>
+        <h3>Tsavo National Parks</h3>
 
-<p>
-Explore the vast wilderness of Tsavo and experience its
-famous wildlife, dramatic landscapes and magnificent
-elephants.
-</p>
+        <p>
+            Explore the vast wilderness of Tsavo and
+            experience its famous red-coated elephants
+            and spectacular landscapes.
+        </p>
 
-<a
-href="booking.html"
-class="book-button"
->
-Book This Safari
-</a>
+        <a href="booking.html" class="button">
+            Book This Safari
+        </a>
 
-</div>
+    </div>
 
 </div>
 
 
-<!-- ================= AMBOSELI ================= -->
+<!-- AMBOSELI -->
 
 <div class="card">
 
-<img
-src="images/safari13.jpg"
-alt="Elephant with Mount Kilimanjaro in Amboseli"
->
+    <img src="images/safari13.jpg"
+         alt="Elephants and Mount Kilimanjaro">
 
-<div class="card-content">
+    <div class="card-content">
 
-<h3>Amboseli National Park</h3>
+        <h3>Amboseli National Park</h3>
 
-<p>
-Experience Kenya's iconic elephants with spectacular views
-of Mount Kilimanjaro across the Amboseli plains.
-</p>
+        <p>
+            See magnificent elephants against the
+            spectacular backdrop of Mount Kilimanjaro.
+        </p>
 
-<a
-href="booking.html"
-class="book-button"
->
-Book This Safari
-</a>
+        <a href="booking.html" class="button">
+            Book This Safari
+        </a>
 
-</div>
+    </div>
 
 </div>
 
 
-<!-- ================= SAMBURU ================= -->
+<!-- WILDLIFE -->
 
 <div class="card">
 
-<img
-src="images/safari21.jpg"
-alt="Kenyan wildlife safari"
->
+    <img src="images/safari17.jpg"
+         alt="Impala wildlife">
 
-<div class="card-content">
+    <div class="card-content">
 
-<h3>Samburu National Reserve</h3>
+        <h3>Wildlife Experiences</h3>
 
-<p>
-Discover the unique landscapes and wildlife of northern
-Kenya in the beautiful Samburu ecosystem.
-</p>
+        <p>
+            Enjoy unforgettable wildlife encounters
+            and discover Kenya's beautiful animals in
+            their natural environment.
+        </p>
 
-<a
-href="booking.html"
-class="book-button"
->
-Book This Safari
-</a>
+        <a href="booking.html" class="button">
+            Book This Experience
+        </a>
 
-</div>
+    </div>
 
 </div>
 
 
-<!-- ================= MERU ================= -->
+<!-- BIRDLIFE -->
 
 <div class="card">
 
-<img
-src="images/safari22.jpg"
-alt="Kenya wildlife and nature"
->
+    <img src="images/safari11.jpg"
+         alt="Ground hornbill">
 
-<div class="card-content">
+    <div class="card-content">
 
-<h3>Meru National Park</h3>
+        <h3>Bird Watching</h3>
 
-<p>
-Explore a beautiful wilderness of rivers, grasslands,
-woodlands and diverse wildlife.
-</p>
+        <p>
+            Discover Kenya's diverse birdlife, from
+            ground hornbills to wetland and savannah
+            species.
+        </p>
 
-<a
-href="booking.html"
-class="book-button"
->
-Book This Safari
-</a>
+        <a href="booking.html" class="button">
+            Book This Experience
+        </a>
 
-</div>
+    </div>
 
 </div>
 
 
-<!-- ================= MAASAI MARA ================= -->
+<!-- NATURE -->
 
 <div class="card">
 
-<img
-src="images/safari23.jpg"
-alt="Kenya safari wildlife"
->
+    <img src="images/safari15.jpg"
+         alt="Kenya nature and landscape">
 
-<div class="card-content">
+    <div class="card-content">
 
-<h3>Maasai Mara National Reserve</h3>
+        <h3>Nature & Landscapes</h3>
 
-<p>
-Experience Kenya's world-famous wildlife destination,
-open savannahs and exceptional game viewing.
-</p>
+        <p>
+            Experience Kenya's mountains, lakes, forests,
+            plains and spectacular natural scenery.
+        </p>
 
-<a
-href="booking.html"
-class="book-button"
->
-Book This Safari
-</a>
+        <a href="booking.html" class="button">
+            Book This Experience
+        </a>
 
-</div>
+    </div>
 
 </div>
 
 
-<!-- ================= WILDLIFE ================= -->
+<!-- CUSTOM SAFARI -->
 
 <div class="card">
 
-<img
-src="images/safari17.jpg"
-alt="Impala in the Kenyan bush"
->
+    <img src="images/safari16.jpg"
+         alt="Private Kenya safari">
 
-<div class="card-content">
+    <div class="card-content">
 
-<h3>Wildlife Experiences</h3>
+        <h3>Private Custom Safari</h3>
 
-<p>
-Enjoy memorable encounters with Kenya's wildlife,
-including elephants, antelopes and many other species.
-</p>
+        <p>
+            Plan a private safari around your preferred
+            destinations, dates, wildlife and experiences.
+        </p>
 
-<a
-href="booking.html"
-class="book-button"
->
-Book This Experience
-</a>
+        <a href="booking.html" class="button">
+            Plan Your Safari
+        </a>
 
-</div>
+    </div>
 
 </div>
 
 
-<!-- ================= BIRD WATCHING ================= -->
-
-<div class="card">
-
-<img
-src="images/safari11.jpg"
-alt="Southern Ground Hornbill"
->
-
-<div class="card-content">
-
-<h3>Bird Watching</h3>
-
-<p>
-Discover Kenya's extraordinary birdlife, from large
-ground hornbills to wetland and savannah species.
-</p>
-
-<a
-href="booking.html"
-class="book-button"
->
-Book This Experience
-</a>
-
 </div>
-
 </div>
-
-
-<!-- ================= NATURE ================= -->
-
-<div class="card">
-
-<img
-src="images/safari24.jpg"
-alt="Kenya nature and landscape"
->
-
-<div class="card-content">
-
-<h3>Nature & Landscapes</h3>
-
-<p>
-Enjoy Kenya's mountains, lakes, forests, plains and
-spectacular scenery while travelling through the country.
-</p>
-
-<a
-href="booking.html"
-class="book-button"
->
-Book This Experience
-</a>
-
-</div>
-
-</div>
-
-
-<!-- ================= CULTURAL ================= -->
-
-<div class="card">
-
-<img
-src="images/safari25.jpg"
-alt="Kenya cultural experience"
->
-
-<div class="card-content">
-
-<h3>Maasai Cultural Experience</h3>
-
-<p>
-Experience Kenya's rich cultural heritage and learn about
-the traditions, lifestyle and hospitality of the Maasai.
-</p>
-
-<a
-href="booking.html"
-class="book-button"
->
-Book This Experience
-</a>
-
-</div>
-
-</div>
-
-
-<!-- ================= SAFARI 18 ================= -->
-
-<div class="card">
-
-<img
-src="images/safari18.jpg"
-alt="Kenya safari experience"
->
-
-<div class="card-content">
-
-<h3>Kenya Safari Adventure</h3>
-
-<p>
-Discover Kenya's wildlife and natural beauty through a
-safari experience designed around your interests.
-</p>
-
-<a
-href="booking.html"
-class="book-button"
->
-Book This Safari
-</a>
-
-</div>
-
-</div>
-
-
-<!-- ================= SAFARI 20 ================= -->
-
-<div class="card">
-
-<img
-src="images/safari20.jpg"
-alt="Kenya wildlife"
->
-
-<div class="card-content">
-
-<h3>Private Safari Experience</h3>
-
-<p>
-Enjoy a personalised safari experience designed around
-your preferred destinations, activities and travel dates.
-</p>
-
-<a
-href="booking.html"
-class="book-button"
->
-Plan Your Safari
-</a>
-
-</div>
-
-</div>
-
-
-<!-- ================= SAFARI 21 ================= -->
-
-<div class="card">
-
-<img
-src="images/safari21.jpg"
-alt="Kenya wilderness"
->
-
-<div class="card-content">
-
-<h3>Wilderness Experience</h3>
-
-<p>
-Discover Kenya's wild spaces, beautiful landscapes and
-remarkable wildlife away from the ordinary.
-</p>
-
-<a
-href="booking.html"
-class="book-button"
->
-Book This Experience
-</a>
-
-</div>
-
-</div>
-
-
-<!-- ================= SAFARI 22 ================= -->
-
-<div class="card">
-
-<img
-src="images/safari22.jpg"
-alt="Kenya nature experience"
->
-
-<div class="card-content">
-
-<h3>Nature Experience</h3>
-
-<p>
-Explore Kenya's natural environments and enjoy the scenery,
-wildlife and peaceful surroundings.
-</p>
-
-<a
-href="booking.html"
-class="book-button"
->
-Book This Experience
-</a>
-
-</div>
-
-</div>
-
-
-<!-- ================= SAFARI 23 ================= -->
-
-<div class="card">
-
-<img
-src="images/safari23.jpg"
-alt="Kenya safari"
->
-
-<div class="card-content">
-
-<h3>Safari Adventure</h3>
-
-<p>
-Travel through Kenya's beautiful wild areas and create
-memorable experiences with Oldepe Tours & Safaris.
-</p>
-
-<a
-href="booking.html"
-class="book-button"
->
-Book This Safari
-</a>
-
-</div>
-
-</div>
-
-
-<!-- ================= SAFARI 24 ================= -->
-
-<div class="card">
-
-<img
-src="images/safari24.jpg"
-alt="Kenya landscape"
->
-
-<div class="card-content">
-
-<h3>Kenya Landscape Experience</h3>
-
-<p>
-Discover spectacular Kenyan scenery, from mountains and
-lakes to open savannah landscapes.
-</p>
-
-<a
-href="booking.html"
-class="book-button"
->
-Book This Experience
-</a>
-
-</div>
-
-</div>
-
-
-<!-- ================= SAFARI 25 ================= -->
-
-<div class="card">
-
-<img
-src="images/safari25.jpg"
-alt="Kenya safari experience"
->
-
-<div class="card-content">
-
-<h3>Custom Safari</h3>
-
-<p>
-Create a safari itinerary around the destinations,
-wildlife and experiences you would most like to discover.
-</p>
-
-<a
-href="booking.html"
-class="book-button"
->
-Plan Your Safari
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= FOOTER ================= -->
 
 <footer>
 
-<div class="footer-grid">
+    <p><strong>Oldepe Tours & Safaris</strong></p>
 
-<div>
+    <p>
+        Discover Kenya • Experience Africa
+    </p>
 
-<h3>Oldepe Tours & Safaris</h3>
+    <p>
+        oldepetours@gmail.com
+    </p>
 
-<p>
-Discover Kenya. Experience the wild.
-</p>
-
-<p>
-Kenya safaris, wildlife experiences, cultural experiences,
-nature, landscapes and private safari adventures.
-</p>
-
-</div>
-
-
-<div>
-
-<h3>Quick Links</h3>
-
-<a href="index.html">Home</a>
-<a href="safaris.html">Safaris</a>
-<a href="tours.html">Tours</a>
-<a href="about.html">About</a>
-<a href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
-<a href="booking.html">Book Now</a>
-
-</div>
-
-
-<div>
-
-<h3>Contact Us</h3>
-
-<p>📞 0720 580 063</p>
-
-<p>✉ oldepetours@gmail.com</p>
-
-<a href="https://wa.me/254720580063">
-WhatsApp
-</a>
-
-</div>
-
-</div>
-
-
-<div class="copyright">
-
-© 2026 Oldepe Tours & Safaris. All Rights Reserved.
-
-</div>
+    <p>
+        © 2026 Oldepe Tours & Safaris. All Rights Reserved.
+    </p>
 
 </footer>
-
 
 </body>
 </html>
