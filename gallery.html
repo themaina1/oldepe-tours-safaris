@@ -17,7 +17,6 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background: #f5f3ed;
-    color: #333;
 }
 
 /* HEADER */
@@ -60,147 +59,92 @@ nav a:hover {
 }
 
 
-/* HERO */
-
-.hero {
-    min-height: 300px;
-
-    background:
-        linear-gradient(
-            rgba(0,0,0,.45),
-            rgba(0,0,0,.60)
-        ),
-        url("images/safari1.jpg")
-        center/cover no-repeat;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-    color: white;
-    padding: 30px 20px;
-}
-
-.hero h2 {
-    font-size: 44px;
-    margin: 0 0 10px;
-    text-shadow: 2px 2px 5px #000;
-}
-
-.hero p {
-    font-size: 18px;
-    text-shadow: 1px 1px 4px #000;
-}
-
-
-/* INTRO */
+/* PAGE INTRO */
 
 .intro {
-    max-width: 850px;
-    margin: 40px auto 30px;
-    padding: 0 20px;
     text-align: center;
+    padding: 35px 20px 25px;
 }
 
 .intro h2 {
     color: #174d2a;
-    font-size: 30px;
+    margin: 0 0 8px;
+    font-size: 32px;
 }
 
 .intro p {
-    line-height: 1.7;
-    color: #555;
+    color: #666;
+    margin: 0;
 }
 
 
-/* GALLERY */
+/* PHOTO GALLERY */
 
 .gallery {
     width: 94%;
     max-width: 1200px;
-    margin: auto;
+    margin: 20px auto 45px;
 
     display: grid;
+
     grid-template-columns:
-        repeat(auto-fit, minmax(270px, 1fr));
+        repeat(auto-fit, minmax(260px, 1fr));
 
-    gap: 24px;
-}
-
-
-/* PHOTO CARD */
-
-.gallery-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-
-    box-shadow:
-        0 4px 15px rgba(0,0,0,.14);
-
-    transition: transform .25s ease;
-}
-
-.gallery-card:hover {
-    transform: translateY(-4px);
+    gap: 18px;
 }
 
 
 /* PHOTO */
 
-.gallery-card img {
+.gallery img {
     width: 100%;
-    height: 240px;
+    height: 250px;
+
+    object-fit: cover;
 
     display: block;
 
-    object-fit: cover;
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 14px rgba(0,0,0,0.15);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
+
+    box-shadow:
+        0 7px 20px rgba(0,0,0,0.22);
 }
 
 
-/* CAPTION */
+/* BACK TO PLACES */
 
-.caption {
-    padding: 16px;
+.back-places {
     text-align: center;
+    margin: 15px 0 50px;
 }
 
-.caption h3 {
-    margin: 0 0 5px;
-    color: #174d2a;
-    font-size: 21px;
-}
-
-.caption p {
-    margin: 0;
-    color: #666;
-    font-size: 14px;
-}
-
-
-/* BACK HOME */
-
-.back-home {
-    text-align: center;
-    margin: 45px 0;
-}
-
-.back-home a {
+.back-places a {
     display: inline-block;
 
     background: #174d2a;
     color: white;
 
-    padding: 12px 24px;
+    padding: 13px 25px;
 
-    border-radius: 6px;
+    border-radius: 7px;
 
     text-decoration: none;
+
     font-weight: bold;
 }
 
-.back-home a:hover {
+.back-places a:hover {
     background: #286b3b;
 }
 
@@ -211,7 +155,7 @@ footer {
     background: #10391f;
     color: white;
     text-align: center;
-    padding: 30px 15px;
+    padding: 28px 15px;
 }
 
 footer p {
@@ -232,20 +176,15 @@ footer p {
         margin: 4px 5px;
     }
 
-    .hero {
-        min-height: 260px;
-    }
-
-    .hero h2 {
-        font-size: 35px;
-    }
-
     .gallery {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 96%;
     }
 
-    .gallery-card img {
-        height: 235px;
+    .gallery img {
+        height: 180px;
+        border-radius: 7px;
     }
 
 }
@@ -253,7 +192,6 @@ footer p {
 </style>
 
 </head>
-
 
 <body>
 
@@ -292,439 +230,152 @@ footer p {
 </nav>
 
 
-<!-- HERO -->
-
-<section class="hero">
-
-    <div>
-
-        <h2>Our Gallery</h2>
-
-        <p>
-            Wildlife • Nature • Culture • Safari Experiences
-        </p>
-
-    </div>
-
-</section>
-
-
 <!-- INTRO -->
 
 <section class="intro">
 
-    <h2>Experience Kenya</h2>
+    <h2>Gallery</h2>
 
     <p>
-        Explore some of the wildlife, landscapes, birdlife,
-        culture and safari experiences that make Kenya one
-        of Africa's most remarkable destinations.
+        A glimpse of our Kenya safari experiences.
     </p>
 
 </section>
 
 
-<!-- GALLERY -->
+<!-- PHOTO-ONLY GALLERY -->
 
 <section class="gallery">
 
-
-<!-- EXISTING PHOTO 1 -->
-
-<div class="gallery-card">
+    <!-- Existing photos -->
 
     <img
         src="images/safari1.jpg"
         alt="Kenya safari"
-        onerror="this.closest('.gallery-card').remove();"
     >
-
-    <div class="caption">
-        <h3>Kenya Safari</h3>
-        <p>Wildlife and adventure</p>
-    </div>
-
-</div>
-
-
-<!-- EXISTING PHOTO 2 -->
-
-<div class="gallery-card">
 
     <img
         src="images/safari2.jpg"
         alt="Kenya wildlife"
-        onerror="this.closest('.gallery-card').remove();"
     >
-
-    <div class="caption">
-        <h3>Kenya Wildlife</h3>
-        <p>Wildlife experience</p>
-    </div>
-
-</div>
-
-
-<!-- EXISTING PHOTO 4 -->
-
-<div class="gallery-card">
 
     <img
         src="images/safari4.jpg"
         alt="Kenya nature"
-        onerror="this.closest('.gallery-card').remove();"
     >
-
-    <div class="caption">
-        <h3>Nature & Landscapes</h3>
-        <p>Kenya's spectacular scenery</p>
-    </div>
-
-</div>
-
-
-<!-- EXISTING PHOTO 5 -->
-
-<div class="gallery-card">
 
     <img
         src="images/safari5.jpg"
-        alt="Kenya wildlife"
-        onerror="this.closest('.gallery-card').remove();"
+        alt="Kenya safari"
     >
-
-    <div class="caption">
-        <h3>Wildlife Experience</h3>
-        <p>Discover Kenya's wildlife</p>
-    </div>
-
-</div>
-
-
-<!-- EXISTING PHOTO 6 -->
-
-<div class="gallery-card">
 
     <img
         src="images/safari6.jpg"
-        alt="Kenya safari"
-        onerror="this.closest('.gallery-card').remove();"
+        alt="Kenya wildlife"
     >
-
-    <div class="caption">
-        <h3>Safari Experience</h3>
-        <p>Unforgettable Kenyan adventures</p>
-    </div>
-
-</div>
-
-
-<!-- EXISTING PHOTO 7 -->
-
-<div class="gallery-card">
 
     <img
         src="images/safari7.jpg"
         alt="Kenya wildlife"
-        onerror="this.closest('.gallery-card').remove();"
     >
-
-    <div class="caption">
-        <h3>Wildlife</h3>
-        <p>Kenya's remarkable animals</p>
-    </div>
-
-</div>
-
-
-<!-- EXISTING PHOTO 8 -->
-
-<div class="gallery-card">
 
     <img
         src="images/safari8.jpg"
         alt="Kenya landscape"
-        onerror="this.closest('.gallery-card').remove();"
     >
-
-    <div class="caption">
-        <h3>Kenya Landscapes</h3>
-        <p>Nature and scenery</p>
-    </div>
-
-</div>
-
-
-<!-- EXISTING PHOTO 9 -->
-
-<div class="gallery-card">
 
     <img
         src="images/safari9.jpg"
         alt="Kenya safari"
-        onerror="this.closest('.gallery-card').remove();"
     >
 
-    <div class="caption">
-        <h3>Safari Adventure</h3>
-        <p>Explore Kenya with us</p>
-    </div>
 
-</div>
+    <!-- Additional photos -->
 
-
-<!-- NEW PHOTOS 11–25 -->
-
-
-<div class="gallery-card">
+    <img
+        src="images/safari10.jpg"
+        alt="Kenya safari"
+    >
 
     <img
         src="images/safari11.jpg"
-        alt="Wildlife experience"
-        onerror="this.closest('.gallery-card').remove();"
+        alt="Kenya wildlife"
     >
-
-    <div class="caption">
-        <h3>Wildlife Experience</h3>
-        <p>Kenya wildlife</p>
-    </div>
-
-</div>
-
-
-<div class="gallery-card">
 
     <img
         src="images/safari12.jpg"
-        alt="Lake Nakuru National Park"
-        onerror="this.closest('.gallery-card').remove();"
+        alt="Kenya safari"
     >
-
-    <div class="caption">
-        <h3>Lake Nakuru</h3>
-        <p>Flamingos and lake wildlife</p>
-    </div>
-
-</div>
-
-
-<div class="gallery-card">
 
     <img
         src="images/safari13.jpg"
-        alt="Amboseli National Park"
-        onerror="this.closest('.gallery-card').remove();"
+        alt="Kenya wildlife"
     >
-
-    <div class="caption">
-        <h3>Amboseli</h3>
-        <p>Elephants and Mount Kilimanjaro</p>
-    </div>
-
-</div>
-
-
-<div class="gallery-card">
 
     <img
         src="images/safari14.jpg"
-        alt="Wildlife experience"
-        onerror="this.closest('.gallery-card').remove();"
+        alt="Kenya wildlife"
     >
-
-    <div class="caption">
-        <h3>Wildlife Experience</h3>
-        <p>Kenya's wildlife</p>
-    </div>
-
-</div>
-
-
-<div class="gallery-card">
 
     <img
         src="images/safari15.jpg"
         alt="Kenya birdlife"
-        onerror="this.closest('.gallery-card').remove();"
     >
-
-    <div class="caption">
-        <h3>Bird Watching</h3>
-        <p>Kenya's diverse birdlife</p>
-    </div>
-
-</div>
-
-
-<div class="gallery-card">
 
     <img
         src="images/safari16.jpg"
-        alt="Bird watching in Kenya"
-        onerror="this.closest('.gallery-card').remove();"
+        alt="Kenya birdlife"
     >
-
-    <div class="caption">
-        <h3>Bird Watching</h3>
-        <p>Birdlife and nature</p>
-    </div>
-
-</div>
-
-
-<div class="gallery-card">
 
     <img
         src="images/safari17.jpg"
-        alt="Kenyan wildlife"
-        onerror="this.closest('.gallery-card').remove();"
+        alt="Kenya wildlife"
     >
-
-    <div class="caption">
-        <h3>Kenyan Wildlife</h3>
-        <p>Wildlife safari experience</p>
-    </div>
-
-</div>
-
-
-<div class="gallery-card">
 
     <img
         src="images/safari18.jpg"
         alt="Kenya safari"
-        onerror="this.closest('.gallery-card').remove();"
     >
-
-    <div class="caption">
-        <h3>Safari Experience</h3>
-        <p>Discover Kenya</p>
-    </div>
-
-</div>
-
-
-<div class="gallery-card">
 
     <img
         src="images/safari19.jpg"
-        alt="Kenya nature and landscape"
-        onerror="this.closest('.gallery-card').remove();"
+        alt="Kenya nature"
     >
-
-    <div class="caption">
-        <h3>Nature & Landscapes</h3>
-        <p>Kenya's beautiful scenery</p>
-    </div>
-
-</div>
-
-
-<div class="gallery-card">
 
     <img
         src="images/safari20.jpg"
         alt="Kenya wildlife"
-        onerror="this.closest('.gallery-card').remove();"
     >
-
-    <div class="caption">
-        <h3>Wildlife Experience</h3>
-        <p>Kenya wildlife</p>
-    </div>
-
-</div>
-
-
-<div class="gallery-card">
 
     <img
         src="images/safari21.jpg"
         alt="Kenya safari"
-        onerror="this.closest('.gallery-card').remove();"
     >
-
-    <div class="caption">
-        <h3>Safari Adventure</h3>
-        <p>Explore Kenya</p>
-    </div>
-
-</div>
-
-
-<div class="gallery-card">
 
     <img
         src="images/safari22.jpg"
-        alt="Kenya nature"
-        onerror="this.closest('.gallery-card').remove();"
+        alt="Kenya landscape"
     >
-
-    <div class="caption">
-        <h3>Nature & Landscapes</h3>
-        <p>Kenya's natural beauty</p>
-    </div>
-
-</div>
-
-
-<div class="gallery-card">
-
-    <img
-        src="images/safari23.jpg"
-        alt="Kenya safari"
-        onerror="this.closest('.gallery-card').remove();"
-    >
-
-    <div class="caption">
-        <h3>Safari Experience</h3>
-        <p>Unforgettable Kenya</p>
-    </div>
-
-</div>
-
-
-<div class="gallery-card">
 
     <img
         src="images/safari24.jpg"
-        alt="Kenya landscape"
-        onerror="this.closest('.gallery-card').remove();"
+        alt="Kenya safari"
     >
-
-    <div class="caption">
-        <h3>Kenya Landscape</h3>
-        <p>Nature and scenery</p>
-    </div>
-
-</div>
-
-
-<div class="gallery-card">
 
     <img
         src="images/safari25.jpg"
-        alt="Maasai cultural experience"
-        onerror="this.closest('.gallery-card').remove();"
+        alt="Kenya culture"
     >
-
-    <div class="caption">
-        <h3>Maasai Cultural Experience</h3>
-        <p>Kenyan culture and traditions</p>
-    </div>
-
-</div>
-
 
 </section>
 
 
-<!-- BACK HOME -->
+<!-- BACK TO PLACES -->
 
-<div class="back-home">
+<div class="back-places">
 
-    <a href="index.html">
-        ← Back to Home
+    <a href="safaris.html">
+        ← Back to Places
     </a>
 
 </div>
@@ -740,10 +391,6 @@ footer p {
 
     <p>
         Discover Kenya • Experience Africa
-    </p>
-
-    <p>
-        Safari • Wildlife • Culture • Nature
     </p>
 
     <p>
