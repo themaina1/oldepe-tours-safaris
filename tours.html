@@ -2,368 +2,382 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kenya Tours & Experiences | Oldepe Tours & Safaris</title>
-<meta name="description" content="Discover Kenya through cultural experiences, scenic destinations and unforgettable guided tours with Oldepe Tours & Safaris.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tours | Oldepe Tours & Safaris</title>
+  <meta name="description" content="Discover Kenya through unforgettable guided tours and travel experiences with Oldepe Tours & Safaris.">
 
-<style>
-:root {
-    --sand: #F4EBE1;
-    --charcoal: #2E2A25;
-    --orange: #D97736;
-    --white: #FFFFFF;
-}
+  <style>
+    :root {
+      --sand: #F4EBE1;
+      --charcoal: #2E2A25;
+      --orange: #D97736;
+      --white: #FFFFFF;
+    }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body {
-    font-family: Arial, sans-serif;
-    background: var(--sand);
-    color: var(--charcoal);
-    line-height: 1.7;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-header {
-    background: var(--charcoal);
-    color: var(--sand);
-    padding: 17px 6%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--sand);
+      color: var(--charcoal);
+      line-height: 1.6;
+    }
 
-.logo {
-    font-size: 23px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
+    a {
+      text-decoration: none;
+    }
 
-.logo span {
-    color: var(--orange);
-}
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 19px;
-}
-
-nav a {
-    color: var(--sand);
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: var(--orange);
-}
-
-.hero {
-    min-height: 420px;
-    background:
-        linear-gradient(rgba(20,18,15,.55), rgba(20,18,15,.55)),
-        url('images/Safari1.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 50px 20px;
-    color: white;
-}
-
-.hero-content {
-    max-width: 800px;
-}
-
-.hero h1 {
-    font-size: clamp(34px, 6vw, 55px);
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 25px;
-}
-
-.btn {
-    display: inline-block;
-    background: var(--orange);
-    color: white;
-    padding: 13px 27px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: .3s;
-}
-
-.btn:hover {
-    background: var(--charcoal);
-}
-
-.intro {
-    max-width: 1000px;
-    margin: auto;
-    padding: 55px 20px 35px;
-    text-align: center;
-}
-
-.intro h2 {
-    font-size: 31px;
-    margin-bottom: 15px;
-}
-
-.intro p {
-    font-size: 16px;
-}
-
-.tour-section {
-    padding: 25px 6% 65px;
-}
-
-.tour-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 27px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.tour-card {
-    background: white;
-    border-radius: 7px;
-    overflow: hidden;
-    box-shadow: 0 5px 18px rgba(46,42,37,.10);
-    transition: transform .3s;
-}
-
-.tour-card:hover {
-    transform: translateY(-5px);
-}
-
-.tour-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    display: block;
-}
-
-.card-content {
-    padding: 22px;
-}
-
-.card-content h3 {
-    font-size: 21px;
-    margin-bottom: 10px;
-}
-
-.card-content p {
-    font-size: 14px;
-    margin-bottom: 17px;
-}
-
-.card-content a {
-    display: inline-block;
-    color: var(--orange);
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.card-content a:hover {
-    color: var(--charcoal);
-}
-
-.why-us {
-    background: var(--charcoal);
-    color: var(--sand);
-    padding: 55px 7%;
-    text-align: center;
-}
-
-.why-us h2 {
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-
-.why-us p {
-    max-width: 850px;
-    margin: auto;
-}
-
-.cta {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.cta h2 {
-    font-size: 30px;
-    margin-bottom: 12px;
-}
-
-.cta p {
-    margin-bottom: 22px;
-}
-
-footer {
-    background: var(--charcoal);
-    color: var(--sand);
-    text-align: center;
-    padding: 28px 15px;
-}
-
-footer a {
-    color: var(--orange);
-    text-decoration: none;
-}
-
-footer p {
-    margin: 5px 0;
-    font-size: 14px;
-}
-
-@media(max-width: 700px) {
     header {
-        justify-content: center;
-        gap: 15px;
+      background: var(--charcoal);
+      color: var(--sand);
+      padding: 18px 6%;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .logo {
+      color: var(--sand);
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: var(--orange);
     }
 
     nav {
-        justify-content: center;
-        gap: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
     nav a {
-        font-size: 13px;
+      color: var(--sand);
+      font-size: 14px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--orange);
     }
 
     .hero {
-        min-height: 350px;
+      min-height: 440px;
+      background:
+        linear-gradient(rgba(46,42,37,0.72), rgba(46,42,37,0.72)),
+        url("images/Safari1.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 70px 7%;
+      color: var(--white);
     }
 
-    .intro h2,
-    .why-us h2,
-    .cta h2 {
-        font-size: 25px;
+    .hero-content {
+      max-width: 800px;
     }
-}
-</style>
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 58px);
+      margin-bottom: 18px;
+      line-height: 1.15;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--white);
+      padding: 13px 27px;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--charcoal);
+      color: var(--sand);
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 850px;
+      margin: auto;
+      padding: 65px 6% 35px;
+    }
+
+    .intro h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .intro p {
+      font-size: 16px;
+    }
+
+    .tours-section {
+      padding: 25px 6% 75px;
+    }
+
+    .tour-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 28px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .tour-card {
+      background: var(--charcoal);
+      color: var(--sand);
+      border-radius: 7px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .tour-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .tour-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .tour-content {
+      padding: 23px;
+    }
+
+    .tour-content h3 {
+      color: var(--orange);
+      font-size: 21px;
+      margin-bottom: 12px;
+    }
+
+    .tour-content p {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .tour-content a {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--white);
+      padding: 10px 18px;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .tour-content a:hover {
+      background: var(--sand);
+      color: var(--charcoal);
+    }
+
+    .experience {
+      background: var(--charcoal);
+      color: var(--sand);
+      text-align: center;
+      padding: 65px 7%;
+    }
+
+    .experience h2 {
+      color: var(--orange);
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .experience p {
+      max-width: 750px;
+      margin: 0 auto 25px;
+    }
+
+    footer {
+      background: var(--charcoal);
+      color: var(--sand);
+      text-align: center;
+      padding: 28px 6%;
+      border-top: 2px solid var(--orange);
+    }
+
+    footer p {
+      margin: 6px 0;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: var(--orange);
+    }
+
+    @media (max-width: 700px) {
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 13px;
+      }
+
+      .hero {
+        min-height: 380px;
+      }
+
+      .intro h2 {
+        font-size: 27px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-    <div class="logo">OLDEPE <span>TOURS & SAFARIS</span></div>
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">OLDEPE <span>TOURS & SAFARIS</span></a>
 
-    <nav>
+      <nav>
         <a href="index.html">Home</a>
         <a href="safaris.html">Safaris</a>
-        <a href="tours.html">Tours</a>
+        <a href="tours.html" class="active">Tours</a>
         <a href="about.html">About</a>
         <a href="gallery.html">Gallery</a>
         <a href="booking.html">Booking</a>
         <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <div class="hero-content">
-        <h1>Discover Kenya Beyond the Safari</h1>
-        <p>Explore beautiful places, local culture, history and memorable experiences across Kenya.</p>
-        <a href="booking.html" class="btn">Book Your Tour</a>
+      </nav>
     </div>
-</section>
+  </header>
 
-<section class="intro">
-    <h2>Explore More of Kenya</h2>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover Kenya Beyond the Ordinary</h1>
+      <p>
+        Explore beautiful landscapes, rich cultures and unforgettable
+        destinations with Oldepe Tours & Safaris.
+      </p>
+      <a href="booking.html" class="btn">Plan Your Tour</a>
+    </div>
+  </section>
+
+  <section class="intro">
+    <h2>Explore Our Tours</h2>
     <p>
-        Kenya offers much more than wildlife safaris. Discover its
-        rich cultural heritage, fascinating history, beautiful
-        landscapes and vibrant local experiences. Our tours help
-        you connect with the people, places and stories that make
-        Kenya special.
+      From scenic countryside journeys to cultural discoveries and
+      wildlife experiences, we help you experience the beauty and
+      diversity of Kenya. Let us make your journey memorable.
     </p>
-</section>
+  </section>
 
-<section class="tour-section">
+  <section class="tours-section">
     <div class="tour-grid">
 
-        <div class="tour-card">
-            <img src="images/Safari1.jpg" alt="Kenyan landscape and scenic tour">
-            <div class="card-content">
-                <h3>Scenic Kenya Tours</h3>
-                <p>Discover Kenya's beautiful landscapes, countryside, mountain scenery and remarkable natural attractions through guided excursions.</p>
-                <a href="booking.html">Book this experience →</a>
-            </div>
+      <article class="tour-card">
+        <img src="images/Safari2.jpg" alt="Kenyan scenic landscapes">
+        <div class="tour-content">
+          <h3>Scenic Kenya Tours</h3>
+          <p>
+            Discover Kenya's spectacular landscapes, beautiful countryside
+            and memorable destinations through guided journeys.
+          </p>
+          <a href="booking.html">Enquire Now</a>
         </div>
+      </article>
 
-        <div class="tour-card">
-            <img src="images/Safari2.jpg" alt="Kenyan wildlife and nature experience">
-            <div class="card-content">
-                <h3>Nature & Wildlife Experiences</h3>
-                <p>Enjoy opportunities to discover Kenya's natural heritage, wildlife habitats and beautiful outdoor destinations.</p>
-                <a href="safaris.html">Explore safari destinations →</a>
-            </div>
+      <article class="tour-card">
+        <img src="images/Safari3.jpg" alt="Kenyan wildlife experience">
+        <div class="tour-content">
+          <h3>Nature & Wildlife Experiences</h3>
+          <p>
+            Experience Kenya's remarkable wildlife and natural beauty
+            with memorable visits to some of its outstanding destinations.
+          </p>
+          <a href="booking.html">Enquire Now</a>
         </div>
+      </article>
 
-        <div class="tour-card">
-            <img src="images/Safari3.jpg" alt="Kenya cultural travel experience">
-            <div class="card-content">
-                <h3>Culture & Heritage</h3>
-                <p>Learn about Kenya's communities, traditions, history, architecture and cultural heritage through meaningful guided experiences.</p>
-                <a href="booking.html">Book this experience →</a>
-            </div>
+      <article class="tour-card">
+        <img src="images/Safari7.jpg" alt="Kenyan cultural and heritage experience">
+        <div class="tour-content">
+          <h3>Culture & Heritage Tours</h3>
+          <p>
+            Discover local traditions, cultural heritage and the stories
+            that make Kenya a unique and fascinating destination.
+          </p>
+          <a href="booking.html">Enquire Now</a>
         </div>
+      </article>
 
-        <div class="tour-card">
-            <img src="images/Safari7.jpg" alt="Kenyan lake and scenic destination">
-            <div class="card-content">
-                <h3>Lake & Countryside Excursions</h3>
-                <p>Explore beautiful lakes, countryside scenery and destinations that reveal another side of Kenya.</p>
-                <a href="booking.html">Book this experience →</a>
-            </div>
+      <article class="tour-card">
+        <img src="images/Safari25.jpg" alt="Kenyan lakes and countryside">
+        <div class="tour-content">
+          <h3>Lakes & Countryside Excursions</h3>
+          <p>
+            Enjoy relaxing journeys through beautiful countryside,
+            scenic lakes and some of Kenya's most memorable locations.
+          </p>
+          <a href="booking.html">Enquire Now</a>
         </div>
+      </article>
 
-        <div class="tour-card">
-            <img src="images/Safari25.jpg" alt="Kenya adventure destination">
-            <div class="card-content">
-                <h3>Private Guided Experiences</h3>
-                <p>Enjoy a flexible tour planned around your interests, preferred destinations and travel schedule.</p>
-                <a href="booking.html">Plan your private tour →</a>
-            </div>
+      <article class="tour-card">
+        <img src="images/Safari1.jpg" alt="Private guided Kenya tour">
+        <div class="tour-content">
+          <h3>Private Guided Experiences</h3>
+          <p>
+            Enjoy a more personal journey with flexible travel arrangements
+            designed around your interests, schedule and destination.
+          </p>
+          <a href="booking.html">Enquire Now</a>
         </div>
+      </article>
 
     </div>
-</section>
+  </section>
 
-<section class="why-us">
-    <h2>Travel with Oldepe Tours & Safaris</h2>
+  <section class="experience">
+    <h2>Your Kenyan Journey Starts Here</h2>
     <p>
-        We believe every journey should be memorable. Whether you are
-        travelling alone, with family, friends or a group, we help
-        you discover Kenya through carefully planned experiences,
-        welcoming service and a personal approach to travel.
+      Whether you are travelling alone, with family or in a group,
+      Oldepe Tours & Safaris is ready to help you plan an unforgettable
+      Kenyan experience.
     </p>
-</section>
+    <a href="https://wa.me/254720580063" class="btn">
+      Chat With Us on WhatsApp
+    </a>
+  </section>
 
-<section class="cta">
-    <h2>Let's Plan Your Next Experience</h2>
-    <p>Tell us what you would like to discover in Kenya.</p>
-    <a href="https://wa.me/254720580063" class="btn">Chat With Us on WhatsApp</a>
-</section>
-
-<footer>
+  <footer>
     <p><strong>OLDEPE TOURS & SAFARIS</strong></p>
-    <p>Discover Kenya. Experience Africa.</p>
+    <p>Discover Kenya. Experience More.</p>
     <p>Phone: <a href="tel:+254720580063">0720 580 063</a></p>
-    <p><a href="index.html">Home</a> | <a href="booking.html">Booking</a> | <a href="contact.html">Contact</a></p>
-    <p>&copy; 2026 Oldepe Tours & Safaris. All Rights Reserved.</p>
-</footer>
+    <p>© 2026 Oldepe Tours & Safaris. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
