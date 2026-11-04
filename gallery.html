@@ -1,408 +1,256 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Oldepe Tours & Safaris</title>
+  <meta name="description" content="Photograph gallery of Oldepe Tours & Safaris experiences in Kenya.">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --sand: #F4EBE1;
+      --charcoal: #2E2A25;
+      --orange: #D97736;
+      --white: #FFFFFF;
+    }
 
-<title>Gallery | Oldepe Tours & Safaris</title>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<style>
+    body {
+      background: var(--sand);
+      color: var(--charcoal);
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+    }
 
-* {
-    box-sizing: border-box;
-}
+    a {
+      text-decoration: none;
+    }
 
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f5f3ed;
-}
+    header {
+      background: var(--charcoal);
+      padding: 20px 5%;
+      border-bottom: 3px solid var(--orange);
+    }
 
-/* HEADER */
+    .nav {
+      max-width: 1250px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
-header {
-    background: #174d2a;
-    color: white;
-    text-align: center;
-    padding: 25px 15px;
-}
+    .logo {
+      color: var(--sand);
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 1.2;
+    }
 
-header h1 {
-    margin: 0;
-    font-size: 32px;
-}
+    .logo span {
+      display: block;
+      color: var(--orange);
+      font-size: 10px;
+      letter-spacing: 3px;
+      margin-top: 5px;
+    }
 
-header p {
-    margin: 7px 0 0;
-}
-
-
-/* NAVIGATION */
-
-nav {
-    background: #10391f;
-    text-align: center;
-    padding: 13px 8px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 8px;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-nav a:hover {
-    color: #f2c14e;
-}
-
-
-/* PAGE INTRO */
-
-.intro {
-    text-align: center;
-    padding: 35px 20px 25px;
-}
-
-.intro h2 {
-    color: #174d2a;
-    margin: 0 0 8px;
-    font-size: 32px;
-}
-
-.intro p {
-    color: #666;
-    margin: 0;
-}
-
-
-/* PHOTO GALLERY */
-
-.gallery {
-    width: 94%;
-    max-width: 1200px;
-    margin: 20px auto 45px;
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(260px, 1fr));
-
-    gap: 18px;
-}
-
-
-/* PHOTO */
-
-.gallery img {
-    width: 100%;
-    height: 250px;
-
-    object-fit: cover;
-
-    display: block;
-
-    border-radius: 10px;
-
-    box-shadow:
-        0 4px 14px rgba(0,0,0,0.15);
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-}
-
-.gallery img:hover {
-    transform: scale(1.02);
-
-    box-shadow:
-        0 7px 20px rgba(0,0,0,0.22);
-}
-
-
-/* BACK TO PLACES */
-
-.back-places {
-    text-align: center;
-    margin: 15px 0 50px;
-}
-
-.back-places a {
-    display: inline-block;
-
-    background: #174d2a;
-    color: white;
-
-    padding: 13px 25px;
-
-    border-radius: 7px;
-
-    text-decoration: none;
-
-    font-weight: bold;
-}
-
-.back-places a:hover {
-    background: #286b3b;
-}
-
-
-/* FOOTER */
-
-footer {
-    background: #10391f;
-    color: white;
-    text-align: center;
-    padding: 28px 15px;
-}
-
-footer p {
-    margin: 6px;
-}
-
-
-/* MOBILE */
-
-@media (max-width: 600px) {
-
-    header h1 {
-        font-size: 27px;
+    nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
     nav a {
-        display: inline-block;
-        margin: 4px 5px;
+      color: var(--sand);
+      font-size: 14px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--orange);
+    }
+
+    .whatsapp {
+      background: var(--orange);
+      color: var(--white);
+      padding: 10px 15px;
+      border-radius: 4px;
+    }
+
+    .whatsapp:hover {
+      background: var(--sand);
+      color: var(--charcoal);
+    }
+
+    main {
+      background: var(--sand);
+      padding: 35px 5% 65px;
     }
 
     .gallery {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        width: 96%;
+      max-width: 1250px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
     }
 
-    .gallery img {
-        height: 180px;
-        border-radius: 7px;
+    .photo {
+      height: 300px;
+      overflow: hidden;
+      border-radius: 5px;
+      background: var(--charcoal);
     }
 
-}
+    .photo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.45s ease;
+    }
 
-</style>
+    .photo:hover img {
+      transform: scale(1.05);
+    }
 
+    footer {
+      background: var(--charcoal);
+      color: var(--sand);
+      text-align: center;
+      padding: 25px 5%;
+      border-top: 3px solid var(--orange);
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: var(--orange);
+    }
+
+    @media (max-width: 850px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .photo {
+        height: 260px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .nav {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 13px;
+      }
+
+      main {
+        padding: 20px 4% 40px;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .photo {
+        height: 280px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-
-<!-- HEADER -->
-
-<header>
-
-    <h1>Oldepe Tours & Safaris</h1>
-
-    <p>
-        Discover Kenya • Experience Africa
-    </p>
-
-</header>
-
-
-<!-- NAVIGATION -->
-
-<nav>
-
-    <a href="index.html">Home</a>
-
-    <a href="safaris.html">Safaris</a>
-
-    <a href="tours.html">Tours</a>
-
-    <a href="about.html">About Us</a>
-
-    <a href="gallery.html">Gallery</a>
-
-    <a href="booking.html">Book Now</a>
-
-    <a href="contact.html">Contact</a>
-
-</nav>
-
-
-<!-- INTRO -->
-
-<section class="intro">
-
-    <h2>Gallery</h2>
-
-    <p>
-        A glimpse of our Kenya safari experiences.
-    </p>
-
-</section>
-
-
-<!-- PHOTO-ONLY GALLERY -->
-
-<section class="gallery">
-
-    <!-- Existing photos -->
-
-    <img
-        src="images/safari1.jpg"
-        alt="Kenya safari"
-    >
-
-    <img
-        src="images/safari2.jpg"
-        alt="Kenya wildlife"
-    >
-
-    <img
-        src="images/safari4.jpg"
-        alt="Kenya nature"
-    >
-
-    <img
-        src="images/safari5.jpg"
-        alt="Kenya safari"
-    >
-
-    <img
-        src="images/safari6.jpg"
-        alt="Kenya wildlife"
-    >
-
-    <img
-        src="images/safari7.jpg"
-        alt="Kenya wildlife"
-    >
-
-    <img
-        src="images/safari8.jpg"
-        alt="Kenya landscape"
-    >
-
-    <img
-        src="images/safari9.jpg"
-        alt="Kenya safari"
-    >
-
-
-    <!-- Additional photos -->
-
-    <img
-        src="images/safari10.jpg"
-        alt="Kenya safari"
-    >
-
-    <img
-        src="images/safari11.jpg"
-        alt="Kenya wildlife"
-    >
-
-    <img
-        src="images/safari12.jpg"
-        alt="Kenya safari"
-    >
-
-    <img
-        src="images/safari13.jpg"
-        alt="Kenya wildlife"
-    >
-
-    <img
-        src="images/safari14.jpg"
-        alt="Kenya wildlife"
-    >
-
-    <img
-        src="images/safari15.jpg"
-        alt="Kenya birdlife"
-    >
-
-    <img
-        src="images/safari16.jpg"
-        alt="Kenya birdlife"
-    >
-
-    <img
-        src="images/safari17.jpg"
-        alt="Kenya wildlife"
-    >
-
-    <img
-        src="images/safari18.jpg"
-        alt="Kenya safari"
-    >
-
-    <img
-        src="images/safari19.jpg"
-        alt="Kenya nature"
-    >
-
-    <img
-        src="images/safari20.jpg"
-        alt="Kenya wildlife"
-    >
-
-    <img
-        src="images/safari21.jpg"
-        alt="Kenya safari"
-    >
-
-    <img
-        src="images/safari22.jpg"
-        alt="Kenya landscape"
-    >
-
-    <img
-        src="images/safari24.jpg"
-        alt="Kenya safari"
-    >
-
-    <img
-        src="images/safari25.jpg"
-        alt="Kenya culture"
-    >
-
-</section>
-
-
-<!-- BACK TO PLACES -->
-
-<div class="back-places">
-
-    <a href="safaris.html">
-        ← Back to Places
-    </a>
-
-</div>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-    <p>
-        <strong>Oldepe Tours & Safaris</strong>
-    </p>
-
-    <p>
-        Discover Kenya • Experience Africa
-    </p>
-
-    <p>
-        oldepetours@gmail.com
-    </p>
-
-    <p>
-        © 2026 Oldepe Tours & Safaris. All Rights Reserved.
-    </p>
-
-</footer>
-
+  <header>
+    <div class="nav">
+
+      <a href="index.html" class="logo">
+        OLDEPE TOURS & SAFARIS
+        <span>TEMBEA KENYA</span>
+      </a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="safaris.html">Safaris</a>
+        <a href="tours.html">Tours</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a
+          class="whatsapp"
+          href="https://wa.me/254720580063">
+          WhatsApp
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <div class="gallery">
+
+      <div class="photo">
+        <img src="images/safari1.jpg" alt="Safari photograph 1">
+      </div>
+
+      <div class="photo">
+        <img src="images/safari2.jpg" alt="Safari photograph 2">
+      </div>
+
+      <div class="photo">
+        <img src="images/safari4.jpg" alt="Safari photograph 4">
+      </div>
+
+      <div class="photo">
+        <img src="images/safari5.jpg" alt="Safari photograph 5">
+      </div>
+
+      <div class="photo">
+        <img src="images/safari6.jpg" alt="Safari photograph 6">
+      </div>
+
+      <div class="photo">
+        <img src="images/safari7.jpg" alt="Safari photograph 7">
+      </div>
+
+      <div class="photo">
+        <img src="images/safari8.jpg" alt="Safari photograph 8">
+      </div>
+
+      <div class="photo">
+        <img src="images/safari9.jpg" alt="Safari photograph 9">
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p><strong>OLDEPE TOURS & SAFARIS</strong></p>
+    <p>Discover Kenya. Experience the wild.</p>
+    <p>Phone: <a href="tel:+254720580063">0720 580 063</a></p>
+    <p>© 2026 Oldepe Tours & Safaris. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
