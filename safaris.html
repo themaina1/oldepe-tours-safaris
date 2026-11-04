@@ -1,674 +1,716 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Safaris | Oldepe Tours & Safaris</title>
+<meta name="description" content="Explore Kenya's wildlife destinations with Oldepe Tours & Safaris. Discover Maasai Mara, Amboseli, Lake Nakuru, Ol Pejeta, Mount Kenya, Aberdare and Tsavo.">
+<title>Kenya Safaris | Oldepe Tours & Safaris</title>
 
 <style>
+:root {
+  --green: #063d28;
+  --dark: #032b1c;
+  --gold: #e7b94f;
+  --cream: #f7f4ec;
+  --white: #ffffff;
+  --text: #27332b;
+  --muted: #69746c;
+}
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f5f3ed;
-    color: #333;
-    line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
-    background: #174d2a;
-    color: white;
-    text-align: center;
-    padding: 25px 15px;
+  background: var(--green);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 15px #0002;
 }
 
-header h1 {
-    font-size: 32px;
-    margin-bottom: 6px;
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
-header p {
-    font-size: 15px;
+.logo {
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
-nav {
-    background: #10391f;
-    text-align: center;
-    padding: 13px 8px;
+.logo span {
+  display: block;
+  color: var(--gold);
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-top: 5px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 8px;
-    font-weight: bold;
-    font-size: 14px;
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-nav a:hover {
-    color: #f2c14e;
+.nav-links a {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--gold);
+}
+
+.nav-links .booking-link {
+  background: var(--gold);
+  color: var(--dark);
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.menu-button {
+  display: none;
+  color: white;
+  background: transparent;
+  border: 1px solid #ffffff80;
+  padding: 9px 12px;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
 .hero {
-    min-height: 380px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    background:
-        linear-gradient(
-            rgba(0,0,0,0.45),
-            rgba(0,0,0,0.60)
-        ),
-        url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Maasai_Mara_National_Reserve_Kenya.jpg")
-        center/cover no-repeat;
-
-    color: white;
-    padding: 30px 20px;
+  min-height: 470px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(2,32,20,.88), rgba(2,32,20,.35)),
+    url("images/Safari1.jpg") center/cover no-repeat;
 }
 
 .hero-content {
-    max-width: 800px;
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 0;
+  color: white;
 }
 
-.hero h2 {
-    font-size: 46px;
-    margin-bottom: 12px;
-    text-shadow: 2px 2px 5px #000;
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 7vw, 72px);
+  line-height: 1.08;
+  max-width: 750px;
+  margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 19px;
-    text-shadow: 1px 1px 4px #000;
+  max-width: 650px;
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+.button {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--dark);
+  padding: 13px 22px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 13px;
+  transition: .2s;
+}
+
+.button:hover {
+  background: #f3cf78;
+  transform: translateY(-2px);
 }
 
 .intro {
-    max-width: 900px;
-    margin: 45px auto 35px;
-    padding: 0 20px;
-    text-align: center;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  padding: 75px 5% 35px;
 }
 
-.intro h2 {
-    color: #174d2a;
-    font-size: 32px;
-    margin-bottom: 12px;
+.section-label {
+  color: #99701e;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.intro h2,
+.planning h2 {
+  color: var(--green);
+  font-size: clamp(29px, 4vw, 42px);
+  line-height: 1.2;
+  margin-bottom: 15px;
 }
 
 .intro p {
-    color: #555;
-    font-size: 17px;
+  color: var(--muted);
+  font-size: 16px;
 }
 
-.safari-grid {
-    width: 94%;
-    max-width: 1200px;
-    margin: auto;
-
-    display: grid;
-    grid-template-columns:
-        repeat(auto-fit, minmax(280px, 1fr));
-
-    gap: 28px;
+.destinations {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 5% 85px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
 }
 
-.card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.13);
-
-    display: flex;
-    flex-direction: column;
+.destination-card {
+  background: white;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 7px 25px #00000012;
+  display: flex;
+  flex-direction: column;
 }
 
-.card img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    display: block;
+.destination-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
 }
 
 .card-content {
-    padding: 21px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+  padding: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.card h3 {
-    color: #174d2a;
-    font-size: 23px;
-    margin-bottom: 10px;
+.card-content h3 {
+  color: var(--green);
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 8px;
 }
 
-.card p {
-    color: #555;
-    margin-bottom: 18px;
+.card-tag {
+  color: #a8791d;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 12px;
 }
 
-.highlights {
-    padding-left: 20px;
-    margin-bottom: 20px;
-    color: #555;
-    font-size: 14px;
+.card-content p {
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 20px;
 }
 
-.highlights li {
-    margin-bottom: 4px;
+.card-content .button {
+  margin-top: auto;
 }
 
-.book-button {
-    margin-top: auto;
-    display: block;
-    background: #174d2a;
-    color: white;
-    text-align: center;
-    padding: 12px 15px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
+.featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.book-button:hover {
-    background: #286b3b;
+.featured img {
+  height: 100%;
+  min-height: 310px;
 }
 
-.back-home {
-    text-align: center;
-    margin: 45px 0;
+.featured .card-content {
+  justify-content: center;
+  padding: 35px;
 }
 
-.back-home a {
-    background: #d49a28;
-    color: white;
-    padding: 12px 22px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
+.planning {
+  background: var(--green);
+  color: white;
+  text-align: center;
+  padding: 75px 5%;
+}
+
+.planning .section-label {
+  color: var(--gold);
+}
+
+.planning h2 {
+  color: white;
+}
+
+.planning p {
+  max-width: 700px;
+  margin: 0 auto 25px;
+  color: #e2e9e3;
+}
+
+.contact-strip {
+  background: #eee8d9;
+  padding: 35px 5%;
+  text-align: center;
+}
+
+.contact-strip h3 {
+  color: var(--green);
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.contact-strip p {
+  color: var(--muted);
+  margin-bottom: 15px;
+}
+
+.contact-strip a {
+  color: var(--green);
+  font-weight: bold;
 }
 
 footer {
-    background: #10391f;
-    color: white;
+  background: var(--dark);
+  color: white;
+  padding: 48px 5% 20px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 35px;
+}
+
+footer h3 {
+  font-size: 17px;
+  margin-bottom: 14px;
+}
+
+footer p,
+footer a {
+  display: block;
+  color: #c3d0c6;
+  font-size: 14px;
+  margin-bottom: 9px;
+}
+
+footer a:hover {
+  color: var(--gold);
+}
+
+.copyright {
+  max-width: 1100px;
+  margin: 30px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid #ffffff30;
+  text-align: center;
+  color: #aab9ae;
+  font-size: 12px;
+}
+
+@media(max-width: 850px) {
+  .menu-button {
+    display: block;
+  }
+
+  .nav-container {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 11px 4px;
+    border-top: 1px solid #ffffff25;
+  }
+
+  .nav-links .booking-link {
     text-align: center;
-    padding: 30px 15px;
-    margin-top: 20px;
+    margin-top: 8px;
+  }
+
+  .featured {
+    grid-template-columns: 1fr;
+  }
+
+  .featured img {
+    height: 260px;
+    min-height: 0;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-footer p {
-    margin: 6px;
+@media(max-width: 600px) {
+  .hero {
+    min-height: 410px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .intro {
+    padding-top: 55px;
+  }
+
+  .destinations {
+    grid-template-columns: 1fr;
+    padding-bottom: 60px;
+  }
+
+  .featured {
+    grid-column: auto;
+  }
+
+  .destination-card img {
+    height: 230px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
 }
-
-@media (max-width: 600px) {
-
-    header h1 {
-        font-size: 27px;
-    }
-
-    nav a {
-        display: inline-block;
-        margin: 4px 5px;
-    }
-
-    .hero {
-        min-height: 310px;
-    }
-
-    .hero h2 {
-        font-size: 36px;
-    }
-
-    .hero p {
-        font-size: 17px;
-    }
-
-    .safari-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .card img {
-        height: 230px;
-    }
-}
-
 </style>
-
 </head>
 
 <body>
 
-
-<!-- HEADER -->
-
 <header>
-
-    <h1>Oldepe Tours & Safaris</h1>
-
-    <p>
-        Discover Kenya • Experience Africa
-    </p>
-
-</header>
-
-
-<!-- NAVIGATION -->
-
-<nav>
-
-    <a href="index.html">Home</a>
-
-    <a href="safaris.html">Safaris</a>
-
-    <a href="tours.html">Tours</a>
-
-    <a href="about.html">About Us</a>
-
-    <a href="gallery.html">Gallery</a>
-
-    <a href="booking.html">Book Now</a>
-
-    <a href="contact.html">Contact</a>
-
-</nav>
-
-
-<!-- HERO -->
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <h2>Kenya Safaris</h2>
-
-        <p>
-            Discover Kenya's iconic wildlife, mountains,
-            lakes, forests and spectacular landscapes.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- INTRO -->
-
-<section class="intro">
-
-    <h2>Explore Kenya's Safari Destinations</h2>
-
-    <p>
-        Discover some of Kenya's most remarkable destinations,
-        each offering its own unique wildlife, scenery and
-        unforgettable safari experiences.
-    </p>
-
-</section>
-
-
-<!-- SAFARI CARDS -->
-
-<section class="safari-grid">
-
-
-<!-- MAASAI MARA -->
-
-<div class="card">
-
-    <img
-        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Zebras_and_wildebeest_Maasai_Mara.jpg"
-        alt="Zebras and wildebeest in Maasai Mara"
-    >
-
-    <div class="card-content">
-
-        <h3>Maasai Mara National Reserve</h3>
-
-        <p>
-            Kenya's world-famous wildlife reserve, known for
-            its open savannahs, big cats, zebras, wildebeest
-            and the Great Migration.
-        </p>
-
-        <ul class="highlights">
-            <li>Big Five</li>
-            <li>Great Migration</li>
-            <li>Lions and cheetahs</li>
-            <li>Zebras and wildebeest</li>
-        </ul>
-
-        <a href="booking.html" class="book-button">
-            Book Maasai Mara Safari
-        </a>
-
-    </div>
-
-</div>
-
-
-<!-- AMBOSELI -->
-
-<div class="card">
-
-    <img
-        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Elephants_at_Amboseli_national_park_against_Mount_Kilimanjaro.jpg"
-        alt="Elephants with Mount Kilimanjaro in Amboseli"
-    >
-
-    <div class="card-content">
-
-        <h3>Amboseli National Park</h3>
-
-        <p>
-            Famous for its magnificent elephant herds and
-            spectacular views of Mount Kilimanjaro.
-        </p>
-
-        <ul class="highlights">
-            <li>Elephants</li>
-            <li>Mount Kilimanjaro</li>
-            <li>Open savannah</li>
-            <li>Birdlife</li>
-        </ul>
-
-        <a href="booking.html" class="book-button">
-            Book Amboseli Safari
-        </a>
-
-    </div>
-
-</div>
-
-
-<!-- LAKE NAKURU -->
-
-<div class="card">
-
-    <img
-        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Flamingos_at_lake_Nakuru.jpg"
-        alt="Flamingos at Lake Nakuru National Park"
-    >
-
-    <div class="card-content">
-
-        <h3>Lake Nakuru National Park</h3>
-
-        <p>
-            Famous for its spectacular flamingos, rhinos,
-            lake scenery and abundant birdlife.
-        </p>
-
-        <ul class="highlights">
-            <li>Flamingos</li>
-            <li>Black rhinos</li>
-            <li>White rhinos</li>
-            <li>Bird watching</li>
-        </ul>
-
-        <a href="booking.html" class="book-button">
-            Book Lake Nakuru Safari
-        </a>
-
-    </div>
-
-</div>
-
-
-<!-- ABERDARE -->
-
-<div class="card">
-
-    <img
-        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/African_elephant_in_Aberdare_NP.JPG"
-        alt="Elephant in Aberdare National Park"
-    >
-
-    <div class="card-content">
-
-        <h3>Aberdare National Park</h3>
-
-        <p>
-            Explore the beautiful highland forests and
-            encounter elephants and other forest wildlife.
-        </p>
-
-        <ul class="highlights">
-            <li>Forest elephants</li>
-            <li>Black rhinos</li>
-            <li>Waterfalls</li>
-            <li>Mountain forests</li>
-        </ul>
-
-        <a href="booking.html" class="book-button">
-            Book Aberdare Safari
-        </a>
-
-    </div>
-
-</div>
-
-
-<!-- OL PEJETA -->
-
-<div class="card">
-
-    <img
-        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Barako,_The_Blind_Black_Rhino,_Ol_Pejeta_Conservancy,_Kenya.jpg"
-        alt="Black rhino at Ol Pejeta Conservancy"
-    >
-
-    <div class="card-content">
-
-        <h3>Ol Pejeta Conservancy</h3>
-
-        <p>
-            A leading conservation destination particularly
-            famous for its rhino conservation and exceptional
-            wildlife experiences.
-        </p>
-
-        <ul class="highlights">
-            <li>Black rhinos</li>
-            <li>White rhinos</li>
-            <li>Big Five</li>
-            <li>Wildlife conservation</li>
-        </ul>
-
-        <a href="booking.html" class="book-button">
-            Book Ol Pejeta Safari
-        </a>
-
-    </div>
-
-</div>
-
-
-<!-- TSAVO -->
-
-<div class="card">
-
-    <img
-        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Red_elephant.jpg"
-        alt="Red elephant in Tsavo East National Park"
-    >
-
-    <div class="card-content">
-
-        <h3>Tsavo National Parks</h3>
-
-        <p>
-            Explore the vast wilderness of Tsavo, famous for
-            its iconic red-coated elephants and dramatic scenery.
-        </p>
-
-        <ul class="highlights">
-            <li>Red-coated elephants</li>
-            <li>Lions</li>
-            <li>Buffalo</li>
-            <li>Vast wilderness</li>
-        </ul>
-
-        <a href="booking.html" class="book-button">
-            Book Tsavo Safari
-        </a>
-
-    </div>
-
-</div>
-
-
-<!-- SAMBURU -->
-
-<div class="card">
-
-    <img
-        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Samburu_Elephant.jpg"
-        alt="Elephant in Samburu National Reserve"
-    >
-
-    <div class="card-content">
-
-        <h3>Samburu National Reserve</h3>
-
-        <p>
-            Discover the spectacular northern landscape and
-            unique wildlife of the Samburu ecosystem.
-        </p>
-
-        <ul class="highlights">
-            <li>Elephants</li>
-            <li>Gerenuk</li>
-            <li>Reticulated giraffe</li>
-            <li>Dry northern landscape</li>
-        </ul>
-
-        <a href="booking.html" class="book-button">
-            Book Samburu Safari
-        </a>
-
-    </div>
-
-</div>
-
-
-<!-- MOUNT KENYA -->
-
-<div class="card">
-
-    <img
-        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mount_Kenya.jpg"
-        alt="Mount Kenya mountain"
-    >
-
-    <div class="card-content">
-
-        <h3>Mount Kenya</h3>
-
-        <p>
-            Explore Kenya's highest mountain, its dramatic
-            peaks, alpine landscapes, forests and surrounding
-            wildlife areas.
-        </p>
-
-        <ul class="highlights">
-            <li>Mount Kenya peaks</li>
-            <li>Mountain scenery</li>
-            <li>Alpine landscapes</li>
-            <li>Wildlife and forests</li>
-        </ul>
-
-        <a href="booking.html" class="book-button">
-            Book Mount Kenya Safari
-        </a>
-
-    </div>
-
-</div>
-
-
-<!-- NAIROBI NATIONAL PARK -->
-
-<div class="card">
-
-    <img
-        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/A_giraffe_with_a_beautiful_background_of_Nairobi_City_Skyline.jpg"
-        alt="Giraffe and Nairobi skyline at Nairobi National Park"
-    >
-
-    <div class="card-content">
-
-        <h3>Nairobi National Park</h3>
-
-        <p>
-            Experience remarkable wildlife against the unique
-            backdrop of Nairobi's skyline at Kenya's famous
-            city-edge national park.
-        </p>
-
-        <ul class="highlights">
-            <li>Giraffes</li>
-            <li>Black rhinos</li>
-            <li>Lions</li>
-            <li>Nairobi skyline</li>
-        </ul>
-
-        <a href="booking.html" class="book-button">
-            Book Nairobi Safari
-        </a>
-
-    </div>
-
-</div>
-
-
-</section>
-
-
-<!-- BACK HOME -->
-
-<div class="back-home">
-
-    <a href="index.html">
-        ← Back to Home
+  <div class="nav-container">
+
+    <a href="index.html" class="logo">
+      OLDEPE TOURS &amp; SAFARIS
+      <span>DISCOVER KENYA</span>
     </a>
 
-</div>
+    <button class="menu-button" id="menuButton"
+      aria-expanded="false" aria-controls="navigation">
+      MENU ☰
+    </button>
 
+    <nav class="nav-links" id="navigation">
+      <a href="index.html">Home</a>
+      <a href="safaris.html" class="active">Safaris</a>
+      <a href="tours.html">Tours</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" class="booking-link">Plan a Safari</a>
+    </nav>
 
-<!-- FOOTER -->
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">Wild Kenya • Unforgettable Journeys</div>
+
+    <h1>Discover Kenya's Wild Side</h1>
+
+    <p>
+      Explore magnificent landscapes, fascinating wildlife
+      and unforgettable safari destinations with Oldepe
+      Tours &amp; Safaris.
+    </p>
+
+    <a href="booking.html" class="button">PLAN YOUR SAFARI</a>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="section-label">Explore Kenya</div>
+
+  <h2>Find Your Perfect Safari</h2>
+
+  <p>
+    From the famous savannahs of Maasai Mara to the
+    elephant country of Amboseli and the beautiful
+    highlands of Kenya, discover experiences that make
+    every journey special.
+  </p>
+</section>
+
+<section class="destinations">
+
+  <article class="destination-card">
+    <img src="images/Safari2.jpg"
+      alt="Kenya safari destination" loading="lazy">
+
+    <div class="card-content">
+      <h3>Maasai Mara National Reserve</h3>
+      <div class="card-tag">Big Five &amp; Great Migration</div>
+
+      <p>
+        Discover the famous African savannah, home to lions,
+        elephants, leopards, buffalo and cheetahs. The Mara
+        is also renowned for the spectacular Great Migration.
+      </p>
+
+      <a href="booking.html" class="button">PLAN THIS SAFARI</a>
+    </div>
+  </article>
+
+  <article class="destination-card">
+    <img src="images/Safari3.jpg"
+      alt="Kenya wildlife safari" loading="lazy">
+
+    <div class="card-content">
+      <h3>Amboseli National Park</h3>
+      <div class="card-tag">Elephants &amp; Kilimanjaro Views</div>
+
+      <p>
+        Experience large elephant herds and beautiful open
+        landscapes, with magnificent views of Mount Kilimanjaro
+        on clear days.
+      </p>
+
+      <a href="booking.html" class="button">PLAN THIS SAFARI</a>
+    </div>
+  </article>
+
+  <article class="destination-card featured">
+    <img src="images/Safari7.jpg"
+      alt="Kenyan nature and wildlife" loading="lazy">
+
+    <div class="card-content">
+      <div class="section-label">Rift Valley Experience</div>
+
+      <h3>Lake Nakuru National Park</h3>
+      <div class="card-tag">Birdlife, Flamingos &amp; Rhinos</div>
+
+      <p>
+        Explore a beautiful Rift Valley park known for
+        remarkable birdlife, flamingos, rhinos, giraffes
+        and other wildlife.
+      </p>
+
+      <a href="booking.html" class="button">PLAN THIS SAFARI</a>
+    </div>
+  </article>
+
+  <article class="destination-card">
+    <img src="images/Safari25.jpg"
+      alt="Kenya wildlife and nature" loading="lazy">
+
+    <div class="card-content">
+      <h3>Ol Pejeta Conservancy</h3>
+      <div class="card-tag">Rhino Conservation &amp; Wildlife</div>
+
+      <p>
+        Visit a leading conservation area in Laikipia,
+        famous for its rhino protection work and diverse
+        wildlife.
+      </p>
+
+      <a href="booking.html" class="button">PLAN THIS SAFARI</a>
+    </div>
+  </article>
+
+  <article class="destination-card">
+    <img src="images/Safari1.jpg"
+      alt="Kenya mountain and nature experience" loading="lazy">
+
+    <div class="card-content">
+      <h3>Mount Kenya</h3>
+      <div class="card-tag">Mountain Scenery &amp; Nature</div>
+
+      <p>
+        Discover dramatic mountain scenery, forest,
+        moorland and beautiful highland surroundings
+        around Africa's second-highest mountain.
+      </p>
+
+      <a href="booking.html" class="button">EXPLORE MOUNT KENYA</a>
+    </div>
+  </article>
+
+  <article class="destination-card">
+    <img src="images/Safari3.jpg"
+      alt="Kenyan highland nature experience" loading="lazy">
+
+    <div class="card-content">
+      <h3>Aberdare National Park</h3>
+      <div class="card-tag">Forests, Waterfalls &amp; Wildlife</div>
+
+      <p>
+        Explore cool mountain forests, waterfalls and
+        moorlands that provide a home to elephants,
+        buffalo and many bird species.
+      </p>
+
+      <a href="booking.html" class="button">EXPLORE ABERDARE</a>
+    </div>
+  </article>
+
+  <article class="destination-card featured">
+    <img src="images/Safari25.jpg"
+      alt="African safari wilderness" loading="lazy">
+
+    <div class="card-content">
+      <div class="section-label">Vast African Wilderness</div>
+
+      <h3>Tsavo East &amp; Tsavo West</h3>
+      <div class="card-tag">Red Elephants &amp; Rugged Landscapes</div>
+
+      <p>
+        Experience one of Kenya's largest wilderness regions,
+        famous for its red elephants, expansive landscapes
+        and remarkable wildlife.
+      </p>
+
+      <a href="booking.html" class="button">PLAN THIS SAFARI</a>
+    </div>
+  </article>
+
+</section>
+
+<section class="planning">
+  <div class="section-label">Your Journey, Your Way</div>
+
+  <h2>Let's Plan Your Kenya Safari</h2>
+
+  <p>
+    Tell us your preferred destinations, travel dates and
+    number of guests. Oldepe Tours &amp; Safaris will help
+    you plan a memorable Kenyan experience.
+  </p>
+
+  <a href="booking.html" class="button">
+    MAKE A BOOKING ENQUIRY
+  </a>
+</section>
+
+<section class="contact-strip">
+  <h3>Need Help Planning Your Safari?</h3>
+
+  <p>
+    Speak to Oldepe Tours &amp; Safaris.
+    We're happy to help you plan your journey.
+  </p>
+
+  <p>
+    <a href="tel:+254720580063">Call 0720 580 063</a>
+    &nbsp; | &nbsp;
+    <a href="mailto:oldep​​etours@gmail.com">Email Us</a>
+  </p>
+
+  <a href="https://wa.me/254720580063" class="button">
+    CHAT WITH US ON WHATSAPP
+  </a>
+</section>
+
+</main>
 
 <footer>
+  <div class="footer-container">
 
-    <p>
-        <strong>Oldepe Tours & Safaris</strong>
-    </p>
+    <div>
+      <h3>Oldepe Tours &amp; Safaris</h3>
 
-    <p>
-        Discover Kenya • Experience Africa
-    </p>
+      <p>Discover Kenya. Experience the wild.</p>
 
-    <p>
-        Safari • Wildlife • Culture • Nature
-    </p>
+      <p>
+        Wildlife safaris, nature experiences and
+        unforgettable journeys across Kenya.
+      </p>
+    </div>
 
-    <p>
+    <div>
+      <h3>Explore</h3>
+
+      <a href="index.html">Home</a>
+      <a href="safaris.html">Safaris</a>
+      <a href="tours.html">Tours</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+    </div>
+
+    <div>
+      <h3>Contact Us</h3>
+
+      <a href="tel:+254720580063">0720 580 063</a>
+
+      <a href="mailto:oldep​​etours@gmail.com">
         oldepetours@gmail.com
-    </p>
+      </a>
 
-    <p>
-        © 2026 Oldepe Tours & Safaris. All Rights Reserved.
-    </p>
+      <a href="https://wa.me/254720580063">
+        WhatsApp
+      </a>
 
+      <a href="contact.html">Contact Page</a>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 Oldepe Tours &amp; Safaris. All Rights Reserved.
+  </div>
 </footer>
 
+<script>
+const menuButton = document.getElementById("menuButton");
+const navigation = document.getElementById("navigation");
+
+menuButton.addEventListener("click", function() {
+  const opened = navigation.classList.toggle("open");
+  menuButton.setAttribute("aria-expanded", opened);
+});
+</script>
 
 </body>
 </html>
