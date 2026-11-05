@@ -1,268 +1,184 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Thank You | Oldepe Tours & Safaris</title>
 
 <style>
-
-*{
-    box-sizing:border-box;
+:root {
+  --sand: #F4EBE1;
+  --charcoal: #2E2A25;
+  --orange: #D97736;
 }
 
-body{
-
-    margin:0;
-
-    min-height:100vh;
-
-    font-family:Arial,Helvetica,sans-serif;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    padding:20px;
-
-    background:
-    linear-gradient(
-        rgba(0,0,0,.55),
-        rgba(0,0,0,.70)
-    ),
-    url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2000&q=90")
-    center/cover no-repeat;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.card{
-
-    width:100%;
-
-    max-width:650px;
-
-    background:#fff;
-
-    border-radius:14px;
-
-    padding:50px 30px;
-
-    text-align:center;
-
-    box-shadow:0 20px 60px rgba(0,0,0,.3);
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--sand);
+  color: var(--charcoal);
 }
 
-.logo{
-
-    color:#173b2a;
-
-    font-size:22px;
-
-    font-weight:bold;
-
-    margin-bottom:25px;
+.card {
+  width: 100%;
+  max-width: 650px;
+  padding: 45px 30px;
+  text-align: center;
+  background: var(--sand);
+  border: 1px solid rgba(46,42,37,.25);
+  border-radius: 12px;
 }
 
-.logo span{
-
-    display:block;
-
-    color:#b47b13;
-
-    font-size:10px;
-
-    letter-spacing:4px;
-
-    margin-top:5px;
-
-    font-weight:normal;
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: var(--charcoal);
 }
 
-.check{
-
-    width:80px;
-
-    height:80px;
-
-    border-radius:50%;
-
-    background:#173b2a;
-
-    color:#fff;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    margin:0 auto 25px;
-
-    font-size:45px;
+.logo span {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin-top: 5px;
+  font-weight: normal;
 }
 
-h1{
-
-    color:#173b2a;
-
-    font-size:40px;
-
-    margin-bottom:15px;
+.check {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--charcoal);
+  color: var(--sand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  font-size: 43px;
 }
 
-p{
-
-    color:#666;
-
-    font-size:18px;
-
-    line-height:1.7;
+h1 {
+  font-size: 36px;
+  margin-bottom: 18px;
+  color: var(--charcoal);
 }
 
-.buttons{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:12px;
-
-    max-width:400px;
-
-    margin:30px auto 0;
+p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 12px;
 }
 
-.button{
-
-    display:block;
-
-    padding:15px;
-
-    border-radius:6px;
-
-    color:#fff;
-
-    font-weight:bold;
-
-    text-decoration:none;
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 30px auto 0;
 }
 
-.home{
-
-    background:#173b2a;
+.button {
+  display: block;
+  padding: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.safaris{
-
-    background:#d99b27;
+.home {
+  background: var(--orange);
+  color: #fff;
 }
 
-.whatsapp{
-
-    background:#229c4b;
+.safaris {
+  background: var(--charcoal);
+  color: var(--sand);
 }
 
-.footer{
-
-    margin-top:30px;
-
-    padding-top:20px;
-
-    border-top:1px solid #eee;
-
-    color:#888;
-
-    font-size:13px;
+.whatsapp {
+  background: var(--sand);
+  color: var(--charcoal);
+  border: 1px solid var(--charcoal);
 }
 
+.button:hover {
+  opacity: .85;
+}
+
+.footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(46,42,37,.25);
+  font-size: 13px;
+}
+
+@media(max-width: 500px) {
+  h1 {
+    font-size: 29px;
+  }
+
+  .card {
+    padding: 35px 20px;
+  }
+}
 </style>
-
 </head>
 
 <body>
 
 <div class="card">
 
-<div class="logo">
+  <div class="logo">
+    OLDEPE TOURS & SAFARIS
+    <span>TEMBEA KENYA</span>
+  </div>
 
-OLDEPE TOURS & SAFARIS
+  <div class="check">✓</div>
 
-<span>TEMBEA KENYA</span>
+  <h1>Thank You!</h1>
 
-</div>
+  <p><strong>Your Safari Enquiry Has Been Received.</strong></p>
 
+  <p>
+    Thank you for contacting Oldepe Tours & Safaris.
+    We appreciate your interest and look forward to helping
+    you plan your Kenya safari.
+  </p>
 
-<div class="check">
+  <p>Our team will contact you to discuss your travel plans.</p>
 
-✓
+  <div class="buttons">
 
-</div>
+    <a href="index.html" class="button home">
+      BACK HOME
+    </a>
 
+    <a href="safaris.html" class="button safaris">
+      VIEW OUR SAFARIS
+    </a>
 
-<h1>
-Safari Enquiry Received!
-</h1>
+    <a href="https://wa.me/254720580063" class="button whatsapp">
+      CHAT ON WHATSAPP
+    </a>
 
+  </div>
 
-<p>
-
-Thank you for contacting
-<strong>Oldepe Tours & Safaris.</strong>
-
-</p>
-
-
-<p>
-
-Your safari enquiry has been received
-successfully. We will contact you shortly
-to discuss your travel plans.
-
-</p>
-
-
-<div class="buttons">
-
-<a
-href="index.html"
-class="button home"
->
-← BACK HOME
-</a>
-
-
-<a
-href="safaris.html"
-class="button safaris"
->
-VIEW OUR SAFARIS
-</a>
-
-
-<a
-href="https://wa.me/254720580063?text=Hello%20Oldepe%20Tours%20%26%20Safaris.%20I%20have%20just%20submitted%20a%20safari%20enquiry."
-class="button whatsapp"
->
-CHAT ON WHATSAPP
-</a>
-
-</div>
-
-
-<div class="footer">
-
-© 2026 Oldepe Tours & Safaris
-
-</div>
+  <div class="footer">
+    © 2026 Oldepe Tours & Safaris. All Rights Reserved.
+  </div>
 
 </div>
 
 </body>
-
 </html>
