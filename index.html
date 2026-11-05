@@ -9,590 +9,590 @@
 <title>Oldepe Tours & Safaris | Discover Kenya</title>
 
 <style>
-:root{
-  --sand:#F4EBE1;
-  --charcoal:#2E2A25;
-  --orange:#D97736;
-  --muted:#665D54;
-  --white:#FFFFFF;
+:root {
+  --sand: #F4EBE1;
+  --charcoal: #2E2A25;
+  --orange: #D97736;
+  --muted: #665D54;
 }
 
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-
-body{
-  font-family:Georgia,"Times New Roman",serif;
-  color:var(--charcoal);
-  background:var(--sand);
-  line-height:1.65;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-a{color:inherit;text-decoration:none}
-img{display:block;width:100%}
+html { scroll-behavior: smooth; }
 
-.topline{
-  background:var(--charcoal);
-  color:var(--sand);
-  text-align:center;
-  padding:8px;
-  font:11px Arial;
-  letter-spacing:.13em;
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--charcoal);
+  background: var(--sand);
+  line-height: 1.65;
 }
 
-header{
-  position:sticky;
-  top:0;
-  z-index:10;
-  background:#F4EBE1F5;
-  border-bottom:1px solid #2E2A2520;
-  backdrop-filter:blur(10px);
+a { color: inherit; text-decoration: none; }
+img { display: block; width: 100%; }
+
+.topline {
+  background: var(--charcoal);
+  color: var(--sand);
+  text-align: center;
+  padding: 8px;
+  font: 11px Arial;
+  letter-spacing: .13em;
 }
 
-.nav{
-  max-width:1220px;
-  margin:auto;
-  padding:14px 24px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #F4EBE1F5;
+  border-bottom: 1px solid #2E2A2520;
+  backdrop-filter: blur(10px);
 }
 
-.brand{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  color:var(--charcoal);
+.nav {
+  max-width: 1220px;
+  margin: auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.mark{
-  width:42px;
-  height:42px;
-  border:1px solid var(--orange);
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  color:var(--orange);
-  font-weight:bold;
-  font-size:19px;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--charcoal);
 }
 
-.brand strong{
-  font-size:19px;
-  letter-spacing:.05em;
-  line-height:1.1;
+.mark {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--orange);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 19px;
 }
 
-.brand small{
-  display:block;
-  color:var(--orange);
-  font:10px Arial;
-  letter-spacing:.2em;
-  margin-top:4px;
+.brand strong {
+  font-size: 19px;
+  letter-spacing: .05em;
+  line-height: 1.1;
 }
 
-.links{
-  display:flex;
-  gap:22px;
-  align-items:center;
-  list-style:none;
-  font:700 13px Arial;
+.brand small {
+  display: block;
+  color: var(--orange);
+  font: 10px Arial;
+  letter-spacing: .2em;
+  margin-top: 4px;
 }
 
-.links a:hover{color:var(--orange)}
-
-.btn,.navbtn{
-  display:inline-block;
-  background:var(--orange);
-  color:white;
-  padding:13px 21px;
-  font:700 12px Arial;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  border-radius:3px;
-  transition:.2s;
+.links {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  list-style: none;
+  font: 700 13px Arial;
 }
 
-.btn:hover,.navbtn:hover{
-  background:#B85E27;
-  transform:translateY(-2px);
+.links a:hover { color: var(--orange); }
+
+.btn, .navbtn {
+  display: inline-block;
+  background: var(--orange);
+  color: white;
+  padding: 13px 21px;
+  font: 700 12px Arial;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  transition: .2s;
 }
 
-.menu{
-  display:none;
-  border:0;
-  background:none;
-  font-size:28px;
-  color:var(--charcoal);
+.btn:hover, .navbtn:hover {
+  background: #B85E27;
+  transform: translateY(-2px);
 }
 
-.hero{
-  min-height:670px;
-  display:flex;
-  align-items:center;
-  color:white;
+.menu {
+  display: none;
+  border: 0;
+  background: none;
+  font-size: 28px;
+  color: var(--charcoal);
+}
+
+.hero {
+  min-height: 670px;
+  display: flex;
+  align-items: center;
+  color: white;
   background:
     linear-gradient(90deg,#2E2A25D9,#2E2A2560 60%,#2E2A2510),
-    url("images/Safari1.jpg") center/cover no-repeat;
+    url("images/safari1.jpg") center/cover no-repeat;
 }
 
-.hero-inner{
-  max-width:1220px;
-  width:100%;
-  margin:auto;
-  padding:90px 24px;
+.hero-inner {
+  max-width: 1220px;
+  width: 100%;
+  margin: auto;
+  padding: 90px 24px;
 }
 
-.eyebrow,.label{
-  color:var(--orange);
-  font:700 11px Arial;
-  letter-spacing:.25em;
-  text-transform:uppercase;
-  margin-bottom:15px;
+.eyebrow, .label {
+  color: var(--orange);
+  font: 700 11px Arial;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
-h1{
-  font-size:clamp(44px,6.5vw,78px);
-  line-height:1.05;
-  font-weight:500;
-  max-width:760px;
-  margin-bottom:22px;
+h1 {
+  font-size: clamp(44px,6.5vw,78px);
+  line-height: 1.05;
+  font-weight: 500;
+  max-width: 760px;
+  margin-bottom: 22px;
 }
 
-h1 em{color:#F2A16D}
+h1 em { color: #F2A16D; }
 
-.hero p{
-  max-width:590px;
-  font:16px/1.9 Arial;
-  color:#F4EBE1;
-  margin-bottom:30px;
+.hero p {
+  max-width: 590px;
+  font: 16px/1.9 Arial;
+  color: var(--sand);
+  margin-bottom: 30px;
 }
 
-.actions{
-  display:flex;
-  gap:13px;
-  flex-wrap:wrap;
+.actions {
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
 }
 
-.outline{
-  display:inline-block;
-  padding:12px 20px;
-  border:1px solid white;
-  color:white;
-  font:700 12px Arial;
-  letter-spacing:.08em;
-  text-transform:uppercase;
+.outline {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid white;
+  color: white;
+  font: 700 12px Arial;
+  letter-spacing: .08em;
+  text-transform: uppercase;
 }
 
-.outline:hover{
-  background:white;
-  color:var(--charcoal);
+.outline:hover {
+  background: white;
+  color: var(--charcoal);
 }
 
-section{padding:82px 24px}
+section { padding: 82px 24px; }
 
-.wrap{
-  max-width:1220px;
-  margin:auto;
+.wrap {
+  max-width: 1220px;
+  margin: auto;
 }
 
-.center{
-  text-align:center;
-  max-width:850px;
-  margin:auto;
+.center {
+  text-align: center;
+  max-width: 850px;
+  margin: auto;
 }
 
-.label{color:var(--orange)}
-
-h2{
-  font-size:clamp(32px,4vw,47px);
-  line-height:1.15;
-  font-weight:500;
-  color:var(--charcoal);
-  margin-bottom:17px;
+h2 {
+  font-size: clamp(32px,4vw,47px);
+  line-height: 1.15;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin-bottom: 17px;
 }
 
-.lead{
-  font:15px/1.9 Arial;
-  color:var(--muted);
+.lead {
+  font: 15px/1.9 Arial;
+  color: var(--muted);
 }
 
-.intro{background:var(--sand)}
+.intro { background: var(--sand); }
 
-.intro p{
-  max-width:790px;
-  margin:auto;
-  font:16px/1.9 Arial;
-  color:var(--muted);
+.intro p {
+  max-width: 790px;
+  margin: auto;
+  font: 16px/1.9 Arial;
+  color: var(--muted);
 }
 
-.destinations{background:#EDE1D5}
+.destinations { background: #F4EBE1; }
 
-.head{
-  display:flex;
-  justify-content:space-between;
-  align-items:end;
-  gap:30px;
-  margin-bottom:35px;
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 35px;
 }
 
-.head>div{max-width:670px}
-.head .lead{max-width:540px}
+.head > div { max-width: 670px; }
+.head .lead { max-width: 540px; }
 
-.cards{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:17px;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 17px;
 }
 
-.destination{
-  position:relative;
-  min-height:340px;
-  overflow:hidden;
-  background:#D8C9B9;
+.destination {
+  position: relative;
+  min-height: 340px;
+  overflow: hidden;
+  background: #D8C9B9;
 }
 
-.destination img{
-  height:100%;
-  position:absolute;
-  inset:0;
-  object-fit:cover;
-  transition:.5s;
+.destination img {
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  transition: .5s;
 }
 
-.destination:hover img{transform:scale(1.06)}
+.destination:hover img { transform: scale(1.06); }
 
-.destination:after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(0deg,#2E2A25E6,transparent 65%);
+.destination:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg,#2E2A25E6,transparent 65%);
 }
 
-.destcopy{
-  position:absolute;
-  z-index:1;
-  bottom:20px;
-  left:20px;
-  color:white;
+.destcopy {
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: 20px;
+  color: white;
 }
 
-.destcopy small{
-  color:#F2A16D;
-  font:10px Arial;
-  letter-spacing:.16em;
-  text-transform:uppercase;
+.destcopy small {
+  color: #F2A16D;
+  font: 10px Arial;
+  letter-spacing: .16em;
+  text-transform: uppercase;
 }
 
-.destcopy h3{
-  font-size:24px;
-  font-weight:500;
+.destcopy h3 {
+  font-size: 24px;
+  font-weight: 500;
 }
 
-.experience{background:var(--sand)}
+.experience { background: var(--sand); }
 
-.two{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:60px;
-  align-items:center;
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
 }
 
-.photo{position:relative}
+.photo { position: relative; }
 
-.photo img{
-  height:520px;
-  object-fit:cover;
+.photo img {
+  height: 520px;
+  object-fit: cover;
 }
 
-.tag{
-  position:absolute;
-  right:-12px;
-  bottom:-15px;
-  background:var(--orange);
-  padding:17px 22px;
-  color:white;
-  font:700 11px/1.5 Arial;
-  letter-spacing:.1em;
-  text-transform:uppercase;
+.tag {
+  position: absolute;
+  right: -12px;
+  bottom: -15px;
+  background: var(--orange);
+  padding: 17px 22px;
+  color: white;
+  font: 700 11px/1.5 Arial;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 }
 
-.experience p{
-  font:15px/1.9 Arial;
-  color:var(--muted);
-  margin-bottom:22px;
+.experience p {
+  font: 15px/1.9 Arial;
+  color: var(--muted);
+  margin-bottom: 22px;
 }
 
-.checklist{
-  list-style:none;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
-  margin:24px 0 30px;
-  font:14px Arial;
+.checklist {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 24px 0 30px;
+  font: 14px Arial;
 }
 
-.checklist li:before{
-  content:"✦";
-  color:var(--orange);
-  margin-right:9px;
+.checklist li:before {
+  content: "✦";
+  color: var(--orange);
+  margin-right: 9px;
 }
 
-.services{
-  background:var(--charcoal);
-  color:white;
+.services {
+  background: var(--charcoal);
+  color: white;
 }
 
-.services h2{color:var(--sand)}
-.services .lead{color:#E0D6CC}
+.services h2 { color: var(--sand); }
+.services .lead { color: #E0D6CC; }
 
-.servicegrid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:1px;
-  background:#FFFFFF30;
-  border:1px solid #FFFFFF30;
-  margin-top:35px;
+.servicegrid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1px;
+  background: #FFFFFF30;
+  border: 1px solid #FFFFFF30;
+  margin-top: 35px;
 }
 
-.service{
-  background:var(--charcoal);
-  padding:32px;
-  min-height:210px;
+.service {
+  background: var(--charcoal);
+  padding: 32px;
+  min-height: 210px;
 }
 
-.service small{
-  color:var(--orange);
-  font:11px Arial;
-  letter-spacing:.2em;
+.service small {
+  color: var(--orange);
+  font: 11px Arial;
+  letter-spacing: .2em;
 }
 
-.service h3{
-  font-size:25px;
-  font-weight:500;
-  margin:17px 0 9px;
+.service h3 {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 17px 0 9px;
 }
 
-.service p{
-  font:14px/1.8 Arial;
-  color:#E0D6CC;
+.service p {
+  font: 14px/1.8 Arial;
+  color: #E0D6CC;
 }
 
-.promise{background:#EDE1D5}
+.promise { background: #F4EBE1; }
 
-.promisegrid{
-  display:grid;
-  grid-template-columns:.9fr 1.1fr;
-  gap:55px;
-  align-items:center;
+.promisegrid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 55px;
+  align-items: center;
 }
 
-.promisegrid p{
-  font:15px/1.9 Arial;
-  color:var(--muted);
+.promisegrid p {
+  font: 15px/1.9 Arial;
+  color: var(--muted);
 }
 
-.points{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:22px;
+.points {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
 }
 
-.point{
-  border-top:1px solid #C9B7A6;
-  padding-top:14px;
+.point {
+  border-top: 1px solid #C9B7A6;
+  padding-top: 14px;
 }
 
-.point strong{
-  display:block;
-  color:var(--charcoal);
-  font-size:19px;
+.point strong {
+  display: block;
+  color: var(--charcoal);
+  font-size: 19px;
 }
 
-.point span{
-  font:13px/1.7 Arial;
-  color:var(--muted);
+.point span {
+  font: 13px/1.7 Arial;
+  color: var(--muted);
 }
 
-.transfer{background:var(--sand)}
+.transfer { background: var(--sand); }
 
-.transferbox{
-  border:1px solid #D6C7B9;
-  padding:34px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:30px;
+.transferbox {
+  border: 1px solid #D6C7B9;
+  padding: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
 }
 
-.transferbox p{
-  max-width:700px;
-  font:14px/1.8 Arial;
-  color:var(--muted);
+.transferbox p {
+  max-width: 700px;
+  font: 14px/1.8 Arial;
+  color: var(--muted);
 }
 
-.gallery{
-  padding-top:0;
-  background:var(--sand);
+.gallery {
+  padding-top: 0;
+  background: var(--sand);
 }
 
-.strip{
-  display:grid;
-  grid-template-columns:1.2fr 1fr 1fr 1fr;
-  gap:12px;
+.strip {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  gap: 12px;
 }
 
-.strip img{
-  height:205px;
-  object-fit:cover;
+.strip img {
+  height: 205px;
+  object-fit: cover;
 }
 
-.cta{
-  text-align:center;
-  color:white;
+.cta {
+  text-align: center;
+  color: white;
   background:
     linear-gradient(#2E2A25D9,#2E2A25E6),
-    url("images/Safari3.jpg") center/cover no-repeat;
+    url("images/safari3.jpg") center/cover no-repeat;
 }
 
-.cta h2{
-  color:white;
-  max-width:750px;
-  margin:0 auto 18px;
+.cta h2 {
+  color: white;
+  max-width: 750px;
+  margin: 0 auto 18px;
 }
 
-.cta p{
-  max-width:650px;
-  margin:0 auto 27px;
-  font:15px/1.8 Arial;
-  color:#F4EBE1;
+.cta p {
+  max-width: 650px;
+  margin: 0 auto 27px;
+  font: 15px/1.8 Arial;
+  color: var(--sand);
 }
 
-footer{
-  background:var(--charcoal);
-  color:var(--sand);
-  padding:50px 24px 20px;
+footer {
+  background: var(--charcoal);
+  color: var(--sand);
+  padding: 50px 24px 20px;
 }
 
-.footgrid{
-  max-width:1220px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:2fr 1fr 1fr;
-  gap:45px;
+.footgrid {
+  max-width: 1220px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 45px;
 }
 
-footer h3{
-  color:var(--orange);
-  font:700 12px Arial;
-  letter-spacing:.15em;
-  margin-bottom:14px;
+footer h3 {
+  color: var(--orange);
+  font: 700 12px Arial;
+  letter-spacing: .15em;
+  margin-bottom: 14px;
 }
 
-footer p,footer li{
-  font:13px/1.9 Arial;
-  color:#E0D6CC;
+footer p, footer li {
+  font: 13px/1.9 Arial;
+  color: #E0D6CC;
 }
 
-footer ul{list-style:none}
+footer ul { list-style: none; }
+footer a:hover { color: var(--orange); }
 
-footer a:hover{color:var(--orange)}
-
-.copyright{
-  max-width:1220px;
-  margin:30px auto 0;
-  padding-top:17px;
-  border-top:1px solid #FFFFFF24;
-  text-align:center;
-  color:#C9BDB1;
-  font:11px Arial;
+.copyright {
+  max-width: 1220px;
+  margin: 30px auto 0;
+  padding-top: 17px;
+  border-top: 1px solid #FFFFFF24;
+  text-align: center;
+  color: #C9BDB1;
+  font: 11px Arial;
 }
 
-@media(max-width:900px){
-  .cards{grid-template-columns:repeat(2,1fr)}
-  .head{display:block}
-  .head .lead{margin-top:12px}
+@media(max-width:900px) {
+  .cards { grid-template-columns: repeat(2,1fr); }
+  .head { display: block; }
+  .head .lead { margin-top: 12px; }
 }
 
-@media(max-width:700px){
-  .nav{padding:12px 17px}
-  .menu{display:block}
-  .navbtn{display:none}
+@media(max-width:700px) {
+  .nav { padding: 12px 17px; }
+  .menu { display: block; }
+  .navbtn { display: none; }
 
-  .links{
-    display:none;
-    position:absolute;
-    top:68px;
-    left:0;
-    right:0;
-    background:var(--sand);
-    padding:15px 22px 22px;
-    flex-direction:column;
-    align-items:stretch;
-    gap:0;
-    border-bottom:1px solid #D6C7B9;
+  .links {
+    display: none;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background: var(--sand);
+    padding: 15px 22px 22px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    border-bottom: 1px solid #D6C7B9;
   }
 
-  .links.open{display:flex}
+  .links.open { display: flex; }
 
-  .links a{
-    display:block;
-    padding:10px 0;
-    color:var(--charcoal);
+  .links a {
+    display: block;
+    padding: 10px 0;
+    color: var(--charcoal);
   }
 
-  .hero{
-    min-height:590px;
-    background-position:58% center;
+  .hero {
+    min-height: 590px;
+    background-position: 58% center;
   }
 
-  .hero-inner{padding:75px 21px}
-  .hero p{font-size:15px}
-  section{padding:62px 19px}
-  .cards{gap:11px}
-  .destination{min-height:245px}
-  .destcopy{left:13px;bottom:13px}
-  .destcopy h3{font-size:19px}
+  .hero-inner { padding: 75px 21px; }
+  .hero p { font-size: 15px; }
+  section { padding: 62px 19px; }
+  .cards { gap: 11px; }
+  .destination { min-height: 245px; }
+  .destcopy { left: 13px; bottom: 13px; }
+  .destcopy h3 { font-size: 19px; }
 
-  .two,.promisegrid{
-    grid-template-columns:1fr;
-    gap:36px;
+  .two, .promisegrid {
+    grid-template-columns: 1fr;
+    gap: 36px;
   }
 
-  .photo img{height:350px}
-  .tag{right:-4px}
+  .photo img { height: 350px; }
+  .tag { right: -4px; }
+  .servicegrid { grid-template-columns: 1fr; }
+  .service { min-height: 0; padding: 25px; }
 
-  .servicegrid{grid-template-columns:1fr}
-  .service{min-height:0;padding:25px}
-
-  .transferbox{
-    display:block;
-    padding:25px;
+  .transferbox {
+    display: block;
+    padding: 25px;
   }
 
-  .transferbox .btn{margin-top:18px}
+  .transferbox .btn { margin-top: 18px; }
+  .strip { grid-template-columns: 1fr 1fr; }
+  .strip img { height: 145px; }
 
-  .strip{grid-template-columns:1fr 1fr}
-  .strip img{height:145px}
-
-  .footgrid{
-    grid-template-columns:1fr 1fr;
-    gap:28px;
+  .footgrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
   }
 
-  .footgrid>div:first-child{grid-column:1/-1}
+  .footgrid > div:first-child { grid-column: 1/-1; }
 }
 
-@media(max-width:420px){
-  .cards{grid-template-columns:1fr 1fr}
-  .destination{min-height:215px}
-  .checklist{grid-template-columns:1fr}
-  .footgrid{grid-template-columns:1fr}
-  .footgrid>div:first-child{grid-column:auto}
-  .actions{
-    flex-direction:column;
-    align-items:stretch;
-    max-width:290px;
+@media(max-width:420px) {
+  .cards { grid-template-columns: 1fr 1fr; }
+  .destination { min-height: 215px; }
+  .checklist { grid-template-columns: 1fr; }
+  .footgrid { grid-template-columns: 1fr; }
+  .footgrid > div:first-child { grid-column: auto; }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 290px;
   }
 }
 </style>
@@ -606,15 +606,12 @@ KENYA • WILDLIFE • CULTURE • UNFORGETTABLE JOURNEYS
 
 <header>
 <nav class="nav">
-
 <a class="brand" href="index.html">
 <span class="mark">O</span>
 <strong>OLDEPE<small>TOURS &amp; SAFARIS</small></strong>
 </a>
 
-<button class="menu" id="menu"
-aria-label="Toggle navigation"
-aria-expanded="false">☰</button>
+<button class="menu" id="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button>
 
 <ul class="links" id="links">
 <li><a href="index.html">Home</a></li>
@@ -626,7 +623,6 @@ aria-expanded="false">☰</button>
 </ul>
 
 <a class="navbtn" href="booking.html">Plan Your Safari</a>
-
 </nav>
 </header>
 
@@ -634,126 +630,69 @@ aria-expanded="false">☰</button>
 
 <section class="hero">
 <div class="hero-inner">
-
 <div class="eyebrow">The spirit of Kenya awaits</div>
-
-<h1>
-Find your wild.<br>
-<em>Discover Kenya.</em>
-</h1>
-
-<p>
-From open savannahs and remarkable wildlife to rich
-cultures and quiet natural escapes, experience Kenya
-through journeys shaped around you.
-</p>
-
+<h1>Find your wild.<br><em>Discover Kenya.</em></h1>
+<p>From open savannahs and remarkable wildlife to rich cultures and quiet natural escapes, experience Kenya through journeys shaped around you.</p>
 <div class="actions">
 <a class="btn" href="safaris.html">Explore our safaris</a>
 <a class="outline" href="booking.html">Start planning</a>
 </div>
-
 </div>
 </section>
 
 <section class="intro">
 <div class="center">
-
 <div class="label">Welcome to Oldepe</div>
-
 <h2>Journeys made for the curious</h2>
-
-<p>
-Oldepe Tours &amp; Safaris invites you to experience the
-landscapes, wildlife and heritage that make Kenya
-extraordinary. Whether you dream of a private wildlife
-adventure, a tailor-made holiday or a smooth airport
-transfer, we help you make every part of the journey count.
-</p>
-
+<p>Oldepe Tours &amp; Safaris invites you to experience the landscapes, wildlife and heritage that make Kenya extraordinary. Whether you dream of a private wildlife adventure, a tailor-made holiday or a smooth airport transfer, we help you make every part of the journey count.</p>
 </div>
 </section>
 
 <section class="destinations">
 <div class="wrap">
-
 <div class="head">
 <div>
 <div class="label">Explore Kenya</div>
 <h2>Landscapes that stay with you</h2>
 </div>
-
-<p class="lead">
-Discover remarkable places and the experiences that
-make each journey unique. Explore our safari options
-and let us help shape your itinerary.
-</p>
+<p class="lead">Discover remarkable places and the experiences that make each journey unique. Explore our safari options and let us help shape your itinerary.</p>
 </div>
 
 <div class="cards">
-
 <a class="destination" href="safaris.html">
-<img src="images/Safari2.jpg"
-alt="Kenyan safari landscape and wildlife" loading="lazy">
-<div class="destcopy">
-<small>Wildlife journeys</small>
-<h3>Maasai Mara</h3>
-</div>
+<img src="images/safari2.jpg" alt="Kenyan safari landscape and wildlife" loading="lazy">
+<div class="destcopy"><small>Wildlife journeys</small><h3>Maasai Mara</h3></div>
 </a>
 
 <a class="destination" href="safaris.html">
-<img src="images/Safari3.jpg"
-alt="Safari scenery in Kenya" loading="lazy">
-<div class="destcopy">
-<small>Scenic adventures</small>
-<h3>Amboseli &amp; Beyond</h3>
-</div>
+<img src="images/safari3.jpg" alt="Safari scenery in Kenya" loading="lazy">
+<div class="destcopy"><small>Scenic adventures</small><h3>Amboseli &amp; Beyond</h3></div>
 </a>
 
 <a class="destination" href="safaris.html">
-<img src="images/Safari7.jpg"
-alt="Nature and wildlife in Kenya" loading="lazy">
-<div class="destcopy">
-<small>Nature escapes</small>
-<h3>Kenya's Wild Places</h3>
-</div>
+<img src="images/safari7.jpg" alt="Nature and wildlife in Kenya" loading="lazy">
+<div class="destcopy"><small>Nature escapes</small><h3>Kenya's Wild Places</h3></div>
 </a>
 
 <a class="destination" href="safaris.html">
-<img src="images/Safari25.jpg"
-alt="Kenyan safari experience" loading="lazy">
-<div class="destcopy">
-<small>Made for discovery</small>
-<h3>Private Safaris</h3>
-</div>
+<img src="images/safari25.jpg" alt="Kenyan safari experience" loading="lazy">
+<div class="destcopy"><small>Made for discovery</small><h3>Private Safaris</h3></div>
 </a>
-
 </div>
 </div>
 </section>
 
 <section class="experience">
 <div class="wrap two">
-
 <div class="photo">
-<img src="images/Safari25.jpg"
-alt="Wildlife safari experience in Kenya" loading="lazy">
-<div class="tag">
-Your Kenya<br>story begins here
-</div>
+<img src="images/safari25.jpg" alt="Wildlife safari experience in Kenya" loading="lazy">
+<div class="tag">Your Kenya<br>story begins here</div>
 </div>
 
 <div>
 <div class="label">Travel your way</div>
-
 <h2>More than a destination. A feeling.</h2>
-
-<p>
-Every traveller has a different idea of the perfect
-journey. We help you explore Kenya at your own pace,
-with experiences shaped around your interests,
-schedule and travel style.
-</p>
+<p>Every traveller has a different idea of the perfect journey. We help you explore Kenya at your own pace, with experiences shaped around your interests, schedule and travel style.</p>
 
 <ul class="checklist">
 <li>Private wildlife safaris</li>
@@ -764,188 +703,103 @@ schedule and travel style.
 <li>Airport transfers</li>
 </ul>
 
-<a class="btn" href="safaris.html">
-Discover safari options
-</a>
+<a class="btn" href="safaris.html">Discover safari options</a>
 </div>
-
 </div>
 </section>
 
 <section class="services">
 <div class="wrap">
-
 <div class="label">Our experiences</div>
-
 <h2>Thoughtful travel, from start to finish</h2>
-
-<p class="lead">
-Whether you are planning a dedicated safari or need
-dependable transport, explore the services available
-through Oldepe Tours &amp; Safaris.
-</p>
+<p class="lead">Whether you are planning a dedicated safari or need dependable transport, explore the services available through Oldepe Tours &amp; Safaris.</p>
 
 <div class="servicegrid">
-
 <article class="service">
 <small>01 / SAFARIS</small>
 <h3>Wildlife Safaris</h3>
-<p>
-Explore Kenya's celebrated wildlife areas and natural
-landscapes on a safari that suits your plans.
-</p>
+<p>Explore Kenya's celebrated wildlife areas and natural landscapes on a safari that suits your plans.</p>
 </article>
 
 <article class="service">
 <small>02 / PRIVATE TRAVEL</small>
 <h3>Private Journeys</h3>
-<p>
-Enjoy a personal way to travel, with an itinerary shaped
-around your interests and available time.
-</p>
+<p>Enjoy a personal way to travel, with an itinerary shaped around your interests and available time.</p>
 </article>
 
 <article class="service">
 <small>03 / TRANSFERS</small>
 <h3>Airport Transfers</h3>
-<p>
-Arrange convenient airport pick-ups and drop-offs to
-help make your arrival and departure smoother.
-</p>
+<p>Arrange convenient airport pick-ups and drop-offs to help make your arrival and departure smoother.</p>
 </article>
-
 </div>
 </div>
 </section>
 
 <section class="promise">
 <div class="wrap promisegrid">
-
 <div>
 <div class="label">The Oldepe approach</div>
-
 <h2>Personal attention. Genuine experiences.</h2>
-
-<p>
-Good travel is about more than getting from one place
-to another. It is about feeling welcome, having room
-to explore and making memories along the way. We aim
-to make planning clear and your experience rewarding.
-</p>
+<p>Good travel is about more than getting from one place to another. It is about feeling welcome, having room to explore and making memories along the way. We aim to make planning clear and your experience rewarding.</p>
 </div>
 
 <div class="points">
-
-<div class="point">
-<strong>Personalised</strong>
-<span>Travel plans shaped around your interests.</span>
-</div>
-
-<div class="point">
-<strong>Local insight</strong>
-<span>Discover the character of Kenya's places.</span>
-</div>
-
-<div class="point">
-<strong>Guest focused</strong>
-<span>Helpful communication throughout your journey.</span>
-</div>
-
-<div class="point">
-<strong>Flexible</strong>
-<span>Options for different travel styles and schedules.</span>
-</div>
-
+<div class="point"><strong>Personalised</strong><span>Travel plans shaped around your interests.</span></div>
+<div class="point"><strong>Local insight</strong><span>Discover the character of Kenya's places.</span></div>
+<div class="point"><strong>Guest focused</strong><span>Helpful communication throughout your journey.</span></div>
+<div class="point"><strong>Flexible</strong><span>Options for different travel styles and schedules.</span></div>
 </div>
 </div>
 </section>
 
 <section class="transfer">
 <div class="wrap transferbox">
-
 <div>
 <div class="label">Arrive with ease</div>
-
 <h2>Need an airport transfer?</h2>
-
-<p>
-Arrange a private transfer for your arrival or departure.
-Contact Oldepe Tours &amp; Safaris to discuss your route,
-timing and travel requirements.
-</p>
+<p>Arrange a private transfer for your arrival or departure. Contact Oldepe Tours &amp; Safaris to discuss your route, timing and travel requirements.</p>
 </div>
-
-<a class="btn" href="contact.html">
-Enquire about transfers
-</a>
-
+<a class="btn" href="contact.html">Enquire about transfers</a>
 </div>
 </section>
 
 <section class="gallery">
 <div class="wrap">
-
 <div class="head">
 <div>
 <div class="label">A glimpse of Kenya</div>
 <h2>See the journey</h2>
 </div>
-
-<a class="btn" href="gallery.html">
-View photo gallery
-</a>
+<a class="btn" href="gallery.html">View photo gallery</a>
 </div>
 
 <div class="strip">
-<img src="images/Safari1.jpg"
-alt="Kenyan safari scenery" loading="lazy">
-
-<img src="images/Safari7.jpg"
-alt="Wildlife and nature in Kenya" loading="lazy">
-
-<img src="images/Safari3.jpg"
-alt="Kenyan safari landscape" loading="lazy">
-
-<img src="images/Safari25.jpg"
-alt="Safari travel in Kenya" loading="lazy">
+<img src="images/safari1.jpg" alt="Kenyan safari scenery" loading="lazy">
+<img src="images/safari7.jpg" alt="Wildlife and nature in Kenya" loading="lazy">
+<img src="images/safari3.jpg" alt="Kenyan safari landscape" loading="lazy">
+<img src="images/safari25.jpg" alt="Safari travel in Kenya" loading="lazy">
 </div>
-
 </div>
 </section>
 
 <section class="cta">
-
 <div class="label">Your adventure starts here</div>
-
 <h2>Let Kenya surprise you.</h2>
-
-<p>
-Tell us what you would love to experience. We can help
-you take the next step towards a memorable Kenyan journey.
-</p>
-
-<a class="btn" href="booking.html">
-Enquire about your journey
-</a>
-
+<p>Tell us what you would love to experience. We can help you take the next step towards a memorable Kenyan journey.</p>
+<a class="btn" href="booking.html">Enquire about your journey</a>
 </section>
 
 </main>
 
 <footer>
-
 <div class="footgrid">
-
 <div>
 <a class="brand" href="index.html">
 <span class="mark">O</span>
 <strong>OLDEPE<small>TOURS &amp; SAFARIS</small></strong>
 </a>
-
-<p>
-Discover Kenya through wildlife, landscapes, culture
-and journeys made around you.
-</p>
+<p>Discover Kenya through wildlife, landscapes, culture and journeys made around you.</p>
 </div>
 
 <div>
@@ -966,30 +820,28 @@ and journeys made around you.
 <li><a href="safaris.html">Safari options</a></li>
 </ul>
 </div>
-
 </div>
 
 <div class="copyright">
 © 2026 Oldepe Tours &amp; Safaris. All rights reserved.
 </div>
-
 </footer>
 
 <script>
-const menu=document.getElementById("menu");
-const links=document.getElementById("links");
+const menu = document.getElementById("menu");
+const links = document.getElementById("links");
 
-menu.addEventListener("click",()=>{
-  const open=links.classList.toggle("open");
-  menu.setAttribute("aria-expanded",String(open));
-  menu.textContent=open?"×":"☰";
+menu.addEventListener("click", () => {
+  const open = links.classList.toggle("open");
+  menu.setAttribute("aria-expanded", String(open));
+  menu.textContent = open ? "×" : "☰";
 });
 
-links.querySelectorAll("a").forEach(a=>{
-  a.addEventListener("click",()=>{
+links.querySelectorAll("a").forEach(a => {
+  a.addEventListener("click", () => {
     links.classList.remove("open");
-    menu.setAttribute("aria-expanded","false");
-    menu.textContent="☰";
+    menu.setAttribute("aria-expanded", "false");
+    menu.textContent = "☰";
   });
 });
 </script>
