@@ -14,91 +14,112 @@
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
   background: var(--sand);
   color: var(--charcoal);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.card {
-  width: 100%;
-  max-width: 650px;
-  padding: 45px 30px;
+header {
+  background: var(--charcoal);
+  color: var(--sand);
+  padding: 25px 20px;
   text-align: center;
-  background: var(--sand);
-  border: 1px solid rgba(46,42,37,.25);
-  border-radius: 12px;
 }
 
 .logo {
-  font-size: 22px;
+  font-size: 23px;
   font-weight: bold;
-  margin-bottom: 30px;
-  color: var(--charcoal);
+  letter-spacing: 1px;
 }
 
 .logo span {
   display: block;
-  font-size: 10px;
+  font-size: 11px;
+  font-weight: normal;
   letter-spacing: 4px;
   margin-top: 5px;
-  font-weight: normal;
 }
 
-.check {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: var(--charcoal);
-  color: var(--sand);
+main {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 55px 20px;
+}
+
+.thankyou-card {
+  width: 100%;
+  max-width: 720px;
+  text-align: center;
+  padding: 45px 35px;
+  background: var(--sand);
+  border: 2px solid var(--charcoal);
+  border-radius: 8px;
+}
+
+.check {
+  width: 75px;
+  height: 75px;
   margin: 0 auto 25px;
-  font-size: 43px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: var(--charcoal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  font-weight: bold;
 }
 
 h1 {
-  font-size: 36px;
-  margin-bottom: 18px;
   color: var(--charcoal);
+  font-size: 38px;
+  margin-bottom: 18px;
 }
 
-p {
-  font-size: 17px;
-  line-height: 1.7;
+.highlight {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.thankyou-card p {
+  font-size: 16px;
+  line-height: 1.8;
   margin-bottom: 12px;
 }
 
 .buttons {
+  max-width: 420px;
+  margin: 30px auto 0;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  max-width: 400px;
-  margin: 30px auto 0;
 }
 
 .button {
   display: block;
-  padding: 15px;
-  border-radius: 5px;
+  padding: 14px 20px;
+  border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
+  transition: opacity .2s;
 }
 
 .home {
   background: var(--orange);
-  color: #fff;
+  color: var(--charcoal);
 }
 
 .safaris {
@@ -109,27 +130,28 @@ p {
 .whatsapp {
   background: var(--sand);
   color: var(--charcoal);
-  border: 1px solid var(--charcoal);
+  border: 2px solid var(--charcoal);
 }
 
 .button:hover {
-  opacity: .85;
+  opacity: .8;
 }
 
-.footer {
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(46,42,37,.25);
-  font-size: 13px;
+footer {
+  background: var(--charcoal);
+  color: var(--sand);
+  text-align: center;
+  padding: 22px 15px;
+  font-size: 14px;
 }
 
-@media(max-width: 500px) {
-  h1 {
-    font-size: 29px;
+@media(max-width: 550px) {
+  .thankyou-card {
+    padding: 35px 20px;
   }
 
-  .card {
-    padding: 35px 20px;
+  h1 {
+    font-size: 30px;
   }
 }
 </style>
@@ -137,48 +159,56 @@ p {
 
 <body>
 
-<div class="card">
-
+<header>
   <div class="logo">
     OLDEPE TOURS & SAFARIS
     <span>TEMBEA KENYA</span>
   </div>
+</header>
 
-  <div class="check">✓</div>
+<main>
+  <section class="thankyou-card">
 
-  <h1>Thank You!</h1>
+    <div class="check">✓</div>
 
-  <p><strong>Your Safari Enquiry Has Been Received.</strong></p>
+    <h1>Thank You!</h1>
 
-  <p>
-    Thank you for contacting Oldepe Tours & Safaris.
-    We appreciate your interest and look forward to helping
-    you plan your Kenya safari.
-  </p>
+    <div class="highlight">
+      Your Safari Enquiry Has Been Received.
+    </div>
 
-  <p>Our team will contact you to discuss your travel plans.</p>
+    <p>
+      Thank you for choosing Oldepe Tours & Safaris.
+      We appreciate your interest in exploring Kenya with us.
+    </p>
 
-  <div class="buttons">
+    <p>
+      Our team will contact you to discuss your travel plans
+      and help arrange your safari experience.
+    </p>
 
-    <a href="index.html" class="button home">
-      BACK HOME
-    </a>
+    <div class="buttons">
 
-    <a href="safaris.html" class="button safaris">
-      VIEW OUR SAFARIS
-    </a>
+      <a href="index.html" class="button home">
+        BACK HOME
+      </a>
 
-    <a href="https://wa.me/254720580063" class="button whatsapp">
-      CHAT ON WHATSAPP
-    </a>
+      <a href="safaris.html" class="button safaris">
+        VIEW OUR SAFARIS
+      </a>
 
-  </div>
+      <a href="https://wa.me/254720580063" class="button whatsapp">
+        CHAT ON WHATSAPP
+      </a>
 
-  <div class="footer">
-    © 2026 Oldepe Tours & Safaris. All Rights Reserved.
-  </div>
+    </div>
 
-</div>
+  </section>
+</main>
+
+<footer>
+  © 2026 Oldepe Tours & Safaris. All Rights Reserved.
+</footer>
 
 </body>
 </html>
