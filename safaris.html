@@ -13,13 +13,20 @@
   --charcoal: #2E2A25;
   --orange: #D97736;
 }
-* { box-sizing: border-box; margin: 0; padding: 0; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
   background: var(--sand);
   color: var(--charcoal);
   line-height: 1.7;
 }
+
 header {
   background: var(--charcoal);
   color: var(--sand);
@@ -30,16 +37,32 @@ header {
   flex-wrap: wrap;
   gap: 15px;
 }
-.logo { font-size: 22px; font-weight: bold; }
-.logo span { color: var(--orange); }
-nav { display: flex; flex-wrap: wrap; gap: 18px; }
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: var(--orange);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
 nav a {
   color: var(--sand);
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
 }
-nav a:hover { color: var(--orange); }
+
+nav a:hover {
+  color: var(--orange);
+}
 
 .hero {
   min-height: 430px;
@@ -53,9 +76,21 @@ nav a:hover { color: var(--orange); }
   padding: 45px 20px;
   color: white;
 }
-.hero-content { max-width: 800px; }
-.hero h1 { font-size: clamp(34px,6vw,55px); margin-bottom: 15px; }
-.hero p { font-size: 18px; margin-bottom: 25px; }
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: clamp(34px,6vw,55px);
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
 .btn {
   display: inline-block;
   background: var(--orange);
@@ -65,7 +100,10 @@ nav a:hover { color: var(--orange); }
   text-decoration: none;
   font-weight: bold;
 }
-.btn:hover { background: var(--charcoal); }
+
+.btn:hover {
+  background: var(--charcoal);
+}
 
 .intro {
   max-width: 1000px;
@@ -73,12 +111,18 @@ nav a:hover { color: var(--orange); }
   padding: 55px 20px 35px;
   text-align: center;
 }
-.intro h2, .experience h2, .cta h2 {
+
+.intro h2,
+.experience h2,
+.cta h2 {
   font-size: 31px;
   margin-bottom: 15px;
 }
 
-.destinations { padding: 25px 6% 65px; }
+.destinations {
+  padding: 25px 6% 65px;
+}
+
 .destination-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
@@ -86,6 +130,7 @@ nav a:hover { color: var(--orange); }
   max-width: 1200px;
   margin: auto;
 }
+
 .destination-card {
   background: var(--sand);
   border: 1px solid #D6C7B9;
@@ -94,16 +139,32 @@ nav a:hover { color: var(--orange); }
   box-shadow: 0 5px 18px #2E2A2515;
   transition: transform .3s;
 }
-.destination-card:hover { transform: translateY(-5px); }
+
+.destination-card:hover {
+  transform: translateY(-5px);
+}
+
 .destination-card img {
   width: 100%;
   height: 220px;
   object-fit: cover;
   display: block;
 }
-.card-content { padding: 22px; }
-.card-content h3 { font-size: 21px; margin-bottom: 10px; }
-.card-content p { font-size: 14px; margin-bottom: 17px; }
+
+.card-content {
+  padding: 22px;
+}
+
+.card-content h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 14px;
+  margin-bottom: 17px;
+}
+
 .card-content a {
   color: var(--orange);
   font-weight: bold;
@@ -116,18 +177,29 @@ nav a:hover { color: var(--orange); }
   padding: 55px 7%;
   text-align: center;
 }
-.experience h2 { color: var(--sand); }
+
+.experience h2 {
+  color: var(--sand);
+}
+
 .experience p {
   max-width: 850px;
   margin: auto auto 25px;
 }
+
 .cta {
   background: var(--sand);
   text-align: center;
   padding: 60px 20px;
 }
-.cta h2 { color: var(--charcoal); }
-.cta p { margin-bottom: 22px; }
+
+.cta h2 {
+  color: var(--charcoal);
+}
+
+.cta p {
+  margin-bottom: 22px;
+}
 
 footer {
   background: var(--charcoal);
@@ -135,15 +207,40 @@ footer {
   text-align: center;
   padding: 28px 15px;
 }
-footer p { margin: 5px 0; font-size: 14px; }
-footer a { color: var(--orange); text-decoration: none; }
+
+footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: var(--orange);
+  text-decoration: none;
+}
 
 @media(max-width:700px) {
-  header { justify-content: center; }
-  nav { justify-content: center; gap: 12px; }
-  nav a { font-size: 13px; }
-  .hero { min-height: 350px; }
-  .intro h2, .experience h2, .cta h2 { font-size: 25px; }
+  header {
+    justify-content: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: 350px;
+  }
+
+  .intro h2,
+  .experience h2,
+  .cta h2 {
+    font-size: 25px;
+  }
 }
 </style>
 </head>
@@ -152,6 +249,7 @@ footer a { color: var(--orange); text-decoration: none; }
 
 <header>
   <div class="logo">OLDEPE <span>TOURS &amp; SAFARIS</span></div>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="safaris.html">Safaris</a>
@@ -173,71 +271,117 @@ footer a { color: var(--orange); text-decoration: none; }
 
 <section class="intro">
   <h2>Explore Kenya's Safari Destinations</h2>
-  <p>Kenya is home to some of Africa's most remarkable wildlife destinations. From the open plains of the Maasai Mara to the beautiful lakes of the Rift Valley, every destination offers a unique experience. Explore Kenya with Oldepe Tours &amp; Safaris and discover the magic of Africa.</p>
+  <p>
+    Kenya is home to some of Africa's most remarkable wildlife destinations.
+    From the open plains of the Maasai Mara to the beautiful lakes of the
+    Rift Valley, every destination offers a unique experience. Explore Kenya
+    with Oldepe Tours &amp; Safaris and discover the magic of Africa.
+  </p>
 </section>
 
 <section class="destinations">
 <div class="destination-grid">
 
   <article class="destination-card">
-    <img src="images/safari2.jpg" alt="Maasai Mara safari landscape" loading="lazy">
+    <img src="images/safari17.jpg"
+         alt="Maasai Mara wildlife and cheetahs"
+         loading="lazy">
     <div class="card-content">
       <h3>Maasai Mara</h3>
-      <p>Discover vast savannah plains, abundant wildlife and the spectacular Great Migration season. The Mara offers excellent opportunities to see lions, elephants, cheetahs and more.</p>
+      <p>
+        Discover vast savannah plains, abundant wildlife and the spectacular
+        Great Migration season. The Mara offers excellent opportunities to
+        see lions, elephants, cheetahs and more.
+      </p>
       <a href="booking.html">Explore this safari →</a>
     </div>
   </article>
 
   <article class="destination-card">
-    <img src="images/safari3.jpg" alt="Amboseli National Park" loading="lazy">
+    <img src="images/safari2.jpg"
+         alt="Amboseli elephants with Mount Kilimanjaro"
+         loading="lazy">
     <div class="card-content">
       <h3>Amboseli National Park</h3>
-      <p>Enjoy unforgettable elephant encounters against the magnificent backdrop of Mount Kilimanjaro. Amboseli is famous for its open landscapes and large elephant herds.</p>
+      <p>
+        Enjoy unforgettable elephant encounters against the magnificent
+        backdrop of Mount Kilimanjaro. Amboseli is famous for its open
+        landscapes and large elephant herds.
+      </p>
       <a href="booking.html">Explore this safari →</a>
     </div>
   </article>
 
   <article class="destination-card">
-    <img src="images/safari7.jpg" alt="Lake Nakuru wildlife" loading="lazy">
+    <img src="images/safari6.jpg"
+         alt="Flamingos at Lake Nakuru"
+         loading="lazy">
     <div class="card-content">
       <h3>Lake Nakuru National Park</h3>
-      <p>Explore beautiful lake scenery, rhinos, giraffes and diverse birdlife. Lake Nakuru is a wonderful destination for wildlife viewing and photography.</p>
+      <p>
+        Explore beautiful lake scenery, flamingos, rhinos, giraffes and
+        diverse birdlife. Lake Nakuru is a wonderful destination for
+        wildlife viewing and photography.
+      </p>
       <a href="booking.html">Explore this safari →</a>
     </div>
   </article>
 
   <article class="destination-card">
-    <img src="images/safari25.jpg" alt="Ol Pejeta wildlife" loading="lazy">
+    <img src="images/olpejeta.jpg"
+         alt="Wildlife at Ol Pejeta Conservancy"
+         loading="lazy">
     <div class="card-content">
       <h3>Ol Pejeta Conservancy</h3>
-      <p>Visit a leading wildlife conservation destination in Laikipia, known for its rhino conservation work, diverse wildlife and beautiful views of Mount Kenya.</p>
+      <p>
+        Visit a leading wildlife conservation destination in Laikipia,
+        known for its rhino conservation work, diverse wildlife and
+        beautiful views of Mount Kenya.
+      </p>
       <a href="booking.html">Explore this safari →</a>
     </div>
   </article>
 
   <article class="destination-card">
-    <img src="images/safari1.jpg" alt="Mount Kenya scenery" loading="lazy">
+    <img src="images/mountkenya.jpg"
+         alt="Mount Kenya scenery"
+         loading="lazy">
     <div class="card-content">
       <h3>Mount Kenya</h3>
-      <p>Discover spectacular mountain scenery, forest landscapes and unique high-altitude environments around Africa's second-highest mountain.</p>
+      <p>
+        Discover spectacular mountain scenery, forest landscapes and
+        unique high-altitude environments around Africa's second-highest
+        mountain.
+      </p>
       <a href="booking.html">Explore this safari →</a>
     </div>
   </article>
 
   <article class="destination-card">
-    <img src="images/safari3.jpg" alt="Aberdare landscape" loading="lazy">
+    <img src="images/aberdare.jpg"
+         alt="Aberdare National Park landscape"
+         loading="lazy">
     <div class="card-content">
       <h3>Aberdare National Park</h3>
-      <p>Experience beautiful mountain forests, waterfalls and rich wildlife. The Aberdares offer a refreshing escape into Kenya's highland wilderness.</p>
+      <p>
+        Experience beautiful mountain forests, waterfalls and rich
+        wildlife. The Aberdares offer a refreshing escape into Kenya's
+        highland wilderness.
+      </p>
       <a href="booking.html">Explore this safari →</a>
     </div>
   </article>
 
   <article class="destination-card">
-    <img src="images/safari25.jpg" alt="Tsavo wildlife and wilderness" loading="lazy">
+    <img src="images/safari15.jpg"
+         alt="Elephant in Tsavo wilderness"
+         loading="lazy">
     <div class="card-content">
       <h3>Tsavo National Parks</h3>
-      <p>Explore the vast wilderness of Tsavo East and Tsavo West, famous for their red elephants, dramatic landscapes and diverse wildlife.</p>
+      <p>
+        Explore the vast wilderness of Tsavo East and Tsavo West, famous
+        for their red elephants, dramatic landscapes and diverse wildlife.
+      </p>
       <a href="booking.html">Explore this safari →</a>
     </div>
   </article>
@@ -247,21 +391,32 @@ footer a { color: var(--orange); text-decoration: none; }
 
 <section class="experience">
   <h2>Your Safari, Your Experience</h2>
-  <p>Whether you are planning a family holiday, a wildlife adventure, a photography trip or a private safari, Oldepe Tours &amp; Safaris can help you plan an experience that suits your interests. Let us help you discover Kenya at your own pace.</p>
+  <p>
+    Whether you are planning a family holiday, a wildlife adventure,
+    a photography trip or a private safari, Oldepe Tours &amp; Safaris
+    can help you plan an experience that suits your interests.
+    Let us help you discover Kenya at your own pace.
+  </p>
   <a href="booking.html" class="btn">Start Planning</a>
 </section>
 
 <section class="cta">
   <h2>Ready for Your Kenyan Adventure?</h2>
   <p>Contact us and let us help you plan your next safari.</p>
-  <a href="https://wa.me/254720580063" class="btn">Chat With Us on WhatsApp</a>
+  <a href="https://wa.me/254720580063" class="btn">
+    Chat With Us on WhatsApp
+  </a>
 </section>
 
 <footer>
   <p><strong>OLDEPE TOURS &amp; SAFARIS</strong></p>
   <p>Discover Kenya. Experience Africa.</p>
   <p>Phone: <a href="tel:+254720580063">0720 580 063</a></p>
-  <p><a href="index.html">Home</a> | <a href="booking.html">Book a Safari</a> | <a href="contact.html">Contact</a></p>
+  <p>
+    <a href="index.html">Home</a> |
+    <a href="booking.html">Book a Safari</a> |
+    <a href="contact.html">Contact</a>
+  </p>
   <p>© 2026 Oldepe Tours &amp; Safaris. All Rights Reserved.</p>
 </footer>
 
