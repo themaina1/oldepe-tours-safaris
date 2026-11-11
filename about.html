@@ -2,449 +2,430 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Oldepe Tours & Safaris</title>
-  <meta name="description" content="Discover Oldepe Tours & Safaris and our passion for memorable travel experiences in Kenya.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Oldepe Tours & Safaris</title>
+<meta name="description" content="Discover Oldepe Tours & Safaris and our passion for memorable travel experiences in Kenya.">
 
-  <style>
-    :root {
-      --sand: #F4EBE1;
-      --charcoal: #2E2A25;
-      --orange: #D97736;
-      --white: #FFFFFF;
-    }
+<style>
+:root {
+  --sand: #F4EBE1;
+  --charcoal: #2E2A25;
+  --orange: #D97736;
+  --white: #FFFFFF;
+}
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    html {
-      scroll-behavior: smooth;
-    }
+html { scroll-behavior: smooth; }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--sand);
-      color: var(--charcoal);
-      line-height: 1.7;
-    }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--sand);
+  color: var(--charcoal);
+  line-height: 1.7;
+}
 
-    a {
-      text-decoration: none;
-    }
+a { text-decoration: none; }
 
-    header {
-      background: var(--charcoal);
-      color: var(--sand);
-      padding: 18px 6%;
-    }
+header {
+  background: var(--charcoal);
+  color: var(--sand);
+  padding: 18px 6%;
+}
 
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 18px;
-    }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
 
-    .logo {
-      color: var(--sand);
-      font-size: 22px;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
+.logo {
+  color: var(--sand);
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
 
-    .logo span {
-      color: var(--orange);
-    }
+.logo span { color: var(--orange); }
 
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-    nav a {
-      color: var(--sand);
-      font-size: 14px;
-      font-weight: bold;
-    }
+nav a {
+  color: var(--sand);
+  font-size: 14px;
+  font-weight: bold;
+}
 
-    nav a:hover,
-    nav a.active {
-      color: var(--orange);
-    }
+nav a:hover,
+nav a.active {
+  color: var(--orange);
+}
 
-    .hero {
-      min-height: 390px;
-      background:
-        linear-gradient(rgba(46,42,37,0.72), rgba(46,42,37,0.72)),
-        url("images/Safari3.jpg") center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: var(--white);
-      padding: 70px 7%;
-    }
+.hero {
+  min-height: 390px;
+  background:
+    linear-gradient(rgba(46,42,37,0.72), rgba(46,42,37,0.72)),
+    url("images/safari3.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  padding: 70px 7%;
+}
 
-    .hero-content {
-      max-width: 800px;
-    }
+.hero-content { max-width: 800px; }
 
-    .hero h1 {
-      font-size: clamp(36px, 6vw, 55px);
-      line-height: 1.2;
-      margin-bottom: 15px;
-    }
+.hero h1 {
+  font-size: clamp(36px, 6vw, 55px);
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
 
-    .hero p {
-      font-size: 18px;
-    }
+.hero p { font-size: 18px; }
 
-    .section {
-      padding: 65px 7%;
-      background: var(--sand);
-    }
+.section {
+  padding: 65px 7%;
+  background: var(--sand);
+}
 
-    .section h2 {
-      font-size: 30px;
-      margin-bottom: 18px;
-      line-height: 1.3;
-      color: var(--charcoal);
-    }
+.section h2 {
+  font-size: 30px;
+  margin-bottom: 18px;
+  line-height: 1.3;
+  color: var(--charcoal);
+}
 
-    .section p {
-      margin-bottom: 15px;
-    }
+.section p { margin-bottom: 15px; }
 
-    .eyebrow {
-      color: var(--orange);
-      text-transform: uppercase;
-      font-weight: bold;
-      letter-spacing: 2px;
-      font-size: 13px;
-      margin-bottom: 10px;
-    }
+.eyebrow {
+  color: var(--orange);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
 
-    .about-layout {
-      max-width: 1150px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 40px;
-      align-items: center;
-    }
+.about-layout {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
 
-    .about-image img {
-      width: 100%;
-      height: 390px;
-      object-fit: cover;
-      border-radius: 7px;
-      display: block;
-    }
+.about-image img {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 7px;
+  display: block;
+}
 
-    .values {
-      background: var(--charcoal);
-      color: var(--sand);
-      text-align: center;
-    }
+.values {
+  background: var(--charcoal);
+  color: var(--sand);
+  text-align: center;
+}
 
-    .values h2 {
-      color: var(--sand);
-    }
+.values h2 { color: var(--sand); }
 
-    .values-intro {
-      max-width: 750px;
-      margin: 0 auto 35px;
-    }
+.values-intro {
+  max-width: 750px;
+  margin: 0 auto 35px;
+}
 
-    .value-grid {
-      max-width: 1100px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 22px;
-    }
+.value-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
 
-    .value-card {
-      background: var(--sand);
-      color: var(--charcoal);
-      padding: 28px 22px;
-      border-radius: 6px;
-      border-bottom: 4px solid var(--orange);
-    }
+.value-card {
+  background: var(--sand);
+  color: var(--charcoal);
+  padding: 28px 22px;
+  border-radius: 6px;
+  border-bottom: 4px solid var(--orange);
+}
 
-    .value-card h3 {
-      color: var(--charcoal);
-      margin-bottom: 12px;
-      font-size: 20px;
-    }
+.value-card h3 {
+  color: var(--charcoal);
+  margin-bottom: 12px;
+  font-size: 20px;
+}
 
-    .value-card p {
-      font-size: 15px;
-    }
+.value-card p { font-size: 15px; }
 
-    .why-layout {
-      max-width: 1050px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 35px;
-      align-items: center;
-    }
+.why-layout {
+  max-width: 1050px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: center;
+}
 
-    .why-image img {
-      width: 100%;
-      height: 340px;
-      object-fit: cover;
-      border-radius: 7px;
-    }
+.why-image img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 7px;
+  display: block;
+}
 
-    .why-list {
-      padding-left: 20px;
-    }
+.why-list { padding-left: 20px; }
 
-    .why-list li {
-      margin-bottom: 12px;
-    }
+.why-list li { margin-bottom: 12px; }
 
-    .cta {
-      background: var(--sand);
-      color: var(--charcoal);
-      text-align: center;
-      padding: 60px 7%;
-      border-top: 1px solid rgba(46,42,37,0.15);
-    }
+.cta {
+  background: var(--sand);
+  color: var(--charcoal);
+  text-align: center;
+  padding: 60px 7%;
+  border-top: 1px solid rgba(46,42,37,0.15);
+}
 
-    .cta h2 {
-      color: var(--charcoal);
-      font-size: 30px;
-      margin-bottom: 12px;
-    }
+.cta h2 {
+  color: var(--charcoal);
+  font-size: 30px;
+  margin-bottom: 12px;
+}
 
-    .cta p {
-      max-width: 700px;
-      margin: 0 auto 23px;
-    }
+.cta p {
+  max-width: 700px;
+  margin: 0 auto 23px;
+}
 
-    .btn {
-      display: inline-block;
-      background: var(--orange);
-      color: var(--white);
-      padding: 13px 26px;
-      border-radius: 4px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+.btn {
+  display: inline-block;
+  background: var(--orange);
+  color: var(--white);
+  padding: 13px 26px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
-    .btn:hover {
-      background: var(--charcoal);
-      color: var(--sand);
-    }
+.btn:hover {
+  background: var(--charcoal);
+  color: var(--sand);
+}
 
-    footer {
-      background: var(--charcoal);
-      color: var(--sand);
-      text-align: center;
-      padding: 28px 6%;
-      border-top: 3px solid var(--orange);
-    }
+footer {
+  background: var(--charcoal);
+  color: var(--sand);
+  text-align: center;
+  padding: 28px 6%;
+  border-top: 3px solid var(--orange);
+}
 
-    footer p {
-      margin: 6px 0;
-      font-size: 14px;
-    }
+footer p {
+  margin: 6px 0;
+  font-size: 14px;
+}
 
-    footer a {
-      color: var(--orange);
-    }
+footer a { color: var(--orange); }
 
-    @media (max-width: 750px) {
-      .navbar {
-        flex-direction: column;
-        text-align: center;
-      }
+@media (max-width: 750px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
 
-      nav {
-        justify-content: center;
-        gap: 13px;
-      }
+  nav {
+    justify-content: center;
+    gap: 13px;
+  }
 
-      .about-layout,
-      .why-layout {
-        grid-template-columns: 1fr;
-      }
+  .about-layout,
+  .why-layout {
+    grid-template-columns: 1fr;
+  }
 
-      .about-image img,
-      .why-image img {
-        height: 280px;
-      }
+  .about-image img,
+  .why-image img {
+    height: 280px;
+  }
 
-      .section {
-        padding: 48px 6%;
-      }
-    }
-  </style>
+  .section { padding: 48px 6%; }
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <div class="navbar">
-      <a href="index.html" class="logo">
-        OLDEPE <span>TOURS & SAFARIS</span>
-      </a>
+<header>
+  <div class="navbar">
+    <a href="index.html" class="logo">
+      OLDEPE <span>TOURS &amp; SAFARIS</span>
+    </a>
 
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="safaris.html">Safaris</a>
-        <a href="tours.html">Tours</a>
-        <a href="about.html" class="active">About</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="booking.html">Booking</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="safaris.html">Safaris</a>
+      <a href="tours.html">Tours</a>
+      <a href="about.html" class="active">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>About Oldepe Tours & Safaris</h1>
-      <p>
-        Discover the beauty, wildlife, landscapes and cultures
-        that make Kenya an unforgettable destination.
-      </p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="about-layout">
-      <div>
-        <div class="eyebrow">Who We Are</div>
-        <h2>Sharing the Beauty of Kenya</h2>
-
-        <p>
-          Oldepe Tours & Safaris is focused on helping visitors
-          discover the remarkable experiences Kenya has to offer.
-          From wildlife destinations and scenic landscapes to
-          cultural experiences and countryside journeys, we want
-          every trip to be memorable.
-        </p>
-
-        <p>
-          We believe that travelling is more than visiting places.
-          It is about discovering new environments, appreciating
-          different cultures, meeting people and creating memories
-          that last long after the journey ends.
-        </p>
-
-        <p>
-          Whether you are planning a safari, a guided tour or a
-          private travel experience, we aim to help you make the
-          most of your time in Kenya.
-        </p>
-      </div>
-
-      <div class="about-image">
-        <img src="images/Safari1.jpg" alt="Kenyan safari travel experience">
-      </div>
-    </div>
-  </section>
-
-  <section class="section values">
-    <div class="values-intro">
-      <div class="eyebrow">What Guides Us</div>
-      <h2>Our Values</h2>
-      <p>
-        The principles behind the travel experiences we aim to provide.
-      </p>
-    </div>
-
-    <div class="value-grid">
-
-      <div class="value-card">
-        <h3>Hospitality</h3>
-        <p>
-          Welcoming visitors warmly and helping them feel comfortable
-          throughout their travel experience.
-        </p>
-      </div>
-
-      <div class="value-card">
-        <h3>Authentic Experiences</h3>
-        <p>
-          Encouraging meaningful discoveries of Kenya's landscapes,
-          wildlife, heritage and local life.
-        </p>
-      </div>
-
-      <div class="value-card">
-        <h3>Reliability</h3>
-        <p>
-          Valuing clear communication, thoughtful planning and
-          dependable travel arrangements.
-        </p>
-      </div>
-
-      <div class="value-card">
-        <h3>Respect for Nature</h3>
-        <p>
-          Promoting appreciation and responsible enjoyment of
-          Kenya's natural environment and wildlife.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="why-layout">
-
-      <div class="why-image">
-        <img src="images/safari7.jpg" alt="Kenyan nature and safari destination">
-      </div>
-
-      <div>
-        <div class="eyebrow">The Oldepe Experience</div>
-        <h2>Why Explore Kenya With Us?</h2>
-
-        <p>
-          Every traveller has different interests and expectations.
-          We aim to make planning easier by helping you choose
-          experiences that suit your journey.
-        </p>
-
-        <ul class="why-list">
-          <li>Safari and destination experiences across Kenya.</li>
-          <li>Scenic tours and countryside excursions.</li>
-          <li>Cultural and heritage experiences.</li>
-          <li>Private guided travel arrangements.</li>
-          <li>Personal attention when planning your journey.</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="cta">
-    <h2>Let's Plan Your Kenyan Adventure</h2>
+<section class="hero">
+  <div class="hero-content">
+    <h1>About Oldepe Tours &amp; Safaris</h1>
     <p>
-      Start planning your next experience with Oldepe Tours & Safaris.
-      Get in touch and tell us where you would like to go.
+      Discover the beauty, wildlife, landscapes and cultures
+      that make Kenya an unforgettable destination.
     </p>
-    <a href="booking.html" class="btn">Make an Enquiry</a>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <p><strong>OLDEPE TOURS & SAFARIS</strong></p>
-    <p>Discover Kenya. Experience More.</p>
-    <p>Phone: <a href="tel:+254720580063">0720 580 063</a></p>
-    <p>© 2026 Oldepe Tours & Safaris. All Rights Reserved.</p>
-  </footer>
+<section class="section">
+  <div class="about-layout">
+
+    <div>
+      <div class="eyebrow">Who We Are</div>
+      <h2>Sharing the Beauty of Kenya</h2>
+
+      <p>
+        Oldepe Tours &amp; Safaris is focused on helping visitors
+        discover the remarkable experiences Kenya has to offer.
+        From wildlife destinations and scenic landscapes to
+        cultural experiences and countryside journeys, we want
+        every trip to be memorable.
+      </p>
+
+      <p>
+        We believe that travelling is more than visiting places.
+        It is about discovering new environments, appreciating
+        different cultures, meeting people and creating memories
+        that last long after the journey ends.
+      </p>
+
+      <p>
+        Whether you are planning a safari, a guided tour or a
+        private travel experience, we aim to help you make the
+        most of your time in Kenya.
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img src="images/safari1.jpg"
+           alt="Kenyan safari travel experience">
+    </div>
+
+  </div>
+</section>
+
+<section class="section values">
+  <div class="values-intro">
+    <div class="eyebrow">What Guides Us</div>
+    <h2>Our Values</h2>
+    <p>
+      The principles behind the travel experiences we aim to provide.
+    </p>
+  </div>
+
+  <div class="value-grid">
+
+    <div class="value-card">
+      <h3>Hospitality</h3>
+      <p>
+        Welcoming visitors warmly and helping them feel comfortable
+        throughout their travel experience.
+      </p>
+    </div>
+
+    <div class="value-card">
+      <h3>Authentic Experiences</h3>
+      <p>
+        Encouraging meaningful discoveries of Kenya's landscapes,
+        wildlife, heritage and local life.
+      </p>
+    </div>
+
+    <div class="value-card">
+      <h3>Reliability</h3>
+      <p>
+        Valuing clear communication, thoughtful planning and
+        dependable travel arrangements.
+      </p>
+    </div>
+
+    <div class="value-card">
+      <h3>Respect for Nature</h3>
+      <p>
+        Promoting appreciation and responsible enjoyment of
+        Kenya's natural environment and wildlife.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="why-layout">
+
+    <div class="why-image">
+      <img src="images/safari7.jpg"
+           alt="Kenyan nature and safari destination">
+    </div>
+
+    <div>
+      <div class="eyebrow">The Oldepe Experience</div>
+      <h2>Why Explore Kenya With Us?</h2>
+
+      <p>
+        Every traveller has different interests and expectations.
+        We aim to make planning easier by helping you choose
+        experiences that suit your journey.
+      </p>
+
+      <ul class="why-list">
+        <li>Safari and destination experiences across Kenya.</li>
+        <li>Scenic tours and countryside excursions.</li>
+        <li>Cultural and heritage experiences.</li>
+        <li>Private guided travel arrangements.</li>
+        <li>Personal attention when planning your journey.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Let's Plan Your Kenyan Adventure</h2>
+  <p>
+    Start planning your next experience with Oldepe Tours &amp; Safaris.
+    Get in touch and tell us where you would like to go.
+  </p>
+  <a href="booking.html" class="btn">Make an Enquiry</a>
+</section>
+
+<footer>
+  <p><strong>OLDEPE TOURS &amp; SAFARIS</strong></p>
+  <p>Discover Kenya. Experience More.</p>
+  <p>Phone: <a href="tel:+254720580063">0720 580 063</a></p>
+  <p>© 2026 Oldepe Tours &amp; Safaris. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
