@@ -16,12 +16,7 @@
   --muted: #665D54;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+* { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 
 body {
@@ -172,11 +167,7 @@ h1 em { color: #F2A16D; }
   margin-bottom: 30px;
 }
 
-.actions {
-  display: flex;
-  gap: 13px;
-  flex-wrap: wrap;
-}
+.actions { display: flex; gap: 13px; flex-wrap: wrap; }
 
 .outline {
   display: inline-block;
@@ -188,17 +179,10 @@ h1 em { color: #F2A16D; }
   text-transform: uppercase;
 }
 
-.outline:hover {
-  background: white;
-  color: var(--charcoal);
-}
+.outline:hover { background: white; color: var(--charcoal); }
 
 section { padding: 82px 24px; }
-
-.wrap {
-  max-width: 1220px;
-  margin: auto;
-}
+.wrap { max-width: 1220px; margin: auto; }
 
 .center {
   text-align: center;
@@ -219,7 +203,9 @@ h2 {
   color: var(--muted);
 }
 
-.intro { background: var(--sand); }
+.intro, .experience, .promise, .transfer, .gallery {
+  background: var(--sand);
+}
 
 .intro p {
   max-width: 790px;
@@ -286,12 +272,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.destcopy h3 {
-  font-size: 24px;
-  font-weight: 500;
-}
-
-.experience { background: var(--sand); }
+.destcopy h3 { font-size: 24px; font-weight: 500; }
 
 .two {
   display: grid;
@@ -301,11 +282,7 @@ h2 {
 }
 
 .photo { position: relative; }
-
-.photo img {
-  height: 520px;
-  object-fit: cover;
-}
+.photo img { height: 520px; object-fit: cover; }
 
 .tag {
   position: absolute;
@@ -340,11 +317,7 @@ h2 {
   margin-right: 9px;
 }
 
-.services {
-  background: var(--charcoal);
-  color: white;
-}
-
+.services { background: var(--charcoal); color: white; }
 .services h2 { color: var(--sand); }
 .services .lead { color: #E0D6CC; }
 
@@ -369,18 +342,12 @@ h2 {
   letter-spacing: .2em;
 }
 
-.service h3 {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 17px 0 9px;
-}
+.service h3 { font-size: 25px; font-weight: 500; margin: 17px 0 9px; }
 
 .service p {
   font: 14px/1.8 Arial;
   color: #E0D6CC;
 }
-
-.promise { background: #F4EBE1; }
 
 .promisegrid {
   display: grid;
@@ -389,10 +356,7 @@ h2 {
   align-items: center;
 }
 
-.promisegrid p {
-  font: 15px/1.9 Arial;
-  color: var(--muted);
-}
+.promisegrid p { font: 15px/1.9 Arial; color: var(--muted); }
 
 .points {
   display: grid;
@@ -400,23 +364,9 @@ h2 {
   gap: 22px;
 }
 
-.point {
-  border-top: 1px solid #C9B7A6;
-  padding-top: 14px;
-}
-
-.point strong {
-  display: block;
-  color: var(--charcoal);
-  font-size: 19px;
-}
-
-.point span {
-  font: 13px/1.7 Arial;
-  color: var(--muted);
-}
-
-.transfer { background: var(--sand); }
+.point { border-top: 1px solid #C9B7A6; padding-top: 14px; }
+.point strong { display: block; color: var(--charcoal); font-size: 19px; }
+.point span { font: 13px/1.7 Arial; color: var(--muted); }
 
 .transferbox {
   border: 1px solid #D6C7B9;
@@ -433,10 +383,7 @@ h2 {
   color: var(--muted);
 }
 
-.gallery {
-  padding-top: 0;
-  background: var(--sand);
-}
+.gallery { padding-top: 0; }
 
 .strip {
   display: grid;
@@ -444,10 +391,7 @@ h2 {
   gap: 12px;
 }
 
-.strip img {
-  height: 205px;
-  object-fit: cover;
-}
+.strip img { height: 205px; object-fit: cover; }
 
 .cta {
   text-align: center;
@@ -457,11 +401,7 @@ h2 {
     url("images/safari3.jpg") center/cover no-repeat;
 }
 
-.cta h2 {
-  color: white;
-  max-width: 750px;
-  margin: 0 auto 18px;
-}
+.cta h2 { color: white; max-width: 750px; margin: 0 auto 18px; }
 
 .cta p {
   max-width: 650px;
@@ -491,11 +431,7 @@ footer h3 {
   margin-bottom: 14px;
 }
 
-footer p, footer li {
-  font: 13px/1.9 Arial;
-  color: #E0D6CC;
-}
-
+footer p, footer li { font: 13px/1.9 Arial; color: #E0D6CC; }
 footer ul { list-style: none; }
 footer a:hover { color: var(--orange); }
 
@@ -507,6 +443,54 @@ footer a:hover { color: var(--orange); }
   text-align: center;
   color: #C9BDB1;
   font: 11px Arial;
+}
+
+/* Floating WhatsApp bubble */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,.28);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,.32);
+}
+
+.whatsapp-float svg {
+  width: 34px;
+  height: 34px;
+  fill: currentColor;
+}
+
+.whatsapp-float span {
+  position: absolute;
+  right: 70px;
+  background: var(--charcoal);
+  color: white;
+  padding: 7px 12px;
+  border-radius: 4px;
+  font: 12px Arial;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s;
+}
+
+.whatsapp-float:hover span {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media(max-width:900px) {
@@ -535,18 +519,9 @@ footer a:hover { color: var(--orange); }
   }
 
   .links.open { display: flex; }
+  .links a { display: block; padding: 10px 0; color: var(--charcoal); }
 
-  .links a {
-    display: block;
-    padding: 10px 0;
-    color: var(--charcoal);
-  }
-
-  .hero {
-    min-height: 590px;
-    background-position: 58% center;
-  }
-
+  .hero { min-height: 590px; background-position: 58% center; }
   .hero-inner { padding: 75px 21px; }
   .hero p { font-size: 15px; }
   section { padding: 62px 19px; }
@@ -555,31 +530,26 @@ footer a:hover { color: var(--orange); }
   .destcopy { left: 13px; bottom: 13px; }
   .destcopy h3 { font-size: 19px; }
 
-  .two, .promisegrid {
-    grid-template-columns: 1fr;
-    gap: 36px;
-  }
-
+  .two, .promisegrid { grid-template-columns: 1fr; gap: 36px; }
   .photo img { height: 350px; }
   .tag { right: -4px; }
   .servicegrid { grid-template-columns: 1fr; }
   .service { min-height: 0; padding: 25px; }
 
-  .transferbox {
-    display: block;
-    padding: 25px;
-  }
-
+  .transferbox { display: block; padding: 25px; }
   .transferbox .btn { margin-top: 18px; }
   .strip { grid-template-columns: 1fr 1fr; }
   .strip img { height: 145px; }
 
-  .footgrid {
-    grid-template-columns: 1fr 1fr;
-    gap: 28px;
-  }
-
+  .footgrid { grid-template-columns: 1fr 1fr; gap: 28px; }
   .footgrid > div:first-child { grid-column: 1/-1; }
+
+  .whatsapp-float {
+    width: 56px;
+    height: 56px;
+    right: 15px;
+    bottom: 15px;
+  }
 }
 
 @media(max-width:420px) {
@@ -826,6 +796,18 @@ KENYA • WILDLIFE • CULTURE • UNFORGETTABLE JOURNEYS
 © 2026 Oldepe Tours &amp; Safaris. All rights reserved.
 </div>
 </footer>
+
+<!-- Floating WhatsApp contact bubble -->
+<a class="whatsapp-float"
+   href="https://wa.me/254720580063"
+   target="_blank"
+   rel="noopener"
+   aria-label="Chat with Oldepe Tours and Safaris on WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M16 .5C7.45.5.5 7.45.5 16c0 2.73.72 5.4 2.08 7.76L.4 31.6l8.05-2.11A15.42 15.42 0 0 0 16 31.5c8.55 0 15.5-6.95 15.5-15.5S24.55.5 16 .5zm0 28.36c-2.35 0-4.65-.63-6.65-1.83l-.48-.28-4.78 1.25 1.28-4.66-.31-.5A12.82 12.82 0 1 1 16 28.86zm7.04-9.6c-.38-.19-2.23-1.1-2.58-1.23-.35-.13-.6-.19-.85.19-.25.38-.98 1.23-1.2 1.48-.22.25-.44.28-.82.09-.38-.19-1.6-.59-3.04-1.88-1.12-1-1.88-2.23-2.1-2.61-.22-.38-.02-.59.17-.78.17-.17.38-.44.57-.66.19-.22.25-.38.38-.63.13-.25.06-.47-.03-.66-.1-.19-.85-2.05-1.17-2.8-.31-.74-.62-.64-.85-.65h-.72c-.25 0-.66.09-1.01.47-.35.38-1.32 1.29-1.32 3.15s1.35 3.65 1.54 3.9c.19.25 2.66 4.06 6.45 5.7.9.39 1.6.62 2.15.79.9.29 1.72.25 2.37.15.72-.11 2.23-.91 2.55-1.79.31-.88.31-1.63.22-1.79-.09-.16-.34-.25-.72-.44z"/>
+  </svg>
+  <span>Chat with us</span>
+</a>
 
 <script>
 const menu = document.getElementById("menu");
