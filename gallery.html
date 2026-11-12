@@ -4,7 +4,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Gallery | Oldepe Tours & Safaris</title>
 <meta name="description" content="Explore photographs of Kenya through Oldepe Tours & Safaris.">
 
@@ -22,17 +21,13 @@
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: var(--sand);
     color: var(--charcoal);
 }
-
-/* HEADER */
 
 header {
     background: var(--charcoal);
@@ -47,11 +42,7 @@ header h1 {
     margin-bottom: 5px;
 }
 
-header p {
-    color: var(--sand);
-}
-
-/* NAVIGATION */
+header p { color: var(--sand); }
 
 nav {
     background: var(--charcoal);
@@ -70,11 +61,7 @@ nav a {
 }
 
 nav a:hover,
-nav a.active {
-    color: var(--orange);
-}
-
-/* PAGE INTRO */
+nav a.active { color: var(--orange); }
 
 .intro {
     background: var(--sand);
@@ -88,11 +75,7 @@ nav a.active {
     font-size: 32px;
 }
 
-.intro p {
-    color: var(--charcoal);
-}
-
-/* PHOTO GALLERY */
+.intro p { color: var(--charcoal); }
 
 .gallery {
     background: var(--sand);
@@ -113,11 +96,7 @@ nav a.active {
     transition: transform 0.3s ease;
 }
 
-.gallery img:hover {
-    transform: scale(1.025);
-}
-
-/* BACK TO SAFARIS */
+.gallery img:hover { transform: scale(1.025); }
 
 .back-places {
     background: var(--sand);
@@ -141,8 +120,6 @@ nav a.active {
     color: var(--sand);
 }
 
-/* FOOTER */
-
 footer {
     background: var(--charcoal);
     color: var(--sand);
@@ -161,28 +138,15 @@ footer a {
     text-decoration: none;
 }
 
-/* TABLETS */
-
 @media (max-width: 850px) {
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .gallery img {
-        height: 230px;
-    }
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+    .gallery img { height: 230px; }
 }
 
-/* MOBILE */
-
 @media (max-width: 550px) {
-    header h1 {
-        font-size: 25px;
-    }
+    header h1 { font-size: 25px; }
 
-    nav {
-        padding: 12px 5px;
-    }
+    nav { padding: 12px 5px; }
 
     nav a {
         margin: 5px 7px;
@@ -200,9 +164,7 @@ footer a {
         border-radius: 4px;
     }
 
-    .intro h2 {
-        font-size: 27px;
-    }
+    .intro h2 { font-size: 27px; }
 }
 </style>
 </head>
@@ -231,6 +193,7 @@ footer a {
 
 <section class="gallery">
 
+    <!-- Existing photographs - all retained -->
     <img src="images/safari1.jpg" alt="Kenya safari photograph">
     <img src="images/safari2.jpg" alt="Kenya wildlife photograph">
     <img src="images/safari4.jpg" alt="Kenya nature photograph">
@@ -239,7 +202,6 @@ footer a {
     <img src="images/safari7.jpg" alt="Kenya wildlife photograph">
     <img src="images/safari8.jpg" alt="Kenya landscape photograph">
     <img src="images/safari9.jpg" alt="Kenya safari photograph">
-
     <img src="images/safari10.jpg" alt="Kenya safari photograph">
     <img src="images/safari11.jpg" alt="Kenya wildlife photograph">
     <img src="images/safari12.jpg" alt="Kenya safari photograph">
@@ -255,6 +217,12 @@ footer a {
     <img src="images/safari22.jpg" alt="Kenya landscape photograph">
     <img src="images/safari24.jpg" alt="Kenya safari photograph">
     <img src="images/safari25.jpg" alt="Kenya cultural photograph">
+
+    <!-- Four newly added photographs -->
+    <img src="images/lion.jpg" alt="Lion in the Kenyan wilderness">
+    <img src="images/black-rhino.jpg" alt="Black rhino at a Kenyan wildlife reserve">
+    <img src="images/safari-lodge.jpg" alt="Safari lodge accommodation in Kenya">
+    <img src="images/maasai-culture.jpg" alt="Maasai cultural experience in Kenya">
 
 </section>
 
