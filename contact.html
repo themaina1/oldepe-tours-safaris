@@ -6,643 +6,209 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | Oldepe Tours & Safaris</title>
 <meta name="description" content="Contact Oldepe Tours & Safaris to plan your Kenya safari.">
-
 <style>
-:root {
-  --sand: #F4EBE1;
-  --charcoal: #2E2A25;
-  --orange: #D97736;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--charcoal);
-  background: var(--sand);
-  line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-header {
-  background: var(--charcoal);
-  padding: 18px 5%;
-}
-
-.nav {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.logo {
-  color: var(--sand);
-  font-size: 21px;
-  font-weight: bold;
-}
-
-.logo span {
-  display: block;
-  font-size: 10px;
-  letter-spacing: 3px;
-  font-weight: normal;
-  margin-top: 4px;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-
-nav a {
-  color: var(--sand);
-  font-size: 14px;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: var(--orange);
-}
-
-.nav-whatsapp {
-  background: var(--orange);
-  color: #fff;
-  padding: 9px 14px;
-  border-radius: 5px;
-}
-
-.hero {
-  min-height: 45vh;
-  background:
-    linear-gradient(rgba(46,42,37,.65), rgba(46,42,37,.8)),
-    url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2000&q=90")
-    center/cover no-repeat;
-  display: flex;
-  align-items: center;
-}
-
-.hero-content {
-  max-width: 1200px;
-  width: 100%;
-  margin: auto;
-  padding: 75px 5%;
-  color: var(--sand);
-}
-
-.hero h1 {
-  font-size: clamp(40px, 6vw, 65px);
-  line-height: 1.1;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 18px;
-  max-width: 700px;
-}
-
-.section {
-  padding: 65px 5%;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.section-heading {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.section-heading h2 {
-  font-size: 34px;
-  margin-bottom: 10px;
-}
-
-.section-heading p {
-  max-width: 650px;
-  margin: auto;
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 35px;
-  align-items: start;
-}
-
-.contact-info h2 {
-  font-size: 32px;
-  margin-bottom: 12px;
-}
-
-.contact-info > p {
-  margin-bottom: 22px;
-}
-
-.contact-item {
-  display: flex;
-  gap: 16px;
-  padding: 18px 0;
-  border-bottom: 1px solid rgba(46,42,37,.2);
-}
-
-.contact-icon {
-  font-size: 27px;
-  width: 40px;
-  flex-shrink: 0;
-}
-
-.contact-item h3 {
-  margin-bottom: 4px;
-}
-
-.contact-item a {
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: var(--orange);
-  overflow-wrap: anywhere;
-}
-
-.contact-button {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 13px 22px;
-  background: var(--orange);
-  color: #fff;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.form-box {
-  background: var(--sand);
-  border: 1px solid rgba(46,42,37,.25);
-  padding: 35px;
-  border-radius: 9px;
-}
-
-.form-box h2 {
-  font-size: 30px;
-  margin-bottom: 8px;
-}
-
-.form-box > p {
-  margin-bottom: 22px;
-}
-
-.form-group {
-  margin-bottom: 17px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 7px;
-}
-
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 13px;
-  border: 1px solid #81776D;
-  border-radius: 5px;
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #fff;
-  color: var(--charcoal);
-}
-
-textarea {
-  min-height: 135px;
-  resize: vertical;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-  outline: 2px solid var(--orange);
-  border-color: var(--orange);
-}
-
-.submit-button {
-  width: 100%;
-  border: none;
-  background: var(--orange);
-  color: #fff;
-  padding: 15px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.submit-button:hover,
-.contact-button:hover {
-  opacity: .88;
-}
-
-.form-note {
-  font-size: 13px;
-  margin-top: 12px;
-  text-align: center;
-}
-
-footer {
-  background: var(--charcoal);
-  color: var(--sand);
-  padding: 45px 5% 20px;
-}
-
-.footer-grid {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 35px;
-}
-
-footer h3 {
-  color: var(--sand);
-  margin-bottom: 14px;
-}
-
-footer p,
-footer a {
-  color: var(--sand);
-  margin-bottom: 8px;
-}
-
-footer a {
-  display: block;
-}
-
-footer a:hover {
-  color: var(--orange);
-}
-
-.copyright {
-  max-width: 1200px;
-  margin: 30px auto 0;
-  padding-top: 20px;
-  border-top: 1px solid rgba(244,235,225,.25);
-  text-align: center;
-  font-size: 14px;
-}
-
-/* Floating WhatsApp bubble */
-.whatsapp-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  right: 20px;
-  bottom: 20px;
-  z-index: 9999;
-  background: #25D366;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 14px rgba(0,0,0,.28);
-  transition: transform .2s;
-}
-.whatsapp-float:hover { transform: scale(1.08); }
-.whatsapp-float svg { width: 34px; height: 34px; fill: currentColor; }
-.whatsapp-float span {
-  position: absolute;
-  right: 70px;
-  background: #2E2A25;
-  color: white;
-  padding: 7px 12px;
-  border-radius: 4px;
-  font: 12px Arial;
-  white-space: nowrap;
-  opacity: 0;
-  visibility: hidden;
-  transition: .2s;
-}
-.whatsapp-float:hover span { opacity: 1; visibility: visible; }
-
-@media(max-width:700px) {
-  .whatsapp-float {
-    width: 56px;
-    height: 56px;
-    right: 15px;
-    bottom: 15px;
-  }
-}
-
-@media(max-width:850px) {
-  .nav {
-    flex-direction: column;
-  }
-
-  nav {
-    justify-content: center;
-    gap: 12px;
-  }
-
-  .contact-grid,
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .form-box {
-    padding: 25px 20px;
-  }
-
-  .section-heading h2 {
-    font-size: 28px;
-  }
-}
+:root{--sand:#F4EBE1;--charcoal:#2E2A25;--orange:#D97736}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--charcoal);background:var(--sand);line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{background:var(--charcoal);padding:18px 5%}
+.nav{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{color:var(--sand);font-size:21px;font-weight:bold}
+.logo span{display:block;font-size:10px;letter-spacing:3px;font-weight:normal;margin-top:4px}
+nav{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+nav a{color:var(--sand);font-size:14px;font-weight:bold}
+nav a:hover{color:var(--orange)}
+.nav-whatsapp{background:var(--orange);color:#fff;padding:9px 14px;border-radius:5px}
+.hero{min-height:45vh;background:linear-gradient(rgba(46,42,37,.65),rgba(46,42,37,.8)),url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2000&q=90") center/cover no-repeat;display:flex;align-items:center}
+.hero-content{max-width:1200px;width:100%;margin:auto;padding:75px 5%;color:var(--sand)}
+.hero h1{font-size:clamp(40px,6vw,65px);line-height:1.1;margin-bottom:15px}
+.hero p{font-size:18px;max-width:700px}
+.section{padding:65px 5%}
+.container{max-width:1200px;margin:auto}
+.section-heading{text-align:center;margin-bottom:40px}
+.section-heading h2{font-size:34px;margin-bottom:10px}
+.section-heading p{max-width:650px;margin:auto}
+.contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:35px;align-items:start}
+.contact-info h2{font-size:32px;margin-bottom:12px}
+.contact-info>p{margin-bottom:22px}
+.contact-item{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid rgba(46,42,37,.2)}
+.contact-icon{font-size:27px;width:40px;flex-shrink:0}
+.contact-item h3{margin-bottom:4px}
+.contact-item a{font-weight:bold;text-decoration:underline;text-decoration-color:var(--orange);overflow-wrap:anywhere}
+.contact-button{display:inline-block;margin-top:25px;padding:13px 22px;background:var(--orange);color:#fff;border-radius:5px;font-weight:bold}
+.form-box{background:var(--sand);border:1px solid rgba(46,42,37,.25);padding:35px;border-radius:9px}
+.form-box h2{font-size:30px;margin-bottom:8px}
+.form-box>p{margin-bottom:22px}
+.form-group{margin-bottom:17px}
+label{display:block;font-weight:bold;margin-bottom:7px}
+input,select,textarea{width:100%;padding:13px;border:1px solid #81776D;border-radius:5px;font-size:15px;font-family:Arial,Helvetica,sans-serif;background:#fff;color:var(--charcoal)}
+textarea{min-height:135px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--orange);border-color:var(--orange)}
+.submit-button{width:100%;border:none;background:var(--orange);color:#fff;padding:15px;font-size:16px;font-weight:bold;border-radius:5px;cursor:pointer}
+.whatsapp-button{width:100%;border:none;background:var(--charcoal);color:var(--sand);padding:15px;font-size:16px;font-weight:bold;border-radius:5px;cursor:pointer;margin-top:12px}
+.submit-button:hover,.whatsapp-button:hover,.contact-button:hover{opacity:.88}
+.form-note{font-size:13px;margin-top:12px;text-align:center}
+footer{background:var(--charcoal);color:var(--sand);padding:45px 5% 20px}
+.footer-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px}
+footer h3{color:var(--sand);margin-bottom:14px}
+footer p,footer a{color:var(--sand);margin-bottom:8px}
+footer a{display:block}
+footer a:hover{color:var(--orange)}
+.copyright{max-width:1200px;margin:30px auto 0;padding-top:20px;border-top:1px solid rgba(244,235,225,.25);text-align:center;font-size:14px}
+.whatsapp-float{position:fixed;width:60px;height:60px;right:20px;bottom:20px;z-index:9999;background:#25D366;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.28);transition:transform .2s}
+.whatsapp-float:hover{transform:scale(1.08)}
+.whatsapp-float svg{width:34px;height:34px;fill:currentColor}
+.whatsapp-float span{position:absolute;right:70px;background:#2E2A25;color:white;padding:7px 12px;border-radius:4px;font:12px Arial;white-space:nowrap;opacity:0;visibility:hidden;transition:.2s}
+.whatsapp-float:hover span{opacity:1;visibility:visible}
+@media(max-width:700px){.whatsapp-float{width:56px;height:56px;right:15px;bottom:15px}}
+@media(max-width:850px){.nav{flex-direction:column}nav{justify-content:center;gap:12px}.contact-grid,.footer-grid{grid-template-columns:1fr}.form-box{padding:25px 20px}.section-heading h2{font-size:28px}}
 </style>
 </head>
-
 <body>
-
 <header>
-  <div class="nav">
-    <a href="index.html" class="logo">
-      OLDEPE TOURS & SAFARIS
-      <span>TEMBEA KENYA</span>
-    </a>
-
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="safaris.html">Safaris</a>
-      <a href="tours.html">Tours</a>
-      <a href="about.html">About</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-      <a class="nav-whatsapp" href="https://wa.me/254720580063">WhatsApp</a>
-    </nav>
-  </div>
+<div class="nav">
+<a href="index.html" class="logo">OLDEPE TOURS & SAFARIS<span>TEMBEA KENYA</span></a>
+<nav>
+<a href="index.html">Home</a><a href="safaris.html">Safaris</a><a href="tours.html">Tours</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a class="nav-whatsapp" href="https://wa.me/254720580063">WhatsApp</a>
+</nav>
+</div>
 </header>
 
 <section class="hero">
-  <div class="hero-content">
-    <h1>Contact Us</h1>
-    <p>
-      Plan your next Kenya safari with Oldepe Tours & Safaris.
-      Tell us what you would like to experience and we will
-      help you plan your journey.
-    </p>
-  </div>
+<div class="hero-content">
+<h1>Contact Us</h1>
+<p>Plan your next Kenya safari with Oldepe Tours & Safaris. Tell us what you would like to experience and we will help you plan your journey.</p>
+</div>
 </section>
 
 <section class="section">
-  <div class="container">
+<div class="container">
+<div class="section-heading">
+<h2>Let's Plan Your Safari</h2>
+<p>Get in touch with us for safari enquiries, travel arrangements and personalised Kenya experiences.</p>
+</div>
 
-    <div class="section-heading">
-      <h2>Let's Plan Your Safari</h2>
-      <p>
-        Get in touch with us for safari enquiries, travel arrangements
-        and personalised Kenya experiences.
-      </p>
-    </div>
+<div class="contact-grid">
+<div class="contact-info">
+<h2>Get In Touch</h2>
+<p>Whether you are planning a wildlife safari, cultural experience, airport transfer or private trip, we are ready to assist you.</p>
 
-    <div class="contact-grid">
+<div class="contact-item"><div class="contact-icon">📞</div><div><h3>Phone</h3><p><a href="tel:+254720580063">0720 580 063</a></p></div></div>
+<div class="contact-item"><div class="contact-icon">💬</div><div><h3>WhatsApp</h3><p><a href="https://wa.me/254720580063">Chat with us on WhatsApp</a></p></div></div>
+<div class="contact-item"><div class="contact-icon">✉️</div><div><h3>Email</h3><p><a href="mailto:oldepetours@gmail.com">oldepetours@gmail.com</a></p></div></div>
+<div class="contact-item"><div class="contact-icon">🇰🇪</div><div><h3>Location</h3><p>Kenya</p></div></div>
 
-      <div class="contact-info">
-        <h2>Get In Touch</h2>
+<a class="contact-button" href="https://wa.me/254720580063">Chat on WhatsApp</a>
+</div>
 
-        <p>
-          Whether you are planning a wildlife safari, cultural
-          experience, airport transfer or private trip, we are
-          ready to assist you.
-        </p>
+<div class="form-box">
+<h2>Send an Enquiry</h2>
+<p>Complete the details below and choose whether to send your enquiry by email or WhatsApp.</p>
 
-        <div class="contact-item">
-          <div class="contact-icon">📞</div>
-          <div>
-            <h3>Phone</h3>
-            <p>
-              <a href="tel:+254720580063">0720 580 063</a>
-            </p>
-          </div>
-        </div>
+<form id="safariForm" action="https://formsubmit.co/oldepetours@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New Enquiry - Oldepe Tours & Safaris">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://themaina1.github.io/oldepe-tours-safaris/thankyou.html">
 
-        <div class="contact-item">
-          <div class="contact-icon">💬</div>
-          <div>
-            <h3>WhatsApp</h3>
-            <p>
-              <a href="https://wa.me/254720580063">
-                Chat with us on WhatsApp
-              </a>
-            </p>
-          </div>
-        </div>
+<div class="form-group">
+<label for="fullname">Full Name *</label>
+<input id="fullname" type="text" name="Full Name" placeholder="Your full name" required>
+</div>
 
-        <div class="contact-item">
-          <div class="contact-icon">✉️</div>
-          <div>
-            <h3>Email</h3>
-            <p>
-              <a href="mailto:oldepetours@gmail.com">
-                oldepetours@gmail.com
-              </a>
-            </p>
-          </div>
-        </div>
+<div class="form-group">
+<label for="email">Email *</label>
+<input id="email" type="email" name="Email" placeholder="Your email address" required>
+</div>
 
-        <div class="contact-item">
-          <div class="contact-icon">🇰🇪</div>
-          <div>
-            <h3>Location</h3>
-            <p>Kenya</p>
-          </div>
-        </div>
+<div class="form-group">
+<label for="phone">Phone / WhatsApp</label>
+<input id="phone" type="tel" name="Phone / WhatsApp" placeholder="Your phone number">
+</div>
 
-        <a class="contact-button"
-           href="https://wa.me/254720580063">
-          Chat on WhatsApp
-        </a>
-      </div>
+<div class="form-group">
+<label for="service">Safari / Service Interested In</label>
+<select id="service" name="Safari / Service">
+<option value="">Select a safari or service</option>
+<option>Maasai Mara National Reserve</option>
+<option>Amboseli National Park</option>
+<option>Lake Nakuru National Park</option>
+<option>Tsavo National Parks</option>
+<option>Samburu National Reserve</option>
+<option>Mount Kenya</option>
+<option>Aberdare National Park</option>
+<option>Ol Pejeta Conservancy</option>
+<option>Kenya Safari</option>
+<option>Airport Transfer</option>
+<option>Private Safari</option>
+<option>Custom Safari</option>
+</select>
+</div>
 
-      <div class="form-box">
-        <h2>Send an Enquiry</h2>
-        <p>
-          Complete the details below. Your enquiry will open in
-          WhatsApp ready for you to send.
-        </p>
+<div class="form-group">
+<label for="travel-date">Preferred Travel Date</label>
+<input id="travel-date" type="date" name="Preferred Travel Date">
+</div>
 
-        <form id="safariForm">
+<div class="form-group">
+<label for="guests">Number of Guests</label>
+<select id="guests" name="Number of Guests">
+<option value="">Select number of guests</option>
+<option>1 Guest</option><option>2 Guests</option><option>3 Guests</option><option>4 Guests</option><option>5 Guests</option><option>6 Guests</option><option>7 Guests</option><option>8+ Guests</option>
+</select>
+</div>
 
-          <div class="form-group">
-            <label for="fullname">Full Name *</label>
-            <input id="fullname" type="text"
-                   name="Full Name"
-                   placeholder="Your full name" required>
-          </div>
+<div class="form-group">
+<label for="message">Tell Us About Your Safari *</label>
+<textarea id="message" name="Message" placeholder="Tell us where you would like to go, how many days you have and anything else we should know..." required></textarea>
+</div>
 
-          <div class="form-group">
-            <label for="email">Email *</label>
-            <input id="email" type="email"
-                   name="Email"
-                   placeholder="Your email address" required>
-          </div>
+<button type="submit" class="submit-button">SEND ENQUIRY VIA EMAIL</button>
+<p class="form-note">Your enquiry will be submitted to oldepetours@gmail.com.</p>
 
-          <div class="form-group">
-            <label for="phone">Phone / WhatsApp</label>
-            <input id="phone" type="tel"
-                   name="Phone / WhatsApp"
-                   placeholder="Your phone number">
-          </div>
-
-          <div class="form-group">
-            <label for="service">Safari / Service Interested In</label>
-            <select id="service" name="Safari / Service">
-              <option value="">Select a safari or service</option>
-              <option>Maasai Mara National Reserve</option>
-              <option>Amboseli National Park</option>
-              <option>Lake Nakuru National Park</option>
-              <option>Tsavo National Parks</option>
-              <option>Samburu National Reserve</option>
-              <option>Mount Kenya</option>
-              <option>Aberdare National Park</option>
-              <option>Ol Pejeta Conservancy</option>
-              <option>Kenya Safari</option>
-              <option>Airport Transfer</option>
-              <option>Private Safari</option>
-              <option>Custom Safari</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="travel-date">Preferred Travel Date</label>
-            <input id="travel-date" type="date"
-                   name="Preferred Travel Date">
-          </div>
-
-          <div class="form-group">
-            <label for="guests">Number of Guests</label>
-            <select id="guests" name="Number of Guests">
-              <option value="">Select number of guests</option>
-              <option>1 Guest</option>
-              <option>2 Guests</option>
-              <option>3 Guests</option>
-              <option>4 Guests</option>
-              <option>5 Guests</option>
-              <option>6 Guests</option>
-              <option>7 Guests</option>
-              <option>8+ Guests</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Tell Us About Your Safari *</label>
-            <textarea id="message" name="Message"
-              placeholder="Tell us where you would like to go, how many days you have and anything else we should know..."
-              required></textarea>
-          </div>
-
-          <button type="submit" class="submit-button">
-            SEND ENQUIRY VIA WHATSAPP
-          </button>
-
-          <p class="form-note">
-            WhatsApp will open with your enquiry. Please press Send
-            to deliver it to Oldepe Tours & Safaris.
-          </p>
-
-        </form>
-      </div>
-
-    </div>
-  </div>
+<button type="button" id="whatsappButton" class="whatsapp-button">SEND ENQUIRY VIA WHATSAPP</button>
+<p class="form-note">WhatsApp will open with your enquiry ready. Please press Send to deliver it.</p>
+</form>
+</div>
+</div>
+</div>
 </section>
 
 <footer>
-  <div class="footer-grid">
-
-    <div>
-      <h3>Oldepe Tours & Safaris</h3>
-      <p>Discover Kenya. Experience the wild.</p>
-      <p>
-        Safaris, wildlife experiences, airport transfers
-        and private safari adventures.
-      </p>
-    </div>
-
-    <div>
-      <h3>Quick Links</h3>
-      <a href="index.html">Home</a>
-      <a href="safaris.html">Safaris</a>
-      <a href="tours.html">Tours</a>
-      <a href="about.html">About</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </div>
-
-    <div>
-      <h3>Contact</h3>
-      <p><a href="tel:+254720580063">0720 580 063</a></p>
-      <p><a href="mailto:oldepetours@gmail.com">oldepetours@gmail.com</a></p>
-      <a href="https://wa.me/254720580063">WhatsApp</a>
-    </div>
-
-  </div>
-
-  <div class="copyright">
-    © 2026 Oldepe Tours & Safaris. All Rights Reserved.
-  </div>
+<div class="footer-grid">
+<div><h3>Oldepe Tours & Safaris</h3><p>Discover Kenya. Experience the wild.</p><p>Safaris, wildlife experiences, airport transfers and private safari adventures.</p></div>
+<div><h3>Quick Links</h3><a href="index.html">Home</a><a href="safaris.html">Safaris</a><a href="tours.html">Tours</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></div>
+<div><h3>Contact</h3><p><a href="tel:+254720580063">0720 580 063</a></p><p><a href="mailto:oldepetours@gmail.com">oldepetours@gmail.com</a></p><a href="https://wa.me/254720580063">WhatsApp</a></div>
+</div>
+<div class="copyright">© 2026 Oldepe Tours & Safaris. All Rights Reserved.</div>
 </footer>
 
 <script>
-document.getElementById("safariForm").addEventListener("submit", function(event) {
-  event.preventDefault();
+const safariForm = document.getElementById("safariForm");
+const whatsappButton = document.getElementById("whatsappButton");
 
-  const form = this;
+whatsappButton.addEventListener("click", function() {
+  if (!safariForm.reportValidity()) return;
 
-  if (!form.reportValidity()) {
-    return;
-  }
-
-  const data = new FormData(form);
-
-  let message = "NEW SAFARI ENQUIRY - OLDEPE TOURS & SAFARIS\n\n";
+  const data = new FormData(safariForm);
+  let message = "NEW ENQUIRY - OLDEPE TOURS & SAFARIS\n\n";
 
   for (const [key, value] of data.entries()) {
-    if (String(value).trim() !== "") {
-      message += key + ": " + value + "\n";
-    }
+    if (key.startsWith("_")) continue;
+    if (String(value).trim() !== "") message += key + ": " + value + "\n";
   }
 
   message += "\nPlease contact me regarding this enquiry. Thank you.";
-
-  const url = "https://wa.me/254720580063?text=" +
-              encodeURIComponent(message);
-
-  window.location.href = url;
+  const url = "https://wa.me/254720580063?text=" + encodeURIComponent(message);
+  window.open(url, "_blank");
 });
 </script>
 
-<!-- Floating WhatsApp contact bubble -->
-<a class="whatsapp-float"
-   href="https://wa.me/254720580063"
-   target="_blank"
-   rel="noopener"
-   aria-label="Chat with Oldepe Tours and Safaris on WhatsApp">
-  <svg viewBox="0 0 32 32" aria-hidden="true">
-    <path d="M16 .5C7.45.5.5 7.45.5 16c0 2.73.72 5.4 2.08 7.76L.4 31.6l8.05-2.11A15.42 15.42 0 0 0 16 31.5c8.55 0 15.5-6.95 15.5-15.5S24.55.5 16 .5zm0 28.36c-2.35 0-4.65-.63-6.65-1.83l-.48-.28-4.78 1.25 1.28-4.66-.31-.5A12.82 12.82 0 1 1 16 28.86zm7.04-9.6c-.38-.19-2.23-1.1-2.58-1.23-.35-.13-.6-.19-.85.19-.25.38-.98 1.23-1.2 1.48-.22.25-.44.28-.82.09-.38-.19-1.6-.59-3.04-1.88-1.12-1-1.88-2.23-2.1-2.61-.22-.38-.02-.59.17-.78.17-.17.38-.44.57-.66.19-.22.25-.38.38-.63.13-.25.06-.47-.03-.66-.1-.19-.85-2.05-1.17-2.8-.31-.74-.62-.64-.85-.65h-.72c-.25 0-.66.09-1.01.47-.35.38-1.32 1.29-1.32 3.15s1.35 3.65 1.54 3.9c.19.25 2.66 4.06 6.45 5.7.9.39 1.6.62 2.15.79.9.29 1.72.25 2.37.15.72-.11 2.23-.91 2.55-1.79.31-.88.31-1.63.22-1.79-.09-.16-.34-.25-.72-.44z"/>
-  </svg>
-  <span>Chat with us</span>
+<a class="whatsapp-float" href="https://wa.me/254720580063" target="_blank" rel="noopener" aria-label="Chat with Oldepe Tours and Safaris on WhatsApp">
+<svg viewBox="0 0 32 32" aria-hidden="true">
+<path d="M16 .5C7.45.5.5 7.45.5 16c0 2.73.72 5.4 2.08 7.76L.4 31.6l8.05-2.11A15.42 15.42 0 0 0 16 31.5c8.55 0 15.5-6.95 15.5-15.5S24.55.5 16 .5zm0 28.36c-2.35 0-4.65-.63-6.65-1.83l-.48-.28-4.78 1.25 1.28-4.66-.31-.5A12.82 12.82 0 1 1 16 28.86zm7.04-9.6c-.38-.19-2.23-1.1-2.58-1.23-.35-.13-.6-.19-.85.19-.25.38-.98 1.23-1.2 1.48-.22.25-.44.28-.82.09-.38-.19-1.6-.59-3.04-1.88-1.12-1-1.88-2.23-2.1-2.61-.22-.38-.02-.59.17-.78.17-.17.38-.44.57-.66.19-.22.25-.38.38-.63.13-.25.06-.47-.03-.66-.1-.19-.85-2.05-1.17-2.8-.31-.74-.62-.64-.85-.65h-.72c-.25 0-.66.09-1.01.47-.35.38-1.32 1.29-1.32 3.15s1.35 3.65 1.54 3.9c.19.25 2.66 4.06 6.45 5.7.9.39 1.6.62 2.15.79.9.29 1.72.25 2.37.15.72-.11 2.23-.91 2.55-1.79.31-.88.31-1.63.22-1.79-.09-.16-.34-.25-.72-.44z"/>
+</svg>
+<span>Chat with us</span>
 </a>
-
 </body>
 </html>
